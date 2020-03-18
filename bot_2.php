@@ -2123,7 +2123,7 @@ Copa69 ขอขอบคุณที่ใช้บริการค่ะ....
 if (!is_null($events)) {
     $userMessage = strtolower($userMessage);
     if (!is_null($eventFollow)) {
-        $imageMain = 'https://www.pic2free.com/uploads/20200311/0f2a99163fd6712f73d04da793c78d13e13e6f7a.png';
+        $imageMain = 'https://drive.google.com/file/d/1Eh0id-cjHYdnTCa0eM8YDt0vK11UeOZs/view?usp=sharing';
         $replyData = new ImagemapMessageBuilder(
             $imageMain,
             'test',
@@ -2160,7 +2160,7 @@ if (!is_null($events)) {
         case "text":
             if ($userMessage != null) {
                 if($userMessage == "ย้อนกลับMain") {
-                    $imageMain = 'https://www.pic2free.com/uploads/20200311/0f2a99163fd6712f73d04da793c78d13e13e6f7a.png';
+                    $imageMain = 'https://drive.google.com/file/d/1Eh0id-cjHYdnTCa0eM8YDt0vK11UeOZs/view?usp=sharing';
                     $replyData = new ImagemapMessageBuilder(
                         $imageMain,
                         'test',
@@ -2182,7 +2182,7 @@ if (!is_null($events)) {
                     );
                 }                
                 else if ($userMessage == "สอบถาม" || $userMessage == "q" || $userMessage == "Q" || $userMessage == "ย้อนกลับQuestion") {
-                    $imageMapUrl = 'https://www.pic2free.com/uploads/20200311/57f1378aadbe36e2d659f634c71d9cb9cfebe0b1.png';
+                    $imageMapUrl = 'https://drive.google.com/file/d/13ShJFEojxRPhuAdkfVGn7QgOSAF-88DN/view?usp=sharing';
                     $replyData = new ImagemapMessageBuilder(
                         $imageMapUrl,
                         'test',
@@ -2256,7 +2256,7 @@ if (!is_null($events)) {
                     //                     );
                     //                     $replyData = new FlexMessageBuilder("Flex", $textReplyMessage, $quickReplyMain);
                 } else if ($userMessage == "สมัคร") {
-                    $imageMapUrl = 'https://www.pic2free.com/uploads/20200311/ab4364db41db57f34d4a0aa0b22573946da8a6c4.png';
+                    $imageMapUrl = 'https://drive.google.com/file/d/172tMoujX619fgqfN7x5hYOlnB9A6dN-e/view?usp=sharing';
                     $replyData = new ImagemapMessageBuilder(
                         $imageMapUrl,9+
                         'test',
@@ -2372,7 +2372,7 @@ if (!is_null($events)) {
                 // ----------------------------------------------------------------------------------------- Promotion
 
                 else if ($userMessage == "โปรโมชั่น") {
-                    $imagePromotion = 'https://www.pic2free.com/uploads/20200311/45304216249fa2fb524de64b0446ce3592d9f7ce.png';
+                    $imagePromotion = 'https://drive.google.com/file/d/1FyNzaFY4zBOsd3lsy4Q_x3meIUjdyot9/view?usp=sharing';
                     $replyData = new ImagemapMessageBuilder(
                         $imagePromotion,
                         'test',
@@ -2418,7 +2418,7 @@ if (!is_null($events)) {
                 // ----------------------------------------------------------------------------------------- Recommend
 
                 else if ($userMessage == "คำแนะนำ") {
-                    $imageRecommend = 'https://www.pic2free.com/uploads/20200311/9d45060816145cff9ddf6c2bfd7ae9972fca71da.png';
+                    $imageRecommend = 'https://drive.google.com/file/d/1E79gzRNdoROWZJ_5fdYmc8rcnfuJK-z6/view?usp=sharing';
                     $replyData = new ImagemapMessageBuilder(
                         $imageRecommend,
                         'test',
@@ -2452,7 +2452,7 @@ if (!is_null($events)) {
                 // ----------------------------------------------------------------------------------------- Group
 
                 else if ($userMessage == "กลุ่ม") {
-                    $imageGroup = 'https://www.pic2free.com/uploads/20200311/2ef615a9e4074c39eeb4dd0002e34113d260a7f6.png';
+                    $imageGroup = 'https://drive.google.com/file/d/1d-0ztdDgwDFvWRyi9qepsTE-UN1uk_4t/view?usp=sharing';
                     $replyData = new ImagemapMessageBuilder(
                         $imageGroup,
                         'test',
@@ -2497,7 +2497,7 @@ if (!is_null($events)) {
                 // ----------------------------------------------------------------------------------------- Deposit
 
                 else if ($userMessage == "ฝาก") {
-                    $imageDeposit = 'https://www.pic2free.com/uploads/20200311/aa0511085a9d1fb2a5cbe58cf308cef4e3b25fe0.png';
+                    $imageDeposit = 'https://drive.google.com/file/d/102EVC24soWmjCRzIQKCfznriKkwrbP27/view?usp=sharing';
                     $replyData = new ImagemapMessageBuilder(
                         $imageDeposit,
                         'test',
@@ -2545,7 +2545,7 @@ if (!is_null($events)) {
                 // ----------------------------------------------------------------------------------------- Register
 
                 else if ($userMessage == "สมาชิก") {
-                    $imageRegister = 'https://www.pic2free.com/uploads/20200311/f660861d050ff2a1fe4aa8077b71aad6b18e463f.png';
+                    $imageRegister = 'https://drive.google.com/file/d/13rcDf8PfHmzkGsH4VtCHoc40ZMCTo8HM/view?usp=sharing';
                     $replyData = new ImagemapMessageBuilder(
                         $imageRegister,
                         'test',
@@ -2605,7 +2605,7 @@ if (!is_null($events)) {
                 // ----------------------------------------------------------------------------------------- Account
 
                 else if ($userMessage == "บัญชี") {
-                    $imageAccount = 'https://www.pic2free.com/uploads/20200311/49668c2cca3199378b55cb85518433c4c8471dd4.png';
+                    $imageAccount = 'https://drive.google.com/file/d/1pwpLgfH1AJBfghbgD3FwJ2aDBImyWqeZ/view?usp=sharing';
                     $replyData = new ImagemapMessageBuilder(
                         $imageAccount,
                         'test',
@@ -2639,7 +2639,7 @@ if (!is_null($events)) {
                 // ----------------------------------------------------------------------------------------- Website
 
                 else if ($userMessage == "เว็บ") {
-                    $imageWebsite = 'https://www.pic2free.com/uploads/20200311/2fcf0179ea43c6c6b65bdf5243bbff146cb5e303.png';
+                    $imageWebsite = 'https://drive.google.com/file/d/1t6RfwBZbi4Bcj1092AcgK3ELTaA58o7m/view?usp=sharing';
                     $replyData = new ImagemapMessageBuilder(
                         $imageWebsite,
                         'test',

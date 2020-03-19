@@ -2160,7 +2160,7 @@ if (!is_null($events)) {
         case "text":
             if ($userMessage != null) {
                 if ($userMessage == "ย้อนกลับMain") {
-                    $imageMain = 'https://drive.google.com/file/d/1Eh0id-cjHYdnTCa0eM8YDt0vK11UeOZs/view?usp=sharing';
+                    $imageMain = 'https://www.pic2free.com/uploads/20200311/0f2a99163fd6712f73d04da793c78d13e13e6f7a.png?_ignore=';
                     $replyData = new ImagemapMessageBuilder(
                         $imageMain,
                         'test',
@@ -2181,7 +2181,7 @@ if (!is_null($events)) {
                         )
                     );
                 } else if ($userMessage == "สอบถาม" || $userMessage == "q" || $userMessage == "Q" || $userMessage == "ย้อนกลับQuestion") {
-                    $imageMapUrl = 'https://drive.google.com/file/d/13ShJFEojxRPhuAdkfVGn7QgOSAF-88DN/view?usp=sharing';
+                    $imageMapUrl = 'https://www.pic2free.com/uploads/20200311/57f1378aadbe36e2d659f634c71d9cb9cfebe0b1.png?_ignore=';
                     $replyData = new ImagemapMessageBuilder(
                         $imageMapUrl,
                         'test',

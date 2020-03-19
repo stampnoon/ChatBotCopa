@@ -2606,7 +2606,7 @@ if (!is_null($events)) {
                 // ----------------------------------------------------------------------------------------- Account
 
                 else if ($userMessage == "บัญชี") {
-                    $imageAccount = 'https://drive.google.com/file/d/1pwpLgfH1AJBfghbgD3FwJ2aDBImyWqeZ/view?usp=sharing';
+                    $imageAccount = 'https://www.pic2free.com/uploads/20200311/49668c2cca3199378b55cb85518433c4c8471dd4.png?_ignore=';
                     $replyData = new ImagemapMessageBuilder(
                         $imageAccount,
                         'test',
@@ -2640,7 +2640,7 @@ if (!is_null($events)) {
                 // ----------------------------------------------------------------------------------------- Website
 
                 else if ($userMessage == "เว็บ") {
-                    $imageWebsite = 'https://drive.google.com/file/d/1t6RfwBZbi4Bcj1092AcgK3ELTaA58o7m/view?usp=sharing';
+                    $imageWebsite = 'https://www.pic2free.com/uploads/20200311/2fcf0179ea43c6c6b65bdf5243bbff146cb5e303.png?_ignore=';
                     $replyData = new ImagemapMessageBuilder(
                         $imageWebsite,
                         'test',

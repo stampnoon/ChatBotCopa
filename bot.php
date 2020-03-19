@@ -2729,7 +2729,7 @@ if (!is_null($events)) {
                         array(
                             new ImagemapMessageActionBuilder(
                                 'เข้ากลุ่ม',
-                                new AreaBuilder(1000, 500, 512, 95)
+                                new AreaBuilder(0, 0, 1200, 1200)
                             ),
                             // new ImagemapUriActionBuilder(
                             //     'http://www.ninenik.com',

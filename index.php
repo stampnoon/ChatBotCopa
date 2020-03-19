@@ -1,3 +1,3 @@
 <?php
-echo "Hello LINE bot World stamp!";
+echo "Hello LINE bot Test!";
 ?>

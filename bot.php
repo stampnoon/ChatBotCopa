@@ -2373,7 +2373,7 @@ if (!is_null($events)) {
                 // ----------------------------------------------------------------------------------------- Promotion
 
                 else if ($userMessage == "โปรโมชั่น") {
-                    $imagePromotion = 'https://drive.google.com/file/d/1FyNzaFY4zBOsd3lsy4Q_x3meIUjdyot9/view?usp=sharing';
+                    $imagePromotion = 'https://www.pic2free.com/uploads/20200311/45304216249fa2fb524de64b0446ce3592d9f7ce.png?_ignore=';
                     $replyData = new ImagemapMessageBuilder(
                         $imagePromotion,
                         'test',
@@ -2419,7 +2419,7 @@ if (!is_null($events)) {
                 // ----------------------------------------------------------------------------------------- Recommend
 
                 else if ($userMessage == "คำแนะนำ") {
-                    $imageRecommend = 'https://drive.google.com/file/d/1E79gzRNdoROWZJ_5fdYmc8rcnfuJK-z6/view?usp=sharing';
+                    $imageRecommend = 'https://www.pic2free.com/uploads/20200311/9d45060816145cff9ddf6c2bfd7ae9972fca71da.png?_ignore=';
                     $replyData = new ImagemapMessageBuilder(
                         $imageRecommend,
                         'test',
@@ -2453,7 +2453,7 @@ if (!is_null($events)) {
                 // ----------------------------------------------------------------------------------------- Group
 
                 else if ($userMessage == "กลุ่ม") {
-                    $imageGroup = 'https://drive.google.com/file/d/1d-0ztdDgwDFvWRyi9qepsTE-UN1uk_4t/view?usp=sharing';
+                    $imageGroup = 'https://www.pic2free.com/uploads/20200311/2ef615a9e4074c39eeb4dd0002e34113d260a7f6.png?_ignore=';
                     $replyData = new ImagemapMessageBuilder(
                         $imageGroup,
                         'test',

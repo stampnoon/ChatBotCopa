@@ -2498,7 +2498,7 @@ if (!is_null($events)) {
                 // ----------------------------------------------------------------------------------------- Deposit
 
                 else if ($userMessage == "ฝาก") {
-                    $imageDeposit = 'https://drive.google.com/file/d/102EVC24soWmjCRzIQKCfznriKkwrbP27/view?usp=sharing';
+                    $imageDeposit = 'https://www.pic2free.com/uploads/20200311/aa0511085a9d1fb2a5cbe58cf308cef4e3b25fe0.png?_ignore=';
                     $replyData = new ImagemapMessageBuilder(
                         $imageDeposit,
                         'test',
@@ -2546,7 +2546,7 @@ if (!is_null($events)) {
                 // ----------------------------------------------------------------------------------------- Register
 
                 else if ($userMessage == "สมาชิก") {
-                    $imageRegister = 'https://drive.google.com/file/d/13rcDf8PfHmzkGsH4VtCHoc40ZMCTo8HM/view?usp=sharing';
+                    $imageRegister = 'https://www.pic2free.com/uploads/20200311/f660861d050ff2a1fe4aa8077b71aad6b18e463f.png?_ignore=';
                     $replyData = new ImagemapMessageBuilder(
                         $imageRegister,
                         'test',

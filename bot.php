@@ -2725,11 +2725,11 @@ if (!is_null($events)) {
                     $replyData = new ImagemapMessageBuilder(
                         $imageWebsite,
                         'test',
-                        new BaseSizeBuilder(1200, 1200),
+                        new BaseSizeBuilder(1040, 1040),
                         array(
                             new ImagemapMessageActionBuilder(
                                 'เข้ากลุ่ม',
-                                new AreaBuilder(400, 900, 500, 200)
+                                new AreaBuilder(344, 898, 345, 83)
                             ),
                             // new ImagemapUriActionBuilder(
                             //     'http://www.ninenik.com',

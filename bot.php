@@ -2725,7 +2725,7 @@ if (!is_null($events)) {
                     $replyData = new ImagemapMessageBuilder(
                         $imageWebsite,
                         'test',
-                        new BaseSizeBuilder(800, 1200),
+                        new BaseSizeBuilder(1200, 1200),
                         array(
                             new ImagemapMessageActionBuilder(
                                 'คำถาม:เว็บ1',

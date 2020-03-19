@@ -2718,35 +2718,27 @@ if (!is_null($events)) {
                 } else if (strstr($userMessage, "เพิ่มเติม") == true) {
                     $replyData = new FlexMessageBuilder("Flex", $textSendAddress, $quickReplyMain);
 
-// ========================== Test new picture ===================================
+                    // ========================== Test new picture ===================================
 
                 } else if ($userMessage == "ads") {
                     $imageWebsite = 'https://www.pic2free.com/uploads/20200319/93235726873d0241bdfb672a9315a580919aae99.jpg?_ignore=';
                     $replyData = new ImagemapMessageBuilder(
                         $imageWebsite,
                         'test',
-                        new BaseSizeBuilder(1200, 1000),
+                        new BaseSizeBuilder(1200, 1200),
                         array(
                             new ImagemapMessageActionBuilder(
-                                'คำถาม:เว็บ1',
-                                new AreaBuilder(4, 145, 512, 108)
+                                'เข้ากลุ่ม',
+                                new AreaBuilder(1000, 500, 512, 95)
                             ),
-                            new ImagemapMessageActionBuilder(
-                                'คำถาม:เว็บ2',
-                                new AreaBuilder(521, 145, 513, 108)
-                            ),
-                            new ImagemapMessageActionBuilder(
-                                'ย้อนกลับQuestion',
-                                new AreaBuilder(4, 259, 513, 107)
-                            ),
-                            new ImagemapMessageActionBuilder(
-                                'ย้อนกลับMain',
-                                new AreaBuilder(520, 257, 513, 106)
-                            ),
+                            // new ImagemapUriActionBuilder(
+                            //     'http://www.ninenik.com',
+                            //     new AreaBuilder(520, 0, 520, 699)
+                            // )
                         )
                     );
-                } 
-// ========================== Test new picture ===================================
+                }
+                // ========================== Test new picture ===================================
                 else {
                     $replyData = new FlexMessageBuilder("Flex", $textNotKeyword, $quickReplyMain);
                 }

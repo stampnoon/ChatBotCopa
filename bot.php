@@ -1,8 +1,8 @@
 <?php
 
-define('LINE_MESSAGE_CHANNEL_ID','1653962671');
-define('LINE_MESSAGE_CHANNEL_SECRET','d2dfde7d8d794de418721245d96de4cc');
-define('LINE_MESSAGE_ACCESS_TOKEN','/K+Rh34f9Gj/yHmNHTZWjoW/AKjzHTKPMVfz7HtX8IpqbsQQ8Ps0sY+w9RkOoL7OcaCLH+VM8dDjC0LYPevRZKBEqjm0iw2+RT8vb91IuPRxw2xiUNLFYh2zmRFHxEBiP/Ev22L+Gl299UB1IQ+cuAdB04t89/1O/w1cDnyilFU=');
+define('LINE_MESSAGE_CHANNEL_ID', '1653962671');
+define('LINE_MESSAGE_CHANNEL_SECRET', 'd2dfde7d8d794de418721245d96de4cc');
+define('LINE_MESSAGE_ACCESS_TOKEN', '/K+Rh34f9Gj/yHmNHTZWjoW/AKjzHTKPMVfz7HtX8IpqbsQQ8Ps0sY+w9RkOoL7OcaCLH+VM8dDjC0LYPevRZKBEqjm0iw2+RT8vb91IuPRxw2xiUNLFYh2zmRFHxEBiP/Ev22L+Gl299UB1IQ+cuAdB04t89/1O/w1cDnyilFU=');
 
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
@@ -2144,7 +2144,7 @@ if (!is_null($events)) {
             )
         );
     }
-    
+
     if (!is_null($eventMessage)) {
         $typeMessage = $eventObj->getMessageType();
         $idMessage = $eventObj->getMessageId();
@@ -2717,7 +2717,37 @@ if (!is_null($events)) {
                     $replyData = new FlexMessageBuilder("Flex", $textDetailUser, $quickReplyDetailUser);
                 } else if (strstr($userMessage, "เพิ่มเติม") == true) {
                     $replyData = new FlexMessageBuilder("Flex", $textSendAddress, $quickReplyMain);
-                } else {
+
+// ========================== Test new picture ===================================
+
+                } else if ($userMessage == "ads") {
+                    $imageWebsite = 'https://www.pic2free.com/uploads/20200319/93235726873d0241bdfb672a9315a580919aae99.jpg?_ignore=';
+                    $replyData = new ImagemapMessageBuilder(
+                        $imageWebsite,
+                        'test',
+                        new BaseSizeBuilder(800, 1200),
+                        array(
+                            new ImagemapMessageActionBuilder(
+                                'คำถาม:เว็บ1',
+                                new AreaBuilder(4, 145, 512, 108)
+                            ),
+                            new ImagemapMessageActionBuilder(
+                                'คำถาม:เว็บ2',
+                                new AreaBuilder(521, 145, 513, 108)
+                            ),
+                            new ImagemapMessageActionBuilder(
+                                'ย้อนกลับQuestion',
+                                new AreaBuilder(4, 259, 513, 107)
+                            ),
+                            new ImagemapMessageActionBuilder(
+                                'ย้อนกลับMain',
+                                new AreaBuilder(520, 257, 513, 106)
+                            ),
+                        )
+                    );
+                } 
+// ========================== Test new picture ===================================
+                else {
                     $replyData = new FlexMessageBuilder("Flex", $textNotKeyword, $quickReplyMain);
                 }
                 break;

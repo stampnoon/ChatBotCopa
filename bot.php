@@ -124,7 +124,15 @@ if (is_null($eventLeave) && is_null($eventUnfollow) && is_null($eventMemberLeft)
     $replyToken = $eventObj->getReplyToken();
 }
 
+//======================================================================================
+//============================ Initial object to use ===================================
+//======================================================================================
+
 // ----------------------------------------------------------------------------------------- QuickReply
+// $textReplyToQuestion = new MessageTemplateActionBuilder(
+//     'Text Show',
+//     'Text Print'
+// );
 
 $textReplyToQuestion = new MessageTemplateActionBuilder(
     'สอบถาม',
@@ -194,6 +202,8 @@ $textEditAddress = new MessageTemplateActionBuilder(
     'แก้ไขที่อยู่',
     'ย้อนกลับAddress'
 );
+
+// ----------------------------------------------------------------------------------------- Flex button 
 
 $quickReplyMain = new QuickReplyMessageBuilder(
     array(
@@ -2118,6 +2128,10 @@ Copa69 ขอขอบคุณที่ใช้บริการค่ะ....
     )
 );
 
+//======================================================================================
+//============================== Working condition =====================================
+//======================================================================================
+
 // ----------------------------------------------------------------------------------------- TextAll
 
 if (!is_null($events)) {
@@ -2255,7 +2269,7 @@ if (!is_null($events)) {
                     //                     );
                     //                     $replyData = new FlexMessageBuilder("Flex", $textReplyMessage, $quickReplyMain);
                 } else if ($userMessage == "สมัคร") {
-                    $imageMapUrl = 'https://www.pic2free.com/uploads/20200311/ab4364db41db57f34d4a0aa0b22573946da8a6c4.png?_ignore=';
+                    $imageMapUrl = 'https://www.pic2free.com/uploads/20200319/22aff7616945ae9b1c4079d4501507b60a7b701a.jpg?_ignore=';
                     $replyData = new ImagemapMessageBuilder(
                         $imageMapUrl,
                         9 +

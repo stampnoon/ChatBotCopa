@@ -2758,6 +2758,18 @@ if (!is_null($events)) {
                     $profile = $responseProfile->getJSONDecodedBody();
                     $textReplyMessage = $profile['displayName']; //can get 'displayName', 'userId', 'pictureUrl', 'statusMessage'
                     $replyData = new TextMessageBuilder($textReplyMessage);
+                } else if ($userMessage == "push") {
+                    $responseProfile = $bot->getProfile(LINE_USER_ID);
+                    $profile = $responseProfile->getJSONDecodedBody();
+                    $UserName = $profile['displayName']; //can get 'displayName', 'userId', 'pictureUrl', 'statusMessage'
+                    $textUsername = new TextMessageBuilder($UserName);
+                    //Send to line_Bot2 
+                    $httpClient_push = new CurlHTTPClient('E8J7R3AojuWoZIwnVr1DnW7kINJiSxQxm300gBm2U4vtz38yaelGTD7dzL1PHhxLzRJopPKocwdVw4Em17nYAlzV8Ux+gOIAiT7oQiNac4D84OoMD9VZ1LVF72JQecvWhzfeDBWNcO7EMlft0cHmmQdB04t89/1O/w1cDnyilFU=');
+                    $bot_push = new LINEBot($httpClient_push, array('channelSecret' => 'a907165cb16817404ab203620cbe9fe6'));
+                    $response_push = $bot_push->pushMessage('U038a8b215cd7cc765f7a8380c2f86683', $textUsername);
+                    if ($response_push->isSucceeded()) {
+                        $replyData = new TextMessageBuilder(new TextMessageBuilder('Send to Bot2 success'));
+                    }
                 }
                 // ========================== Test new picture ===================================
                 else {

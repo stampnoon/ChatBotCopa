@@ -2753,9 +2753,8 @@ if (!is_null($events)) {
                             // )
                         )
                     );
-                } else if ($userMessage == "getName") {
-                    $id = $events['events'][0]['source']['userId'];
-                    $responseProfile = $bot->getProfile($id);
+                } else if ($userMessage == "getid") {
+                    $responseProfile = $bot->getProfile(LINE_USER_ID);
                     $profile = $responseProfile->getJSONDecodedBody();
                     $textReplyMessage = $profile['displayName']; //can get 'displayName', 'userId', 'pictureUrl', 'statusMessage'
                     $replyData = new TextMessageBuilder($textReplyMessage);

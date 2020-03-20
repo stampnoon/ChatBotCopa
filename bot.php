@@ -2768,7 +2768,7 @@ if (!is_null($events)) {
                     $bot_push = new LINEBot($httpClient_push, array('channelSecret' => 'a907165cb16817404ab203620cbe9fe6'));
                     $response_push = $bot_push->pushMessage('U038a8b215cd7cc765f7a8380c2f86683', $textUsername);
                     if ($response_push->isSucceeded()) {
-                        $replyData = new TextMessageBuilder(new TextMessageBuilder('Send to Bot2 success'));
+                        $replyData = new TextMessageBuilder('Send to Bot2 success');
                     }
                 }
                 // ========================== Test new picture ===================================

@@ -3,6 +3,8 @@
 define('LINE_MESSAGE_CHANNEL_ID', '1653962671');
 define('LINE_MESSAGE_CHANNEL_SECRET', 'd2dfde7d8d794de418721245d96de4cc');
 define('LINE_MESSAGE_ACCESS_TOKEN', '/K+Rh34f9Gj/yHmNHTZWjoW/AKjzHTKPMVfz7HtX8IpqbsQQ8Ps0sY+w9RkOoL7OcaCLH+VM8dDjC0LYPevRZKBEqjm0iw2+RT8vb91IuPRxw2xiUNLFYh2zmRFHxEBiP/Ev22L+Gl299UB1IQ+cuAdB04t89/1O/w1cDnyilFU=');
+define('LINE_USER_ID', 'Ua465cc5346a14189526aec3f177f0433');
+
 
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
@@ -2751,6 +2753,11 @@ if (!is_null($events)) {
                             // )
                         )
                     );
+                } else if ($userMessage == "getName") {
+                    $responseProfile = $bot->getProfile(LINE_USER_ID);
+                    $profile = $responseProfile->getJSONDecodedBody();
+                    $textReplyMessage = $profile['displayName']; //can get 'displayName', 'userId', 'pictureUrl', 'statusMessage'
+                    $replyData = new TextMessageBuilder($textReplyMessage);
                 }
                 // ========================== Test new picture ===================================
                 else {

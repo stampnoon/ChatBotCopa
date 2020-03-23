@@ -2237,39 +2237,6 @@ if (!is_null($events)) {
                             ),
                         )
                     );
-                    //                     $textReplyMessage = new BubbleContainerBuilder(
-                    //                         "ltr",
-                    //                         NULL,
-                    //                         NULL,
-                    //                         new BoxComponentBuilder(
-                    //                             "horizontal",
-                    //                             array(
-                    //                                 new TextComponentBuilder(
-                    //                                     "พิมพ์ q ตามด้วยหัวข้อที่ต้องการ เช่น q1
-                    // ___________________________________
-
-                    // หัวข้อปัญหาหรือเรื่องที่ต้องการสอบถาม
-                    // 1. โปรโมชั่น
-                    // 2. คำแนะนำ
-                    // 3. กลุ่ม/สูตร
-                    // 4. ฝาก/ถอน
-                    // 5. การสมัครสมาชิก
-                    // 6. บัญชีผู้ใช้
-                    // 7. เกี่ยวกับเว็บไซต์
-                    // ___________________________________
-
-                    // Copa69 ขอขอบคุณที่ใช้บริการค่ะ....",
-                    //                                     NULL,
-                    //                                     NULL,
-                    //                                     "md",
-                    //                                     NULL,
-                    //                                     NULL,
-                    //                                     true
-                    //                                 )
-                    //                             )
-                    //                         )
-                    //                     );
-                    //                     $replyData = new FlexMessageBuilder("Flex", $textReplyMessage, $quickReplyMain);
                 } else if ($userMessage == "สมัคร") {
                     $imageMapUrl = 'https://www.pic2free.com/uploads/20200319/22aff7616945ae9b1c4079d4501507b60a7b701a.jpg?_ignore=';
                     $replyData = new ImagemapMessageBuilder(
@@ -2279,21 +2246,21 @@ if (!is_null($events)) {
                         new BaseSizeBuilder(1040, 1040),
                         array(
                             new ImagemapMessageActionBuilder(
-                                'โปร1000',
+                                'โปร1',
                                 new AreaBuilder(10, 91, 1024, 235)
                             ),
                             new ImagemapMessageActionBuilder(
-                                'โปร500',
+                                'โปร5',
                                 new AreaBuilder(11, 328, 1024, 235)
                             ),  
                             new ImagemapMessageActionBuilder(
-                                'โปร300',
+                                'โปร3',
                                 new AreaBuilder(11, 565, 1024, 235)
                             ),
                             new ImagemapMessageActionBuilder(
-                                'โปร200',
+                                'โปร2',
                                 new AreaBuilder(11, 801, 1024, 235)
-                            )
+                            ),
                         ),
                         $quickReplyMain
                     );

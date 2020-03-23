@@ -2168,7 +2168,7 @@ if (!is_null($events)) {
     switch ($typeMessage) {
         case "text":
             if ($userMessage != null) {
-                if ($userMessage == "ย้อนกลับMain") {
+                if ($userMessage == "ย้อนกลับMain" || $userMessage == "Main" ) {
                     $imageMain = 'https://i.ibb.co/q7GNG0k/main.jpg?_ignore=';
                     $replyData = new ImagemapMessageBuilder(
                         $imageMain,

@@ -2239,7 +2239,7 @@ if (!is_null($events)) {
                     );
                 } else if ($userMessage == "สมัคร") {
                     //$imageMapUrl = 'https://www.pic2free.com/uploads/20200319/22aff7616945ae9b1c4079d4501507b60a7b701a.jpg?_ignore=';
-                    $imageMapUrl = '../imagemap/Npromotion.jpg?_ignore=';
+                    $imageMapUrl = realpath('../imagemap/Npromotion.jpg?_ignore=');
                     $replyData = new ImagemapMessageBuilder(
                         $imageMapUrl,
                         'register',

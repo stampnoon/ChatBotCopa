@@ -2239,19 +2239,19 @@ if (!is_null($events)) {
                         new BaseSizeBuilder(1040, 1040),
                         array(
                             new ImagemapMessageActionBuilder(
-                                'โปร1',
+                                'โปร1000บาท',
                                 new AreaBuilder(11, 91, 1020, 232)
                             ),
                             new ImagemapMessageActionBuilder(
-                                'โปร2',
+                                'โปร500บาท',
                                 new AreaBuilder(11, 329, 1020, 232)
                             ),
                             new ImagemapMessageActionBuilder(
-                                'โปร3',
+                                'โปร300บาท',
                                 new AreaBuilder(11, 561, 1020, 232)
                             ),
                             new ImagemapMessageActionBuilder(
-                                'โปร4',
+                                'โปร200บาท',
                                 new AreaBuilder(11, 800, 1020, 232)
                             ),
                         ),
@@ -2259,13 +2259,13 @@ if (!is_null($events)) {
                     );
                 }
                 // ----------------------------------------------------------------------------------------- DetailPromotion
-                else if ($userMessage == "โปร1") {
+                else if ($userMessage == "โปร1000บาท") {
                     $replyData = new FlexMessageBuilder("Flex", $textDetailPromotion1, $quickReplyBackRegister);
-                } else if ($userMessage == "โปร2") {
+                } else if ($userMessage == "โปโปร500บาทร2") {
                     $replyData = new FlexMessageBuilder("Flex", $textDetailPromotion2, $quickReplyBackRegister);
-                } else if ($userMessage == "โปร3") {
+                } else if ($userMessage == "โปร300บาท") {
                     $replyData = new FlexMessageBuilder("Flex", $textDetailPromotion3, $quickReplyBackRegister);
-                } else if ($userMessage == "โปร4") {
+                } else if ($userMessage == "โปร200บาท") {
                     $replyData = new FlexMessageBuilder("Flex", $textDetailPromotion4, $quickReplyBackRegister);
                 }
                 //  else if ($userMessage == "โปร5") {

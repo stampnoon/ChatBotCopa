@@ -2306,38 +2306,6 @@ if (!is_null($events)) {
                                 'โปร7',
                                 new AreaBuilder(11, 882, 1018, 112)
                             ),
-                            new ImagemapMessageActionBuilder(
-                                'โปร8',
-                                new AreaBuilder(11, 1006, 1018, 111)
-                            ),
-                            new ImagemapMessageActionBuilder(
-                                'โปร9',
-                                new AreaBuilder(11, 1127, 1018, 112)
-                            ),
-                            new ImagemapMessageActionBuilder(
-                                'โปร10',
-                                new AreaBuilder(11, 1248, 1017, 113)
-                            ),
-                            new ImagemapMessageActionBuilder(
-                                'โปร11',
-                                new AreaBuilder(11, 1369, 1018, 114)
-                            ),
-                            new ImagemapMessageActionBuilder(
-                                'โปร12',
-                                new AreaBuilder(12, 1492, 1017, 113)
-                            ),
-                            new ImagemapMessageActionBuilder(
-                                'โปร13',
-                                new AreaBuilder(11, 1615, 1020, 112)
-                            ),
-                            new ImagemapMessageActionBuilder(
-                                'โปร14',
-                                new AreaBuilder(12, 1738, 1017, 112)
-                            ),
-                            new ImagemapMessageActionBuilder(
-                                'ย้อนกลับMain',
-                                new AreaBuilder(11, 1859, 1018, 111)
-                            ),
                         ),
                         $quickReplyMain
                     );

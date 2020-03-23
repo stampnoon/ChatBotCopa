@@ -2276,112 +2276,61 @@ if (!is_null($events)) {
                         $imageMapUrl,
                         9 +
                             'test',
-                        new BaseSizeBuilder(2000, 1040),
+                        new BaseSizeBuilder(1040, 1040),
                         array(
                             new ImagemapMessageActionBuilder(
-                                'โปร1',
-                                new AreaBuilder(11, 148, 1020, 116)
+                                'โปร1000',
+                                new AreaBuilder(10, 91, 1024, 235)
                             ),
                             new ImagemapMessageActionBuilder(
-                                'โปร2',
-                                new AreaBuilder(11, 272, 1020, 114)
+                                'โปร500',
+                                new AreaBuilder(11, 328, 1024, 235)
+                            ),  
+                            new ImagemapMessageActionBuilder(
+                                'โปร300',
+                                new AreaBuilder(11, 565, 1024, 235)
                             ),
                             new ImagemapMessageActionBuilder(
-                                'โปร3',
-                                new AreaBuilder(11, 395, 1018, 113)
-                            ),
-                            new ImagemapMessageActionBuilder(
-                                'โปร4',
-                                new AreaBuilder(11, 515, 1017, 115)
-                            ),
-                            new ImagemapMessageActionBuilder(
-                                'โปร5',
-                                new AreaBuilder(14, 638, 1015, 119)
-                            ),
-                            new ImagemapMessageActionBuilder(
-                                'โปร6',
-                                new AreaBuilder(11, 762, 1020, 112)
-                            ),
-                            new ImagemapMessageActionBuilder(
-                                'โปร7',
-                                new AreaBuilder(11, 882, 1018, 112)
-                            ),
-                            new ImagemapMessageActionBuilder(
-                                'โปร8',
-                                new AreaBuilder(11, 1006, 1018, 111)
-                            ),
-                            new ImagemapMessageActionBuilder(
-                                'โปร9',
-                                new AreaBuilder(11, 1127, 1018, 112)
-                            ),
-                            new ImagemapMessageActionBuilder(
-                                'โปร10',
-                                new AreaBuilder(11, 1248, 1017, 113)
-                            ),
-                            new ImagemapMessageActionBuilder(
-                                'โปร11',
-                                new AreaBuilder(11, 1369, 1018, 114)
-                            ),
-                            new ImagemapMessageActionBuilder(
-                                'โปร12',
-                                new AreaBuilder(12, 1492, 1017, 113)
-                            ),
-                            new ImagemapMessageActionBuilder(
-                                'โปร13',
-                                new AreaBuilder(11, 1615, 1020, 112)
-                            ),
-                            new ImagemapMessageActionBuilder(
-                                'โปร14',
-                                new AreaBuilder(12, 1738, 1017, 112)
-                            ),
-                            new ImagemapMessageActionBuilder(
-                                'ย้อนกลับMain',
-                                new AreaBuilder(11, 1859, 1018, 111)
-                            ),
+                                'โปร200',
+                                new AreaBuilder(11, 801, 1024, 235)
+                            )
                         ),
                         $quickReplyMain
                     );
-                    //                     $textReplyMessage = new BubbleContainerBuilder(
-                    //                         "ltr",
-                    //                         NULL,
-                    //                         NULL,
-                    //                         new BoxComponentBuilder(
-                    //                             "horizontal",
-                    //                             array(
-                    //                                 new TextComponentBuilder(
-                    //                                     "พิมพ์ s ตามด้วยหัวข้อที่ต้องการ เช่น s1
-                    // ___________________________________
+                }
+                // ----------------------------------------------------------------------------------------- DetailPromotion
+                else if ($userMessage == "โปร1") {
+                    $replyData = new FlexMessageBuilder("Flex", $textDetailPromotion1, $quickReplyBackRegister);
+                } else if ($userMessage == "โปร2") {
+                    $replyData = new FlexMessageBuilder("Flex", $textDetailPromotion2, $quickReplyBackRegister);
+                } else if ($userMessage == "โปร3") {
+                    $replyData = new FlexMessageBuilder("Flex", $textDetailPromotion3, $quickReplyBackRegister);
+                } else if ($userMessage == "โปร4") {
+                    $replyData = new FlexMessageBuilder("Flex", $textDetailPromotion4, $quickReplyBackRegister);
+                } else if ($userMessage == "โปร5") {
+                    $replyData = new FlexMessageBuilder("Flex", $textDetailPromotion5, $quickReplyBackRegister);
+                } else if ($userMessage == "โปร6") {
+                    $replyData = new FlexMessageBuilder("Flex", $textDetailPromotion6, $quickReplyBackRegister);
+                } else if ($userMessage == "โปร7") {
+                    $replyData = new FlexMessageBuilder("Flex", $textDetailPromotion7, $quickReplyBackRegister);
+                } else if ($userMessage == "โปร8") {
+                    $replyData = new FlexMessageBuilder("Flex", $textDetailPromotion8, $quickReplyBackRegister);
+                } else if ($userMessage == "โปร9") {
+                    $replyData = new FlexMessageBuilder("Flex", $textDetailPromotion9, $quickReplyBackRegister);
+                } else if ($userMessage == "โปร10") {
+                    $replyData = new FlexMessageBuilder("Flex", $textDetailPromotion10, $quickReplyBackRegister);
+                } else if ($userMessage == "โปร11") {
+                    $replyData = new FlexMessageBuilder("Flex", $textDetailPromotion11, $quickReplyBackRegister);
+                } else if ($userMessage == "โปร12") {
+                    $replyData = new FlexMessageBuilder("Flex", $textDetailPromotion12, $quickReplyBackRegister);
+                } else if ($userMessage == "โปร13") {
+                    $replyData = new FlexMessageBuilder("Flex", $textDetailPromotion13, $quickReplyBackRegister);
+                } else if ($userMessage == "โปร14") {
+                    $replyData = new FlexMessageBuilder("Flex", $textDetailPromotion14, $quickReplyBackRegister);
+                }
 
-                    // หัวข้อโปรโมชั่นต่างๆของทางเรา
-                    // 1. สมัคร 1000 บาท ได้รับ หูฟังบลูทูธ TRUT WIRELESS 5.0 TWS 
-                    // 2. สมัคร 1000 บาท ได้รับ พาวเวอร์แบ๊ง ELOOP E-12 
-                    // 3. สมัคร 1000 บาท ได้รับ ลำโพง BLUETOOTH IRON MAN
-                    // 4. สมัคร 1000 บาท ได้รับ บุหรี่ไฟฟ้า DRAG 
-                    // 5. สมัคร 1000 บาท ได้รับ โทรศัพท์จิ๋ว 
-                    // 6. สมัคร 500 บาท ได้รับ เสื้อบอล EURO 
-                    // 7. สมัคร 500 บาท ได้รับ เสื้อฮูด Nike 
-                    // 8. สมัคร 500 บาท ได้รับ Smart Watch 
-                    // 9. สมัคร 500 บาท ได้รับ ลำโพง Bluetooth Mini 
-                    // 10. สมัคร 500 บาท ได้รับ หูฟัง Bluetooth 
-                    // 11. สมัคร 300 บาท ได้รับ ลำโพงสโมสรฟุตบอลโลก 
-                    // 12. สมัคร 300 บาท ได้รับ กระเป๋าสะพายข้างลายสโมสรฟุตบอลโลก 
-                    // 13. สมัคร 300 บาท ได้รับ Game Handle 
-                    // 14. สมัครฝาก 200 รับโบนัส 30 %
-                    // ___________________________________
-
-                    // Copa69 ขอขอบคุณที่ใช้บริการค่ะ....",
-                    //                                     NULL,
-                    //                                     NULL,
-                    //                                     "md",
-                    //                                     NULL,
-                    //                                     NULL,
-                    //                                     true
-                    //                                 )
-                    //                             )
-                    //                         )
-                    //                     );
-                    //                     $replyData = new FlexMessageBuilder("Flex", $textReplyMessage, $quickReplyMain);
-                } else if ($userMessage == "ติดต่อ") {
+                // ----------------------------------------------------------------------------------------- DetailPromotion 
+                else if ($userMessage == "ติดต่อ") {
                     $replyData = new FlexMessageBuilder("Flex", $textContact, $quickReplyMain);
                 }
 
@@ -2687,39 +2636,6 @@ if (!is_null($events)) {
                 }
 
                 // ----------------------------------------------------------------------------------------- Website
-                // ----------------------------------------------------------------------------------------- DetailPromotion
-
-                else if ($userMessage == "โปร1") {
-                    $replyData = new FlexMessageBuilder("Flex", $textDetailPromotion1, $quickReplyBackRegister);
-                } else if ($userMessage == "โปร2") {
-                    $replyData = new FlexMessageBuilder("Flex", $textDetailPromotion2, $quickReplyBackRegister);
-                } else if ($userMessage == "โปร3") {
-                    $replyData = new FlexMessageBuilder("Flex", $textDetailPromotion3, $quickReplyBackRegister);
-                } else if ($userMessage == "โปร4") {
-                    $replyData = new FlexMessageBuilder("Flex", $textDetailPromotion4, $quickReplyBackRegister);
-                } else if ($userMessage == "โปร5") {
-                    $replyData = new FlexMessageBuilder("Flex", $textDetailPromotion5, $quickReplyBackRegister);
-                } else if ($userMessage == "โปร6") {
-                    $replyData = new FlexMessageBuilder("Flex", $textDetailPromotion6, $quickReplyBackRegister);
-                } else if ($userMessage == "โปร7") {
-                    $replyData = new FlexMessageBuilder("Flex", $textDetailPromotion7, $quickReplyBackRegister);
-                } else if ($userMessage == "โปร8") {
-                    $replyData = new FlexMessageBuilder("Flex", $textDetailPromotion8, $quickReplyBackRegister);
-                } else if ($userMessage == "โปร9") {
-                    $replyData = new FlexMessageBuilder("Flex", $textDetailPromotion9, $quickReplyBackRegister);
-                } else if ($userMessage == "โปร10") {
-                    $replyData = new FlexMessageBuilder("Flex", $textDetailPromotion10, $quickReplyBackRegister);
-                } else if ($userMessage == "โปร11") {
-                    $replyData = new FlexMessageBuilder("Flex", $textDetailPromotion11, $quickReplyBackRegister);
-                } else if ($userMessage == "โปร12") {
-                    $replyData = new FlexMessageBuilder("Flex", $textDetailPromotion12, $quickReplyBackRegister);
-                } else if ($userMessage == "โปร13") {
-                    $replyData = new FlexMessageBuilder("Flex", $textDetailPromotion13, $quickReplyBackRegister);
-                } else if ($userMessage == "โปร14") {
-                    $replyData = new FlexMessageBuilder("Flex", $textDetailPromotion14, $quickReplyBackRegister);
-                }
-
-                // ----------------------------------------------------------------------------------------- DetailPromotion 
 
                 else if (strstr($userMessage, "แจ้งเลขยูส") == true) {
                     $replyData = new FlexMessageBuilder("Flex", $textGetUser, $quickReplyEditSlip);

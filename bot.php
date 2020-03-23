@@ -2237,30 +2237,106 @@ if (!is_null($events)) {
                             ),
                         )
                     );
+                    //                     $textReplyMessage = new BubbleContainerBuilder(
+                    //                         "ltr",
+                    //                         NULL,
+                    //                         NULL,
+                    //                         new BoxComponentBuilder(
+                    //                             "horizontal",
+                    //                             array(
+                    //                                 new TextComponentBuilder(
+                    //                                     "พิมพ์ q ตามด้วยหัวข้อที่ต้องการ เช่น q1
+                    // ___________________________________
+
+                    // หัวข้อปัญหาหรือเรื่องที่ต้องการสอบถาม
+                    // 1. โปรโมชั่น
+                    // 2. คำแนะนำ
+                    // 3. กลุ่ม/สูตร
+                    // 4. ฝาก/ถอน
+                    // 5. การสมัครสมาชิก
+                    // 6. บัญชีผู้ใช้
+                    // 7. เกี่ยวกับเว็บไซต์
+                    // ___________________________________
+
+                    // Copa69 ขอขอบคุณที่ใช้บริการค่ะ....",
+                    //                                     NULL,
+                    //                                     NULL,
+                    //                                     "md",
+                    //                                     NULL,
+                    //                                     NULL,
+                    //                                     true
+                    //                                 )
+                    //                             )
+                    //                         )
+                    //                     );
+                    //                     $replyData = new FlexMessageBuilder("Flex", $textReplyMessage, $quickReplyMain);
                 } else if ($userMessage == "สมัคร") {
                     $imageMapUrl = 'https://www.pic2free.com/uploads/20200319/22aff7616945ae9b1c4079d4501507b60a7b701a.jpg?_ignore=';
-                                  //https://www.pic2free.com/uploads/20200319/93235726873d0241bdfb672a9315a580919aae99.jpg?_ignore=
                     $replyData = new ImagemapMessageBuilder(
                         $imageMapUrl,
                         9 +
                             'test',
-                        new BaseSizeBuilder(1040, 1040),
+                        new BaseSizeBuilder(2000, 1040),
                         array(
                             new ImagemapMessageActionBuilder(
                                 'โปร1',
-                                new AreaBuilder(10, 91, 1024, 232)
-                            ),
-                            new ImagemapMessageActionBuilder(
-                                'โปร5',
-                                new AreaBuilder(11, 328, 1024, 232)
-                            ),  
-                            new ImagemapMessageActionBuilder(
-                                'โปร3',
-                                new AreaBuilder(11, 565, 1024, 232)
+                                new AreaBuilder(11, 148, 1020, 116)
                             ),
                             new ImagemapMessageActionBuilder(
                                 'โปร2',
-                                new AreaBuilder(11, 801, 1024, 232)
+                                new AreaBuilder(11, 272, 1020, 114)
+                            ),
+                            new ImagemapMessageActionBuilder(
+                                'โปร3',
+                                new AreaBuilder(11, 395, 1018, 113)
+                            ),
+                            new ImagemapMessageActionBuilder(
+                                'โปร4',
+                                new AreaBuilder(11, 515, 1017, 115)
+                            ),
+                            new ImagemapMessageActionBuilder(
+                                'โปร5',
+                                new AreaBuilder(14, 638, 1015, 119)
+                            ),
+                            new ImagemapMessageActionBuilder(
+                                'โปร6',
+                                new AreaBuilder(11, 762, 1020, 112)
+                            ),
+                            new ImagemapMessageActionBuilder(
+                                'โปร7',
+                                new AreaBuilder(11, 882, 1018, 112)
+                            ),
+                            new ImagemapMessageActionBuilder(
+                                'โปร8',
+                                new AreaBuilder(11, 1006, 1018, 111)
+                            ),
+                            new ImagemapMessageActionBuilder(
+                                'โปร9',
+                                new AreaBuilder(11, 1127, 1018, 112)
+                            ),
+                            new ImagemapMessageActionBuilder(
+                                'โปร10',
+                                new AreaBuilder(11, 1248, 1017, 113)
+                            ),
+                            new ImagemapMessageActionBuilder(
+                                'โปร11',
+                                new AreaBuilder(11, 1369, 1018, 114)
+                            ),
+                            new ImagemapMessageActionBuilder(
+                                'โปร12',
+                                new AreaBuilder(12, 1492, 1017, 113)
+                            ),
+                            new ImagemapMessageActionBuilder(
+                                'โปร13',
+                                new AreaBuilder(11, 1615, 1020, 112)
+                            ),
+                            new ImagemapMessageActionBuilder(
+                                'โปร14',
+                                new AreaBuilder(12, 1738, 1017, 112)
+                            ),
+                            new ImagemapMessageActionBuilder(
+                                'ย้อนกลับMain',
+                                new AreaBuilder(11, 1859, 1018, 111)
                             ),
                         ),
                         $quickReplyMain

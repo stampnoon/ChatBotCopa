@@ -2238,8 +2238,8 @@ if (!is_null($events)) {
                         )
                     );
                 } else if ($userMessage == "สมัคร") {
-                    //$imageMapUrl = 'https://www.pic2free.com/uploads/20200319/22aff7616945ae9b1c4079d4501507b60a7b701a.jpg?_ignore=';
-                    $imageMapUrl = 'https://www.picz.in.th/image/promotion-20200319.QEdVLP?_ignore=';
+                    $imageMapUrl = 'https://www.pic2free.com/uploads/20200319/22aff7616945ae9b1c4079d4501507b60a7b701a.jpg?_ignore=';
+                    //$imageMapUrl = 'https://www.picz.in.th/image/promotion-20200319.QEdVLP?_ignore=';
                     $replyData = new ImagemapMessageBuilder(
                         $imageMapUrl,
                         'test',

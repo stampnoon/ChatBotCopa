@@ -2272,7 +2272,7 @@ if (!is_null($events)) {
                     //                     $replyData = new FlexMessageBuilder("Flex", $textReplyMessage, $quickReplyMain);
                 } else if ($userMessage == "สมัคร1") {
                     //$imageMapUrl = 'https://www.pic2free.com/uploads/20200319/22aff7616945ae9b1c4079d4501507b60a7b701a.jpg?_ignore=';
-                    $imageMapUrl = 'https://drive.google.com/file/d/1PPrvrVo7i64naAUsrC-xW113CQkFYRbY/view';
+                    $imageMapUrl = 'https://drive.google.com/file/d/1PPrvrVo7i64naAUsrC-xW113CQkFYRbY/view?_ignore=';
                     $replyData = new ImagemapMessageBuilder(
                         $imageMapUrl,
                         9 +

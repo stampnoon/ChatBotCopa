@@ -2142,7 +2142,7 @@ if (!is_null($events)) {
         $imageMain = 'https://www.pic2free.com/uploads/20200311/0f2a99163fd6712f73d04da793c78d13e13e6f7a.png?_ignore=';
         $replyData = new ImagemapMessageBuilder(
             $imageMain,
-            'test',
+            'main',
             new BaseSizeBuilder(420, 1040),
             array(
                 new ImagemapMessageActionBuilder(
@@ -2179,7 +2179,7 @@ if (!is_null($events)) {
                     $imageMain = 'https://www.pic2free.com/uploads/20200311/0f2a99163fd6712f73d04da793c78d13e13e6f7a.png?_ignore=';
                     $replyData = new ImagemapMessageBuilder(
                         $imageMain,
-                        'test',
+                        'main',
                         new BaseSizeBuilder(420, 1040),
                         array(
                             new ImagemapMessageActionBuilder(
@@ -2200,7 +2200,7 @@ if (!is_null($events)) {
                     $imageMapUrl = 'https://www.pic2free.com/uploads/20200311/57f1378aadbe36e2d659f634c71d9cb9cfebe0b1.png?_ignore=';
                     $replyData = new ImagemapMessageBuilder(
                         $imageMapUrl,
-                        'test',
+                        'question',
                         new BaseSizeBuilder(800, 1040),
                         array(
                             new ImagemapMessageActionBuilder(
@@ -2242,7 +2242,7 @@ if (!is_null($events)) {
                     $imageMapUrl = 'https://www.img.in.th/image/TvhcMf';
                     $replyData = new ImagemapMessageBuilder(
                         $imageMapUrl,
-                        'test',
+                        'register',
                         new BaseSizeBuilder(1040, 1040),
                         array(
                             new ImagemapMessageActionBuilder(
@@ -2312,7 +2312,7 @@ if (!is_null($events)) {
                     $imagePromotion = 'https://www.pic2free.com/uploads/20200311/45304216249fa2fb524de64b0446ce3592d9f7ce.png?_ignore=';
                     $replyData = new ImagemapMessageBuilder(
                         $imagePromotion,
-                        'test',
+                        'qpromotion',
                         new BaseSizeBuilder(500, 1040),
                         array(
                             new ImagemapMessageActionBuilder(
@@ -2358,7 +2358,7 @@ if (!is_null($events)) {
                     $imageRecommend = 'https://www.pic2free.com/uploads/20200311/9d45060816145cff9ddf6c2bfd7ae9972fca71da.png?_ignore=';
                     $replyData = new ImagemapMessageBuilder(
                         $imageRecommend,
-                        'test',
+                        'suggest',
                         new BaseSizeBuilder(400, 1040),
                         array(
                             new ImagemapMessageActionBuilder(
@@ -2392,7 +2392,7 @@ if (!is_null($events)) {
                     $imageGroup = 'https://www.pic2free.com/uploads/20200311/2ef615a9e4074c39eeb4dd0002e34113d260a7f6.png?_ignore=';
                     $replyData = new ImagemapMessageBuilder(
                         $imageGroup,
-                        'test',
+                        'group',
                         new BaseSizeBuilder(500, 1040),
                         array(
                             new ImagemapMessageActionBuilder(
@@ -2437,7 +2437,7 @@ if (!is_null($events)) {
                     $imageDeposit = 'https://www.pic2free.com/uploads/20200311/aa0511085a9d1fb2a5cbe58cf308cef4e3b25fe0.png?_ignore=';
                     $replyData = new ImagemapMessageBuilder(
                         $imageDeposit,
-                        'test',
+                        'withdraw',
                         new BaseSizeBuilder(500, 1040),
                         array(
                             new ImagemapMessageActionBuilder(
@@ -2485,7 +2485,7 @@ if (!is_null($events)) {
                     $imageRegister = 'https://www.pic2free.com/uploads/20200311/f660861d050ff2a1fe4aa8077b71aad6b18e463f.png?_ignore=';
                     $replyData = new ImagemapMessageBuilder(
                         $imageRegister,
-                        'test',
+                        'member',
                         new BaseSizeBuilder(620, 1040),
                         array(
                             new ImagemapMessageActionBuilder(
@@ -2545,7 +2545,7 @@ if (!is_null($events)) {
                     $imageAccount = 'https://www.pic2free.com/uploads/20200311/49668c2cca3199378b55cb85518433c4c8471dd4.png?_ignore=';
                     $replyData = new ImagemapMessageBuilder(
                         $imageAccount,
-                        'test',
+                        'account',
                         new BaseSizeBuilder(400, 1040),
                         array(
                             new ImagemapMessageActionBuilder(
@@ -2579,7 +2579,7 @@ if (!is_null($events)) {
                     $imageWebsite = 'https://www.pic2free.com/uploads/20200311/2fcf0179ea43c6c6b65bdf5243bbff146cb5e303.png?_ignore=';
                     $replyData = new ImagemapMessageBuilder(
                         $imageWebsite,
-                        'test',
+                        'website',
                         new BaseSizeBuilder(400, 1040),
                         array(
                             new ImagemapMessageActionBuilder(
@@ -2627,7 +2627,7 @@ if (!is_null($events)) {
                     $imageWebsite = 'https://www.pic2free.com/uploads/20200319/93235726873d0241bdfb672a9315a580919aae99.jpg?_ignore=';
                     $replyData = new ImagemapMessageBuilder(
                         $imageWebsite,
-                        'test',
+                        'ads',
                         new BaseSizeBuilder(1040, 1040),
                         array(
                             new ImagemapMessageActionBuilder(
@@ -2667,10 +2667,7 @@ if (!is_null($events)) {
 
             // ----------------------------------------------------------------------------------------- Image
         default:
-            if (!is_null($replyData)) {
-            } else {
-                $replyData = new FlexMessageBuilder("Flex", $textGetUser, $quickReplyEditSlip);
-            }
+            $replyData = new FlexMessageBuilder("Flex", $textGetUser, $quickReplyEditSlip);
             break;
     }
     // ----------------------------------------------------------------------------------------- Image

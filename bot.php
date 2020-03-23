@@ -2246,12 +2246,20 @@ if (!is_null($events)) {
                         new BaseSizeBuilder(1040, 1040),
                         array(
                             new ImagemapMessageActionBuilder(
-                                'โปร1',
-                                new AreaBuilder(11, 148, 500, 116)
+                                'โปร1000บาท',
+                                new AreaBuilder(11, 91, 1020, 232)
                             ),
                             new ImagemapMessageActionBuilder(
-                                'โปร2',
-                                new AreaBuilder(11, 272, 500, 114)
+                                'โปร500บาท',
+                                new AreaBuilder(11, 329, 1020, 232)
+                            ),
+                            new ImagemapMessageActionBuilder(
+                                'โปร300บาท',
+                                new AreaBuilder(11, 561, 1020, 232)
+                            ),
+                            new ImagemapMessageActionBuilder(
+                                'โปร200บาท',
+                                new AreaBuilder(11, 800, 1020, 232)
                             ),
                         ),
                         $quickReplyMain

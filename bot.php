@@ -2238,13 +2238,13 @@ if (!is_null($events)) {
                         )
                     );
                 } else if ($userMessage == "สมัคร") {
-                    $imageMapUrl = 'https://www.pic2free.com/uploads/20200319/22aff7616945ae9b1c4079d4501507b60a7b701a.jpg';
-                    //$imageMapUrl = 'https://www.pic2free.com/uploads/20200319/93235726873d0241bdfb672a9315a580919aae99.jpg?_ignore=';
+                    //$imageMapUrl = 'https://www.pic2free.com/uploads/20200319/22aff7616945ae9b1c4079d4501507b60a7b701a.jpg?_ignore=';
+                    $imageMapUrl = 'https://www.picz.in.th/image/promotion-20200319.QEdVLP';
                     $replyData = new ImagemapMessageBuilder(
                         $imageMapUrl,
                         9 +
                             'test',
-                        new BaseSizeBuilder(1200, 1200),
+                        new BaseSizeBuilder(1040, 1040),
                         array(
                             new ImagemapMessageActionBuilder(
                                 'โปร1',

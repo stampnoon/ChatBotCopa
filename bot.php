@@ -2242,8 +2242,7 @@ if (!is_null($events)) {
                     $imageMapUrl = 'https://www.picz.in.th/image/promotion-20200319.QEdVLP';
                     $replyData = new ImagemapMessageBuilder(
                         $imageMapUrl,
-                        9 +
-                            'test',
+                        'test',
                         new BaseSizeBuilder(1040, 1040),
                         array(
                             new ImagemapMessageActionBuilder(

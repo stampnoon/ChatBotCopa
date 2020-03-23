@@ -2238,13 +2238,13 @@ if (!is_null($events)) {
                         )
                     );
                 } else if ($userMessage == "สมัคร") {
-                    //$imageMapUrl = 'https://www.pic2free.com/uploads/20200319/22aff7616945ae9b1c4079d4501507b60a7b701a.jpg?_ignore=';
-                    $imageMapUrl = 'https://www.pic2free.com/uploads/20200311/57f1378aadbe36e2d659f634c71d9cb9cfebe0b1.png?_ignore=';
+                    $imageMapUrl = 'https://www.pic2free.com/uploads/20200319/22aff7616945ae9b1c4079d4501507b60a7b701a.jpg?_ignore=';
+                    //$imageMapUrl = 'https://www.pic2free.com/uploads/20200311/57f1378aadbe36e2d659f634c71d9cb9cfebe0b1.png?_ignore=';
                     $replyData = new ImagemapMessageBuilder(
                         $imageMapUrl,
                         9 +
                             'test',
-                        new BaseSizeBuilder(800, 1040),
+                        new BaseSizeBuilder(1200, 1200),
                         array(
                             new ImagemapMessageActionBuilder(
                                 'โปร1',

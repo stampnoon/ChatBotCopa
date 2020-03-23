@@ -2261,7 +2261,7 @@ if (!is_null($events)) {
                 // ----------------------------------------------------------------------------------------- DetailPromotion
                 else if ($userMessage == "โปร1000บาท") {
                     $replyData = new FlexMessageBuilder("Flex", $textDetailPromotion1, $quickReplyBackRegister);
-                } else if ($userMessage == "โปโปร500บาทร2") {
+                } else if ($userMessage == "โปร500บาท") {
                     $replyData = new FlexMessageBuilder("Flex", $textDetailPromotion2, $quickReplyBackRegister);
                 } else if ($userMessage == "โปร300บาท") {
                     $replyData = new FlexMessageBuilder("Flex", $textDetailPromotion3, $quickReplyBackRegister);

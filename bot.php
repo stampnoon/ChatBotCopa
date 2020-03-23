@@ -2276,7 +2276,7 @@ if (!is_null($events)) {
                         $imageMapUrl,
                         9 +
                             'test',
-                        new BaseSizeBuilder(2000, 1040),
+                        new BaseSizeBuilder(1040, 1040),
                         array(
                             new ImagemapMessageActionBuilder(
                                 'โปร1',

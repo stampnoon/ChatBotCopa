@@ -2238,8 +2238,8 @@ if (!is_null($events)) {
                         )
                     );
                 } else if ($userMessage == "สมัคร") {
-                    $imageMapUrl = 'https://www.pic2free.com/uploads/20200319/22aff7616945ae9b1c4079d4501507b60a7b701a.jpg?_ignore=';
-                    //$imageMapUrl = 'https://www.img.in.th/image/TvhcMf';
+                    //$imageMapUrl = 'https://www.pic2free.com/uploads/20200319/22aff7616945ae9b1c4079d4501507b60a7b701a.jpg?_ignore=';
+                    $imageMapUrl = 'https://www.pic2free.com/uploads/20200319/93235726873d0241bdfb672a9315a580919aae99.jpg';
                     $replyData = new ImagemapMessageBuilder(
                         $imageMapUrl,
                         'register',

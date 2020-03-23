@@ -2247,23 +2247,23 @@ if (!is_null($events)) {
                         array(
                             new ImagemapMessageActionBuilder(
                                 'โปร1',
-                                new AreaBuilder(11, 148, 1020, 116)
+                                new AreaBuilder(11, 148, 500, 116)
                             ),
                             new ImagemapMessageActionBuilder(
                                 'โปร2',
-                                new AreaBuilder(11, 272, 1020, 114)
+                                new AreaBuilder(11, 272, 500, 114)
                             ),
                             new ImagemapMessageActionBuilder(
                                 'โปร3',
-                                new AreaBuilder(11, 395, 1018, 113)
+                                new AreaBuilder(11, 395, 500, 113)
                             ),
                             new ImagemapMessageActionBuilder(
                                 'โปร4',
-                                new AreaBuilder(11, 515, 1017, 115)
+                                new AreaBuilder(11, 515, 500, 115)
                             ),
                             new ImagemapMessageActionBuilder(
                                 'โปร5',
-                                new AreaBuilder(14, 638, 1015, 119)
+                                new AreaBuilder(14, 638, 500, 119)
                             ),
                         ),
                         $quickReplyMain

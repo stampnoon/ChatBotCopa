@@ -2132,7 +2132,7 @@ Copa69 ขอขอบคุณที่ใช้บริการค่ะ....
 if (!is_null($events)) {
     $userMessage = strtolower($userMessage);
     if (!is_null($eventFollow)) {
-        $imageMain = 'https://www.pic2free.com/uploads/20200311/0f2a99163fd6712f73d04da793c78d13e13e6f7a.png?_ignore=';
+        $imageMain = 'https://i.ibb.co/q7GNG0k/main.jpg?_ignore=';
         $replyData = new ImagemapMessageBuilder(
             $imageMain,
             'main',
@@ -2169,7 +2169,7 @@ if (!is_null($events)) {
         case "text":
             if ($userMessage != null) {
                 if ($userMessage == "ย้อนกลับMain") {
-                    $imageMain = 'https://www.pic2free.com/uploads/20200311/0f2a99163fd6712f73d04da793c78d13e13e6f7a.png?_ignore=';
+                    $imageMain = 'https://i.ibb.co/q7GNG0k/main.jpg?_ignore=';
                     $replyData = new ImagemapMessageBuilder(
                         $imageMain,
                         'main',
@@ -2190,7 +2190,7 @@ if (!is_null($events)) {
                         )
                     );
                 } else if ($userMessage == "สอบถาม" || $userMessage == "q" || $userMessage == "Q" || $userMessage == "ย้อนกลับQuestion") {
-                    $imageMapUrl = 'https://www.pic2free.com/uploads/20200311/57f1378aadbe36e2d659f634c71d9cb9cfebe0b1.png?_ignore=';
+                    $imageMapUrl = 'https://i.ibb.co/1df4VCD/question.jpg?_ignore=';
                     $replyData = new ImagemapMessageBuilder(
                         $imageMapUrl,
                         'question',

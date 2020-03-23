@@ -2266,7 +2266,7 @@ if (!is_null($events)) {
                                 new AreaBuilder(14, 638, 500, 119)
                             ),
                         ),
-                        $quickReplyMain
+                        //$quickReplyMain
                     );
                 }
                 // ----------------------------------------------------------------------------------------- DetailPromotion

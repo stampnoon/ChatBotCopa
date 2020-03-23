@@ -2239,6 +2239,7 @@ if (!is_null($events)) {
                     );
                 } else if ($userMessage == "สมัคร") {
                     $imageMapUrl = 'https://www.pic2free.com/uploads/20200319/22aff7616945ae9b1c4079d4501507b60a7b701a.jpg?_ignore=';
+                                  //https://www.pic2free.com/uploads/20200319/93235726873d0241bdfb672a9315a580919aae99.jpg?_ignore=
                     $replyData = new ImagemapMessageBuilder(
                         $imageMapUrl,
                         9 +
@@ -2247,19 +2248,19 @@ if (!is_null($events)) {
                         array(
                             new ImagemapMessageActionBuilder(
                                 'โปร1',
-                                new AreaBuilder(10, 91, 1024, 235)
+                                new AreaBuilder(10, 91, 1024, 232)
                             ),
                             new ImagemapMessageActionBuilder(
                                 'โปร5',
-                                new AreaBuilder(11, 328, 1024, 235)
+                                new AreaBuilder(11, 328, 1024, 232)
                             ),  
                             new ImagemapMessageActionBuilder(
                                 'โปร3',
-                                new AreaBuilder(11, 565, 1024, 235)
+                                new AreaBuilder(11, 565, 1024, 232)
                             ),
                             new ImagemapMessageActionBuilder(
                                 'โปร2',
-                                new AreaBuilder(11, 801, 1024, 235)
+                                new AreaBuilder(11, 801, 1024, 232)
                             ),
                         ),
                         $quickReplyMain

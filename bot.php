@@ -2956,7 +2956,7 @@ if (!is_null($events)) {
                     $textReplyMessage = $profile['displayName']; //can get 'displayName', 'userId', 'pictureUrl', 'statusMessage'
                     //$replyData = new TextMessageBuilder($textReplyMessage);
                     $province_th = ['กรุงเทพฯ','กระบี่','กาญจนบุรี','กาฬสินธุ์','กำแพงเพชร'];
-                    $replyData = new TextMessageBuilder('test',NULL);
+                    $replyData = new TextMessageBuilder('test','test2','test3');
                 } 
                 // else if ($userMessage == "push") {
                 //     $responseProfile = $bot->getProfile(LINE_USER_ID);

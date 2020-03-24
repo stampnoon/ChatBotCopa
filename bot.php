@@ -1329,6 +1329,112 @@ ___________________________________",
     )
 );
 
+$textProblem1 = new BubbleContainerBuilder(
+    "ltr",
+    NULL,
+    NULL,
+    new BoxComponentBuilder(
+        "horizontal",
+        array(
+            new TextComponentBuilder(
+                "ทำรายการ ฝาก-ถอน ไม่สำเร็จ
+
+- กรุณารอสักครู่ระบบกาลังทารายการตามคิวนะคะ
+หรือ สามารถติดต่อแอดมิน คลิกลิงค์ได้เลยค่ะ
+___________________________________",
+                NULL,
+                NULL,
+                NULL,
+                NULL,
+                NULL,
+                true
+            )
+        )
+    ),
+    new BoxComponentBuilder(
+        "horizontal",
+        array(
+            new ButtonComponentBuilder(
+                new UriTemplateActionBuilder("ติดต่อแอดมิน", "https://line.me/R/ti/p/%40519uqyhc"),
+                NULL,
+                NULL,
+                NULL,
+                "primary"
+            )
+        )
+    )
+);
+
+$textProblem2 = new BubbleContainerBuilder(
+    "ltr",
+    NULL,
+    NULL,
+    new BoxComponentBuilder(
+        "horizontal",
+        array(
+            new TextComponentBuilder(
+                "เช็คว่าเคยสมัครไปหรือยัง ?
+
+สามารถตรวจสอบเช็คได้ที่แอดมิน คลิกที่ลิงค์ได้เลยค่ะ
+___________________________________",
+                NULL,
+                NULL,
+                NULL,
+                NULL,
+                NULL,
+                true
+            )
+        )
+    ),
+    new BoxComponentBuilder(
+        "horizontal",
+        array(
+            new ButtonComponentBuilder(
+                new UriTemplateActionBuilder("ติดต่อแอดมิน", "https://line.me/R/ti/p/%40519uqyhc"),
+                NULL,
+                NULL,
+                NULL,
+                "primary"
+            )
+        )
+    )
+);
+
+$textProblem3 = new BubbleContainerBuilder(
+    "ltr",
+    NULL,
+    NULL,
+    new BoxComponentBuilder(
+        "horizontal",
+        array(
+            new TextComponentBuilder(
+                "ลืม Username
+
+- สามารถแจ้งขอ User ใหม่ได้ค่ะ คลิกที่ลิงค์ได้เลยค่ะ
+___________________________________",
+                NULL,
+                NULL,
+                NULL,
+                NULL,
+                NULL,
+                true
+            )
+        )
+    ),
+    new BoxComponentBuilder(
+        "horizontal",
+        array(
+            new ButtonComponentBuilder(
+                new UriTemplateActionBuilder("ติดต่อแอดมิน", "https://line.me/R/ti/p/%40519uqyhc"),
+                NULL,
+                NULL,
+                NULL,
+                "primary"
+            )
+        )
+    )
+);
+
 $textDetailPromotion1 = new BubbleContainerBuilder(
     "ltr",
     NULL,
@@ -2366,11 +2472,11 @@ if (!is_null($events)) {
                         )
                     );
                 } else if ($userMessage == "คำถาม:ปัญหา1") {
-                    $replyData = new FlexMessageBuilder("Problem1", $textWebsite1, $quickReplySubWebsite);
+                    $replyData = new FlexMessageBuilder("Problem1", $textProblem1, $quickReplySubWebsite);
                 } else if ($userMessage == "คำถาม:ปัญหา2") {
-                    $replyData = new FlexMessageBuilder("Problem2", $textWebsite2, $quickReplySubWebsite);
+                    $replyData = new FlexMessageBuilder("Problem2", $textProblem2, $quickReplySubWebsite);
                 } else if ($userMessage == "คำถาม:ปัญหา3") {
-                    $replyData = new FlexMessageBuilder("Problem3", $textWebsite2, $quickReplySubWebsite);
+                    $replyData = new FlexMessageBuilder("Problem3", $textProblem3, $quickReplySubWebsite);
                 }
 
                 // ----------------------------------------------------------------------------------------- Promotion

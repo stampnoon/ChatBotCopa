@@ -2389,29 +2389,33 @@ if (!is_null($events)) {
                         new BaseSizeBuilder(610, 1040),
                         array(
                             new ImagemapMessageActionBuilder(
-                                'เทิร์น',
-                                new AreaBuilder(5, 145, 513, 108)
+                                '1',
+                                new AreaBuilder(4, 151, 513, 108)
+                            ),
+                            new ImagemapMessageActionBuilder(
+                                '3',
+                                new AreaBuilder(4, 259, 513, 108)
+                            ),
+                            new ImagemapMessageActionBuilder(
+                                '5',
+                                new AreaBuilder(4, 370, 513, 108)
                             ),
                             new ImagemapMessageActionBuilder(
                                 'ย้อนกลับQuestion',
-                                new AreaBuilder(5, 255, 513, 108)
+                                new AreaBuilder(4, 480, 513, 108)
                             ),
                             new ImagemapMessageActionBuilder(
-                                'คำถาม:โปรโมชั่น2',
-                                new AreaBuilder(523, 145, 513, 108)
+                                '2',
+                                new AreaBuilder(523, 151, 513, 108)
+                            ),
+                            new ImagemapMessageActionBuilder(
+                                '4',
+                                new AreaBuilder(523, 260, 513, 108)
                             ),
                             new ImagemapMessageActionBuilder(
                                 'ย้อนกลับMain',
-                                new AreaBuilder(523, 255, 513, 108)
+                                new AreaBuilder(523, 370, 513, 108)
                             ),
-                            // new ImagemapMessageActionBuilder(
-                            //     'คำถาม:โปรโมชั่น3',
-                            //     new AreaBuilder(5, 370, 513, 108)
-                            // ),
-                            // new ImagemapMessageActionBuilder(
-                            //     'คำถาม:โปรโมชั่น4',
-                            //     new AreaBuilder(524, 370, 509, 108)
-                            // ),
                         )
                     );
                 }

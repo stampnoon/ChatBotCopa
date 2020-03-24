@@ -2950,13 +2950,62 @@ if (!is_null($events)) {
                     $replyData = new FlexMessageBuilder("Flex", $textSendAddress, $quickReplyMain);
                 }
                 // ========================== Test ===================================
-                else if ($userMessage == "test") {
+                else if ($userMessage == "img") {
+                    $imageMapUrl = 'https://i.ibb.co/Dg7r1Rp/Npromotion.jpg?_ignore=';
+                    $replyData = new ImagemapMessageBuilder(
+                        $imageMapUrl,
+                        'register',
+                        new BaseSizeBuilder(1040, 1040),
+                        array(
+                            new ImagemapMessageActionBuilder(
+                                'โปร1000บาท',
+                                new AreaBuilder(11, 91, 1020, 232)
+                            ),
+                            new ImagemapMessageActionBuilder(
+                                'โปร500บาท',
+                                new AreaBuilder(11, 329, 1020, 232)
+                            ),
+                            new ImagemapMessageActionBuilder(
+                                'โปร300บาท',
+                                new AreaBuilder(11, 561, 1020, 232)
+                            ),
+                            new ImagemapMessageActionBuilder(
+                                'โปร200บาท',
+                                new AreaBuilder(11, 800, 1020, 232)
+                            ),
+                        ),
+                        $quickReplyMain
+                    );
+                } else if ($userMessage == "test") {
                     $responseProfile = $bot->getProfile(LINE_USER_ID);
                     $profile = $responseProfile->getJSONDecodedBody();
                     $textReplyMessage = $profile['displayName']; //can get 'displayName', 'userId', 'pictureUrl', 'statusMessage'
                     //$replyData = new TextMessageBuilder($textReplyMessage);
-                    $replyData = new TextMessageBuilder('test','test2','test3');
-                } 
+                    $replyData = new TextMessageBuilder('test') + new ImagemapMessageBuilder(
+                        $imageMapUrl,
+                        'register',
+                        new BaseSizeBuilder(1040, 1040),
+                        array(
+                            new ImagemapMessageActionBuilder(
+                                'โปร1000บาท',
+                                new AreaBuilder(11, 91, 1020, 232)
+                            ),
+                            new ImagemapMessageActionBuilder(
+                                'โปร500บาท',
+                                new AreaBuilder(11, 329, 1020, 232)
+                            ),
+                            new ImagemapMessageActionBuilder(
+                                'โปร300บาท',
+                                new AreaBuilder(11, 561, 1020, 232)
+                            ),
+                            new ImagemapMessageActionBuilder(
+                                'โปร200บาท',
+                                new AreaBuilder(11, 800, 1020, 232)
+                            ),
+                        ),
+                        $quickReplyMain
+                    );
+                }
                 // else if ($userMessage == "push") {
                 //     $responseProfile = $bot->getProfile(LINE_USER_ID);
                 //     $profile = $responseProfile->getJSONDecodedBody();

@@ -383,7 +383,7 @@ $textPromotion1 = new BubbleContainerBuilder(
 - สมัครสมาชิก 1000 รับ POD ไฟฟ้า 
 หรือ หูฟัง Redmi Airdots
 
-(ทุกการสมัครอย่าลืมแจ้ง คนแนะนา เพื่อรับสิทธิ์นะคะ)",
+(ทุกการสมัครอย่าลืมแจ้ง คนแนะนำ เพื่อรับสิทธิ์นะคะ)",
                 NULL,
                 NULL,
                 "md",
@@ -394,6 +394,7 @@ $textPromotion1 = new BubbleContainerBuilder(
         )
     )
 );
+
 
 
 $textPromotion2 = new BubbleContainerBuilder(
@@ -2220,7 +2221,56 @@ if (!is_null($events)) {
                         ),
                         $quickReplyMain
                     );
-                } else if ($userMessage == "สมัคร") {
+                }
+                // ----------------------------------------------------------------------------------------- Promotion
+
+                else if ($userMessage == "โปรโมชั่น") {
+                    $imagePromotion = 'https://i.ibb.co/60LLDdr/q-promotion.jpg?_ignore=';
+                    $replyData = new ImagemapMessageBuilder(
+                        $imagePromotion,
+                        'qpromotion',
+                        new BaseSizeBuilder(386, 1040),
+                        array(
+                            new ImagemapMessageActionBuilder(
+                                'คำถาม:โปรโมชั่น1',
+                                new AreaBuilder(5, 145, 513, 108)
+                            ),
+                            new ImagemapMessageActionBuilder(
+                                'ย้อนกลับQuestion',
+                                new AreaBuilder(5, 255, 513, 108)
+                            ),
+                            new ImagemapMessageActionBuilder(
+                                'คำถาม:โปรโมชั่น2',
+                                new AreaBuilder(523, 145, 513, 108)
+                            ),
+                            new ImagemapMessageActionBuilder(
+                                'ย้อนกลับMain',
+                                new AreaBuilder(523, 255, 513, 108)
+                            ),
+                            // new ImagemapMessageActionBuilder(
+                            //     'คำถาม:โปรโมชั่น3',
+                            //     new AreaBuilder(5, 370, 513, 108)
+                            // ),
+                            // new ImagemapMessageActionBuilder(
+                            //     'คำถาม:โปรโมชั่น4',
+                            //     new AreaBuilder(524, 370, 509, 108)
+                            // ),
+                        )
+                    );
+                } else if ($userMessage == "คำถาม:โปรโมชั่น1") {
+                    $replyData = new FlexMessageBuilder("Flex", $textPromotion1, $quickReplySubPromotion);
+                } else if ($userMessage == "คำถาม:โปรโมชั่น2") {
+                    $replyData = new FlexMessageBuilder("Flex", $textPromotion2, $quickReplySubPromotion);
+                }
+                // else if ($userMessage == "คำถาม:โปรโมชั่น3") {
+                //     $replyData = new FlexMessageBuilder("Flex", $textPromotion3, $quickReplySubPromotion);
+                // } else if ($userMessage == "คำถาม:โปรโมชั่น4") {
+                //     $replyData = new FlexMessageBuilder("Flex", $textPromotion4, $quickReplySubPromotion);
+                // }
+
+                // ----------------------------------------------------------------------------------------- Promotion
+
+                else if ($userMessage == "สมัคร") {
                     //$imageMapUrl = 'https://www.pic2free.com/uploads/20200319/22aff7616945ae9b1c4079d4501507b60a7b701a.jpg?_ignore=';
                     $imageMapUrl = 'https://i.ibb.co/Dg7r1Rp/Npromotion.jpg?_ignore=';
                     $replyData = new ImagemapMessageBuilder(
@@ -2282,57 +2332,11 @@ if (!is_null($events)) {
 
                 // ----------------------------------------------------------------------------------------- DetailPromotion 
                 else if ($userMessage == "ติดต่อ") {
-                    $replyData = new FlexMessageBuilder("Flex", $textContact, $quickReplyMain);
+                    $replyData = new FlexMessageBuilder("Contact", $textContact, $quickReplyMain);
                 }
 
                 // ----------------------------------------------------------------------------------------- MainMenu
-                // ----------------------------------------------------------------------------------------- Promotion
 
-                else if ($userMessage == "โปรโมชั่น") {
-                    $imagePromotion = 'https://i.ibb.co/60LLDdr/q-promotion.jpg?_ignore=';
-                    $replyData = new ImagemapMessageBuilder(
-                        $imagePromotion,
-                        'qpromotion',
-                        new BaseSizeBuilder(386, 1040),
-                        array(
-                            new ImagemapMessageActionBuilder(
-                                'คำถาม:โปรโมชั่น1',
-                                new AreaBuilder(5, 145, 513, 108)
-                            ),
-                            new ImagemapMessageActionBuilder(
-                                'ย้อนกลับQuestion',
-                                new AreaBuilder(5, 255, 513, 108)
-                            ),
-                            new ImagemapMessageActionBuilder(
-                                'คำถาม:โปรโมชั่น2',
-                                new AreaBuilder(523, 145, 513, 108)
-                            ),
-                            new ImagemapMessageActionBuilder(
-                                'ย้อนกลับMain',
-                                new AreaBuilder(523, 255, 513, 108)
-                            ),
-                            // new ImagemapMessageActionBuilder(
-                            //     'คำถาม:โปรโมชั่น3',
-                            //     new AreaBuilder(5, 370, 513, 108)
-                            // ),
-                            // new ImagemapMessageActionBuilder(
-                            //     'คำถาม:โปรโมชั่น4',
-                            //     new AreaBuilder(524, 370, 509, 108)
-                            // ),
-                        )
-                    );
-                } else if ($userMessage == "คำถาม:โปรโมชั่น1") {
-                    $replyData = new FlexMessageBuilder("Flex", $textPromotion1, $quickReplySubPromotion);
-                } else if ($userMessage == "คำถาม:โปรโมชั่น2") {
-                    $replyData = new FlexMessageBuilder("Flex", $textPromotion2, $quickReplySubPromotion);
-                } 
-                // else if ($userMessage == "คำถาม:โปรโมชั่น3") {
-                //     $replyData = new FlexMessageBuilder("Flex", $textPromotion3, $quickReplySubPromotion);
-                // } else if ($userMessage == "คำถาม:โปรโมชั่น4") {
-                //     $replyData = new FlexMessageBuilder("Flex", $textPromotion4, $quickReplySubPromotion);
-                // }
-
-                // ----------------------------------------------------------------------------------------- Promotion
                 // ----------------------------------------------------------------------------------------- Recommend
 
                 else if ($userMessage == "คำแนะนำ") {
@@ -2608,17 +2612,13 @@ if (!is_null($events)) {
                     $imageWebsite = 'https://www.pic2free.com/uploads/20200319/93235726873d0241bdfb672a9315a580919aae99.jpg?_ignore=';
                     $replyData = new ImagemapMessageBuilder(
                         $imageWebsite,
-                        'ads',
+                        '18+',
                         new BaseSizeBuilder(1040, 1040),
                         array(
                             new ImagemapMessageActionBuilder(
                                 'เข้ากลุ่ม',
                                 new AreaBuilder(344, 898, 345, 83)
                             ),
-                            // new ImagemapUriActionBuilder(
-                            //     'http://www.ninenik.com',
-                            //     new AreaBuilder(520, 0, 520, 699)
-                            // )
                         )
                     );
                 } else if ($userMessage == "getid") {

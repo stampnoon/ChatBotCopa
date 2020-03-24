@@ -415,7 +415,22 @@ $textPromotion1 = new BubbleContainerBuilder(
 หรือ หูฟัง Redmi Airdots
 
 (ทุกการสมัครอย่าลืมแจ้ง คนแนะนำ เพื่อรับสิทธิ์นะคะ)",
-                NULL,
+                new ImagemapMessageBuilder(
+                    'https://i.ibb.co/kMgHs2J/Ads.jpg?_ignore=',
+                    '18+',
+                    new BaseSizeBuilder(1040, 1040),
+                    array(
+                        // new ImagemapMessageActionBuilder(
+                        //     'เข้ากลุ่ม',
+                        //     new AreaBuilder(344, 898, 345, 83)
+                        // ), 
+                        // new ImagemapUriActionBuilder(
+                        //     'https://line.me/R/ti/p/%40519uqyhc',
+                        //     new AreaBuilder(344, 898, 345, 83)
+                        // )
+                    ),
+                    $quickReplySubPromotion
+                ),
                 NULL,
                 "md",
                 NULL,
@@ -423,22 +438,6 @@ $textPromotion1 = new BubbleContainerBuilder(
                 true
             )
         )
-    ),
-    new ImagemapMessageBuilder(
-        'https://i.ibb.co/kMgHs2J/Ads.jpg?_ignore=',
-        '18+',
-        new BaseSizeBuilder(1040, 1040),
-        array(
-            // new ImagemapMessageActionBuilder(
-            //     'เข้ากลุ่ม',
-            //     new AreaBuilder(344, 898, 345, 83)
-            // ), 
-            // new ImagemapUriActionBuilder(
-            //     'https://line.me/R/ti/p/%40519uqyhc',
-            //     new AreaBuilder(344, 898, 345, 83)
-            // )
-        ),
-        $quickReplySubPromotion
     )
 );
 

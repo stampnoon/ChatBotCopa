@@ -482,9 +482,7 @@ $textOther2 = new BubbleContainerBuilder(
         "horizontal",
         array(
             new TextComponentBuilder(
-                "ฝาก-ถอนขั้นต่ำ
-
-ฝาก-ถอนข้าต่ำเริ่มต้นที่ 100 ค่ะ",
+                "ฝาก-ถอนขั้นต่ำเริ่มต้นที่ 100 ค่ะ",
                 NULL,
                 NULL,
                 "md",
@@ -504,9 +502,7 @@ $textOther3 = new BubbleContainerBuilder(
         "horizontal",
         array(
             new TextComponentBuilder(
-                "ถอนได้กี่ครั้งต่อ 1 วัน
-
-ไม่จำกัดจานวนครั้งค่ะ",
+                "ไม่จำกัดจานวนครั้งค่ะ",
                 NULL,
                 NULL,
                 "md",
@@ -526,9 +522,7 @@ $textOther4 = new BubbleContainerBuilder(
         "horizontal",
         array(
             new TextComponentBuilder(
-                "วิธีการฝากเงิน
-
-วิธีการฝากเงิน คลิกลิงค์ได้เลยค่ะ
+                "วิธีการฝากเงิน คลิกลิงค์ได้เลยค่ะ
 ___________________________________",
                 NULL,
                 NULL,
@@ -561,9 +555,7 @@ $textOther5 = new BubbleContainerBuilder(
         "horizontal",
         array(
             new TextComponentBuilder(
-                "วิธีการถอนเงิน
-
-วิธีการถอนเงิน คลิกลิงค์ได้เลยค่ะ
+                "วิธีการถอนเงิน คลิกลิงค์ได้เลยค่ะ
 ___________________________________",
                 NULL,
                 NULL,

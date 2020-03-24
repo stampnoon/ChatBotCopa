@@ -140,6 +140,10 @@ $textReplyToQuestion = new MessageTemplateActionBuilder(
     'สอบถาม',
     'สอบถาม'
 );
+$textBackOtherQuestion = new MessageTemplateActionBuilder(
+    'ย้อนกลับ',
+    'คำถามเพิ่มเติม'
+);
 $textReplyToRegister = new MessageTemplateActionBuilder(
     'สมัคร',
     'สมัคร'
@@ -283,6 +287,16 @@ $quickReplySubPromotion = new QuickReplyMessageBuilder(
         new QuickReplyButtonBuilder($textReplyToContact),
     )
 );
+
+$quickReplyOtherQuestion = new QuickReplyMessageBuilder(
+    array(
+        new QuickReplyButtonBuilder($textBackOtherQuestion),
+        new QuickReplyButtonBuilder($textReplyToQuestion),
+        new QuickReplyButtonBuilder($textReplyToRegister),
+        new QuickReplyButtonBuilder($textReplyToContact),
+    )
+);
+
 $quickReplySubRecommend = new QuickReplyMessageBuilder(
     array(
         new QuickReplyButtonBuilder($textBackRecommend),
@@ -436,35 +450,32 @@ $textPromotion2 = new BubbleContainerBuilder(
     )
 );
 
-// $textPromotion3 = new BubbleContainerBuilder(
-//     "ltr",
-//     NULL,
-//     NULL,
-//     new BoxComponentBuilder(
-//         "horizontal",
-//         array(
-//             new TextComponentBuilder(
-//                 "ถ้ารับโปรโมชั่นต้องทำเทิร์นเท่าไหร่ ?
-// ___________________________________
+$textTurn1 = new BubbleContainerBuilder(
+    "ltr",
+    NULL,
+    NULL,
+    new BoxComponentBuilder(
+        "horizontal",
+        array(
+            new TextComponentBuilder(
+                "ทาเทิร์นเท่าไหร่
 
-// ทุกโปรทำเทิร์น 1.5 ค่ะ เช่น ฝาก200 
-// (ต้องมียอดเล่นได้หรือเสียประมาณ 
-// 300) ก็ถอนได้แล้วค่ะ เล่นได้ทุก
-// อย่าง เช่น คาสิโน เกมส์ แทง บอล
-// อื่นๆ เป็นต้นค่ะ
-// ___________________________________
+- การสมัครครั้งแรกต้องมียอดเล่น 1.5 เท่าของยอดสมัคร
+สมมุติ พี่ฝากมา 500 บาทต้องมียอดเล่นให้เท่ากับ 750 
+หรือมากกว่า ถึงจะถอนได้ค่ะ ไม่นับรวมยอดค้างเล่น
 
-// Copa69 ขอขอบคุณที่ใช้บริการค่ะ....",
-//                 NULL,
-//                 NULL,
-//                 "md",
-//                 NULL,
-//                 NULL,
-//                 true
-//             )
-//         )
-//     )
-// );
+- ฝากครั้งต่อไป 1 เท่าปกตินะค่ะ
+___________________________________",
+                NULL,
+                NULL,
+                "md",
+                NULL,
+                NULL,
+                true
+            )
+        )
+    )
+);
 
 // $textPromotion4 = new BubbleContainerBuilder(
 //     "ltr",
@@ -908,7 +919,7 @@ $textDeposit2 = new BubbleContainerBuilder(
                 "ถ้าฝากไปแล้วไม่เล่นถอนได้เลยมั้ย ?
 ___________________________________
 
-ไม่ได้ค่ะ ต้องมียอดเล่นให้ครบเทริน
+ไม่ได้ค่ะ ต้องมียอดเล่นให้ครบเทิร์น
 ถึงถอนออกได้ค่ะ
 ___________________________________
 
@@ -2371,10 +2382,6 @@ if (!is_null($events)) {
                             //     'คำแนะนำ',
                             //     new AreaBuilder(7, 631, 510, 139)
                             // ),
-                            // new ImagemapMessageActionBuilder(
-                            //     'ย้อนกลับMain',
-                            //     new AreaBuilder(524, 633, 509, 133)
-                            // ),
                         ),
                         $quickReplyMain
                     );
@@ -2389,15 +2396,15 @@ if (!is_null($events)) {
                         new BaseSizeBuilder(610, 1040),
                         array(
                             new ImagemapMessageActionBuilder(
-                                '1',
+                                'ทำเทิร์น',
                                 new AreaBuilder(4, 151, 513, 108)
                             ),
                             new ImagemapMessageActionBuilder(
-                                '3',
+                                'ถอนกี่ครั้ง',
                                 new AreaBuilder(4, 259, 513, 108)
                             ),
                             new ImagemapMessageActionBuilder(
-                                '5',
+                                'ฝากเงิน',
                                 new AreaBuilder(4, 370, 513, 108)
                             ),
                             new ImagemapMessageActionBuilder(
@@ -2405,11 +2412,11 @@ if (!is_null($events)) {
                                 new AreaBuilder(4, 480, 513, 108)
                             ),
                             new ImagemapMessageActionBuilder(
-                                '2',
+                                'ฝากถอนขั้นต่ำ',
                                 new AreaBuilder(523, 151, 513, 108)
                             ),
                             new ImagemapMessageActionBuilder(
-                                '4',
+                                'ถอนเงิน',
                                 new AreaBuilder(523, 260, 513, 108)
                             ),
                             new ImagemapMessageActionBuilder(
@@ -2418,8 +2425,9 @@ if (!is_null($events)) {
                             ),
                         )
                     );
+                } else if ($userMessage == "ทำเทิร์น") {
+                    $replyData = new FlexMessageBuilder("Turn", $textTurn1, $quickReplyOtherQuestion);
                 }
-
                 // ----------------------------------------------------------------------------------------- Promotion
 
                 else if ($userMessage == "โปรโมชั่น") {
@@ -2445,14 +2453,6 @@ if (!is_null($events)) {
                                 'ย้อนกลับMain',
                                 new AreaBuilder(523, 255, 513, 108)
                             ),
-                            // new ImagemapMessageActionBuilder(
-                            //     'คำถาม:โปรโมชั่น3',
-                            //     new AreaBuilder(5, 370, 513, 108)
-                            // ),
-                            // new ImagemapMessageActionBuilder(
-                            //     'คำถาม:โปรโมชั่น4',
-                            //     new AreaBuilder(524, 370, 509, 108)
-                            // ),
                         )
                     );
                 } else if ($userMessage == "คำถาม:โปรโมชั่น1") {

@@ -2189,7 +2189,7 @@ if (!is_null($events)) {
                                 new AreaBuilder(4, 266, 515, 108)
                             ),
                             new ImagemapMessageActionBuilder(
-                                'กลุ่ม',
+                                'แจ้งปัญหา',
                                 new AreaBuilder(4, 377, 515, 108)
                             ),
                             new ImagemapMessageActionBuilder(
@@ -2204,6 +2204,10 @@ if (!is_null($events)) {
                                 'บัญชี',
                                 new AreaBuilder(523, 379, 515, 108)
                             ),
+                            // new ImagemapMessageActionBuilder(
+                            //     'กลุ่ม',
+                            //     new AreaBuilder(4, 377, 515, 108)
+                            // ),
                             // new ImagemapMessageActionBuilder(
                             //     'คำแนะนำ',
                             //     new AreaBuilder(7, 631, 510, 139)
@@ -2292,12 +2296,82 @@ if (!is_null($events)) {
                         $quickReplySubPromotion
                     );
                 }
-
                 // else if ($userMessage == "คำถาม:โปรโมชั่น3") {
                 //     $replyData = new FlexMessageBuilder("Flex", $textPromotion3, $quickReplySubPromotion);
                 // } else if ($userMessage == "คำถาม:โปรโมชั่น4") {
                 //     $replyData = new FlexMessageBuilder("Flex", $textPromotion4, $quickReplySubPromotion);
                 // }
+
+                // ----------------------------------------------------------------------------------------- Website
+
+                else if ($userMessage == "เว็บไซต์") {
+                    $imageWebsite = 'https://i.ibb.co/fSNv1Mq/q-website.jpg?_ignore=';
+                    $replyData = new ImagemapMessageBuilder(
+                        $imageWebsite,
+                        'website',
+                        new BaseSizeBuilder(400, 1040),
+                        array(
+                            new ImagemapMessageActionBuilder(
+                                'คำถาม:เว็บ1',
+                                new AreaBuilder(4, 145, 515, 108)
+                            ),
+                            new ImagemapMessageActionBuilder(
+                                'ย้อนกลับQuestion',
+                                new AreaBuilder(4, 255, 515, 108)
+                            ),
+                            new ImagemapMessageActionBuilder(
+                                'คำถาม:เว็บ2',
+                                new AreaBuilder(522, 145, 515, 108)
+                            ),
+                            new ImagemapMessageActionBuilder(
+                                'ย้อนกลับMain',
+                                new AreaBuilder(522, 255, 515, 108)
+                            ),
+                        )
+                    );
+                } else if ($userMessage == "คำถาม:เว็บ1") {
+                    $replyData = new FlexMessageBuilder("Web1", $textWebsite1, $quickReplySubWebsite);
+                } else if ($userMessage == "คำถาม:เว็บ2") {
+                    $replyData = new FlexMessageBuilder("Web2", $textWebsite2, $quickReplySubWebsite);
+                }
+
+                // ----------------------------------------------------------------------------------------- Problem
+                else if ($userMessage == "แจ้งปัญหา") {
+                    $imageWebsite = 'https://i.ibb.co/T0kMpSt/q-problem.jpg?_ignore=';
+                    $replyData = new ImagemapMessageBuilder(
+                        $imageWebsite,
+                        'Problem',
+                        new BaseSizeBuilder(506, 1040),
+                        array(
+                            new ImagemapMessageActionBuilder(
+                                'คำถาม:ปัญหา1',
+                                new AreaBuilder(4, 149, 515, 108)
+                            ),
+                            new ImagemapMessageActionBuilder(
+                                'คำถาม:ปัญหา2',
+                                new AreaBuilder(4, 262, 515, 108)
+                            ),
+                            new ImagemapMessageActionBuilder(
+                                'ย้อนกลับQuestion',
+                                new AreaBuilder(4, 373, 515, 108)
+                            ),
+                            new ImagemapMessageActionBuilder(
+                                'คำถาม:ปัญหา3',
+                                new AreaBuilder(523, 149, 515, 108)
+                            ),
+                            new ImagemapMessageActionBuilder(
+                                'ย้อนกลับMain',
+                                new AreaBuilder(522, 262, 515, 108)
+                            ),
+                        )
+                    );
+                } else if ($userMessage == "คำถาม:ปัญหา1") {
+                    $replyData = new FlexMessageBuilder("Problem1", $textWebsite1, $quickReplySubWebsite);
+                } else if ($userMessage == "คำถาม:ปัญหา2") {
+                    $replyData = new FlexMessageBuilder("Problem2", $textWebsite2, $quickReplySubWebsite);
+                } else if ($userMessage == "คำถาม:ปัญหา3") {
+                    $replyData = new FlexMessageBuilder("Problem3", $textWebsite2, $quickReplySubWebsite);
+                }
 
                 // ----------------------------------------------------------------------------------------- Promotion
 
@@ -2589,40 +2663,6 @@ if (!is_null($events)) {
                 }
 
                 // ----------------------------------------------------------------------------------------- Account
-                // ----------------------------------------------------------------------------------------- Website
-
-                else if ($userMessage == "เว็บไซต์") {
-                    $imageWebsite = 'https://i.ibb.co/fSNv1Mq/q-website.jpg?_ignore=';
-                    $replyData = new ImagemapMessageBuilder(
-                        $imageWebsite,
-                        'website',
-                        new BaseSizeBuilder(400, 1040),
-                        array(
-                            new ImagemapMessageActionBuilder(
-                                'คำถาม:เว็บ1',
-                                new AreaBuilder(4, 145, 515, 108)
-                            ),
-                            new ImagemapMessageActionBuilder(
-                                'ย้อนกลับQuestion',
-                                new AreaBuilder(4, 255, 515, 108)
-                            ),
-                            new ImagemapMessageActionBuilder(
-                                'คำถาม:เว็บ2',
-                                new AreaBuilder(522, 145, 515, 108)
-                            ),
-                            new ImagemapMessageActionBuilder(
-                                'ย้อนกลับMain',
-                                new AreaBuilder(522, 255, 515, 108)
-                            ),
-                        )
-                    );
-                } else if ($userMessage == "คำถาม:เว็บ1") {
-                    $replyData = new FlexMessageBuilder("Web1", $textWebsite1, $quickReplySubWebsite);
-                } else if ($userMessage == "คำถาม:เว็บ2") {
-                    $replyData = new FlexMessageBuilder("Web2", $textWebsite2, $quickReplySubWebsite);
-                }
-
-                // ----------------------------------------------------------------------------------------- Website
 
                 else if (strstr($userMessage, "แจ้งเลขยูส") == true) {
                     $replyData = new FlexMessageBuilder("Flex", $textGetUser, $quickReplyEditSlip);

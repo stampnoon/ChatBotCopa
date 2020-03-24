@@ -1385,9 +1385,9 @@ $textProblem2 = new BubbleContainerBuilder(
         "horizontal",
         array(
             new TextComponentBuilder(
-                "เช็คว่าเคยสมัครไปหรือยัง ?
+                "ลืม Username
 
-สามารถตรวจสอบเช็คได้ที่แอดมิน คลิกที่ลิงค์ได้เลยค่ะ
+- สามารถแจ้งขอ User ใหม่ได้ค่ะ คลิกที่ลิงค์ได้เลยค่ะ
 ___________________________________",
                 NULL,
                 NULL,
@@ -1420,9 +1420,9 @@ $textProblem3 = new BubbleContainerBuilder(
         "horizontal",
         array(
             new TextComponentBuilder(
-                "ลืม Username
+                "เช็คว่าเคยสมัครไปหรือยัง ?
 
-- สามารถแจ้งขอ User ใหม่ได้ค่ะ คลิกที่ลิงค์ได้เลยค่ะ
+สามารถตรวจสอบเช็คได้ที่แอดมิน คลิกที่ลิงค์ได้เลยค่ะ
 ___________________________________",
                 NULL,
                 NULL,

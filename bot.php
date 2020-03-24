@@ -424,17 +424,21 @@ $textPromotion1 = new BubbleContainerBuilder(
             )
         )
     ),
-    new BoxComponentBuilder(
-        "horizontal",
+    new ImagemapMessageBuilder(
+        'https://i.ibb.co/kMgHs2J/Ads.jpg?_ignore=',
+        '18+',
+        new BaseSizeBuilder(1040, 1040),
         array(
-            new ButtonComponentBuilder(
-                new UriTemplateActionBuilder("วิธีถอนเงิน", "https://www.copa69.com/%e0%b8%a7%e0%b8%b4%e0%b8%98%e0%b8%b5%e0%b8%96%e0%b8%ad%e0%b8%99%e0%b9%80%e0%b8%87%e0%b8%b4%e0%b8%99-copa69"),
-                NULL,
-                NULL,
-                NULL,
-                "primary"
-            )
-        )
+            // new ImagemapMessageActionBuilder(
+            //     'เข้ากลุ่ม',
+            //     new AreaBuilder(344, 898, 345, 83)
+            // ), 
+            // new ImagemapUriActionBuilder(
+            //     'https://line.me/R/ti/p/%40519uqyhc',
+            //     new AreaBuilder(344, 898, 345, 83)
+            // )
+        ),
+        $quickReplySubPromotion
     )
 );
 

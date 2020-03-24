@@ -450,7 +450,7 @@ $textPromotion2 = new BubbleContainerBuilder(
     )
 );
 
-$textTurn1 = new BubbleContainerBuilder(
+$textOther1 = new BubbleContainerBuilder(
     "ltr",
     NULL,
     NULL,
@@ -474,6 +474,119 @@ $textTurn1 = new BubbleContainerBuilder(
     )
 );
 
+$textOther2 = new BubbleContainerBuilder(
+    "ltr",
+    NULL,
+    NULL,
+    new BoxComponentBuilder(
+        "horizontal",
+        array(
+            new TextComponentBuilder(
+                "ฝาก-ถอนขั้นต่า
+
+ฝาก-ถอนข้าต่าเริ่มต้นที่ 100 ค่ะ",
+                NULL,
+                NULL,
+                "md",
+                NULL,
+                NULL,
+                true
+            )
+        )
+    )
+);
+
+$textOther3 = new BubbleContainerBuilder(
+    "ltr",
+    NULL,
+    NULL,
+    new BoxComponentBuilder(
+        "horizontal",
+        array(
+            new TextComponentBuilder(
+                "ถอนได้กี่ครั้งต่อ 1 วัน
+
+ไม่จากัดจานวนครั้งค่ะ",
+                NULL,
+                NULL,
+                "md",
+                NULL,
+                NULL,
+                true
+            )
+        )
+    )
+);
+
+$textOther4 = new BubbleContainerBuilder(
+    "ltr",
+    NULL,
+    NULL,
+    new BoxComponentBuilder(
+        "horizontal",
+        array(
+            new TextComponentBuilder(
+                "วิธีการฝากเงิน
+
+วิธีการฝากเงิน คลิกลิงค์ได้เลยค่ะ
+___________________________________",
+                NULL,
+                NULL,
+                NULL,
+                NULL,
+                NULL,
+                true
+            )
+        )
+    ),
+    new BoxComponentBuilder(
+        "horizontal",
+        array(
+            new ButtonComponentBuilder(
+                new UriTemplateActionBuilder("วิธีฝากเงิน", "https://www.copa69.com/%e0%b8%a7%e0%b8%b4%e0%b8%98%e0%b8%b5%e0%b8%9d%e0%b8%b2%e0%b8%81%e0%b9%80%e0%b8%87%e0%b8%b4%e0%b8%99-copa69"),
+                NULL,
+                NULL,
+                NULL,
+                "primary"
+            )
+        )
+    )
+);
+
+$textOther5 = new BubbleContainerBuilder(
+    "ltr",
+    NULL,
+    NULL,
+    new BoxComponentBuilder(
+        "horizontal",
+        array(
+            new TextComponentBuilder(
+                "วิธีการถอนเงิน
+
+วิธีการถอนเงิน คลิกลิงค์ได้เลยค่ะ
+___________________________________",
+                NULL,
+                NULL,
+                NULL,
+                NULL,
+                NULL,
+                true
+            )
+        )
+    ),
+    new BoxComponentBuilder(
+        "horizontal",
+        array(
+            new ButtonComponentBuilder(
+                new UriTemplateActionBuilder("วิธีถอนเงิน", "https://www.copa69.com/%e0%b8%a7%e0%b8%b4%e0%b8%98%e0%b8%b5%e0%b8%96%e0%b8%ad%e0%b8%99%e0%b9%80%e0%b8%87%e0%b8%b4%e0%b8%99-copa69"),
+                NULL,
+                NULL,
+                NULL,
+                "primary"
+            )
+        )
+    )
+);
 // $textPromotion4 = new BubbleContainerBuilder(
 //     "ltr",
 //     NULL,
@@ -791,173 +904,146 @@ ___________________________________",
     )
 );
 
-$textToDeposit = new BubbleContainerBuilder(
-    "ltr",
-    NULL,
-    NULL,
-    new BoxComponentBuilder(
-        "horizontal",
-        array(
-            new TextComponentBuilder(
-                "ฝาก/ถอน
+// $textToDeposit = new BubbleContainerBuilder(
+//     "ltr",
+//     NULL,
+//     NULL,
+//     new BoxComponentBuilder(
+//         "horizontal",
+//         array(
+//             new TextComponentBuilder(
+//                 "ฝาก/ถอน
 
-พิมพ์ d ตามด้วยหัวข้อที่ต้องการ เช่น d1
-___________________________________
+// พิมพ์ d ตามด้วยหัวข้อที่ต้องการ เช่น d1
+// ___________________________________
 
-หัวข้อปัญหาหรือเรื่องที่ต้องการสอบถาม
-1. ฝาก/ถอนขั้นต่ำเท่าไหร่
-2. ครั้งต่อไปฝาก/ถอนยังไง
-3. ฝาก/ถอนจำกัดครั้งมั้ย ถอนได้เร็วมั้ย
-4. ถ้าฝากไปแล้วไม่เล่นถอนได้เลยมั้ย
-5. โอนเงินเสร็จแล้วทำไงต่อ
-___________________________________
+// หัวข้อปัญหาหรือเรื่องที่ต้องการสอบถาม
+// 1. ฝาก/ถอนขั้นต่ำเท่าไหร่
+// 2. ครั้งต่อไปฝาก/ถอนยังไง
+// 3. ฝาก/ถอนจำกัดครั้งมั้ย ถอนได้เร็วมั้ย
+// 4. ถ้าฝากไปแล้วไม่เล่นถอนได้เลยมั้ย
+// 5. โอนเงินเสร็จแล้วทำไงต่อ
+// ___________________________________
 
-Copa69 ขอขอบคุณที่ใช้บริการค่ะ....",
-                NULL,
-                NULL,
-                "md",
-                NULL,
-                NULL,
-                true
-            )
-        )
-    )
-);
+// Copa69 ขอขอบคุณที่ใช้บริการค่ะ....",
+//                 NULL,
+//                 NULL,
+//                 "md",
+//                 NULL,
+//                 NULL,
+//                 true
+//             )
+//         )
+//     )
+// );
 
-$textDeposit1 = new BubbleContainerBuilder(
-    "ltr",
-    NULL,
-    NULL,
-    new BoxComponentBuilder(
-        "horizontal",
-        array(
-            new TextComponentBuilder(
-                "ฝาก/ถอนขั้นต่ำเท่าไหร่ ?
-___________________________________
+// $textDeposit3 = new BubbleContainerBuilder(
+//     "ltr",
+//     NULL,
+//     NULL,
+//     new BoxComponentBuilder(
+//         "horizontal",
+//         array(
+//             new TextComponentBuilder(
+//                 "ครั้งต่อไปฝาก/ถอนยังไง ?
+// ___________________________________
 
-หลังจากสมัครเป็นสมาชิกแล้วฝาก/ถอน
-ขั้นต่ำ 100 บาท ค่ะ
-___________________________________
+// ฝาก/ถอนสามารถทำรายการผ่านหน้า
+// เว็บได้เลยค่ะ
+// ___________________________________
 
-Copa69 ขอขอบคุณที่ใช้บริการค่ะ....",
-                NULL,
-                NULL,
-                "md",
-                NULL,
-                NULL,
-                true
-            )
-        )
-    )
-);
+// Copa69 ขอขอบคุณที่ใช้บริการค่ะ....",
+//                 NULL,
+//                 NULL,
+//                 "md",
+//                 NULL,
+//                 NULL,
+//                 true
+//             )
+//         )
+//     )
+// );
 
-$textDeposit3 = new BubbleContainerBuilder(
-    "ltr",
-    NULL,
-    NULL,
-    new BoxComponentBuilder(
-        "horizontal",
-        array(
-            new TextComponentBuilder(
-                "ครั้งต่อไปฝาก/ถอนยังไง ?
-___________________________________
+// $textDeposit5 = new BubbleContainerBuilder(
+//     "ltr",
+//     NULL,
+//     NULL,
+//     new BoxComponentBuilder(
+//         "horizontal",
+//         array(
+//             new TextComponentBuilder(
+//                 "ฝาก/ถอน จำกัดครั้งมั้ย ถอนได้เร็วมั้ย ?
+// ___________________________________
 
-ฝาก/ถอนสามารถทำรายการผ่านหน้า
-เว็บได้เลยค่ะ
-___________________________________
+// ฝากถอนผ่านหน้าเว็บไม่จำกัดจำนวน
+// ครั้งฝากถอนภายใน 5 วินาที
+// ___________________________________
 
-Copa69 ขอขอบคุณที่ใช้บริการค่ะ....",
-                NULL,
-                NULL,
-                "md",
-                NULL,
-                NULL,
-                true
-            )
-        )
-    )
-);
+// Copa69 ขอขอบคุณที่ใช้บริการค่ะ....",
+//                 NULL,
+//                 NULL,
+//                 "md",
+//                 NULL,
+//                 NULL,
+//                 true
+//             )
+//         )
+//     )
+// );
 
-$textDeposit5 = new BubbleContainerBuilder(
-    "ltr",
-    NULL,
-    NULL,
-    new BoxComponentBuilder(
-        "horizontal",
-        array(
-            new TextComponentBuilder(
-                "ฝาก/ถอน จำกัดครั้งมั้ย ถอนได้เร็วมั้ย ?
-___________________________________
+// $textDeposit2 = new BubbleContainerBuilder(
+//     "ltr",
+//     NULL,
+//     NULL,
+//     new BoxComponentBuilder(
+//         "horizontal",
+//         array(
+//             new TextComponentBuilder(
+//                 "ถ้าฝากไปแล้วไม่เล่นถอนได้เลยมั้ย ?
+// ___________________________________
 
-ฝากถอนผ่านหน้าเว็บไม่จำกัดจำนวน
-ครั้งฝากถอนภายใน 5 วินาที
-___________________________________
+// ไม่ได้ค่ะ ต้องมียอดเล่นให้ครบเทิร์น
+// ถึงถอนออกได้ค่ะ
+// ___________________________________
 
-Copa69 ขอขอบคุณที่ใช้บริการค่ะ....",
-                NULL,
-                NULL,
-                "md",
-                NULL,
-                NULL,
-                true
-            )
-        )
-    )
-);
+// Copa69 ขอขอบคุณที่ใช้บริการค่ะ....",
+//                 NULL,
+//                 NULL,
+//                 "md",
+//                 NULL,
+//                 NULL,
+//                 true
+//             )
+//         )
+//     )
+// );
 
-$textDeposit2 = new BubbleContainerBuilder(
-    "ltr",
-    NULL,
-    NULL,
-    new BoxComponentBuilder(
-        "horizontal",
-        array(
-            new TextComponentBuilder(
-                "ถ้าฝากไปแล้วไม่เล่นถอนได้เลยมั้ย ?
-___________________________________
+// $textDeposit4 = new BubbleContainerBuilder(
+//     "ltr",
+//     NULL,
+//     NULL,
+//     new BoxComponentBuilder(
+//         "horizontal",
+//         array(
+//             new TextComponentBuilder(
+//                 "โอนเงินเสร็จแล้วทำไงต่อ ?
+// ___________________________________
 
-ไม่ได้ค่ะ ต้องมียอดเล่นให้ครบเทิร์น
-ถึงถอนออกได้ค่ะ
-___________________________________
+// รอแอดมินตรวจสอบสักครู่นะคะ เสร็จ
+// แล้วแอดมินจะส่งเลขยูสเวอร์ให้คะ
+// ___________________________________
 
-Copa69 ขอขอบคุณที่ใช้บริการค่ะ....",
-                NULL,
-                NULL,
-                "md",
-                NULL,
-                NULL,
-                true
-            )
-        )
-    )
-);
-
-$textDeposit4 = new BubbleContainerBuilder(
-    "ltr",
-    NULL,
-    NULL,
-    new BoxComponentBuilder(
-        "horizontal",
-        array(
-            new TextComponentBuilder(
-                "โอนเงินเสร็จแล้วทำไงต่อ ?
-___________________________________
-
-รอแอดมินตรวจสอบสักครู่นะคะ เสร็จ
-แล้วแอดมินจะส่งเลขยูสเวอร์ให้คะ
-___________________________________
-
-Copa69 ขอขอบคุณที่ใช้บริการค่ะ....",
-                NULL,
-                NULL,
-                "md",
-                NULL,
-                NULL,
-                true
-            )
-        )
-    )
-);
+// Copa69 ขอขอบคุณที่ใช้บริการค่ะ....",
+//                 NULL,
+//                 NULL,
+//                 "md",
+//                 NULL,
+//                 NULL,
+//                 true
+//             )
+//         )
+//     )
+// );
 
 $textToRegister = new BubbleContainerBuilder(
     "ltr",
@@ -2393,15 +2479,15 @@ if (!is_null($events)) {
                         new BaseSizeBuilder(610, 1040),
                         array(
                             new ImagemapMessageActionBuilder(
-                                'ทำเทิร์น',
+                                'คำถาม:เพิ่มเติม1',
                                 new AreaBuilder(4, 151, 513, 108)
                             ),
                             new ImagemapMessageActionBuilder(
-                                'ถอนกี่ครั้ง',
+                                'คำถาม:เพิ่มเติม3',
                                 new AreaBuilder(4, 259, 513, 108)
                             ),
                             new ImagemapMessageActionBuilder(
-                                'ฝากเงิน',
+                                'คำถาม:เพิ่มเติม5',
                                 new AreaBuilder(4, 370, 513, 108)
                             ),
                             new ImagemapMessageActionBuilder(
@@ -2409,11 +2495,11 @@ if (!is_null($events)) {
                                 new AreaBuilder(4, 480, 513, 108)
                             ),
                             new ImagemapMessageActionBuilder(
-                                'ฝากถอนขั้นต่ำ',
+                                'คำถาม:เพิ่มเติม2',
                                 new AreaBuilder(523, 151, 513, 108)
                             ),
                             new ImagemapMessageActionBuilder(
-                                'ถอนเงิน',
+                                'คำถาม:เพิ่มเติม4',
                                 new AreaBuilder(523, 260, 513, 108)
                             ),
                             new ImagemapMessageActionBuilder(
@@ -2422,9 +2508,18 @@ if (!is_null($events)) {
                             ),
                         )
                     );
-                } else if ($userMessage == "ทำเทิร์น") {
-                    $replyData = new FlexMessageBuilder("Turn", $textTurn1, $quickReplyOtherQuestion);
+                } else if ($userMessage == "คำถาม:เพิ่มเติม1") {
+                    $replyData = new FlexMessageBuilder("Turn", $textOther1, $quickReplyOtherQuestion);
+                } else if ($userMessage == "คำถาม:เพิ่มเติม2") {
+                    $replyData = new FlexMessageBuilder("Turn", $textOther2, $quickReplyOtherQuestion);
+                } else if ($userMessage == "คำถาม:เพิ่มเติม3") {
+                    $replyData = new FlexMessageBuilder("Turn", $textOther2, $quickReplyOtherQuestion);
+                } else if ($userMessage == "คำถาม:เพิ่มเติม4") {
+                    $replyData = new FlexMessageBuilder("Turn", $textOther2, $quickReplyOtherQuestion);
+                } else if ($userMessage == "คำถาม:เพิ่มเติม5") {
+                    $replyData = new FlexMessageBuilder("Turn", $textOther2, $quickReplyOtherQuestion);
                 }
+
                 // ----------------------------------------------------------------------------------------- Promotion
 
                 else if ($userMessage == "โปรโมชั่น") {
@@ -2661,29 +2756,6 @@ if (!is_null($events)) {
                 } else if ($userMessage == "โปร200บาท") {
                     $replyData = new FlexMessageBuilder("Pro200", $textDetailPromotion4, $quickReplyBackRegister);
                 }
-                //  else if ($userMessage == "โปร5") {
-                //     $replyData = new FlexMessageBuilder("Flex", $textDetailPromotion5, $quickReplyBackRegister);
-                // } else if ($userMessage == "โปร6") {
-                //     $replyData = new FlexMessageBuilder("Flex", $textDetailPromotion6, $quickReplyBackRegister);
-                // } else if ($userMessage == "โปร7") {
-                //     $replyData = new FlexMessageBuilder("Flex", $textDetailPromotion7, $quickReplyBackRegister);
-                // } else if ($userMessage == "โปร8") {
-                //     $replyData = new FlexMessageBuilder("Flex", $textDetailPromotion8, $quickReplyBackRegister);
-                // } else if ($userMessage == "โปร9") {
-                //     $replyData = new FlexMessageBuilder("Flex", $textDetailPromotion9, $quickReplyBackRegister);
-                // } else if ($userMessage == "โปร10") {
-                //     $replyData = new FlexMessageBuilder("Flex", $textDetailPromotion10, $quickReplyBackRegister);
-                // } else if ($userMessage == "โปร11") {
-                //     $replyData = new FlexMessageBuilder("Flex", $textDetailPromotion11, $quickReplyBackRegister);
-                // } else if ($userMessage == "โปร12") {
-                //     $replyData = new FlexMessageBuilder("Flex", $textDetailPromotion12, $quickReplyBackRegister);
-                // } else if ($userMessage == "โปร13") {
-                //     $replyData = new FlexMessageBuilder("Flex", $textDetailPromotion13, $quickReplyBackRegister);
-                // } else if ($userMessage == "โปร14") {
-                //     $replyData = new FlexMessageBuilder("Flex", $textDetailPromotion14, $quickReplyBackRegister);
-                // }
-
-                // ----------------------------------------------------------------------------------------- DetailPromotion 
 
                 // ----------------------------------------------------------------------------------------- Contact
                 else if ($userMessage == "ติดต่อ") {
@@ -2726,50 +2798,50 @@ if (!is_null($events)) {
                 // ----------------------------------------------------------------------------------------- Recommend
                 // ----------------------------------------------------------------------------------------- Deposit
 
-                else if ($userMessage == "ฝาก") {
-                    $imageDeposit = 'https://www.pic2free.com/uploads/20200311/aa0511085a9d1fb2a5cbe58cf308cef4e3b25fe0.png?_ignore=';
-                    $replyData = new ImagemapMessageBuilder(
-                        $imageDeposit,
-                        'withdraw',
-                        new BaseSizeBuilder(500, 1040),
-                        array(
-                            new ImagemapMessageActionBuilder(
-                                'คำถาม:ฝาก1',
-                                new AreaBuilder(5, 146, 512, 107)
-                            ),
-                            new ImagemapMessageActionBuilder(
-                                'คำถาม:ฝาก2',
-                                new AreaBuilder(520, 145, 514, 105)
-                            ),
-                            new ImagemapMessageActionBuilder(
-                                'คำถาม:ฝาก3',
-                                new AreaBuilder(4, 258, 512, 108)
-                            ),
-                            new ImagemapMessageActionBuilder(
-                                'คำถาม:ฝาก4',
-                                new AreaBuilder(521, 257, 511, 106)
-                            ),
-                            new ImagemapMessageActionBuilder(
-                                'คำถาม:ฝาก5',
-                                new AreaBuilder(5, 370, 510, 108)
-                            ),
-                            new ImagemapMessageActionBuilder(
-                                'ย้อนกลับQuestion',
-                                new AreaBuilder(522, 371, 509, 105)
-                            ),
-                        )
-                    );
-                } else if ($userMessage == "คำถาม:ฝาก1") {
-                    $replyData = new FlexMessageBuilder("Flex", $textDeposit1, $quickReplySubDeposit);
-                } else if ($userMessage == "คำถาม:ฝาก2") {
-                    $replyData = new FlexMessageBuilder("Flex", $textDeposit2, $quickReplySubDeposit);
-                } else if ($userMessage == "คำถาม:ฝาก3") {
-                    $replyData = new FlexMessageBuilder("Flex", $textDeposit3, $quickReplySubDeposit);
-                } else if ($userMessage == "คำถาม:ฝาก4") {
-                    $replyData = new FlexMessageBuilder("Flex", $textDeposit4, $quickReplySubDeposit);
-                } else if ($userMessage == "คำถาม:ฝาก5") {
-                    $replyData = new FlexMessageBuilder("Flex", $textDeposit5, $quickReplySubDeposit);
-                }
+                // else if ($userMessage == "ฝาก") {
+                //     $imageDeposit = 'https://www.pic2free.com/uploads/20200311/aa0511085a9d1fb2a5cbe58cf308cef4e3b25fe0.png?_ignore=';
+                //     $replyData = new ImagemapMessageBuilder(
+                //         $imageDeposit,
+                //         'withdraw',
+                //         new BaseSizeBuilder(500, 1040),
+                //         array(
+                //             new ImagemapMessageActionBuilder(
+                //                 'คำถาม:ฝาก1',
+                //                 new AreaBuilder(5, 146, 512, 107)
+                //             ),
+                //             new ImagemapMessageActionBuilder(
+                //                 'คำถาม:ฝาก2',
+                //                 new AreaBuilder(520, 145, 514, 105)
+                //             ),
+                //             new ImagemapMessageActionBuilder(
+                //                 'คำถาม:ฝาก3',
+                //                 new AreaBuilder(4, 258, 512, 108)
+                //             ),
+                //             new ImagemapMessageActionBuilder(
+                //                 'คำถาม:ฝาก4',
+                //                 new AreaBuilder(521, 257, 511, 106)
+                //             ),
+                //             new ImagemapMessageActionBuilder(
+                //                 'คำถาม:ฝาก5',
+                //                 new AreaBuilder(5, 370, 510, 108)
+                //             ),
+                //             new ImagemapMessageActionBuilder(
+                //                 'ย้อนกลับQuestion',
+                //                 new AreaBuilder(522, 371, 509, 105)
+                //             ),
+                //         )
+                //     );
+                // } else if ($userMessage == "คำถาม:ฝาก1") {
+                //     $replyData = new FlexMessageBuilder("Flex", $textDeposit1, $quickReplySubDeposit);
+                // } else if ($userMessage == "คำถาม:ฝาก2") {
+                //     $replyData = new FlexMessageBuilder("Flex", $textDeposit2, $quickReplySubDeposit);
+                // } else if ($userMessage == "คำถาม:ฝาก3") {
+                //     $replyData = new FlexMessageBuilder("Flex", $textDeposit3, $quickReplySubDeposit);
+                // } else if ($userMessage == "คำถาม:ฝาก4") {
+                //     $replyData = new FlexMessageBuilder("Flex", $textDeposit4, $quickReplySubDeposit);
+                // } else if ($userMessage == "คำถาม:ฝาก5") {
+                //     $replyData = new FlexMessageBuilder("Flex", $textDeposit5, $quickReplySubDeposit);
+                // }
 
                 // ----------------------------------------------------------------------------------------- Deposit
                 // ----------------------------------------------------------------------------------------- Register

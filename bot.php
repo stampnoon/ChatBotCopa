@@ -202,7 +202,7 @@ $textNotAddress = new MessageTemplateActionBuilder(
 );
 $textEditUser = new MessageTemplateActionBuilder(
     'แก้ไขหมายเลขยูส',
-    'แจ้งเลขยูส'
+    'แก้ไขเลขยูส'
 );
 $textBackToAddress = new MessageTemplateActionBuilder(
     'ย้อนกลับ',
@@ -2934,7 +2934,7 @@ if (!is_null($events)) {
 
                 // ----------------------------------------------------------------------------------------- Account
 
-                else if (strstr($userMessage, "แจ้งเลขยูส") == true) {
+                else if (strstr($userMessage, "แจ้งเลขยูส") == true || strstr($userMessage, "แก้ไขเลขยูส") == true ) {
                     $replyData = new FlexMessageBuilder("Flex", $textGetUser, $quickReplyEditSlip);
                 } else if (strstr($userMessage, "user_") == true || strstr($userMessage, "User_") == true  || strstr($userMessage, "USER_") == true || $userMessage == "BAddress") {
                     //$replyData = new FlexMessageBuilder("Flex", $textToAddress, $quickReplyUser);

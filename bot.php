@@ -2159,30 +2159,30 @@ $textGetUser = new BubbleContainerBuilder(
     )
 );
 
-$textToAddress = new BubbleContainerBuilder(
-    "ltr",
-    NULL,
-    NULL,
-    new BoxComponentBuilder(
-        "horizontal",
-        array(
-            new TextComponentBuilder(
-                "กรุณากรอกที่อยู่เพื่อทางเราจะทำ
-การจัดส่งสินค้า โดยลูกค้าเลือกที่
-จะกรอกหรือไม่กรอกก็ได้ค่ะ
-___________________________________
+// $textToAddress = new BubbleContainerBuilder(
+//     "ltr",
+//     NULL,
+//     NULL,
+//     new BoxComponentBuilder(
+//         "horizontal",
+//         array(
+//             new TextComponentBuilder(
+//                 "กรุณากรอกที่อยู่เพื่อทางเราจะทำ
+// การจัดส่งสินค้า โดยลูกค้าเลือกที่
+// จะกรอกหรือไม่กรอกก็ได้ค่ะ
+// ___________________________________
 
-Copa69 ขอขอบคุณที่ใช้บริการค่ะ....",
-                NULL,
-                NULL,
-                "md",
-                NULL,
-                NULL,
-                true
-            )
-        )
-    )
-);
+// Copa69 ขอขอบคุณที่ใช้บริการค่ะ....",
+//                 NULL,
+//                 NULL,
+//                 "md",
+//                 NULL,
+//                 NULL,
+//                 true
+//             )
+//         )
+//     )
+// );
 
 $textNotAddress = new BubbleContainerBuilder(
     "ltr",
@@ -2215,10 +2215,10 @@ $textAddress = new BubbleContainerBuilder(
             new TextComponentBuilder(
                 "กรุณากรอกที่อยู่ให้ครบถ้วนสมบูรณ์
 *** กรุณานำหน้าประโยคด้วย ที่อยู่
+___________________________________
 
-ตัวอย่าง: ที่อยู่ 148 หมู่1 ต.ตำบล
-อ.อำเภอ จ.จังหวัด 16589
-___________________________________",
+ตัวอย่าง: ที่อยู่ 111 หมู่1 ต.ตำบล
+อ.อำเภอ จ.จังหวัด 11111",
                 NULL,
                 NULL,
                 "md",
@@ -2930,49 +2930,53 @@ if (!is_null($events)) {
                 } else if (strstr($userMessage, "user_") == true || strstr($userMessage, "User_") == true  || strstr($userMessage, "USER_") == true || $userMessage == "BAddress") {
                     //$replyData = new FlexMessageBuilder("Flex", $textToAddress, $quickReplyUser);
                     $replyData = new FlexMessageBuilder("Flex", $textAddress, $quickReplyAddress);
-                } else if ($userMessage == "ไม่ต้องการ") {
-                    $replyData = new FlexMessageBuilder("Flex", $textNotAddress, $quickReplyMain);
-                } else if ($userMessage == "ต้องการ" || $userMessage == "ย้อนกลับAddress") {
-                    $replyData = new FlexMessageBuilder("Flex", $textAddress, $quickReplyAddress);
-                } else if (strstr($userMessage, "ที่อยู่") == true || strstr($userMessage, "อำเภอ") == true || strstr($userMessage, "อ.") == true || strstr($userMessage, "ตำบล") == true || strstr($userMessage, "ต.") == true || strstr($userMessage, "จังหวัด") == true || strstr($userMessage, "จ.") == true) {
+                }
+                // else if ($userMessage == "ไม่ต้องการ") {
+                //     $replyData = new FlexMessageBuilder("Flex", $textNotAddress, $quickReplyMain);
+                // } 
+                // else if ($userMessage == "ต้องการ" || $userMessage == "ย้อนกลับAddress") {
+                //     $replyData = new FlexMessageBuilder("Flex", $textAddress, $quickReplyAddress);
+                // } 
+                // else if (strstr($userMessage, "ที่อยู่") == true || strstr($userMessage, "อำเภอ") == true || strstr($userMessage, "อ.") == true || strstr($userMessage, "ตำบล") == true || strstr($userMessage, "ต.") == true || strstr($userMessage, "จังหวัด") == true || strstr($userMessage, "จ.") == true) {
+                else if (strstr($userMessage, "ที่อยู่") == true) {
                     $replyData = new FlexMessageBuilder("Flex", $textDetailUser, $quickReplyDetailUser);
                 } else if (strstr($userMessage, "เพิ่มเติม") == true) {
                     $replyData = new FlexMessageBuilder("Flex", $textSendAddress, $quickReplyMain);
-
-                    // ========================== Test new picture ===================================
-
-                } else if ($userMessage == "ads") {
-                    $imageWebsite = 'https://i.ibb.co/kMgHs2J/Ads.jpg?_ignore=';
-                    $replyData = new ImagemapMessageBuilder(
-                        $imageWebsite,
-                        '18+',
-                        new BaseSizeBuilder(1040, 1040),
-                        array(
-                            new ImagemapMessageActionBuilder(
-                                'เข้ากลุ่ม',
-                                new AreaBuilder(344, 898, 345, 83)
-                            ),
-                        )
-                    );
-                } else if ($userMessage == "getid") {
-                    $responseProfile = $bot->getProfile(LINE_USER_ID);
-                    $profile = $responseProfile->getJSONDecodedBody();
-                    $textReplyMessage = $profile['displayName']; //can get 'displayName', 'userId', 'pictureUrl', 'statusMessage'
-                    $replyData = new TextMessageBuilder($textReplyMessage);
-                } else if ($userMessage == "push") {
-                    $responseProfile = $bot->getProfile(LINE_USER_ID);
-                    $profile = $responseProfile->getJSONDecodedBody();
-                    $UserName = $profile['displayName']; //can get 'displayName', 'userId', 'pictureUrl', 'statusMessage'
-                    $textUsername = new TextMessageBuilder($UserName);
-                    //Send to line_Bot2 
-                    $httpClient_push = new CurlHTTPClient('E8J7R3AojuWoZIwnVr1DnW7kINJiSxQxm300gBm2U4vtz38yaelGTD7dzL1PHhxLzRJopPKocwdVw4Em17nYAlzV8Ux+gOIAiT7oQiNac4D84OoMD9VZ1LVF72JQecvWhzfeDBWNcO7EMlft0cHmmQdB04t89/1O/w1cDnyilFU=');
-                    $bot_push = new LINEBot($httpClient_push, array('channelSecret' => 'a907165cb16817404ab203620cbe9fe6'));
-                    $response_push = $bot_push->pushMessage('U038a8b215cd7cc765f7a8380c2f86683', $textUsername);
-                    if ($response_push->isSucceeded()) {
-                        $replyData = new TextMessageBuilder('Send to Bot2 success');
-                    }
                 }
-                // ========================== Test new picture ===================================
+                // ========================== Test ===================================
+
+                // } else if ($userMessage == "ads") {
+                //     $imageWebsite = 'https://i.ibb.co/kMgHs2J/Ads.jpg?_ignore=';
+                //     $replyData = new ImagemapMessageBuilder(
+                //         $imageWebsite,
+                //         '18+',
+                //         new BaseSizeBuilder(1040, 1040),
+                //         array(
+                //             new ImagemapMessageActionBuilder(
+                //                 'เข้ากลุ่ม',
+                //                 new AreaBuilder(344, 898, 345, 83)
+                //             ),
+                //         )
+                //     );
+                // } else if ($userMessage == "getid") {
+                //     $responseProfile = $bot->getProfile(LINE_USER_ID);
+                //     $profile = $responseProfile->getJSONDecodedBody();
+                //     $textReplyMessage = $profile['displayName']; //can get 'displayName', 'userId', 'pictureUrl', 'statusMessage'
+                //     $replyData = new TextMessageBuilder($textReplyMessage);
+                // } else if ($userMessage == "push") {
+                //     $responseProfile = $bot->getProfile(LINE_USER_ID);
+                //     $profile = $responseProfile->getJSONDecodedBody();
+                //     $UserName = $profile['displayName']; //can get 'displayName', 'userId', 'pictureUrl', 'statusMessage'
+                //     $textUsername = new TextMessageBuilder($UserName);
+                //     //Send to line_Bot2 
+                //     $httpClient_push = new CurlHTTPClient('E8J7R3AojuWoZIwnVr1DnW7kINJiSxQxm300gBm2U4vtz38yaelGTD7dzL1PHhxLzRJopPKocwdVw4Em17nYAlzV8Ux+gOIAiT7oQiNac4D84OoMD9VZ1LVF72JQecvWhzfeDBWNcO7EMlft0cHmmQdB04t89/1O/w1cDnyilFU=');
+                //     $bot_push = new LINEBot($httpClient_push, array('channelSecret' => 'a907165cb16817404ab203620cbe9fe6'));
+                //     $response_push = $bot_push->pushMessage('U038a8b215cd7cc765f7a8380c2f86683', $textUsername);
+                //     if ($response_push->isSucceeded()) {
+                //         $replyData = new TextMessageBuilder('Send to Bot2 success');
+                //     }
+                // }
+                // ========================== Test===================================
                 else {
                     $replyData = new FlexMessageBuilder("Flex", $textNotKeyword, $quickReplyMain);
                 }

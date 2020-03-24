@@ -2144,14 +2144,10 @@ $textGetUser = new BubbleContainerBuilder(
         "horizontal",
         array(
             new TextComponentBuilder(
-                "กรุณากรอกหมายเลข User
-___________________________________
+                "กรุณากรอก User ด้วยนะคะ
 
-ตัวอย่าง user_หมายเลขยูสของลูกค้า
-เช่น user_sa894567415
-___________________________________
-
-Copa69 ขอขอบคุณที่ใช้บริการค่ะ....",
+ตัวอย่าง user_co69ag9999
+เช่น user_sa894567415",
                 NULL,
                 NULL,
                 "md",

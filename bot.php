@@ -575,37 +575,37 @@ Copa69 ขอขอบคุณที่ใช้บริการค่ะ....
     )
 );
 
-$textToGroup = new BubbleContainerBuilder(
-    "ltr",
-    NULL,
-    NULL,
-    new BoxComponentBuilder(
-        "horizontal",
-        array(
-            new TextComponentBuilder(
-                "กลุ่ม/สูตร
+// $textToGroup = new BubbleContainerBuilder(
+//     "ltr",
+//     NULL,
+//     NULL,
+//     new BoxComponentBuilder(
+//         "horizontal",
+//         array(
+//             new TextComponentBuilder(
+//                 "กลุ่ม/สูตร
 
-พิมพ์ g ตามด้วยหัวข้อที่ต้องการ เช่น g1
-___________________________________
+// พิมพ์ g ตามด้วยหัวข้อที่ต้องการ เช่น g1
+// ___________________________________
 
-หัวข้อปัญหาหรือเรื่องที่ต้องการสอบถาม
-1. มีสูตรโกงบาคาร่าให้มั้ย
-2. มีกลุ่มวิเคราะบอลด้วยมั้ย
-3. เล่นบาคาร่ายังไง
-4. แทงบอลยังไง
-___________________________________
+// หัวข้อปัญหาหรือเรื่องที่ต้องการสอบถาม
+// 1. มีสูตรโกงบาคาร่าให้มั้ย
+// 2. มีกลุ่มวิเคราะบอลด้วยมั้ย
+// 3. เล่นบาคาร่ายังไง
+// 4. แทงบอลยังไง
+// ___________________________________
 
-Copa69 ขอขอบคุณที่ใช้บริการค่ะ....",
-                NULL,
-                NULL,
-                "md",
-                NULL,
-                NULL,
-                true
-            )
-        )
-    )
-);
+// Copa69 ขอขอบคุณที่ใช้บริการค่ะ....",
+//                 NULL,
+//                 NULL,
+//                 "md",
+//                 NULL,
+//                 NULL,
+//                 true
+//             )
+//         )
+//     )
+// );
 
 $textGroup1 = new BubbleContainerBuilder(
     "ltr",
@@ -650,10 +650,9 @@ $textGroup2 = new BubbleContainerBuilder(
         "horizontal",
         array(
             new TextComponentBuilder(
-                "มีกลุ่มวิเคราะบอลด้วยมั้ย ?
-___________________________________
+                "กลุ่มวิเคราะห์บอล
 
-กลุ่มวิเคราะบอล คลิ้กเข้าลิ้งเลยนะคะ
+กลุ่มวิเคราะห์บอลคลิกลิงค์ได้เลยค่ะ
 ___________________________________",
                 NULL,
                 NULL,
@@ -668,7 +667,7 @@ ___________________________________",
         "horizontal",
         array(
             new ButtonComponentBuilder(
-                new UriTemplateActionBuilder("วิเคราะห์บอล", "https://line.me/ti/g2/fbDC6OmeUzJua6pFerS7"),
+                new UriTemplateActionBuilder("กลุ่มวิเคราะห์บอล", "https://line.me/ti/g2/fbDC6OmeUzJua6pFerS7GA?utm_source=invitation&utm_medium=link_copy&utm_campaign=default"),
                 NULL,
                 NULL,
                 NULL,
@@ -686,10 +685,9 @@ $textGroup3 = new BubbleContainerBuilder(
         "horizontal",
         array(
             new TextComponentBuilder(
-                "เล่นบาคาร่ายังไง ?
-___________________________________
+                "กลุ่มนำเล่นบาคาร่า
 
-คลิกลิ้งเพื่อเข้าดูวิธีเข้าเล่นบาคาร่าค่ะ
+กลุ่มนำเล่นบาคาร่า คลิกลิงค์ได้เลยค่ะ
 ___________________________________",
                 NULL,
                 NULL,
@@ -704,7 +702,42 @@ ___________________________________",
         "horizontal",
         array(
             new ButtonComponentBuilder(
-                new UriTemplateActionBuilder("การเล่นบาคาร่า", "https://youtu.be/8O8M8R2Kffg"),
+                new UriTemplateActionBuilder("กลุ่มนำเล่นบาคาร่า", "https://line.me/ti/g2/CriEOA1chT2KNumwKbBpaA?utm_source=invitation&utm_medium=link_copy&utm_campaign=default"),
+                NULL,
+                NULL,
+                NULL,
+                "primary"
+            )
+        )
+    )
+);
+
+$textGroup4 = new BubbleContainerBuilder(
+    "ltr",
+    NULL,
+    NULL,
+    new BoxComponentBuilder(
+        "horizontal",
+        array(
+            new TextComponentBuilder(
+                "วิธีการเข้าเล่นบาคาร่า คลิกลิงค์ได้เลยค่ะ
+
+วิธีการเข้าเล่นบาคาร่า คลิกลิงค์ได้เลยค่ะ
+___________________________________",
+                NULL,
+                NULL,
+                NULL,
+                NULL,
+                NULL,
+                true
+            )
+        )
+    ),
+    new BoxComponentBuilder(
+        "horizontal",
+        array(
+            new ButtonComponentBuilder(
+                new UriTemplateActionBuilder("วิธีเล่นบาคาร่า", "https://www.youtube.com/watch?v=8O8M8R2Kffg&feature=youtu.be"),
                 NULL,
                 NULL,
                 NULL,
@@ -715,7 +748,7 @@ ___________________________________",
 );
 
 
-$textGroup4 = new BubbleContainerBuilder(
+$textGroup5 = new BubbleContainerBuilder(
     "ltr",
     NULL,
     NULL,
@@ -723,10 +756,9 @@ $textGroup4 = new BubbleContainerBuilder(
         "horizontal",
         array(
             new TextComponentBuilder(
-                "แทงบอลยังไง ?
-___________________________________
+                "วิธีการเข้าแทงบอล
 
-คลิกลิ้งเพื่อดูการใช้งานและวิธีแทงหวย+บอล
+วิธีการเข้าแทงบอล คลิกลิงค์ได้เลยค่ะ
 ___________________________________",
                 NULL,
                 NULL,
@@ -741,7 +773,7 @@ ___________________________________",
         "horizontal",
         array(
             new ButtonComponentBuilder(
-                new UriTemplateActionBuilder("การเล่นบอล/หวย", "https://www.youtube.com/channel/UC0j3s6xKcdOX9OFP05W82Bg"),
+                new UriTemplateActionBuilder("การเล่นบอล", "https://www.youtube.com/channel/UC0j3s6xKcdOX9OFP05W82Bg"),
                 NULL,
                 NULL,
                 NULL,
@@ -2539,6 +2571,8 @@ if (!is_null($events)) {
                     $replyData = new FlexMessageBuilder("Flex", $textGroup3, $quickReplySubGroup);
                 } else if ($userMessage == "คำถาม:กลุ่ม4") {
                     $replyData = new FlexMessageBuilder("Flex", $textGroup4, $quickReplySubGroup);
+                } else if ($userMessage == "คำถาม:กลุ่ม5") {
+                    $replyData = new FlexMessageBuilder("Flex", $textGroup5, $quickReplySubGroup);
                 }
                 // ----------------------------------------------------------------------------------------- Group
 

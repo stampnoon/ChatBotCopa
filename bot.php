@@ -210,7 +210,7 @@ $textBackToAddress = new MessageTemplateActionBuilder(
 );
 $textEditAddress = new MessageTemplateActionBuilder(
     'แก้ไขที่อยู่',
-    'ย้อนกลับAddress'
+    'แก้ไขที่อยู่'
 );
 
 // ----------------------------------------------------------------------------------------- Flex button 
@@ -2935,7 +2935,7 @@ if (!is_null($events)) {
 
                 else if (strstr($userMessage, "แจ้งเลขยูส") == true || strstr($userMessage, "แก้ไขเลขยูส") == true ) {
                     $replyData = new FlexMessageBuilder("Flex", $textGetUser, $quickReplyEditSlip);
-                } else if (strstr($userMessage, "user_") == true || strstr($userMessage, "User_") == true  || strstr($userMessage, "USER_") == true || $userMessage == "BAddress") {
+                } else if (strstr($userMessage, "user_") == true || strstr($userMessage, "User_") == true  || strstr($userMessage, "USER_") == true || $userMessage == "แก้ไขที่อยู่") {
                     //$replyData = new FlexMessageBuilder("Flex", $textToAddress, $quickReplyUser);
                     $replyData = new FlexMessageBuilder("Flex", $textAddress, $quickEditUser);
                 }

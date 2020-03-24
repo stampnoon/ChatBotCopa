@@ -1078,209 +1078,209 @@ Copa69 ขอขอบคุณที่ใช้บริการค่ะ....
     )
 );
 
-$textRegister1 = new BubbleContainerBuilder(
-    "ltr",
-    NULL,
-    NULL,
-    new BoxComponentBuilder(
-        "horizontal",
-        array(
-            new TextComponentBuilder(
-                "เช้คได้ไหมว่าเคยสมัครไปหรือยัง ?
-___________________________________
+// $textRegister1 = new BubbleContainerBuilder(
+//     "ltr",
+//     NULL,
+//     NULL,
+//     new BoxComponentBuilder(
+//         "horizontal",
+//         array(
+//             new TextComponentBuilder(
+//                 "เช้คได้ไหมว่าเคยสมัครไปหรือยัง ?
+// ___________________________________
 
-ส่งข้อมูลให้แอดมินตรวจสอบได้เลยนะ
-คะถ้าเคยเป็นสมาชิกแล้วแอดมินจะแจ้ง
-เลขยูสให้คะ
-___________________________________",
-                NULL,
-                NULL,
-                NULL,
-                NULL,
-                NULL,
-                true
-            )
-        )
-    ),
-    new BoxComponentBuilder(
-        "horizontal",
-        array(
-            new ButtonComponentBuilder(
-                new UriTemplateActionBuilder("ติดต่อแอดมิน", "https://line.me/R/ti/p/%40519uqyhc"),
-                NULL,
-                NULL,
-                NULL,
-                "primary"
-            )
-        )
-    )
-);
+// ส่งข้อมูลให้แอดมินตรวจสอบได้เลยนะ
+// คะถ้าเคยเป็นสมาชิกแล้วแอดมินจะแจ้ง
+// เลขยูสให้คะ
+// ___________________________________",
+//                 NULL,
+//                 NULL,
+//                 NULL,
+//                 NULL,
+//                 NULL,
+//                 true
+//             )
+//         )
+//     ),
+//     new BoxComponentBuilder(
+//         "horizontal",
+//         array(
+//             new ButtonComponentBuilder(
+//                 new UriTemplateActionBuilder("ติดต่อแอดมิน", "https://line.me/R/ti/p/%40519uqyhc"),
+//                 NULL,
+//                 NULL,
+//                 NULL,
+//                 "primary"
+//             )
+//         )
+//     )
+// );
 
-$textRegister3 = new BubbleContainerBuilder(
-    "ltr",
-    NULL,
-    NULL,
-    new BoxComponentBuilder(
-        "horizontal",
-        array(
-            new TextComponentBuilder(
-                "ถ้าเคยสมัครแล้ว แต่จะใช้บัญชีแฟน
-สมัครอีกได้ไหม 
-(แฟนนามสกุลเดียวกัน) ?
-___________________________________
+// $textRegister3 = new BubbleContainerBuilder(
+//     "ltr",
+//     NULL,
+//     NULL,
+//     new BoxComponentBuilder(
+//         "horizontal",
+//         array(
+//             new TextComponentBuilder(
+//                 "ถ้าเคยสมัครแล้ว แต่จะใช้บัญชีแฟน
+// สมัครอีกได้ไหม 
+// (แฟนนามสกุลเดียวกัน) ?
+// ___________________________________
 
-รอแอดมินตรวจสอบสักครู่นะคะ เสร็จ
-ได้คะพี่ขอแค่ชื่อคนสมัครกับชื่อบัญชี
-ที่ใช้โอนตรงกันและถ้าชื่อที่เคยสมัคร
-แล้วจะสมัครอีกไม่ได้ค่ะ
-___________________________________
+// รอแอดมินตรวจสอบสักครู่นะคะ เสร็จ
+// ได้คะพี่ขอแค่ชื่อคนสมัครกับชื่อบัญชี
+// ที่ใช้โอนตรงกันและถ้าชื่อที่เคยสมัคร
+// แล้วจะสมัครอีกไม่ได้ค่ะ
+// ___________________________________
 
-Copa69 ขอขอบคุณที่ใช้บริการค่ะ....",
-                NULL,
-                NULL,
-                "md",
-                NULL,
-                NULL,
-                true
-            )
-        )
-    )
-);
+// Copa69 ขอขอบคุณที่ใช้บริการค่ะ....",
+//                 NULL,
+//                 NULL,
+//                 "md",
+//                 NULL,
+//                 NULL,
+//                 true
+//             )
+//         )
+//     )
+// );
 
-$textRegister5 = new BubbleContainerBuilder(
-    "ltr",
-    NULL,
-    NULL,
-    new BoxComponentBuilder(
-        "horizontal",
-        array(
-            new TextComponentBuilder(
-                "เคยสมัครสมาชิกแล้วสมัครใหม่ได้มั้ย ?
-___________________________________
+// $textRegister5 = new BubbleContainerBuilder(
+//     "ltr",
+//     NULL,
+//     NULL,
+//     new BoxComponentBuilder(
+//         "horizontal",
+//         array(
+//             new TextComponentBuilder(
+//                 "เคยสมัครสมาชิกแล้วสมัครใหม่ได้มั้ย ?
+// ___________________________________
 
-ไม่ได้ค่ะเพราะ 1 ชื่อสามารถสมัคร
-ได้แค่ 1 ยูสเซอร์เท่านั้นค่ะ
-___________________________________
+// ไม่ได้ค่ะเพราะ 1 ชื่อสามารถสมัคร
+// ได้แค่ 1 ยูสเซอร์เท่านั้นค่ะ
+// ___________________________________
 
-Copa69 ขอขอบคุณที่ใช้บริการค่ะ....",
-                NULL,
-                NULL,
-                "md",
-                NULL,
-                NULL,
-                true
-            )
-        )
-    )
-);
+// Copa69 ขอขอบคุณที่ใช้บริการค่ะ....",
+//                 NULL,
+//                 NULL,
+//                 "md",
+//                 NULL,
+//                 NULL,
+//                 true
+//             )
+//         )
+//     )
+// );
 
-$textRegister2 = new BubbleContainerBuilder(
-    "ltr",
-    NULL,
-    NULL,
-    new BoxComponentBuilder(
-        "horizontal",
-        array(
-            new TextComponentBuilder(
-                "สมัครง่ายมั้ย ?
-___________________________________
+// $textRegister2 = new BubbleContainerBuilder(
+//     "ltr",
+//     NULL,
+//     NULL,
+//     new BoxComponentBuilder(
+//         "horizontal",
+//         array(
+//             new TextComponentBuilder(
+//                 "สมัครง่ายมั้ย ?
+// ___________________________________
 
-สมัครง่าย เล่นง่าย เล่นในมือถือได้
-ฝากถอนเงินได้ 24 ชม. เลยนะคะ
-___________________________________
+// สมัครง่าย เล่นง่าย เล่นในมือถือได้
+// ฝากถอนเงินได้ 24 ชม. เลยนะคะ
+// ___________________________________
 
-Copa69 ขอขอบคุณที่ใช้บริการค่ะ....",
-                NULL,
-                NULL,
-                "md",
-                NULL,
-                NULL,
-                true
-            )
-        )
-    )
-);
+// Copa69 ขอขอบคุณที่ใช้บริการค่ะ....",
+//                 NULL,
+//                 NULL,
+//                 "md",
+//                 NULL,
+//                 NULL,
+//                 true
+//             )
+//         )
+//     )
+// );
 
-$textRegister4 = new BubbleContainerBuilder(
-    "ltr",
-    NULL,
-    NULL,
-    new BoxComponentBuilder(
-        "horizontal",
-        array(
-            new TextComponentBuilder(
-                "สมัครขั้นต่ำเท่าไหร่ ?
-___________________________________
+// $textRegister4 = new BubbleContainerBuilder(
+//     "ltr",
+//     NULL,
+//     NULL,
+//     new BoxComponentBuilder(
+//         "horizontal",
+//         array(
+//             new TextComponentBuilder(
+//                 "สมัครขั้นต่ำเท่าไหร่ ?
+// ___________________________________
 
-เปิดยูสฝากครั้งแรก 200 บาท ค่ะ
-ฝากครั้งต่อไป 100 บาท ค่ะ
-___________________________________
+// เปิดยูสฝากครั้งแรก 200 บาท ค่ะ
+// ฝากครั้งต่อไป 100 บาท ค่ะ
+// ___________________________________
 
-Copa69 ขอขอบคุณที่ใช้บริการค่ะ....",
-                NULL,
-                NULL,
-                "md",
-                NULL,
-                NULL,
-                true
-            )
-        )
-    )
-);
+// Copa69 ขอขอบคุณที่ใช้บริการค่ะ....",
+//                 NULL,
+//                 NULL,
+//                 "md",
+//                 NULL,
+//                 NULL,
+//                 true
+//             )
+//         )
+//     )
+// );
 
-$textRegister6 = new BubbleContainerBuilder(
-    "ltr",
-    NULL,
-    NULL,
-    new BoxComponentBuilder(
-        "horizontal",
-        array(
-            new TextComponentBuilder(
-                "สมัครยังไง ?
-___________________________________
+// $textRegister6 = new BubbleContainerBuilder(
+//     "ltr",
+//     NULL,
+//     NULL,
+//     new BoxComponentBuilder(
+//         "horizontal",
+//         array(
+//             new TextComponentBuilder(
+//                 "สมัครยังไง ?
+// ___________________________________
 
-คลิกเมนูสมัครเพื่อสมัครสมาชิกค่ะ
-สมัครสมาชิกขั้นต่ำ 200 บาท 
-ได้รับโบโบนัสเพิ่ม 30% ค่ะ
-___________________________________
+// คลิกเมนูสมัครเพื่อสมัครสมาชิกค่ะ
+// สมัครสมาชิกขั้นต่ำ 200 บาท 
+// ได้รับโบโบนัสเพิ่ม 30% ค่ะ
+// ___________________________________
 
-Copa69 ขอขอบคุณที่ใช้บริการค่ะ....",
-                NULL,
-                NULL,
-                "md",
-                NULL,
-                NULL,
-                true
-            )
-        )
-    )
-);
+// Copa69 ขอขอบคุณที่ใช้บริการค่ะ....",
+//                 NULL,
+//                 NULL,
+//                 "md",
+//                 NULL,
+//                 NULL,
+//                 true
+//             )
+//         )
+//     )
+// );
 
-$textRegister7 = new BubbleContainerBuilder(
-    "ltr",
-    NULL,
-    NULL,
-    new BoxComponentBuilder(
-        "horizontal",
-        array(
-            new TextComponentBuilder(
-                "สมัคร100ได้มั้ย ?
-___________________________________
+// $textRegister7 = new BubbleContainerBuilder(
+//     "ltr",
+//     NULL,
+//     NULL,
+//     new BoxComponentBuilder(
+//         "horizontal",
+//         array(
+//             new TextComponentBuilder(
+//                 "สมัคร100ได้มั้ย ?
+// ___________________________________
 
-ได้คะ แต่ว่าจะไม่ได้รับโบนัส30%นะคะ
-___________________________________
+// ได้คะ แต่ว่าจะไม่ได้รับโบนัส30%นะคะ
+// ___________________________________
 
-Copa69 ขอขอบคุณที่ใช้บริการค่ะ....",
-                NULL,
-                NULL,
-                "md",
-                NULL,
-                NULL,
-                true
-            )
-        )
-    )
-);
+// Copa69 ขอขอบคุณที่ใช้บริการค่ะ....",
+//                 NULL,
+//                 NULL,
+//                 "md",
+//                 NULL,
+//                 NULL,
+//                 true
+//             )
+//         )
+//     )
+// );
 
 $textToAccount = new BubbleContainerBuilder(
     "ltr",
@@ -1312,68 +1312,68 @@ Copa69 ขอขอบคุณที่ใช้บริการค่ะ....
     )
 );
 
-$textAccount1 = new BubbleContainerBuilder(
-    "ltr",
-    NULL,
-    NULL,
-    new BoxComponentBuilder(
-        "horizontal",
-        array(
-            new TextComponentBuilder(
-                "ลืมเลขบันชีต้องทำยังไง ?
-___________________________________
+// $textAccount1 = new BubbleContainerBuilder(
+//     "ltr",
+//     NULL,
+//     NULL,
+//     new BoxComponentBuilder(
+//         "horizontal",
+//         array(
+//             new TextComponentBuilder(
+//                 "ลืมเลขบันชีต้องทำยังไง ?
+// ___________________________________
 
-คลิกลิ้งติดต่อขอเลขบัญชีกับแอดมินได้เลยค่ะ
-___________________________________",
-                NULL,
-                NULL,
-                NULL,
-                NULL,
-                NULL,
-                true
-            )
-        )
-    ),
-    new BoxComponentBuilder(
-        "horizontal",
-        array(
-            new ButtonComponentBuilder(
-                new UriTemplateActionBuilder("ติดต่อแอดมิน", "https://line.me/R/ti/p/%40519uqyhc"),
-                NULL,
-                NULL,
-                NULL,
-                "primary"
-            )
-        )
-    )
-);
+// คลิกลิ้งติดต่อขอเลขบัญชีกับแอดมินได้เลยค่ะ
+// ___________________________________",
+//                 NULL,
+//                 NULL,
+//                 NULL,
+//                 NULL,
+//                 NULL,
+//                 true
+//             )
+//         )
+//     ),
+//     new BoxComponentBuilder(
+//         "horizontal",
+//         array(
+//             new ButtonComponentBuilder(
+//                 new UriTemplateActionBuilder("ติดต่อแอดมิน", "https://line.me/R/ti/p/%40519uqyhc"),
+//                 NULL,
+//                 NULL,
+//                 NULL,
+//                 "primary"
+//             )
+//         )
+//     )
+// );
 
-$textAccount2 = new BubbleContainerBuilder(
-    "ltr",
-    NULL,
-    NULL,
-    new BoxComponentBuilder(
-        "horizontal",
-        array(
-            new TextComponentBuilder(
-                "ทำไมทำรายการฝากไม่ได้สักที ?
-___________________________________
+// $textAccount2 = new BubbleContainerBuilder(
+//     "ltr",
+//     NULL,
+//     NULL,
+//     new BoxComponentBuilder(
+//         "horizontal",
+//         array(
+//             new TextComponentBuilder(
+//                 "ทำไมทำรายการฝากไม่ได้สักที ?
+// ___________________________________
 
-กรอกข้อมูลให้ถูกต้องนะคะ ชื่อบัญชี
-ที่โอน เวลา และยอดเงิน 
-___________________________________
+// กรอกข้อมูลให้ถูกต้องนะคะ ชื่อบัญชี
+// ที่โอน เวลา และยอดเงิน 
+// ___________________________________
 
-Copa69 ขอขอบคุณที่ใช้บริการค่ะ....",
-                NULL,
-                NULL,
-                "md",
-                NULL,
-                NULL,
-                true
-            )
-        )
-    )
-);
+// Copa69 ขอขอบคุณที่ใช้บริการค่ะ....",
+//                 NULL,
+//                 NULL,
+//                 "md",
+//                 NULL,
+//                 NULL,
+//                 true
+//             )
+//         )
+//     )
+// );
 
 $textToWebsite = new BubbleContainerBuilder(
     "ltr",
@@ -2245,7 +2245,7 @@ $textDetailUser = new BubbleContainerBuilder(
             new TextComponentBuilder(
                 "กรอกชื่อและเบอร์โทรเพื่อติดต่อ
 *** กรุณานำหน้าประโยคด้วย เพิ่มเติม
-ตัวอย่าง: เพิ่มเติม กอ ดี 089XXXXXXX
+ตัวอย่าง: เพิ่มเติม นายเอ นามสม 0812345678
 ___________________________________
 
 Copa69 ขอขอบคุณที่ใช้บริการค่ะ....",
@@ -2837,96 +2837,96 @@ if (!is_null($events)) {
                 // ----------------------------------------------------------------------------------------- Deposit
                 // ----------------------------------------------------------------------------------------- Register
 
-                else if ($userMessage == "สมาชิก") {
-                    $imageRegister = 'https://www.pic2free.com/uploads/20200311/f660861d050ff2a1fe4aa8077b71aad6b18e463f.png?_ignore=';
-                    $replyData = new ImagemapMessageBuilder(
-                        $imageRegister,
-                        'member',
-                        new BaseSizeBuilder(620, 1040),
-                        array(
-                            new ImagemapMessageActionBuilder(
-                                'คำถาม:สมาชิก1',
-                                new AreaBuilder(5, 145, 512, 109)
-                            ),
-                            new ImagemapMessageActionBuilder(
-                                'คำถาม:สมาชิก2',
-                                new AreaBuilder(520, 147, 514, 105)
-                            ),
-                            new ImagemapMessageActionBuilder(
-                                'คำถาม:สมาชิก3',
-                                new AreaBuilder(5, 259, 511, 105)
-                            ),
-                            new ImagemapMessageActionBuilder(
-                                'คำถาม:สมาชิก4',
-                                new AreaBuilder(520, 259, 514, 104)
-                            ),
-                            new ImagemapMessageActionBuilder(
-                                'คำถาม:สมาชิก5',
-                                new AreaBuilder(5, 371, 511, 105)
-                            ),
-                            new ImagemapMessageActionBuilder(
-                                'คำถาม:สมาชิก6',
-                                new AreaBuilder(522, 369, 512, 106)
-                            ),
-                            new ImagemapMessageActionBuilder(
-                                'คำถาม:สมาชิก7',
-                                new AreaBuilder(6, 484, 509, 105)
-                            ),
-                            new ImagemapMessageActionBuilder(
-                                'ย้อนกลับQuestion',
-                                new AreaBuilder(521, 483, 511, 105)
-                            ),
-                        )
-                    );
-                } else if ($userMessage == "คำถาม:สมาชิก1") {
-                    $replyData = new FlexMessageBuilder("Flex", $textRegister1, $quickReplySubRegister);
-                } else if ($userMessage == "คำถาม:สมาชิก2") {
-                    $replyData = new FlexMessageBuilder("Flex", $textRegister2, $quickReplySubRegister);
-                } else if ($userMessage == "คำถาม:สมาชิก3") {
-                    $replyData = new FlexMessageBuilder("Flex", $textRegister3, $quickReplySubRegister);
-                } else if ($userMessage == "คำถาม:สมาชิก4") {
-                    $replyData = new FlexMessageBuilder("Flex", $textRegister4, $quickReplySubRegister);
-                } else if ($userMessage == "คำถาม:สมาชิก5") {
-                    $replyData = new FlexMessageBuilder("Flex", $textRegister5, $quickReplySubRegister);
-                } else if ($userMessage == "คำถาม:สมาชิก6") {
-                    $replyData = new FlexMessageBuilder("Flex", $textRegister6, $quickReplySubRegister);
-                } else if ($userMessage == "คำถาม:สมาชิก7") {
-                    $replyData = new FlexMessageBuilder("Flex", $textRegister7, $quickReplySubRegister);
-                }
+                // else if ($userMessage == "สมาชิก") {
+                //     $imageRegister = 'https://www.pic2free.com/uploads/20200311/f660861d050ff2a1fe4aa8077b71aad6b18e463f.png?_ignore=';
+                //     $replyData = new ImagemapMessageBuilder(
+                //         $imageRegister,
+                //         'member',
+                //         new BaseSizeBuilder(620, 1040),
+                //         array(
+                //             new ImagemapMessageActionBuilder(
+                //                 'คำถาม:สมาชิก1',
+                //                 new AreaBuilder(5, 145, 512, 109)
+                //             ),
+                //             new ImagemapMessageActionBuilder(
+                //                 'คำถาม:สมาชิก2',
+                //                 new AreaBuilder(520, 147, 514, 105)
+                //             ),
+                //             new ImagemapMessageActionBuilder(
+                //                 'คำถาม:สมาชิก3',
+                //                 new AreaBuilder(5, 259, 511, 105)
+                //             ),
+                //             new ImagemapMessageActionBuilder(
+                //                 'คำถาม:สมาชิก4',
+                //                 new AreaBuilder(520, 259, 514, 104)
+                //             ),
+                //             new ImagemapMessageActionBuilder(
+                //                 'คำถาม:สมาชิก5',
+                //                 new AreaBuilder(5, 371, 511, 105)
+                //             ),
+                //             new ImagemapMessageActionBuilder(
+                //                 'คำถาม:สมาชิก6',
+                //                 new AreaBuilder(522, 369, 512, 106)
+                //             ),
+                //             new ImagemapMessageActionBuilder(
+                //                 'คำถาม:สมาชิก7',
+                //                 new AreaBuilder(6, 484, 509, 105)
+                //             ),
+                //             new ImagemapMessageActionBuilder(
+                //                 'ย้อนกลับQuestion',
+                //                 new AreaBuilder(521, 483, 511, 105)
+                //             ),
+                //         )
+                //     );
+                // } else if ($userMessage == "คำถาม:สมาชิก1") {
+                //     $replyData = new FlexMessageBuilder("Flex", $textRegister1, $quickReplySubRegister);
+                // } else if ($userMessage == "คำถาม:สมาชิก2") {
+                //     $replyData = new FlexMessageBuilder("Flex", $textRegister2, $quickReplySubRegister);
+                // } else if ($userMessage == "คำถาม:สมาชิก3") {
+                //     $replyData = new FlexMessageBuilder("Flex", $textRegister3, $quickReplySubRegister);
+                // } else if ($userMessage == "คำถาม:สมาชิก4") {
+                //     $replyData = new FlexMessageBuilder("Flex", $textRegister4, $quickReplySubRegister);
+                // } else if ($userMessage == "คำถาม:สมาชิก5") {
+                //     $replyData = new FlexMessageBuilder("Flex", $textRegister5, $quickReplySubRegister);
+                // } else if ($userMessage == "คำถาม:สมาชิก6") {
+                //     $replyData = new FlexMessageBuilder("Flex", $textRegister6, $quickReplySubRegister);
+                // } else if ($userMessage == "คำถาม:สมาชิก7") {
+                //     $replyData = new FlexMessageBuilder("Flex", $textRegister7, $quickReplySubRegister);
+                // }
 
                 // ----------------------------------------------------------------------------------------- Register
                 // ----------------------------------------------------------------------------------------- Account
 
-                else if ($userMessage == "บัญชี") {
-                    $imageAccount = 'https://www.pic2free.com/uploads/20200311/49668c2cca3199378b55cb85518433c4c8471dd4.png?_ignore=';
-                    $replyData = new ImagemapMessageBuilder(
-                        $imageAccount,
-                        'account',
-                        new BaseSizeBuilder(400, 1040),
-                        array(
-                            new ImagemapMessageActionBuilder(
-                                'คำถาม:บัญชี1',
-                                new AreaBuilder(5, 144, 511, 108)
-                            ),
-                            new ImagemapMessageActionBuilder(
-                                'คำถาม:บัญชี2',
-                                new AreaBuilder(521, 143, 512, 110)
-                            ),
-                            new ImagemapMessageActionBuilder(
-                                'ย้อนกลับQuestion',
-                                new AreaBuilder(4, 257, 514, 106)
-                            ),
-                            new ImagemapMessageActionBuilder(
-                                'ย้อนกลับMain',
-                                new AreaBuilder(521, 259, 511, 104)
-                            ),
-                        )
-                    );
-                } else if ($userMessage == "คำถาม:บัญชี1") {
-                    $replyData = new FlexMessageBuilder("Flex", $textAccount1, $quickReplySubAccount);
-                } else if ($userMessage == "คำถาม:บัญชี2") {
-                    $replyData = new FlexMessageBuilder("Flex", $textAccount2, $quickReplySubAccount);
-                }
+                // else if ($userMessage == "บัญชี") {
+                //     $imageAccount = 'https://www.pic2free.com/uploads/20200311/49668c2cca3199378b55cb85518433c4c8471dd4.png?_ignore=';
+                //     $replyData = new ImagemapMessageBuilder(
+                //         $imageAccount,
+                //         'account',
+                //         new BaseSizeBuilder(400, 1040),
+                //         array(
+                //             new ImagemapMessageActionBuilder(
+                //                 'คำถาม:บัญชี1',
+                //                 new AreaBuilder(5, 144, 511, 108)
+                //             ),
+                //             new ImagemapMessageActionBuilder(
+                //                 'คำถาม:บัญชี2',
+                //                 new AreaBuilder(521, 143, 512, 110)
+                //             ),
+                //             new ImagemapMessageActionBuilder(
+                //                 'ย้อนกลับQuestion',
+                //                 new AreaBuilder(4, 257, 514, 106)
+                //             ),
+                //             new ImagemapMessageActionBuilder(
+                //                 'ย้อนกลับMain',
+                //                 new AreaBuilder(521, 259, 511, 104)
+                //             ),
+                //         )
+                //     );
+                // } else if ($userMessage == "คำถาม:บัญชี1") {
+                //     $replyData = new FlexMessageBuilder("Flex", $textAccount1, $quickReplySubAccount);
+                // } else if ($userMessage == "คำถาม:บัญชี2") {
+                //     $replyData = new FlexMessageBuilder("Flex", $textAccount2, $quickReplySubAccount);
+                // }
 
                 // ----------------------------------------------------------------------------------------- Account
 

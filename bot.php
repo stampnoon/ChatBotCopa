@@ -2348,13 +2348,21 @@ if (!is_null($events)) {
                                 new AreaBuilder(523, 157, 515, 108)
                             ),
                             new ImagemapMessageActionBuilder(
-                                'สมาชิก',
+                                'สอบถามเพิ่มเติม',
                                 new AreaBuilder(523, 266, 515, 108)
                             ),
                             new ImagemapMessageActionBuilder(
-                                'บัญชี',
+                                'ย้อนกลับMain',
                                 new AreaBuilder(523, 379, 515, 108)
                             ),
+                            // new ImagemapMessageActionBuilder(
+                            //     'บัญชี',
+                            //     new AreaBuilder(523, 379, 515, 108)
+                            // ),
+                            // new ImagemapMessageActionBuilder(
+                            //     'สมาชิก',
+                            //     new AreaBuilder(523, 266, 515, 108)
+                            // ),
                             // new ImagemapMessageActionBuilder(
                             //     'ฝาก',
                             //     new AreaBuilder(4, 377, 515, 108)
@@ -2371,6 +2379,43 @@ if (!is_null($events)) {
                         $quickReplyMain
                     );
                 }
+                //------------------------------------------------------------------------------------------ สอบถามเพิ่มเติม
+
+                else if ($userMessage == "สอบถามเพิ่มเติม") {
+                    $imagePromotion = 'https://i.ibb.co/GF6dMvw/q-other.jpg?_ignore=';
+                    $replyData = new ImagemapMessageBuilder(
+                        $imagePromotion,
+                        'Other',
+                        new BaseSizeBuilder(610, 1040),
+                        array(
+                            new ImagemapMessageActionBuilder(
+                                'เทิร์น',
+                                new AreaBuilder(5, 145, 513, 108)
+                            ),
+                            new ImagemapMessageActionBuilder(
+                                'ย้อนกลับQuestion',
+                                new AreaBuilder(5, 255, 513, 108)
+                            ),
+                            new ImagemapMessageActionBuilder(
+                                'คำถาม:โปรโมชั่น2',
+                                new AreaBuilder(523, 145, 513, 108)
+                            ),
+                            new ImagemapMessageActionBuilder(
+                                'ย้อนกลับMain',
+                                new AreaBuilder(523, 255, 513, 108)
+                            ),
+                            // new ImagemapMessageActionBuilder(
+                            //     'คำถาม:โปรโมชั่น3',
+                            //     new AreaBuilder(5, 370, 513, 108)
+                            // ),
+                            // new ImagemapMessageActionBuilder(
+                            //     'คำถาม:โปรโมชั่น4',
+                            //     new AreaBuilder(524, 370, 509, 108)
+                            // ),
+                        )
+                    );
+                }
+
                 // ----------------------------------------------------------------------------------------- Promotion
 
                 else if ($userMessage == "โปรโมชั่น") {

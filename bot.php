@@ -458,7 +458,7 @@ $textOther1 = new BubbleContainerBuilder(
         "horizontal",
         array(
             new TextComponentBuilder(
-                "ทาเทิร์นเท่าไหร่
+                "ทำเทิร์นเท่าไหร่
 
 - การสมัครครั้งแรกต้องมียอดเล่น 1.5 เท่าของยอดสมัคร สมมุติ พี่ฝากมา 500 บาทต้องมียอดเล่นให้เท่ากับ 750 หรือมากกว่า ถึงจะถอนได้ค่ะ ไม่นับรวมยอดค้างเล่น
 
@@ -482,9 +482,9 @@ $textOther2 = new BubbleContainerBuilder(
         "horizontal",
         array(
             new TextComponentBuilder(
-                "ฝาก-ถอนขั้นต่า
+                "ฝาก-ถอนขั้นต่ำ
 
-ฝาก-ถอนข้าต่าเริ่มต้นที่ 100 ค่ะ",
+ฝาก-ถอนข้าต่ำเริ่มต้นที่ 100 ค่ะ",
                 NULL,
                 NULL,
                 "md",
@@ -506,7 +506,7 @@ $textOther3 = new BubbleContainerBuilder(
             new TextComponentBuilder(
                 "ถอนได้กี่ครั้งต่อ 1 วัน
 
-ไม่จากัดจานวนครั้งค่ะ",
+ไม่จำกัดจานวนครั้งค่ะ",
                 NULL,
                 NULL,
                 "md",
@@ -2513,11 +2513,11 @@ if (!is_null($events)) {
                 } else if ($userMessage == "คำถาม:เพิ่มเติม2") {
                     $replyData = new FlexMessageBuilder("Turn", $textOther2, $quickReplyOtherQuestion);
                 } else if ($userMessage == "คำถาม:เพิ่มเติม3") {
-                    $replyData = new FlexMessageBuilder("Turn", $textOther2, $quickReplyOtherQuestion);
+                    $replyData = new FlexMessageBuilder("Turn", $textOther3, $quickReplyOtherQuestion);
                 } else if ($userMessage == "คำถาม:เพิ่มเติม4") {
-                    $replyData = new FlexMessageBuilder("Turn", $textOther2, $quickReplyOtherQuestion);
+                    $replyData = new FlexMessageBuilder("Turn", $textOther4, $quickReplyOtherQuestion);
                 } else if ($userMessage == "คำถาม:เพิ่มเติม5") {
-                    $replyData = new FlexMessageBuilder("Turn", $textOther2, $quickReplyOtherQuestion);
+                    $replyData = new FlexMessageBuilder("Turn", $textOther5, $quickReplyOtherQuestion);
                 }
 
                 // ----------------------------------------------------------------------------------------- Promotion

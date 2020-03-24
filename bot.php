@@ -2542,55 +2542,50 @@ if (!is_null($events)) {
                         )
                     );
                 } else if ($userMessage == "คำถาม:โปรโมชั่น1") {
-                    //$replyData = new FlexMessageBuilder("Flex", $textPromotion2, $quickReplySubPromotion);
-                    $replyData = new ImagemapMessageBuilder(
-                        'https://i.ibb.co/Dg7r1Rp/Npromotion.jpg?_ignore=',
-                        'register',
-                        new BaseSizeBuilder(1040, 1040),
-                        array(
-                            new ImagemapMessageActionBuilder(
-                                'โปร1000บาท',
-                                new AreaBuilder(11, 91, 1020, 232)
-                            ),
-                            new ImagemapMessageActionBuilder(
-                                'โปร500บาท',
-                                new AreaBuilder(11, 329, 1020, 232)
-                            ),
-                            new ImagemapMessageActionBuilder(
-                                'โปร300บาท',
-                                new AreaBuilder(11, 561, 1020, 232)
-                            ),
-                            new ImagemapMessageActionBuilder(
-                                'โปร200บาท',
-                                new AreaBuilder(11, 800, 1020, 232)
-                            ),
-                        ),
-                        $quickReplySubPromotion
-                    );
+                    $replyData = new FlexMessageBuilder("Flex", $textPromotion1, $quickReplySubPromotion);
+                    // $replyData = new ImagemapMessageBuilder(
+                    //     'https://i.ibb.co/Dg7r1Rp/Npromotion.jpg?_ignore=',
+                    //     'register',
+                    //     new BaseSizeBuilder(1040, 1040),
+                    //     array(
+                    //         new ImagemapMessageActionBuilder(
+                    //             'โปร1000บาท',
+                    //             new AreaBuilder(11, 91, 1020, 232)
+                    //         ),
+                    //         new ImagemapMessageActionBuilder(
+                    //             'โปร500บาท',
+                    //             new AreaBuilder(11, 329, 1020, 232)
+                    //         ),
+                    //         new ImagemapMessageActionBuilder(
+                    //             'โปร300บาท',
+                    //             new AreaBuilder(11, 561, 1020, 232)
+                    //         ),
+                    //         new ImagemapMessageActionBuilder(
+                    //             'โปร200บาท',
+                    //             new AreaBuilder(11, 800, 1020, 232)
+                    //         ),
+                    //     ),
+                    //     $quickReplySubPromotion
+                    // );
                 } else if ($userMessage == "คำถาม:โปรโมชั่น2" || $userMessage == "โปรโมชั่น18+") {
-                    //$replyData = new FlexMessageBuilder("Flex", $textPromotion1, $quickReplySubPromotion);
-                    $replyData = new ImagemapMessageBuilder(
-                        'https://i.ibb.co/kMgHs2J/Ads.jpg?_ignore=',
-                        '18+',
-                        new BaseSizeBuilder(1040, 1040),
-                        array(
-                            // new ImagemapMessageActionBuilder(
-                            //     'เข้ากลุ่ม',
-                            //     new AreaBuilder(344, 898, 345, 83)
-                            // ), 
-                            new ImagemapUriActionBuilder(
-                                'https://line.me/R/ti/p/%40519uqyhc',
-                                new AreaBuilder(344, 898, 345, 83)
-                            )
-                        ),
-                        $quickReplySubPromotion
-                    );
+                    $replyData = new FlexMessageBuilder("Flex", $textPromotion2, $quickReplySubPromotion);
+                    // $replyData = new ImagemapMessageBuilder(
+                    //     'https://i.ibb.co/kMgHs2J/Ads.jpg?_ignore=',
+                    //     '18+',
+                    //     new BaseSizeBuilder(1040, 1040),
+                    //     array(
+                    //         // new ImagemapMessageActionBuilder(
+                    //         //     'เข้ากลุ่ม',
+                    //         //     new AreaBuilder(344, 898, 345, 83)
+                    //         // ), 
+                    //         // new ImagemapUriActionBuilder(
+                    //         //     'https://line.me/R/ti/p/%40519uqyhc',
+                    //         //     new AreaBuilder(344, 898, 345, 83)
+                    //         // )
+                    //     ),
+                    //     $quickReplySubPromotion
+                    // );
                 }
-                // else if ($userMessage == "คำถาม:โปรโมชั่น3") {
-                //     $replyData = new FlexMessageBuilder("Flex", $textPromotion3, $quickReplySubPromotion);
-                // } else if ($userMessage == "คำถาม:โปรโมชั่น4") {
-                //     $replyData = new FlexMessageBuilder("Flex", $textPromotion4, $quickReplySubPromotion);
-                // }
 
                 // ----------------------------------------------------------------------------------------- Website
 

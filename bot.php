@@ -184,6 +184,10 @@ $textBackWebsite = new MessageTemplateActionBuilder(
     'ย้อนกลับ',
     'เว็บไซต์'
 );
+$textBackProblem = new MessageTemplateActionBuilder(
+    'ย้อนกลับ',
+    'แจ้งปัญหา'
+);
 $textAddress = new MessageTemplateActionBuilder(
     'กรอกที่อยู่',
     'ต้องการ'
@@ -322,6 +326,14 @@ $quickReplySubAccount = new QuickReplyMessageBuilder(
 $quickReplySubWebsite = new QuickReplyMessageBuilder(
     array(
         new QuickReplyButtonBuilder($textBackWebsite),
+        new QuickReplyButtonBuilder($textReplyToQuestion),
+        new QuickReplyButtonBuilder($textReplyToRegister),
+        new QuickReplyButtonBuilder($textReplyToContact)
+    )
+);
+$quickReplyProblem = new QuickReplyMessageBuilder(
+    array(
+        new QuickReplyButtonBuilder($textBackProblem),
         new QuickReplyButtonBuilder($textReplyToQuestion),
         new QuickReplyButtonBuilder($textReplyToRegister),
         new QuickReplyButtonBuilder($textReplyToContact)

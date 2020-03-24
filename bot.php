@@ -372,6 +372,11 @@ $quickReplyUser = new QuickReplyMessageBuilder(
         new QuickReplyButtonBuilder($textEditUser),
     )
 );
+$quickEditUser = new QuickReplyMessageBuilder(
+    array(
+        new QuickReplyButtonBuilder($textEditUser),
+    )
+);
 $quickReplyAddress = new QuickReplyMessageBuilder(
     array(
         new QuickReplyButtonBuilder($textBackToAddress),
@@ -2929,7 +2934,7 @@ if (!is_null($events)) {
                     $replyData = new FlexMessageBuilder("Flex", $textGetUser, $quickReplyEditSlip);
                 } else if (strstr($userMessage, "user_") == true || strstr($userMessage, "User_") == true  || strstr($userMessage, "USER_") == true || $userMessage == "BAddress") {
                     //$replyData = new FlexMessageBuilder("Flex", $textToAddress, $quickReplyUser);
-                    $replyData = new FlexMessageBuilder("Flex", $textAddress, $quickReplyAddress);
+                    $replyData = new FlexMessageBuilder("Flex", $textAddress, $quickEditUser);
                 }
                 // else if ($userMessage == "ไม่ต้องการ") {
                 //     $replyData = new FlexMessageBuilder("Flex", $textNotAddress, $quickReplyMain);

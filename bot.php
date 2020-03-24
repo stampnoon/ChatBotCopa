@@ -650,6 +650,42 @@ $textGroup2 = new BubbleContainerBuilder(
         "horizontal",
         array(
             new TextComponentBuilder(
+                "มีกลุ่มวิเคราะบอลด้วยมั้ย ?
+___________________________________
+
+กลุ่มวิเคราะบอล คลิ้กเข้าลิ้งเลยนะคะ
+___________________________________",
+                NULL,
+                NULL,
+                NULL,
+                NULL,
+                NULL,
+                true
+            )
+        )
+    ),
+    new BoxComponentBuilder(
+        "horizontal",
+        array(
+            new ButtonComponentBuilder(
+                new UriTemplateActionBuilder("วิเคราะห์บอล", "https://line.me/ti/g2/fbDC6OmeUzJua6pFerS7"),
+                NULL,
+                NULL,
+                NULL,
+                "primary"
+            )
+        )
+    )
+);
+
+$textGroup3 = new BubbleContainerBuilder(
+    "ltr",
+    NULL,
+    NULL,
+    new BoxComponentBuilder(
+        "horizontal",
+        array(
+            new TextComponentBuilder(
                 "เล่นบาคาร่ายังไง ?
 ___________________________________
 
@@ -678,41 +714,6 @@ ___________________________________",
     )
 );
 
-$textGroup3 = new BubbleContainerBuilder(
-    "ltr",
-    NULL,
-    NULL,
-    new BoxComponentBuilder(
-        "horizontal",
-        array(
-            new TextComponentBuilder(
-                "มีกลุ่มวิเคราะบอลด้วยมั้ย ?
-___________________________________
-
-กลุ่มวิเคราะบอล คลิ้กเข้าลิ้งเลยนะคะ
-___________________________________",
-                NULL,
-                NULL,
-                NULL,
-                NULL,
-                NULL,
-                true
-            )
-        )
-    ),
-    new BoxComponentBuilder(
-        "horizontal",
-        array(
-            new ButtonComponentBuilder(
-                new UriTemplateActionBuilder("วิเคราะห์บอล", "https://line.me/ti/g2/fbDC6OmeUzJua6pFerS7"),
-                NULL,
-                NULL,
-                NULL,
-                "primary"
-            )
-        )
-    )
-);
 
 $textGroup4 = new BubbleContainerBuilder(
     "ltr",
@@ -1384,9 +1385,9 @@ $textProblem2 = new BubbleContainerBuilder(
         "horizontal",
         array(
             new TextComponentBuilder(
-                "ลืม Username
+                "เช็คว่าเคยสมัครไปหรือยัง ?
 
-- สามารถแจ้งขอ User ใหม่ได้ค่ะ คลิกที่ลิงค์ได้เลยค่ะ
+สามารถตรวจสอบเช็คได้ที่แอดมิน คลิกที่ลิงค์ได้เลยค่ะ
 ___________________________________",
                 NULL,
                 NULL,
@@ -1419,9 +1420,9 @@ $textProblem3 = new BubbleContainerBuilder(
         "horizontal",
         array(
             new TextComponentBuilder(
-                "เช็คว่าเคยสมัครไปหรือยัง ?
+                "ลืม Username
 
-สามารถตรวจสอบเช็คได้ที่แอดมิน คลิกที่ลิงค์ได้เลยค่ะ
+- สามารถแจ้งขอ User ใหม่ได้ค่ะ คลิกที่ลิงค์ได้เลยค่ะ
 ___________________________________",
                 NULL,
                 NULL,
@@ -1445,6 +1446,7 @@ ___________________________________",
         )
     )
 );
+
 
 $textDetailPromotion1 = new BubbleContainerBuilder(
     "ltr",
@@ -2504,11 +2506,11 @@ if (!is_null($events)) {
                                 new AreaBuilder(4, 151, 513, 108)
                             ),
                             new ImagemapMessageActionBuilder(
-                                'คำถาม:กลุ่ม2',
+                                'คำถาม:กลุ่ม3',
                                 new AreaBuilder(4, 262, 513, 108)
                             ),
                             new ImagemapMessageActionBuilder(
-                                'คำถาม:กลุ่ม3',
+                                'คำถาม:กลุ่ม5',
                                 new AreaBuilder(4, 373, 513, 108)
                             ),
                             new ImagemapMessageActionBuilder(
@@ -2516,11 +2518,11 @@ if (!is_null($events)) {
                                 new AreaBuilder(4, 488, 513, 108)
                             ),
                             new ImagemapMessageActionBuilder(
-                                'คำถาม:กลุ่ม4',
+                                'คำถาม:กลุ่ม2',
                                 new AreaBuilder(522, 151, 513, 108)
                             ),
                             new ImagemapMessageActionBuilder(
-                                'คำถาม:กลุ่ม5',
+                                'คำถาม:กลุ่ม4',
                                 new AreaBuilder(522, 262, 513, 108)
                             ),
                             new ImagemapMessageActionBuilder(

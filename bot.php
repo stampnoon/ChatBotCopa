@@ -2467,7 +2467,7 @@ if (!is_null($events)) {
                                 new AreaBuilder(4, 149, 515, 108)
                             ),
                             new ImagemapMessageActionBuilder(
-                                'คำถาม:ปัญหา2',
+                                'คำถาม:ปัญหา3',
                                 new AreaBuilder(4, 262, 515, 108)
                             ),
                             new ImagemapMessageActionBuilder(
@@ -2475,7 +2475,7 @@ if (!is_null($events)) {
                                 new AreaBuilder(4, 373, 515, 108)
                             ),
                             new ImagemapMessageActionBuilder(
-                                'คำถาม:ปัญหา3',
+                                'คำถาม:ปัญหา2',
                                 new AreaBuilder(523, 149, 515, 108)
                             ),
                             new ImagemapMessageActionBuilder(

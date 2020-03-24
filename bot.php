@@ -2982,7 +2982,7 @@ if (!is_null($events)) {
                     $textReplyMessage = $profile['displayName']; //can get 'displayName', 'userId', 'pictureUrl', 'statusMessage'
                     //$replyData = new TextMessageBuilder($textReplyMessage);
                     $replyData = new TextMessageBuilder('test') + new ImagemapMessageBuilder(
-                        $imageMapUrl,
+                        'https://i.ibb.co/Dg7r1Rp/Npromotion.jpg?_ignore=',
                         'register',
                         new BaseSizeBuilder(1040, 1040),
                         array(

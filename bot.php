@@ -615,10 +615,9 @@ $textGroup1 = new BubbleContainerBuilder(
         "horizontal",
         array(
             new TextComponentBuilder(
-                "มีสูตรโกงบาคาร่าให้มั้ย ?
-___________________________________
+                "สูตรโกงบาคาร่า
 
-มีค่ะ แจ้งยูส+สลิปการโอน นะคะ
+- แจ้ง Username และสลิปการโอน
 ___________________________________",
                 NULL,
                 NULL,
@@ -633,43 +632,7 @@ ___________________________________",
         "horizontal",
         array(
             new ButtonComponentBuilder(
-                new UriTemplateActionBuilder("สูตรบาคาร่า", "https://www.google.com/?hl=th"),
-                NULL,
-                NULL,
-                NULL,
-                "primary"
-            )
-        )
-    )
-);
-
-$textGroup3 = new BubbleContainerBuilder(
-    "ltr",
-    NULL,
-    NULL,
-    new BoxComponentBuilder(
-        "horizontal",
-        array(
-            new TextComponentBuilder(
-                "มีกลุ่มวิเคราะบอลด้วยมั้ย ?
-___________________________________
-
-กลุ่มวิเคราะบอล คลิ้กเข้าลิ้งเลยนะคะ
-___________________________________",
-                NULL,
-                NULL,
-                NULL,
-                NULL,
-                NULL,
-                true
-            )
-        )
-    ),
-    new BoxComponentBuilder(
-        "horizontal",
-        array(
-            new ButtonComponentBuilder(
-                new UriTemplateActionBuilder("วิเคราะห์บอล", "https://line.me/ti/g2/fbDC6OmeUzJua6pFerS7"),
+                new UriTemplateActionBuilder("สูตรบาคาร่า", "http://line.me/ti/p/@tong8"),
                 NULL,
                 NULL,
                 NULL,
@@ -706,6 +669,42 @@ ___________________________________",
         array(
             new ButtonComponentBuilder(
                 new UriTemplateActionBuilder("การเล่นบาคาร่า", "https://youtu.be/8O8M8R2Kffg"),
+                NULL,
+                NULL,
+                NULL,
+                "primary"
+            )
+        )
+    )
+);
+
+$textGroup3 = new BubbleContainerBuilder(
+    "ltr",
+    NULL,
+    NULL,
+    new BoxComponentBuilder(
+        "horizontal",
+        array(
+            new TextComponentBuilder(
+                "มีกลุ่มวิเคราะบอลด้วยมั้ย ?
+___________________________________
+
+กลุ่มวิเคราะบอล คลิ้กเข้าลิ้งเลยนะคะ
+___________________________________",
+                NULL,
+                NULL,
+                NULL,
+                NULL,
+                NULL,
+                true
+            )
+        )
+    ),
+    new BoxComponentBuilder(
+        "horizontal",
+        array(
+            new ButtonComponentBuilder(
+                new UriTemplateActionBuilder("วิเคราะห์บอล", "https://line.me/ti/g2/fbDC6OmeUzJua6pFerS7"),
                 NULL,
                 NULL,
                 NULL,
@@ -2311,7 +2310,7 @@ if (!is_null($events)) {
                                 new AreaBuilder(4, 377, 515, 108)
                             ),
                             new ImagemapMessageActionBuilder(
-                                'ฝาก',
+                                'กลุ่ม',
                                 new AreaBuilder(523, 157, 515, 108)
                             ),
                             new ImagemapMessageActionBuilder(
@@ -2323,7 +2322,7 @@ if (!is_null($events)) {
                                 new AreaBuilder(523, 379, 515, 108)
                             ),
                             // new ImagemapMessageActionBuilder(
-                            //     'กลุ่ม',
+                            //     'ฝาก',
                             //     new AreaBuilder(4, 377, 515, 108)
                             // ),
                             // new ImagemapMessageActionBuilder(
@@ -2491,8 +2490,57 @@ if (!is_null($events)) {
                     $replyData = new FlexMessageBuilder("Problem3", $textProblem3, $quickReplyProblem);
                 }
 
-                // ----------------------------------------------------------------------------------------- Promotion
+                // ----------------------------------------------------------------------------------------- Group
 
+                else if ($userMessage == "กลุ่ม") {
+                    $imageGroup = 'https://i.ibb.co/3SgJB2J/q-group.jpg?_ignore=';
+                    $replyData = new ImagemapMessageBuilder(
+                        $imageGroup,
+                        'group',
+                        new BaseSizeBuilder(610, 1040),
+                        array(
+                            new ImagemapMessageActionBuilder(
+                                'คำถาม:กลุ่ม1',
+                                new AreaBuilder(4, 151, 513, 108)
+                            ),
+                            new ImagemapMessageActionBuilder(
+                                'คำถาม:กลุ่ม2',
+                                new AreaBuilder(4, 262, 513, 108)
+                            ),
+                            new ImagemapMessageActionBuilder(
+                                'คำถาม:กลุ่ม3',
+                                new AreaBuilder(4, 373, 513, 108)
+                            ),
+                            new ImagemapMessageActionBuilder(
+                                'ย้อนกลับQuestion',
+                                new AreaBuilder(4, 488, 513, 108)
+                            ),
+                            new ImagemapMessageActionBuilder(
+                                'คำถาม:กลุ่ม4',
+                                new AreaBuilder(522, 151, 513, 108)
+                            ),
+                            new ImagemapMessageActionBuilder(
+                                'คำถาม:กลุ่ม5',
+                                new AreaBuilder(522, 262, 513, 108)
+                            ),
+                            new ImagemapMessageActionBuilder(
+                                'ย้อนกลับMain',
+                                new AreaBuilder(522, 377, 513, 108)
+                            ),
+                        )
+                    );
+                } else if ($userMessage == "คำถาม:กลุ่ม1") {
+                    $replyData = new FlexMessageBuilder("Flex", $textGroup1, $quickReplySubGroup);
+                } else if ($userMessage == "คำถาม:กลุ่ม2") {
+                    $replyData = new FlexMessageBuilder("Flex", $textGroup2, $quickReplySubGroup);
+                } else if ($userMessage == "คำถาม:กลุ่ม3") {
+                    $replyData = new FlexMessageBuilder("Flex", $textGroup3, $quickReplySubGroup);
+                } else if ($userMessage == "คำถาม:กลุ่ม4") {
+                    $replyData = new FlexMessageBuilder("Flex", $textGroup4, $quickReplySubGroup);
+                }
+                // ----------------------------------------------------------------------------------------- Group
+
+                // ----------------------------------------------------------------------------------------- Promotion
                 else if ($userMessage == "สมัคร") {
                     //$imageMapUrl = 'https://www.pic2free.com/uploads/20200319/22aff7616945ae9b1c4079d4501507b60a7b701a.jpg?_ignore=';
                     $imageMapUrl = 'https://i.ibb.co/Dg7r1Rp/Npromotion.jpg?_ignore=';
@@ -2594,51 +2642,6 @@ if (!is_null($events)) {
                 // }
 
                 // ----------------------------------------------------------------------------------------- Recommend
-                // ----------------------------------------------------------------------------------------- Group
-
-                else if ($userMessage == "กลุ่ม") {
-                    $imageGroup = 'https://www.pic2free.com/uploads/20200311/2ef615a9e4074c39eeb4dd0002e34113d260a7f6.png?_ignore=';
-                    $replyData = new ImagemapMessageBuilder(
-                        $imageGroup,
-                        'group',
-                        new BaseSizeBuilder(500, 1040),
-                        array(
-                            new ImagemapMessageActionBuilder(
-                                'คำถาม:กลุ่ม1',
-                                new AreaBuilder(6, 146, 510, 107)
-                            ),
-                            new ImagemapMessageActionBuilder(
-                                'คำถาม:กลุ่ม2',
-                                new AreaBuilder(523, 146, 511, 105)
-                            ),
-                            new ImagemapMessageActionBuilder(
-                                'คำถาม:กลุ่ม3',
-                                new AreaBuilder(5, 259, 510, 106)
-                            ),
-                            new ImagemapMessageActionBuilder(
-                                'คำถาม:กลุ่ม4',
-                                new AreaBuilder(522, 256, 514, 104)
-                            ),
-                            new ImagemapMessageActionBuilder(
-                                'ย้อนกลับQuestion',
-                                new AreaBuilder(4, 371, 512, 106)
-                            ),
-                            new ImagemapMessageActionBuilder(
-                                'ย้อนกลับMain',
-                                new AreaBuilder(523, 371, 510, 104)
-                            ),
-                        )
-                    );
-                } else if ($userMessage == "คำถาม:กลุ่ม1") {
-                    $replyData = new FlexMessageBuilder("Flex", $textGroup1, $quickReplySubGroup);
-                } else if ($userMessage == "คำถาม:กลุ่ม2") {
-                    $replyData = new FlexMessageBuilder("Flex", $textGroup2, $quickReplySubGroup);
-                } else if ($userMessage == "คำถาม:กลุ่ม3") {
-                    $replyData = new FlexMessageBuilder("Flex", $textGroup3, $quickReplySubGroup);
-                } else if ($userMessage == "คำถาม:กลุ่ม4") {
-                    $replyData = new FlexMessageBuilder("Flex", $textGroup4, $quickReplySubGroup);
-                }
-                // ----------------------------------------------------------------------------------------- Group
                 // ----------------------------------------------------------------------------------------- Deposit
 
                 else if ($userMessage == "ฝาก") {

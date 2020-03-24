@@ -2218,9 +2218,7 @@ $textAddress = new BubbleContainerBuilder(
 
 ตัวอย่าง: ที่อยู่ 148 หมู่1 ต.ตำบล
 อ.อำเภอ จ.จังหวัด 16589
-___________________________________
-
-Copa69 ขอขอบคุณที่ใช้บริการค่ะ....",
+___________________________________",
                 NULL,
                 NULL,
                 "md",
@@ -2930,7 +2928,8 @@ if (!is_null($events)) {
                 else if (strstr($userMessage, "แจ้งเลขยูส") == true) {
                     $replyData = new FlexMessageBuilder("Flex", $textGetUser, $quickReplyEditSlip);
                 } else if (strstr($userMessage, "user_") == true || strstr($userMessage, "User_") == true  || strstr($userMessage, "USER_") == true || $userMessage == "BAddress") {
-                    $replyData = new FlexMessageBuilder("Flex", $textToAddress, $quickReplyUser);
+                    //$replyData = new FlexMessageBuilder("Flex", $textToAddress, $quickReplyUser);
+                    $replyData = new FlexMessageBuilder("Flex", $textAddress, $quickReplyAddress);
                 } else if ($userMessage == "ไม่ต้องการ") {
                     $replyData = new FlexMessageBuilder("Flex", $textNotAddress, $quickReplyMain);
                 } else if ($userMessage == "ต้องการ" || $userMessage == "ย้อนกลับAddress") {

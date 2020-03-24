@@ -1278,16 +1278,11 @@ $textWebsite1 = new BubbleContainerBuilder(
         "horizontal",
         array(
             new TextComponentBuilder(
-                "ในเว็บมีอะไรให้เล่นบ้าง ?
-___________________________________
+                "ภายในเว็บมีอะไรบ้าง ?
 
-ในเว็บมี บอล มวย หวย บาส ไก่ชน 
-กีฬาให้แทงมี บาคาล่าเซ็กซี่ ไฮโล  
-และคาสิโนสดต่าง เกม  สลอต รูเลท
-ให้เล่น 
-___________________________________
-
-Copa69 ขอขอบคุณที่ใช้บริการค่ะ....",
+เล่นทุกอย่างได้ในยูสเดียว
+บอล มวย หวย คาสิโน เกมส์ สล๊อต 
+มีให้เลือกเล่นครบวงวร",
                 NULL,
                 NULL,
                 "md",
@@ -1308,9 +1303,8 @@ $textWebsite2 = new BubbleContainerBuilder(
         array(
             new TextComponentBuilder(
                 "เข้าเล่นยังไง ?
-___________________________________
-
-คลิกลิ้งเพื่อเข้าหน้าเว็บได้เลยค่ะ
+                
+วิธีเข้าหน้าเว็บ คลิกลิงค์ได้เลยค่ะ
 ___________________________________",
                 NULL,
                 NULL,
@@ -2598,7 +2592,7 @@ if (!is_null($events)) {
                 // ----------------------------------------------------------------------------------------- Website
 
                 else if ($userMessage == "เว็บไซต์") {
-                    $imageWebsite = 'https://www.pic2free.com/uploads/20200311/2fcf0179ea43c6c6b65bdf5243bbff146cb5e303.png?_ignore=';
+                    $imageWebsite = 'https://i.ibb.co/fSNv1Mq/q-website.jpg?_ignore=';
                     $replyData = new ImagemapMessageBuilder(
                         $imageWebsite,
                         'website',
@@ -2606,26 +2600,26 @@ if (!is_null($events)) {
                         array(
                             new ImagemapMessageActionBuilder(
                                 'คำถาม:เว็บ1',
-                                new AreaBuilder(4, 145, 512, 108)
-                            ),
-                            new ImagemapMessageActionBuilder(
-                                'คำถาม:เว็บ2',
-                                new AreaBuilder(521, 145, 513, 108)
+                                new AreaBuilder(4, 145, 515, 108)
                             ),
                             new ImagemapMessageActionBuilder(
                                 'ย้อนกลับQuestion',
-                                new AreaBuilder(4, 259, 513, 107)
+                                new AreaBuilder(4, 255, 515, 108)
+                            ),
+                            new ImagemapMessageActionBuilder(
+                                'คำถาม:เว็บ2',
+                                new AreaBuilder(522, 145, 515, 108)
                             ),
                             new ImagemapMessageActionBuilder(
                                 'ย้อนกลับMain',
-                                new AreaBuilder(520, 257, 513, 106)
+                                new AreaBuilder(522, 255, 515, 108)
                             ),
                         )
                     );
                 } else if ($userMessage == "คำถาม:เว็บ1") {
-                    $replyData = new FlexMessageBuilder("Flex", $textWebsite1, $quickReplySubWebsite);
+                    $replyData = new FlexMessageBuilder("Web1", $textWebsite1, $quickReplySubWebsite);
                 } else if ($userMessage == "คำถาม:เว็บ2") {
-                    $replyData = new FlexMessageBuilder("Flex", $textWebsite2, $quickReplySubWebsite);
+                    $replyData = new FlexMessageBuilder("Web2", $textWebsite2, $quickReplySubWebsite);
                 }
 
                 // ----------------------------------------------------------------------------------------- Website

@@ -142,7 +142,7 @@ $textReplyToQuestion = new MessageTemplateActionBuilder(
 );
 $textBackOtherQuestion = new MessageTemplateActionBuilder(
     'ย้อนกลับ',
-    'คำถามเพิ่มเติม'
+    'สอบถามเพิ่มเติม'
 );
 $textReplyToRegister = new MessageTemplateActionBuilder(
     'สมัคร',
@@ -460,12 +460,9 @@ $textTurn1 = new BubbleContainerBuilder(
             new TextComponentBuilder(
                 "ทาเทิร์นเท่าไหร่
 
-- การสมัครครั้งแรกต้องมียอดเล่น 1.5 เท่าของยอดสมัคร
-สมมุติ พี่ฝากมา 500 บาทต้องมียอดเล่นให้เท่ากับ 750 
-หรือมากกว่า ถึงจะถอนได้ค่ะ ไม่นับรวมยอดค้างเล่น
+- การสมัครครั้งแรกต้องมียอดเล่น 1.5 เท่าของยอดสมัคร สมมุติ พี่ฝากมา 500 บาทต้องมียอดเล่นให้เท่ากับ 750 หรือมากกว่า ถึงจะถอนได้ค่ะ ไม่นับรวมยอดค้างเล่น
 
-- ฝากครั้งต่อไป 1 เท่าปกตินะค่ะ
-___________________________________",
+- ฝากครั้งต่อไป 1 เท่าปกตินะค่ะ",
                 NULL,
                 NULL,
                 "md",

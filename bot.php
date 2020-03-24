@@ -611,87 +611,87 @@ ___________________________________",
 //     )
 // );
 
-$textToRecommend = new BubbleContainerBuilder(
-    "ltr",
-    NULL,
-    NULL,
-    new BoxComponentBuilder(
-        "horizontal",
-        array(
-            new TextComponentBuilder(
-                "คำแนะนำ
+// $textToRecommend = new BubbleContainerBuilder(
+//     "ltr",
+//     NULL,
+//     NULL,
+//     new BoxComponentBuilder(
+//         "horizontal",
+//         array(
+//             new TextComponentBuilder(
+//                 "คำแนะนำ
 
-พิมพ์ r ตามด้วยหัวข้อที่ต้องการ เช่น r1
-___________________________________
+// พิมพ์ r ตามด้วยหัวข้อที่ต้องการ เช่น r1
+// ___________________________________
 
-หัวข้อปัญหาหรือเรื่องที่ต้องการสอบถาม
-1. ใส่คนแนะนำว่าอะไร
-2. ถ้าชวนเพื่อนมาสมัครจะได้อะไรมั้ย
-___________________________________
+// หัวข้อปัญหาหรือเรื่องที่ต้องการสอบถาม
+// 1. ใส่คนแนะนำว่าอะไร
+// 2. ถ้าชวนเพื่อนมาสมัครจะได้อะไรมั้ย
+// ___________________________________
 
-Copa69 ขอขอบคุณที่ใช้บริการค่ะ....",
-                NULL,
-                NULL,
-                "md",
-                NULL,
-                NULL,
-                true
-            )
-        )
-    )
-);
+// Copa69 ขอขอบคุณที่ใช้บริการค่ะ....",
+//                 NULL,
+//                 NULL,
+//                 "md",
+//                 NULL,
+//                 NULL,
+//                 true
+//             )
+//         )
+//     )
+// );
 
-$textRecommend1 = new BubbleContainerBuilder(
-    "ltr",
-    NULL,
-    NULL,
-    new BoxComponentBuilder(
-        "horizontal",
-        array(
-            new TextComponentBuilder(
-                "ใส่คนแนะนำว่าอะไร ?
-___________________________________
+// $textRecommend1 = new BubbleContainerBuilder(
+//     "ltr",
+//     NULL,
+//     NULL,
+//     new BoxComponentBuilder(
+//         "horizontal",
+//         array(
+//             new TextComponentBuilder(
+//                 "ใส่คนแนะนำว่าอะไร ?
+// ___________________________________
 
-SL99 แนะนำให้สมัครคะ 
-___________________________________
+// SL99 แนะนำให้สมัครคะ 
+// ___________________________________
 
-Copa69 ขอขอบคุณที่ใช้บริการค่ะ....",
-                NULL,
-                NULL,
-                "md",
-                NULL,
-                NULL,
-                true
-            )
-        )
-    )
-);
+// Copa69 ขอขอบคุณที่ใช้บริการค่ะ....",
+//                 NULL,
+//                 NULL,
+//                 "md",
+//                 NULL,
+//                 NULL,
+//                 true
+//             )
+//         )
+//     )
+// );
 
-$textRecommend2 = new BubbleContainerBuilder(
-    "ltr",
-    NULL,
-    NULL,
-    new BoxComponentBuilder(
-        "horizontal",
-        array(
-            new TextComponentBuilder(
-                "ถ้าชวนเพื่อนมาสมัครพี่จะได้อะไรมั้ย ?
-___________________________________
+// $textRecommend2 = new BubbleContainerBuilder(
+//     "ltr",
+//     NULL,
+//     NULL,
+//     new BoxComponentBuilder(
+//         "horizontal",
+//         array(
+//             new TextComponentBuilder(
+//                 "ถ้าชวนเพื่อนมาสมัครพี่จะได้อะไรมั้ย ?
+// ___________________________________
 
-ทางเรามีโปรโมชั่นชวนเพื่อนให้คะ
-___________________________________
+// ทางเรามีโปรโมชั่นชวนเพื่อนให้คะ
+// ___________________________________
 
-Copa69 ขอขอบคุณที่ใช้บริการค่ะ....",
-                NULL,
-                NULL,
-                "md",
-                NULL,
-                NULL,
-                true
-            )
-        )
-    )
-);
+// Copa69 ขอขอบคุณที่ใช้บริการค่ะ....",
+//                 NULL,
+//                 NULL,
+//                 "md",
+//                 NULL,
+//                 NULL,
+//                 true
+//             )
+//         )
+//     )
+// );
 
 // $textToGroup = new BubbleContainerBuilder(
 //     "ltr",
@@ -1042,41 +1042,41 @@ ___________________________________",
 //     )
 // );
 
-$textToRegister = new BubbleContainerBuilder(
-    "ltr",
-    NULL,
-    NULL,
-    new BoxComponentBuilder(
-        "horizontal",
-        array(
-            new TextComponentBuilder(
-                "การสมัคร
+// $textToRegister = new BubbleContainerBuilder(
+//     "ltr",
+//     NULL,
+//     NULL,
+//     new BoxComponentBuilder(
+//         "horizontal",
+//         array(
+//             new TextComponentBuilder(
+//                 "การสมัคร
 
-พิมพ์ u ตามด้วยหัวข้อที่ต้องการ เช่น u1
-___________________________________
+// พิมพ์ u ตามด้วยหัวข้อที่ต้องการ เช่น u1
+// ___________________________________
 
-หัวข้อปัญหาหรือเรื่องที่ต้องการสอบถาม
-1. เช้คได้ไหมว่าเคยสมัครไปหรือยัง
-2. ถ้าเคยสมัครแล้ว แต่จะใช้บันชีแฟน
-สมัครอีกได้ไหม (แฟนนามสกุลเดียวกัน)
-3. เคยสมัครสมาชิกแล้วสมัครใหม่ได้มั้ย
-4. สมัครง่ายมั้ย
-5. สมัครขั้นต่ำเท่าไหร่
-6. สมัครยังไง
-7. สมัคร 100 ได้ไหม
-___________________________________
+// หัวข้อปัญหาหรือเรื่องที่ต้องการสอบถาม
+// 1. เช้คได้ไหมว่าเคยสมัครไปหรือยัง
+// 2. ถ้าเคยสมัครแล้ว แต่จะใช้บันชีแฟน
+// สมัครอีกได้ไหม (แฟนนามสกุลเดียวกัน)
+// 3. เคยสมัครสมาชิกแล้วสมัครใหม่ได้มั้ย
+// 4. สมัครง่ายมั้ย
+// 5. สมัครขั้นต่ำเท่าไหร่
+// 6. สมัครยังไง
+// 7. สมัคร 100 ได้ไหม
+// ___________________________________
 
-Copa69 ขอขอบคุณที่ใช้บริการค่ะ....",
-                NULL,
-                NULL,
-                "md",
-                NULL,
-                NULL,
-                true
-            )
-        )
-    )
-);
+// Copa69 ขอขอบคุณที่ใช้บริการค่ะ....",
+//                 NULL,
+//                 NULL,
+//                 "md",
+//                 NULL,
+//                 NULL,
+//                 true
+//             )
+//         )
+//     )
+// );
 
 // $textRegister1 = new BubbleContainerBuilder(
 //     "ltr",
@@ -1375,35 +1375,35 @@ Copa69 ขอขอบคุณที่ใช้บริการค่ะ....
 //     )
 // );
 
-$textToWebsite = new BubbleContainerBuilder(
-    "ltr",
-    NULL,
-    NULL,
-    new BoxComponentBuilder(
-        "horizontal",
-        array(
-            new TextComponentBuilder(
-                "เกี่ยวกับเว็บไซต์
+// $textToWebsite = new BubbleContainerBuilder(
+//     "ltr",
+//     NULL,
+//     NULL,
+//     new BoxComponentBuilder(
+//         "horizontal",
+//         array(
+//             new TextComponentBuilder(
+//                 "เกี่ยวกับเว็บไซต์
 
-พิมพ์ w ตามด้วยหัวข้อที่ต้องการ เช่น w1
-___________________________________
+// พิมพ์ w ตามด้วยหัวข้อที่ต้องการ เช่น w1
+// ___________________________________
 
-หัวข้อปัญหาหรือเรื่องที่ต้องการสอบถาม
-1. ในเว็บมีอะไรให้เล่นบ้าง
-2. เข้าเล่นยังไง
-___________________________________
+// หัวข้อปัญหาหรือเรื่องที่ต้องการสอบถาม
+// 1. ในเว็บมีอะไรให้เล่นบ้าง
+// 2. เข้าเล่นยังไง
+// ___________________________________
 
-Copa69 ขอขอบคุณที่ใช้บริการค่ะ....",
-                NULL,
-                NULL,
-                "md",
-                NULL,
-                NULL,
-                true
-            )
-        )
-    )
-);
+// Copa69 ขอขอบคุณที่ใช้บริการค่ะ....",
+//                 NULL,
+//                 NULL,
+//                 "md",
+//                 NULL,
+//                 NULL,
+//                 true
+//             )
+//         )
+//     )
+// );
 
 $textWebsite1 = new BubbleContainerBuilder(
     "ltr",
@@ -2193,26 +2193,26 @@ $textGetUser = new BubbleContainerBuilder(
 //     )
 // );
 
-$textNotAddress = new BubbleContainerBuilder(
-    "ltr",
-    NULL,
-    NULL,
-    new BoxComponentBuilder(
-        "horizontal",
-        array(
-            new TextComponentBuilder(
-                "Copa69 ขอขอบคุณที่ใช้บริการค่ะ....
-___________________________________",
-                NULL,
-                NULL,
-                "md",
-                NULL,
-                NULL,
-                true
-            )
-        )
-    )
-);
+// $textNotAddress = new BubbleContainerBuilder(
+//     "ltr",
+//     NULL,
+//     NULL,
+//     new BoxComponentBuilder(
+//         "horizontal",
+//         array(
+//             new TextComponentBuilder(
+//                 "Copa69 ขอขอบคุณที่ใช้บริการค่ะ....
+// ___________________________________",
+//                 NULL,
+//                 NULL,
+//                 "md",
+//                 NULL,
+//                 NULL,
+//                 true
+//             )
+//         )
+//     )
+// );
 
 $textAddress = new BubbleContainerBuilder(
     "ltr",
@@ -2951,20 +2951,6 @@ if (!is_null($events)) {
                     $replyData = new FlexMessageBuilder("Flex", $textSendAddress, $quickReplyMain);
                 }
                 // ========================== Test ===================================
-
-                // } else if ($userMessage == "ads") {
-                //     $imageWebsite = 'https://i.ibb.co/kMgHs2J/Ads.jpg?_ignore=';
-                //     $replyData = new ImagemapMessageBuilder(
-                //         $imageWebsite,
-                //         '18+',
-                //         new BaseSizeBuilder(1040, 1040),
-                //         array(
-                //             new ImagemapMessageActionBuilder(
-                //                 'เข้ากลุ่ม',
-                //                 new AreaBuilder(344, 898, 345, 83)
-                //             ),
-                //         )
-                //     );
                 // } else if ($userMessage == "getid") {
                 //     $responseProfile = $bot->getProfile(LINE_USER_ID);
                 //     $profile = $responseProfile->getJSONDecodedBody();

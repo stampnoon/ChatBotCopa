@@ -2540,7 +2540,7 @@ if (!is_null($events)) {
                         )
                     );
                 } else if ($userMessage == "คำถาม:โปรโมชั่น1") {
-                    $replyData = new FlexMessageBuilder("Flex", $textPromotion1, $quickReplySubPromotion);
+                    $replyData = new FlexMessageBuilder("Promotion", $textPromotion1, $quickReplySubPromotion);
                     // $replyData = new ImagemapMessageBuilder(
                     //     'https://i.ibb.co/Dg7r1Rp/Npromotion.jpg?_ignore=',
                     //     'register',
@@ -2566,7 +2566,8 @@ if (!is_null($events)) {
                     //     $quickReplySubPromotion
                     // );
                 } else if ($userMessage == "คำถาม:โปรโมชั่น2" || $userMessage == "โปรโมชั่น18+") {
-                    $replyData = new FlexMessageBuilder("Flex", $textPromotion2, $quickReplySubPromotion);
+                    $replyData = new TextMessageBuilder($textReplyMessage);
+                    //$replyData = new FlexMessageBuilder("Promotion18+", $textPromotion2, $quickReplySubPromotion);
                     // $replyData = new ImagemapMessageBuilder(
                     //     'https://i.ibb.co/kMgHs2J/Ads.jpg?_ignore=',
                     //     '18+',
@@ -2949,12 +2950,15 @@ if (!is_null($events)) {
                     $replyData = new FlexMessageBuilder("Flex", $textSendAddress, $quickReplyMain);
                 }
                 // ========================== Test ===================================
-                // } else if ($userMessage == "getid") {
-                //     $responseProfile = $bot->getProfile(LINE_USER_ID);
-                //     $profile = $responseProfile->getJSONDecodedBody();
-                //     $textReplyMessage = $profile['displayName']; //can get 'displayName', 'userId', 'pictureUrl', 'statusMessage'
-                //     $replyData = new TextMessageBuilder($textReplyMessage);
-                // } else if ($userMessage == "push") {
+                else if ($userMessage == "test") {
+                    $responseProfile = $bot->getProfile(LINE_USER_ID);
+                    $profile = $responseProfile->getJSONDecodedBody();
+                    $textReplyMessage = $profile['displayName']; //can get 'displayName', 'userId', 'pictureUrl', 'statusMessage'
+                    //$replyData = new TextMessageBuilder($textReplyMessage);
+                    $province_th = ['กรุงเทพฯ','กระบี่','กาญจนบุรี','กาฬสินธุ์','กำแพงเพชร'];
+                    $replyData = new TextMessageBuilder($province_th);
+                } 
+                // else if ($userMessage == "push") {
                 //     $responseProfile = $bot->getProfile(LINE_USER_ID);
                 //     $profile = $responseProfile->getJSONDecodedBody();
                 //     $UserName = $profile['displayName']; //can get 'displayName', 'userId', 'pictureUrl', 'statusMessage'

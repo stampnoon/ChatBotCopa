@@ -182,7 +182,7 @@ $textBackAccount = new MessageTemplateActionBuilder(
 );
 $textBackWebsite = new MessageTemplateActionBuilder(
     'ย้อนกลับ',
-    'เว็บ'
+    'เว็บไซต์'
 );
 $textAddress = new MessageTemplateActionBuilder(
     'กรอกที่อยู่',

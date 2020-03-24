@@ -2566,8 +2566,7 @@ if (!is_null($events)) {
                     //     $quickReplySubPromotion
                     // );
                 } else if ($userMessage == "คำถาม:โปรโมชั่น2" || $userMessage == "โปรโมชั่น18+") {
-                    $replyData = new TextMessageBuilder($textReplyMessage);
-                    //$replyData = new FlexMessageBuilder("Promotion18+", $textPromotion2, $quickReplySubPromotion);
+                    $replyData = new FlexMessageBuilder("Promotion18+", $textPromotion2, $quickReplySubPromotion);
                     // $replyData = new ImagemapMessageBuilder(
                     //     'https://i.ibb.co/kMgHs2J/Ads.jpg?_ignore=',
                     //     '18+',

@@ -2542,20 +2542,6 @@ if (!is_null($events)) {
                         )
                     );
                 } else if ($userMessage == "คำถาม:โปรโมชั่น1") {
-                    //$replyData = new FlexMessageBuilder("Flex", $textPromotion1, $quickReplySubPromotion);
-                    $replyData = new ImagemapMessageBuilder(
-                        'https://i.ibb.co/kMgHs2J/Ads.jpg?_ignore=',
-                        '18+',
-                        new BaseSizeBuilder(1040, 1040),
-                        array(
-                            new ImagemapMessageActionBuilder(
-                                'เข้ากลุ่ม',
-                                new AreaBuilder(344, 898, 345, 83)
-                            ),
-                        ),
-                        $quickReplySubPromotion
-                    );
-                } else if ($userMessage == "คำถาม:โปรโมชั่น2") {
                     //$replyData = new FlexMessageBuilder("Flex", $textPromotion2, $quickReplySubPromotion);
                     $replyData = new ImagemapMessageBuilder(
                         'https://i.ibb.co/Dg7r1Rp/Npromotion.jpg?_ignore=',
@@ -2577,6 +2563,20 @@ if (!is_null($events)) {
                             new ImagemapMessageActionBuilder(
                                 'โปร200บาท',
                                 new AreaBuilder(11, 800, 1020, 232)
+                            ),
+                        ),
+                        $quickReplySubPromotion
+                    );
+                } else if ($userMessage == "คำถาม:โปรโมชั่น2") {
+                    //$replyData = new FlexMessageBuilder("Flex", $textPromotion1, $quickReplySubPromotion);
+                    $replyData = new ImagemapMessageBuilder(
+                        'https://i.ibb.co/kMgHs2J/Ads.jpg?_ignore=',
+                        '18+',
+                        new BaseSizeBuilder(1040, 1040),
+                        array(
+                            new ImagemapMessageActionBuilder(
+                                'เข้ากลุ่ม',
+                                new AreaBuilder(344, 898, 345, 83)
                             ),
                         ),
                         $quickReplySubPromotion
@@ -2933,7 +2933,7 @@ if (!is_null($events)) {
 
                 // ----------------------------------------------------------------------------------------- Account
 
-                else if (strstr($userMessage, "แจ้งเลขยูส") == true || strstr($userMessage, "แก้ไขเลขยูส") == true ) {
+                else if (strstr($userMessage, "แจ้งเลขยูส") == true || strstr($userMessage, "แก้ไขเลขยูส") == true) {
                     $replyData = new FlexMessageBuilder("Flex", $textGetUser, $quickReplyEditSlip);
                 } else if (strstr($userMessage, "user_") == true || strstr($userMessage, "User_") == true  || strstr($userMessage, "USER_") == true || $userMessage == "แก้ไขที่อยู่") {
                     //$replyData = new FlexMessageBuilder("Flex", $textToAddress, $quickReplyUser);

@@ -2274,44 +2274,28 @@ if (!is_null($events)) {
                 } else if ($userMessage == "คำถาม:โปรโมชั่น2") {
                     //$replyData = new FlexMessageBuilder("Flex", $textPromotion2, $quickReplySubPromotion);
                     $replyData = new ImagemapMessageBuilder(
-                        'https://i.ibb.co/1df4VCD/question.jpg?_ignore=',
-                        'question',
-                        new BaseSizeBuilder(510, 1040),
+                        'https://i.ibb.co/Dg7r1Rp/Npromotion.jpg?_ignore=',
+                        'register',
+                        new BaseSizeBuilder(1040, 1040),
                         array(
                             new ImagemapMessageActionBuilder(
-                                'โปรโมชั่น',
-                                new AreaBuilder(4, 157, 515, 108)
+                                'โปร1000บาท',
+                                new AreaBuilder(11, 91, 1020, 232)
                             ),
                             new ImagemapMessageActionBuilder(
-                                'คำแนะนำ',
-                                new AreaBuilder(4, 266, 515, 108)
+                                'โปร500บาท',
+                                new AreaBuilder(11, 329, 1020, 232)
                             ),
                             new ImagemapMessageActionBuilder(
-                                'กลุ่ม',
-                                new AreaBuilder(4, 377, 515, 108)
+                                'โปร300บาท',
+                                new AreaBuilder(11, 561, 1020, 232)
                             ),
                             new ImagemapMessageActionBuilder(
-                                'ฝาก',
-                                new AreaBuilder(523, 157, 515, 108)
+                                'โปร200บาท',
+                                new AreaBuilder(11, 800, 1020, 232)
                             ),
-                            new ImagemapMessageActionBuilder(
-                                'สมาชิก',
-                                new AreaBuilder(523, 266, 515, 108)
-                            ),
-                            new ImagemapMessageActionBuilder(
-                                'บัญชี',
-                                new AreaBuilder(523, 379, 515, 108)
-                            ),
-                            // new ImagemapMessageActionBuilder(
-                            //     'เว็บ',
-                            //     new AreaBuilder(7, 631, 510, 139)
-                            // ),
-                            // new ImagemapMessageActionBuilder(
-                            //     'ย้อนกลับMain',
-                            //     new AreaBuilder(524, 633, 509, 133)
-                            // ),
                         ),
-                        $quickReplyMain
+                        $quickReplySubPromotion
                     );
                 }
 

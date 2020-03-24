@@ -2191,7 +2191,7 @@ if (!is_null($events)) {
                                 new AreaBuilder(4, 157, 515, 108)
                             ),
                             new ImagemapMessageActionBuilder(
-                                'คำแนะนำ',
+                                'เว็บไซต์',
                                 new AreaBuilder(4, 266, 515, 108)
                             ),
                             new ImagemapMessageActionBuilder(
@@ -2211,7 +2211,7 @@ if (!is_null($events)) {
                                 new AreaBuilder(523, 379, 515, 108)
                             ),
                             // new ImagemapMessageActionBuilder(
-                            //     'เว็บ',
+                            //     'คำแนะนำ',
                             //     new AreaBuilder(7, 631, 510, 139)
                             // ),
                             // new ImagemapMessageActionBuilder(
@@ -2337,13 +2337,13 @@ if (!is_null($events)) {
                 }
                 // ----------------------------------------------------------------------------------------- DetailPromotion
                 else if ($userMessage == "โปร1000บาท") {
-                    $replyData = new FlexMessageBuilder("Flex", $textDetailPromotion1, $quickReplyBackRegister);
+                    $replyData = new FlexMessageBuilder("Pro1000", $textDetailPromotion1, $quickReplyBackRegister);
                 } else if ($userMessage == "โปร500บาท") {
-                    $replyData = new FlexMessageBuilder("Flex", $textDetailPromotion2, $quickReplyBackRegister);
+                    $replyData = new FlexMessageBuilder("Pro500", $textDetailPromotion2, $quickReplyBackRegister);
                 } else if ($userMessage == "โปร300บาท") {
-                    $replyData = new FlexMessageBuilder("Flex", $textDetailPromotion3, $quickReplyBackRegister);
+                    $replyData = new FlexMessageBuilder("Pro300", $textDetailPromotion3, $quickReplyBackRegister);
                 } else if ($userMessage == "โปร200บาท") {
-                    $replyData = new FlexMessageBuilder("Flex", $textDetailPromotion4, $quickReplyBackRegister);
+                    $replyData = new FlexMessageBuilder("Pro200", $textDetailPromotion4, $quickReplyBackRegister);
                 }
                 //  else if ($userMessage == "โปร5") {
                 //     $replyData = new FlexMessageBuilder("Flex", $textDetailPromotion5, $quickReplyBackRegister);
@@ -2375,37 +2375,37 @@ if (!is_null($events)) {
                 }
 
                 // ----------------------------------------------------------------------------------------- Recommend
-
-                else if ($userMessage == "คำแนะนำ") {
-                    $imageRecommend = 'https://www.pic2free.com/uploads/20200311/9d45060816145cff9ddf6c2bfd7ae9972fca71da.png?_ignore=';
-                    $replyData = new ImagemapMessageBuilder(
-                        $imageRecommend,
-                        'suggest',
-                        new BaseSizeBuilder(400, 1040),
-                        array(
-                            new ImagemapMessageActionBuilder(
-                                'คำถาม:คำแนะนำ1',
-                                new AreaBuilder(5, 146, 511, 105)
-                            ),
-                            new ImagemapMessageActionBuilder(
-                                'คำถาม:คำแนะนำ2',
-                                new AreaBuilder(524, 145, 510, 104)
-                            ),
-                            new ImagemapMessageActionBuilder(
-                                'ย้อนกลับQuestion',
-                                new AreaBuilder(8, 258, 508, 105)
-                            ),
-                            new ImagemapMessageActionBuilder(
-                                'ย้อนกลับMain',
-                                new AreaBuilder(255, 259, 510, 104)
-                            ),
-                        )
-                    );
-                } else if ($userMessage == "คำถาม:คำแนะนำ1") {
-                    $replyData = new FlexMessageBuilder("Flex", $textRecommend1, $quickReplySubRecommend);
-                } else if ($userMessage == "คำถาม:คำแนะนำ2") {
-                    $replyData = new FlexMessageBuilder("Flex", $textRecommend2, $quickReplySubRecommend);
-                }
+                // else if ($userMessage == "คำแนะนำ") {
+                //     $imageRecommend = 'https://www.pic2free.com/uploads/20200311/9d45060816145cff9ddf6c2bfd7ae9972fca71da.png?_ignore=';
+                //     $replyData = new ImagemapMessageBuilder(
+                //         $imageRecommend,
+                //         'suggest',
+                //         new BaseSizeBuilder(400, 1040),
+                //         array(
+                //             new ImagemapMessageActionBuilder(
+                //                 'คำถาม:คำแนะนำ1',
+                //                 new AreaBuilder(5, 146, 511, 105)
+                //             ),
+                //             new ImagemapMessageActionBuilder(
+                //                 'คำถาม:คำแนะนำ2',
+                //                 new AreaBuilder(524, 145, 510, 104)
+                //             ),
+                //             new ImagemapMessageActionBuilder(
+                //                 'ย้อนกลับQuestion',
+                //                 new AreaBuilder(8, 258, 508, 105)
+                //             ),
+                //             new ImagemapMessageActionBuilder(
+                //                 'ย้อนกลับMain',
+                //                 new AreaBuilder(255, 259, 510, 104)
+                //             ),
+                //         )
+                //     );
+                // } 
+                // else if ($userMessage == "คำถาม:คำแนะนำ1") {
+                //     $replyData = new FlexMessageBuilder("Flex", $textRecommend1, $quickReplySubRecommend);
+                // } else if ($userMessage == "คำถาม:คำแนะนำ2") {
+                //     $replyData = new FlexMessageBuilder("Flex", $textRecommend2, $quickReplySubRecommend);
+                // }
 
                 // ----------------------------------------------------------------------------------------- Recommend
                 // ----------------------------------------------------------------------------------------- Group
@@ -2597,7 +2597,7 @@ if (!is_null($events)) {
                 // ----------------------------------------------------------------------------------------- Account
                 // ----------------------------------------------------------------------------------------- Website
 
-                else if ($userMessage == "เว็บ") {
+                else if ($userMessage == "เว็บไซต์") {
                     $imageWebsite = 'https://www.pic2free.com/uploads/20200311/2fcf0179ea43c6c6b65bdf5243bbff146cb5e303.png?_ignore=';
                     $replyData = new ImagemapMessageBuilder(
                         $imageWebsite,

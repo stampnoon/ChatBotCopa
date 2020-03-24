@@ -374,29 +374,16 @@ $textPromotion1 = new BubbleContainerBuilder(
         "horizontal",
         array(
             new TextComponentBuilder(
-                "มีโปรโมชั่นอะไรบ้าง ?
-___________________________________
+                "โปรโมชั่นของแถม
 
-ตอนนี้มีโปรโมชั่น 30% จากยอดฝาก 
-หรือเลือกรับโปรโมชัั่นพร้อมของแถม 
+- สมัครสมาชิก 200 รับโบนัส 30% 
+- สมัครสมาชิก 300 รับหูฟังบลูทูธ 
+- สมัครสมาชิก 500 รับเสื้อฮู้ด หรือ 
+หูฟัง P47 Wireless Headphones
+- สมัครสมาชิก 1000 รับ POD ไฟฟ้า 
+หรือ หูฟัง Redmi Airdots
 
-1. สมัคร 1000 บาท ได้รับ หูฟังบลูทูธ TRUT WIRELESS 5.0 TWS 
-2. สมัคร 1000 บาท ได้รับ พาวเวอร์แบ๊ง ELOOP E-12 
-3. สมัคร 1000 บาท ได้รับ ลำโพง BLUETOOTH IRON MAN
-4. สมัคร 1000 บาท ได้รับ บุหรี่ไฟฟ้า DRAG 
-5. สมัคร 1000 บาท ได้รับ โทรศัพท์จิ๋ว 
-6. สมัคร 500 บาท ได้รับ เสื้อบอล EURO 
-7. สมัคร 500 บาท ได้รับ เสื้อฮูด Nike 
-8. สมัคร 500 บาท ได้รับ Smart Watch 
-9. สมัคร 500 บาท ได้รับ ลำโพง Bluetooth Mini 
-10. สมัคร 500 บาท ได้รับ หูฟัง Bluetooth 
-11. สมัคร 300 บาท ได้รับ ลำโพงสโมสรฟุตบอลโลก 
-12. สมัคร 300 บาท ได้รับ กระเป๋าสะพายข้างลายสโมสรฟุตบอลโลก 
-13. สมัคร 300 บาท ได้รับ Game Handle 
-14. สมัครฝาก 200 รับโบนัส 30 %
-___________________________________
-
-Copa69 ขอขอบคุณที่ใช้บริการค่ะ....",
+(ทุกการสมัครอย่าลืมแจ้ง คนแนะนา เพื่อรับสิทธิ์นะคะ)",
                 NULL,
                 NULL,
                 "md",
@@ -408,35 +395,6 @@ Copa69 ขอขอบคุณที่ใช้บริการค่ะ....
     )
 );
 
-$textPromotion3 = new BubbleContainerBuilder(
-    "ltr",
-    NULL,
-    NULL,
-    new BoxComponentBuilder(
-        "horizontal",
-        array(
-            new TextComponentBuilder(
-                "ถ้ารับโปรโมชั่นต้องทำเทิร์นเท่าไหร่ ?
-___________________________________
-
-ทุกโปรทำเทิร์น 1.5 ค่ะ เช่น ฝาก200 
-(ต้องมียอดเล่นได้หรือเสียประมาณ 
-300) ก็ถอนได้แล้วค่ะ เล่นได้ทุก
-อย่าง เช่น คาสิโน เกมส์ แทง บอล
-อื่นๆ เป็นต้นค่ะ
-___________________________________
-
-Copa69 ขอขอบคุณที่ใช้บริการค่ะ....",
-                NULL,
-                NULL,
-                "md",
-                NULL,
-                NULL,
-                true
-            )
-        )
-    )
-);
 
 $textPromotion2 = new BubbleContainerBuilder(
     "ltr",
@@ -446,13 +404,14 @@ $textPromotion2 = new BubbleContainerBuilder(
         "horizontal",
         array(
             new TextComponentBuilder(
-                "ถ้าไม่รับโบนัสจะต้องทำเทิร์นมั้ย ?
-___________________________________
+                "โปรโมชั่น 18+
 
-ถ้าไม่รับโบนัสก้ทำเทริน 1.5 เหมือนกันคะ
-___________________________________
+ทุกการสมัคร 200 บาทขึ้นไป เข้ากลุ่มฟรี
 
-Copa69 ขอขอบคุณที่ใช้บริการค่ะ....",
+-กลุ่มคลิปหลุด
+-กลุ่มไลฟ์สดถอดหมด
+
+(แจ้งขอเข้ากลุ่มหลังจากสมัครสมาชิกเรียบร้อยแล้ว)",
                 NULL,
                 NULL,
                 "md",
@@ -464,32 +423,62 @@ Copa69 ขอขอบคุณที่ใช้บริการค่ะ....
     )
 );
 
-$textPromotion4 = new BubbleContainerBuilder(
-    "ltr",
-    NULL,
-    NULL,
-    new BoxComponentBuilder(
-        "horizontal",
-        array(
-            new TextComponentBuilder(
-                "มีเครดิตฟรีมั้ย ?
-___________________________________
+// $textPromotion3 = new BubbleContainerBuilder(
+//     "ltr",
+//     NULL,
+//     NULL,
+//     new BoxComponentBuilder(
+//         "horizontal",
+//         array(
+//             new TextComponentBuilder(
+//                 "ถ้ารับโปรโมชั่นต้องทำเทิร์นเท่าไหร่ ?
+// ___________________________________
 
-เงินที่สมัครสามารถนำไปเล่นในเว็บได้
-เลยและได้ของแถมด้วยนะคะ 
-___________________________________
+// ทุกโปรทำเทิร์น 1.5 ค่ะ เช่น ฝาก200 
+// (ต้องมียอดเล่นได้หรือเสียประมาณ 
+// 300) ก็ถอนได้แล้วค่ะ เล่นได้ทุก
+// อย่าง เช่น คาสิโน เกมส์ แทง บอล
+// อื่นๆ เป็นต้นค่ะ
+// ___________________________________
 
-Copa69 ขอขอบคุณที่ใช้บริการค่ะ....",
-                NULL,
-                NULL,
-                "md",
-                NULL,
-                NULL,
-                true
-            )
-        )
-    )
-);
+// Copa69 ขอขอบคุณที่ใช้บริการค่ะ....",
+//                 NULL,
+//                 NULL,
+//                 "md",
+//                 NULL,
+//                 NULL,
+//                 true
+//             )
+//         )
+//     )
+// );
+
+// $textPromotion4 = new BubbleContainerBuilder(
+//     "ltr",
+//     NULL,
+//     NULL,
+//     new BoxComponentBuilder(
+//         "horizontal",
+//         array(
+//             new TextComponentBuilder(
+//                 "มีเครดิตฟรีมั้ย ?
+// ___________________________________
+
+// เงินที่สมัครสามารถนำไปเล่นในเว็บได้
+// เลยและได้ของแถมด้วยนะคะ 
+// ___________________________________
+
+// Copa69 ขอขอบคุณที่ใช้บริการค่ะ....",
+//                 NULL,
+//                 NULL,
+//                 "md",
+//                 NULL,
+//                 NULL,
+//                 true
+//             )
+//         )
+//     )
+// );
 
 $textToRecommend = new BubbleContainerBuilder(
     "ltr",
@@ -2140,7 +2129,7 @@ if (!is_null($events)) {
             array(
                 new ImagemapMessageActionBuilder(
                     'สอบถาม',
-                    new AreaBuilder(4, 113, 337, 281)
+                    new AreaBuilder(4, 112, 337, 281)
                 ),
                 new ImagemapMessageActionBuilder(
                     'สมัคร',
@@ -2148,7 +2137,7 @@ if (!is_null($events)) {
                 ),
                 new ImagemapMessageActionBuilder(
                     'ติดต่อ',
-                    new AreaBuilder(693, 111, 338, 283)
+                    new AreaBuilder(693, 112, 338, 283)
                 ),
             )
         );
@@ -2168,7 +2157,7 @@ if (!is_null($events)) {
     switch ($typeMessage) {
         case "text":
             if ($userMessage != null) {
-                if ($userMessage == "ย้อนกลับMain" || $userMessage == "Main" ) {
+                if ($userMessage == "ย้อนกลับMain" || $userMessage == "Main") {
                     $imageMain = 'https://i.ibb.co/q7GNG0k/main.jpg?_ignore=';
                     $replyData = new ImagemapMessageBuilder(
                         $imageMain,
@@ -2177,7 +2166,7 @@ if (!is_null($events)) {
                         array(
                             new ImagemapMessageActionBuilder(
                                 'สอบถาม',
-                                new AreaBuilder(4, 113, 337, 281)
+                                new AreaBuilder(4, 112, 337, 281)
                             ),
                             new ImagemapMessageActionBuilder(
                                 'สมัคร',
@@ -2185,7 +2174,7 @@ if (!is_null($events)) {
                             ),
                             new ImagemapMessageActionBuilder(
                                 'ติดต่อ',
-                                new AreaBuilder(693, 111, 338, 283)
+                                new AreaBuilder(693, 112, 338, 283)
                             ),
                         )
                     );
@@ -2194,41 +2183,42 @@ if (!is_null($events)) {
                     $replyData = new ImagemapMessageBuilder(
                         $imageMapUrl,
                         'question',
-                        new BaseSizeBuilder(800, 1040),
+                        new BaseSizeBuilder(510, 1040),
                         array(
                             new ImagemapMessageActionBuilder(
                                 'โปรโมชั่น',
-                                new AreaBuilder(7, 208, 509, 139)
+                                new AreaBuilder(4, 157, 515, 108)
                             ),
                             new ImagemapMessageActionBuilder(
                                 'คำแนะนำ',
-                                new AreaBuilder(522, 208, 512, 135)
+                                new AreaBuilder(4, 266, 515, 108)
                             ),
                             new ImagemapMessageActionBuilder(
                                 'กลุ่ม',
-                                new AreaBuilder(4, 350, 512, 134)
+                                new AreaBuilder(4, 377, 515, 108)
                             ),
                             new ImagemapMessageActionBuilder(
                                 'ฝาก',
-                                new AreaBuilder(522, 349, 511, 137)
+                                new AreaBuilder(523, 157, 515, 108)
                             ),
                             new ImagemapMessageActionBuilder(
                                 'สมาชิก',
-                                new AreaBuilder(5, 491, 511, 134)
+                                new AreaBuilder(523, 266, 515, 108)
                             ),
                             new ImagemapMessageActionBuilder(
                                 'บัญชี',
-                                new AreaBuilder(521, 489, 514, 139)
+                                new AreaBuilder(523, 379, 515, 108)
                             ),
-                            new ImagemapMessageActionBuilder(
-                                'เว็บ',
-                                new AreaBuilder(7, 631, 510, 139)
-                            ),
-                            new ImagemapMessageActionBuilder(
-                                'ย้อนกลับMain',
-                                new AreaBuilder(524, 633, 509, 133)
-                            ),
-                        )
+                            // new ImagemapMessageActionBuilder(
+                            //     'เว็บ',
+                            //     new AreaBuilder(7, 631, 510, 139)
+                            // ),
+                            // new ImagemapMessageActionBuilder(
+                            //     'ย้อนกลับMain',
+                            //     new AreaBuilder(524, 633, 509, 133)
+                            // ),
+                        ),
+                        $quickReplyMain
                     );
                 } else if ($userMessage == "สมัคร") {
                     //$imageMapUrl = 'https://www.pic2free.com/uploads/20200319/22aff7616945ae9b1c4079d4501507b60a7b701a.jpg?_ignore=';
@@ -2299,47 +2289,48 @@ if (!is_null($events)) {
                 // ----------------------------------------------------------------------------------------- Promotion
 
                 else if ($userMessage == "โปรโมชั่น") {
-                    $imagePromotion = 'https://www.pic2free.com/uploads/20200311/45304216249fa2fb524de64b0446ce3592d9f7ce.png?_ignore=';
+                    $imagePromotion = 'https://i.ibb.co/60LLDdr/q-promotion.jpg?_ignore=';
                     $replyData = new ImagemapMessageBuilder(
                         $imagePromotion,
                         'qpromotion',
-                        new BaseSizeBuilder(500, 1040),
+                        new BaseSizeBuilder(386, 1040),
                         array(
                             new ImagemapMessageActionBuilder(
                                 'คำถาม:โปรโมชั่น1',
-                                new AreaBuilder(5, 145, 513, 109)
-                            ),
-                            new ImagemapMessageActionBuilder(
-                                'คำถาม:โปรโมชั่น2',
-                                new AreaBuilder(522, 148, 511, 102)
-                            ),
-                            new ImagemapMessageActionBuilder(
-                                'คำถาม:โปรโมชั่น3',
-                                new AreaBuilder(5, 257, 511, 108)
-                            ),
-                            new ImagemapMessageActionBuilder(
-                                'คำถาม:โปรโมชั่น4',
-                                new AreaBuilder(522, 256, 509, 107)
+                                new AreaBuilder(5, 145, 513, 108)
                             ),
                             new ImagemapMessageActionBuilder(
                                 'ย้อนกลับQuestion',
-                                new AreaBuilder(5, 370, 513, 108)
+                                new AreaBuilder(5, 255, 513, 108)
+                            ),
+                            new ImagemapMessageActionBuilder(
+                                'คำถาม:โปรโมชั่น2',
+                                new AreaBuilder(523, 145, 513, 108)
                             ),
                             new ImagemapMessageActionBuilder(
                                 'ย้อนกลับMain',
-                                new AreaBuilder(524, 370, 509, 108)
+                                new AreaBuilder(523, 255, 513, 108)
                             ),
+                            // new ImagemapMessageActionBuilder(
+                            //     'คำถาม:โปรโมชั่น3',
+                            //     new AreaBuilder(5, 370, 513, 108)
+                            // ),
+                            // new ImagemapMessageActionBuilder(
+                            //     'คำถาม:โปรโมชั่น4',
+                            //     new AreaBuilder(524, 370, 509, 108)
+                            // ),
                         )
                     );
                 } else if ($userMessage == "คำถาม:โปรโมชั่น1") {
                     $replyData = new FlexMessageBuilder("Flex", $textPromotion1, $quickReplySubPromotion);
                 } else if ($userMessage == "คำถาม:โปรโมชั่น2") {
                     $replyData = new FlexMessageBuilder("Flex", $textPromotion2, $quickReplySubPromotion);
-                } else if ($userMessage == "คำถาม:โปรโมชั่น3") {
-                    $replyData = new FlexMessageBuilder("Flex", $textPromotion3, $quickReplySubPromotion);
-                } else if ($userMessage == "คำถาม:โปรโมชั่น4") {
-                    $replyData = new FlexMessageBuilder("Flex", $textPromotion4, $quickReplySubPromotion);
-                }
+                } 
+                // else if ($userMessage == "คำถาม:โปรโมชั่น3") {
+                //     $replyData = new FlexMessageBuilder("Flex", $textPromotion3, $quickReplySubPromotion);
+                // } else if ($userMessage == "คำถาม:โปรโมชั่น4") {
+                //     $replyData = new FlexMessageBuilder("Flex", $textPromotion4, $quickReplySubPromotion);
+                // }
 
                 // ----------------------------------------------------------------------------------------- Promotion
                 // ----------------------------------------------------------------------------------------- Recommend

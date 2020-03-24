@@ -2484,11 +2484,11 @@ if (!is_null($events)) {
                         )
                     );
                 } else if ($userMessage == "คำถาม:ปัญหา1") {
-                    $replyData = new FlexMessageBuilder("Problem1", $textProblem1, $quickReplySubWebsite);
+                    $replyData = new FlexMessageBuilder("Problem1", $textProblem1, $quickReplyProblem);
                 } else if ($userMessage == "คำถาม:ปัญหา2") {
-                    $replyData = new FlexMessageBuilder("Problem2", $textProblem2, $quickReplySubWebsite);
+                    $replyData = new FlexMessageBuilder("Problem2", $textProblem2, $quickReplyProblem);
                 } else if ($userMessage == "คำถาม:ปัญหา3") {
-                    $replyData = new FlexMessageBuilder("Problem3", $textProblem3, $quickReplySubWebsite);
+                    $replyData = new FlexMessageBuilder("Problem3", $textProblem3, $quickReplyProblem);
                 }
 
                 // ----------------------------------------------------------------------------------------- Promotion

@@ -1302,7 +1302,7 @@ $textWebsite2 = new BubbleContainerBuilder(
         "horizontal",
         array(
             new TextComponentBuilder(
-                "เข้าเล่นยังไง ?
+                "วิธีเข้าหน้าเว็บ ?
                 
 วิธีเข้าหน้าเว็บ คลิกลิงค์ได้เลยค่ะ
 ___________________________________",

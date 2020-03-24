@@ -387,10 +387,10 @@ $quickReplyAddress = new QuickReplyMessageBuilder(
 );
 $quickReplyDetailUser = new QuickReplyMessageBuilder(
     array(
-        new QuickReplyButtonBuilder($textEditAddress),
-        new QuickReplyButtonBuilder($textReplyToQuestion),
-        new QuickReplyButtonBuilder($textReplyToRegister),
-        new QuickReplyButtonBuilder($textReplyToContact)
+        new QuickReplyButtonBuilder($textEditAddress)
+        // new QuickReplyButtonBuilder($textReplyToQuestion),
+        // new QuickReplyButtonBuilder($textReplyToRegister),
+        // new QuickReplyButtonBuilder($textReplyToContact)
     )
 );
 

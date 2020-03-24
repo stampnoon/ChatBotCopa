@@ -2615,10 +2615,10 @@ if (!is_null($events)) {
                         '18+',
                         new BaseSizeBuilder(1040, 1040),
                         array(
-                            new ImagemapMessageActionBuilder(
-                                'เข้ากลุ่ม',
-                                new AreaBuilder(344, 898, 345, 83)
-                            ),
+                        //     new ImagemapMessageActionBuilder(
+                        //         'เข้ากลุ่ม',
+                        //         new AreaBuilder(344, 898, 345, 83)
+                        //     ),
                         )
                     );
                 } else if ($userMessage == "getid") {

@@ -2331,11 +2331,11 @@ if (!is_null($events)) {
                 // }
 
                 // ----------------------------------------------------------------------------------------- DetailPromotion 
+
+                // ----------------------------------------------------------------------------------------- Contact
                 else if ($userMessage == "ติดต่อ") {
                     $replyData = new FlexMessageBuilder("Contact", $textContact, $quickReplyMain);
                 }
-
-                // ----------------------------------------------------------------------------------------- MainMenu
 
                 // ----------------------------------------------------------------------------------------- Recommend
 
@@ -2365,9 +2365,45 @@ if (!is_null($events)) {
                         )
                     );
                 } else if ($userMessage == "คำถาม:คำแนะนำ1") {
-                    $replyData = new FlexMessageBuilder("Flex", $textRecommend1, $quickReplySubRecommend);
+                    //$replyData = new FlexMessageBuilder("Flex", $textRecommend1, $quickReplySubRecommend);
+                    $replyData = new ImagemapMessageBuilder(
+                        'https://www.pic2free.com/uploads/20200319/93235726873d0241bdfb672a9315a580919aae99.jpg?_ignore=',
+                        '18+',
+                        new BaseSizeBuilder(1040, 1040),
+                        array(
+                            new ImagemapMessageActionBuilder(
+                                'เข้ากลุ่ม',
+                                new AreaBuilder(344, 898, 345, 83)
+                            ),
+                        ),
+                        $quickReplySubRecommend
+                    );
                 } else if ($userMessage == "คำถาม:คำแนะนำ2") {
-                    $replyData = new FlexMessageBuilder("Flex", $textRecommend2, $quickReplySubRecommend);
+                    //$replyData = new FlexMessageBuilder("Flex", $textRecommend2, $quickReplySubRecommend);
+                    $replyData = new ImagemapMessageBuilder(
+                        'https://i.ibb.co/Dg7r1Rp/Npromotion.jpg?_ignore=',
+                        'register',
+                        new BaseSizeBuilder(1040, 1040),
+                        array(
+                            new ImagemapMessageActionBuilder(
+                                'โปร1000บาท',
+                                new AreaBuilder(11, 91, 1020, 232)
+                            ),
+                            new ImagemapMessageActionBuilder(
+                                'โปร500บาท',
+                                new AreaBuilder(11, 329, 1020, 232)
+                            ),
+                            new ImagemapMessageActionBuilder(
+                                'โปร300บาท',
+                                new AreaBuilder(11, 561, 1020, 232)
+                            ),
+                            new ImagemapMessageActionBuilder(
+                                'โปร200บาท',
+                                new AreaBuilder(11, 800, 1020, 232)
+                            ),
+                        ),
+                        $quickReplyMain
+                    );
                 }
 
                 // ----------------------------------------------------------------------------------------- Recommend
@@ -2615,10 +2651,10 @@ if (!is_null($events)) {
                         '18+',
                         new BaseSizeBuilder(1040, 1040),
                         array(
-                        //     new ImagemapMessageActionBuilder(
-                        //         'เข้ากลุ่ม',
-                        //         new AreaBuilder(344, 898, 345, 83)
-                        //     ),
+                            new ImagemapMessageActionBuilder(
+                                'เข้ากลุ่ม',
+                                new AreaBuilder(344, 898, 345, 83)
+                            ),
                         )
                     );
                 } else if ($userMessage == "getid") {

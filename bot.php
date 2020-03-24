@@ -2567,17 +2567,21 @@ if (!is_null($events)) {
                         ),
                         $quickReplySubPromotion
                     );
-                } else if ($userMessage == "คำถาม:โปรโมชั่น2") {
+                } else if ($userMessage == "คำถาม:โปรโมชั่น2" || $userMessage == "โปรโมชั่น18+") {
                     //$replyData = new FlexMessageBuilder("Flex", $textPromotion1, $quickReplySubPromotion);
                     $replyData = new ImagemapMessageBuilder(
                         'https://i.ibb.co/kMgHs2J/Ads.jpg?_ignore=',
                         '18+',
                         new BaseSizeBuilder(1040, 1040),
                         array(
-                            new ImagemapMessageActionBuilder(
-                                'เข้ากลุ่ม',
+                            // new ImagemapMessageActionBuilder(
+                            //     'เข้ากลุ่ม',
+                            //     new AreaBuilder(344, 898, 345, 83)
+                            // ), 
+                            new ImagemapUriActionBuilder(
+                                'https://line.me/R/ti/p/%40519uqyhc',
                                 new AreaBuilder(344, 898, 345, 83)
-                            ),
+                            )
                         ),
                         $quickReplySubPromotion
                     );

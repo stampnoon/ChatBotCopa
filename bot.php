@@ -2980,8 +2980,7 @@ if (!is_null($events)) {
                 // } 
                 else if ($userMessage == "test") {
                     $actions = array(
-                        'type' => 'text',
-                        'text' => 'Hello'
+                        new TextMessageBuilder("test ja")
                     );
                     $replyData = new TextMessageBuilder($actions);
 

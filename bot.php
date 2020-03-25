@@ -3024,7 +3024,9 @@ if (!is_null($events)) {
                 }
                 break;
             }
-
+        case "image":
+            $replyData = new TextMessageBuilder('This is image');
+            break;
             // ----------------------------------------------------------------------------------------- Image
         default:
             $replyData = new FlexMessageBuilder("Flex", $textGetUser, $quickReplyEditSlip);

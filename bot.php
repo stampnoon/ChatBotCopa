@@ -34,6 +34,8 @@ use LINE\LINEBot\ImagemapActionBuilder\ImagemapMessageActionBuilder;
 use LINE\LINEBot\ImagemapActionBuilder\ImagemapUriActionBuilder;
 use LINE\LINEBot\ImagemapActionBuilder\AreaBuilder;
 use LINE\LINEBot\MessageBuilder\Imagemap\BaseSizeBuilder;
+use LINE\LINEBot\MessageBuilder\TemplateBuilder\ButtonTemplateBuilder;
+use LINE\LINEBot\MessageBuilder\TemplateMessageBuilder;
 
 $httpClient = new CurlHTTPClient(LINE_MESSAGE_ACCESS_TOKEN);
 $bot = new LINEBot($httpClient, array('channelSecret' => LINE_MESSAGE_CHANNEL_SECRET));
@@ -3018,6 +3020,17 @@ if (!is_null($events)) {
                 //         $replyData = new TextMessageBuilder('Send to Bot2 success');
                 //     }
                 // }
+                elseif ($userMessage == "F") {
+                    $actions = array(
+                        // general message action
+                        new MessageTemplateActionBuilder("ดูต่อ", "ควยลัน"),
+                    );
+                    $img_url = "https://i.ibb.co/KG4g477/979937-3261730880289-12041100-o.jpg";
+                    $button = new ButtonTemplateBuilder("ควยลัน", "description", $img_url, $actions);
+                    $outputText = new TemplateMessageBuilder("Button template builder", $button);
+                    $response = $bot->replyMessage($replyToken, $outputText);
+                    break;
+                }
                 // ========================== Test===================================
                 else {
                     $replyData = new FlexMessageBuilder("Flex", $textNotKeyword, $quickReplyMain);

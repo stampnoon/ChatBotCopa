@@ -507,7 +507,7 @@ $textOther3 = new BubbleContainerBuilder(
         "horizontal",
         array(
             new TextComponentBuilder(
-                "ไม่จำกัดจานวนครั้งค่ะ",
+                "ไม่จำกัดจำนวนครั้งค่ะ",
                 NULL,
                 NULL,
                 "md",

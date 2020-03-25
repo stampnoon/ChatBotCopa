@@ -2979,7 +2979,10 @@ if (!is_null($events)) {
                 //     );
                 // } 
                 else if ($userMessage == "test") {
-                    $replyData = new TextMessageBuilder('asdasdasd');
+                    $actions = array(
+                        'message' => 'AAA'
+                    );
+                    $replyData = json_decode($actions);
                     //$replyData = new TextMessageBuilder(json_encode($test));
                 }
                 // else if ($userMessage == "push") {

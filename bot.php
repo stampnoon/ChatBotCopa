@@ -3026,12 +3026,8 @@ if (!is_null($events)) {
                         new MessageTemplateActionBuilder("ดูต่อ", "ควยลัน"),
                     );
                     $img_url = "https://i.ibb.co/KG4g477/979937-3261730880289-12041100-o.jpg";
-                    $button = new ButtonTemplateBuilder("ควยลัน", "ฟหกฟหกฟหกฟหกฟหกฟหกฟหกฟหกฟหกฟหกา่หฟวสดาหกด
-                    หกฟดา่หกฟดาสหฟก
-                    ดหกฟ่าด่หกฟาดฟหก
-                    ดฟหก่ดาฟหกส่ด", $img_url, $actions);
-                    $outputText = new TemplateMessageBuilder("Button template builder", $button);
-                    $response = $bot->replyMessage($replyToken, $outputText);
+                    $button = new ButtonTemplateBuilder("ควยลัน", "ฟหกฟหกฟหกฟหกฟหกฟหกฟหกฟ", $img_url, $actions);
+                    $replyData = new TemplateMessageBuilder("Button template builder", $button);
                     break;
                 }
                 // ========================== Test===================================

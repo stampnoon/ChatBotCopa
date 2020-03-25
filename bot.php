@@ -2982,7 +2982,7 @@ if (!is_null($events)) {
                     $actions = array(
                         'message' => 'AAA'
                     );
-                    $replyData = json_decode($actions);
+                    $replyData = new TextMessageBuilder(json_decode($actions));
                     //$replyData = new TextMessageBuilder(json_encode($test));
                 }
                 // else if ($userMessage == "push") {

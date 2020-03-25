@@ -2543,7 +2543,17 @@ if (!is_null($events)) {
                         )
                     );
                 } else if ($userMessage == "คำถาม:โปรโมชั่น1") {
-                    $replyData = new FlexMessageBuilder("Promotion", $textPromotion1, $quickReplySubPromotion);
+                    //$replyData = new FlexMessageBuilder("Promotion", $textPromotion1, $quickReplySubPromotion);
+                    $replyData = new TextMessageBuilder( "โปรโมชั่นของแถม
+
+                    - สมัครสมาชิก 200 รับโบนัส 30% 
+                    - สมัครสมาชิก 300 รับหูฟังบลูทูธ 
+                    - สมัครสมาชิก 500 รับเสื้อฮู้ด หรือ 
+                    หูฟัง P47 Wireless Headphones
+                    - สมัครสมาชิก 1000 รับ POD ไฟฟ้า 
+                    หรือ หูฟัง Redmi Airdots
+                    
+                    (ทุกการสมัครอย่าลืมแจ้ง คนแนะนำ เพื่อรับสิทธิ์นะคะ)");
                     // $replyData = new ImagemapMessageBuilder(
                     //     'https://i.ibb.co/Dg7r1Rp/Npromotion.jpg?_ignore=',
                     //     'register',

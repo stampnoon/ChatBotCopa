@@ -2544,16 +2544,47 @@ if (!is_null($events)) {
                     );
                 } else if ($userMessage == "คำถาม:โปรโมชั่น1") {
                     //$replyData = new FlexMessageBuilder("Promotion", $textPromotion1, $quickReplySubPromotion);
-                    $replyData = new TextMessageBuilder( "โปรโมชั่นของแถม
+                    $actions1 = new TextMessageBuilder("โปรโมชั่นของแถม
 
-                    - สมัครสมาชิก 200 รับโบนัส 30% 
-                    - สมัครสมาชิก 300 รับหูฟังบลูทูธ 
-                    - สมัครสมาชิก 500 รับเสื้อฮู้ด หรือ 
-                    หูฟัง P47 Wireless Headphones
-                    - สมัครสมาชิก 1000 รับ POD ไฟฟ้า 
-                    หรือ หูฟัง Redmi Airdots
+- สมัครสมาชิก 200 รับโบนัส 30% 
+- สมัครสมาชิก 300 รับหูฟังบลูทูธ 
+- สมัครสมาชิก 500 รับเสื้อฮู้ด หรือ 
+หูฟัง P47 Wireless Headphones
+- สมัครสมาชิก 1000 รับ POD ไฟฟ้า 
+หรือ หูฟัง Redmi Airdots
                     
-                    (ทุกการสมัครอย่าลืมแจ้ง คนแนะนำ เพื่อรับสิทธิ์นะคะ)");
+(ทุกการสมัครอย่าลืมแจ้ง คนแนะนำ เพื่อรับสิทธิ์นะคะ)");
+
+                    $actions2 = $replyData = new ImagemapMessageBuilder(
+                        'https://i.ibb.co/Dg7r1Rp/Npromotion.jpg?_ignore=',
+                        'register1',
+                        new BaseSizeBuilder(1040, 1040),
+                        array(
+                            new ImagemapMessageActionBuilder(
+                                'โปร1000บาท',
+                                new AreaBuilder(11, 91, 1020, 232)
+                            ),
+                            new ImagemapMessageActionBuilder(
+                                'โปร500บาท',
+                                new AreaBuilder(11, 329, 1020, 232)
+                            ),
+                            new ImagemapMessageActionBuilder(
+                                'โปร300บาท',
+                                new AreaBuilder(11, 561, 1020, 232)
+                            ),
+                            new ImagemapMessageActionBuilder(
+                                'โปร200บาท',
+                                new AreaBuilder(11, 800, 1020, 232)
+                            ),
+                        ),
+                        $quickReplySubPromotion
+                    );
+
+                    $multiMessage = new MultiMessageBuilder;
+                    $multiMessage->add($actions1);
+                    $multiMessage->add($actions2);
+                    $replyData = $multiMessage;
+                    
                     // $replyData = new ImagemapMessageBuilder(
                     //     'https://i.ibb.co/Dg7r1Rp/Npromotion.jpg?_ignore=',
                     //     'register',

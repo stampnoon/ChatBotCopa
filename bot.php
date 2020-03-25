@@ -2978,37 +2978,16 @@ if (!is_null($events)) {
                         ),
                         $quickReplyMain
                     );
-                } 
-                else if ($userMessage == "test") {
-                    $actions1 = new TextMessageBuilder("test ja");
-                    $actions2 = new ImagemapMessageBuilder(
-                                $imageMapUrl,
-                                'register',
-                                new BaseSizeBuilder(1040, 1040),
-                                array(
-                                    new ImagemapMessageActionBuilder(
-                                        'โปร1000บาท',
-                                        new AreaBuilder(11, 91, 1020, 232)
-                                    ),
-                                    new ImagemapMessageActionBuilder(
-                                        'โปร500บาท',
-                                        new AreaBuilder(11, 329, 1020, 232)
-                                    ),
-                                    new ImagemapMessageActionBuilder(
-                                        'โปร300บาท',
-                                        new AreaBuilder(11, 561, 1020, 232)
-                                    ),
-                                    new ImagemapMessageActionBuilder(
-                                        'โปร200บาท',
-                                        new AreaBuilder(11, 800, 1020, 232)
-                                    ),
-                                ),
-                                $quickReplyMain
-                            );
-                    $multimessage = new MultiMessageBuilder;
-                    $multimessage->add($actions1);
-                    $multimessage->add($actions2);
-                    $replyData = $multimessage;
+                } else if ($userMessage == "test") {
+                    $actions1 = new TextMessageBuilder("test ja1");
+                    $actions2 = new TextMessageBuilder("test ja2");
+
+
+                    $multiMessage =     new MultiMessageBuilder;
+                    $multiMessage->add($actions1);
+                    $multiMessage->add($actions2);
+                    //$multiMessage->add($locationMessage);
+                    $replyData = $multiMessage;
 
                     // $test = new TextMessageBuilder("test ja");
                     // $replyData = new TextMessageBuilder(json_decode($test));
@@ -3044,7 +3023,6 @@ if (!is_null($events)) {
             }
         case "image":
             $replyData = new FlexMessageBuilder("Flex", $textGetUser, $quickReplyEditSlip);
-            //$replyData = new TextMessageBuilder('This is image');
             break;
             // ----------------------------------------------------------------------------------------- Image
         default:

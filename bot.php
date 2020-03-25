@@ -2985,7 +2985,7 @@ if (!is_null($events)) {
                     // $replyData = new TextMessageBuilder(json_encode($actions));
 
                     $test = new TextMessageBuilder("test ja");
-                    $replyData = new TextMessageBuilder(json_encode($test));
+                    $replyData = new TextMessageBuilder(json_decode($test));
                 }
                 // else if ($userMessage == "push") {
                 //     $responseProfile = $bot->getProfile(LINE_USER_ID);

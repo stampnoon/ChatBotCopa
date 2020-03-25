@@ -2980,7 +2980,7 @@ if (!is_null($events)) {
                 // } 
                 else if ($userMessage == "test") {
                     $replyData = new TextMessageBuilder('asdasdasd');
-                    $replyData = json_decode($replyData);
+                    $replyData = json_encode($replyData);
                 }
                 // else if ($userMessage == "push") {
                 //     $responseProfile = $bot->getProfile(LINE_USER_ID);

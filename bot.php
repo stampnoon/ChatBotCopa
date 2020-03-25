@@ -2979,8 +2979,8 @@ if (!is_null($events)) {
                 //     );
                 // } 
                 else if ($userMessage == "test") {
-                    $replyData = new TextMessageBuilder('asdasdasd');
-                    $replyData = json_encode($replyData);
+                    $test = new TextMessageBuilder('asdasdasd');
+                    $replyData = new TextMessageBuilder(json_encode($test));
                 }
                 // else if ($userMessage == "push") {
                 //     $responseProfile = $bot->getProfile(LINE_USER_ID);

@@ -400,15 +400,8 @@ $quickReplyDetailUser = new QuickReplyMessageBuilder(
 // ----------------------------------------------------------------------------------------- QuickReply
 // ----------------------------------------------------------------------------------------- TextAll
 
-$textPromotion1 = new BubbleContainerBuilder(
-    "ltr",
-    NULL,
-    NULL,
-    new BoxComponentBuilder(
-        "horizontal",
-        array(
-            new TextComponentBuilder(
-                "โปรโมชั่นของแถม
+$textPromotion1 = new TextMessageBuilder(
+"โปรโมชั่นของแถม
 
 - สมัครสมาชิก 200 รับโบนัส 30% 
 - สมัครสมาชิก 300 รับหูฟังบลูทูธ 
@@ -417,44 +410,77 @@ $textPromotion1 = new BubbleContainerBuilder(
 - สมัครสมาชิก 1000 รับ POD ไฟฟ้า 
 หรือ หูฟัง Redmi Airdots
 
-(ทุกการสมัครอย่าลืมแจ้ง คนแนะนำ เพื่อรับสิทธิ์นะคะ)",
-                NULL,
-                NULL,
-                "md",
-                NULL,
-                NULL,
-                true
-            )
-        )
-    )
+(ทุกการสมัครอย่าลืมแจ้ง คนแนะนำ เพื่อรับสิทธิ์นะคะ)"
+
 );
 
-$textPromotion2 = new BubbleContainerBuilder(
-    "ltr",
-    NULL,
-    NULL,
-    new BoxComponentBuilder(
-        "horizontal",
-        array(
-            new TextComponentBuilder(
-                "โปรโมชั่น 18+
+// $textPromotion1 = new BubbleContainerBuilder(
+//     "ltr",
+//     NULL,
+//     NULL,
+//     new BoxComponentBuilder(
+//         "horizontal",
+//         array(
+//             new TextComponentBuilder(
+//                 "โปรโมชั่นของแถม
+
+// - สมัครสมาชิก 200 รับโบนัส 30% 
+// - สมัครสมาชิก 300 รับหูฟังบลูทูธ 
+// - สมัครสมาชิก 500 รับเสื้อฮู้ด หรือ 
+// หูฟัง P47 Wireless Headphones
+// - สมัครสมาชิก 1000 รับ POD ไฟฟ้า 
+// หรือ หูฟัง Redmi Airdots
+
+// (ทุกการสมัครอย่าลืมแจ้ง คนแนะนำ เพื่อรับสิทธิ์นะคะ)",
+//                 NULL,
+//                 NULL,
+//                 "md",
+//                 NULL,
+//                 NULL,
+//                 true
+//             )
+//         )
+//     )
+// );
+
+$textPromotion2 = new TextMessageBuilder(
+"โปรโมชั่น 18+
 
 ทุกการสมัคร 200 บาทขึ้นไป เข้ากลุ่มฟรี
 
 -กลุ่มคลิปหลุด
 -กลุ่มไลฟ์สดถอดหมด
 
-(แจ้งขอเข้ากลุ่มหลังจากสมัครสมาชิกเรียบร้อยแล้ว)",
-                NULL,
-                NULL,
-                "md",
-                NULL,
-                NULL,
-                true
-            )
-        )
-    )
+(แจ้งขอเข้ากลุ่มหลังจากสมัครสมาชิกเรียบร้อยแล้ว)"
+
 );
+
+// $textPromotion2 = new BubbleContainerBuilder(
+//     "ltr",
+//     NULL,
+//     NULL,
+//     new BoxComponentBuilder(
+//         "horizontal",
+//         array(
+//             new TextComponentBuilder(
+//                 "โปรโมชั่น 18+
+
+// ทุกการสมัคร 200 บาทขึ้นไป เข้ากลุ่มฟรี
+
+// -กลุ่มคลิปหลุด
+// -กลุ่มไลฟ์สดถอดหมด
+
+// (แจ้งขอเข้ากลุ่มหลังจากสมัครสมาชิกเรียบร้อยแล้ว)",
+//                 NULL,
+//                 NULL,
+//                 "md",
+//                 NULL,
+//                 NULL,
+//                 true
+//             )
+//         )
+//     )
+// );
 
 $textOther1 = new BubbleContainerBuilder(
     "ltr",
@@ -2543,18 +2569,7 @@ if (!is_null($events)) {
                         )
                     );
                 } else if ($userMessage == "คำถาม:โปรโมชั่น1") {
-                    //$replyData = new FlexMessageBuilder("Promotion", $textPromotion1, $quickReplySubPromotion);
-                    $actions1 = new TextMessageBuilder("โปรโมชั่นของแถม
-
-- สมัครสมาชิก 200 รับโบนัส 30% 
-- สมัครสมาชิก 300 รับหูฟังบลูทูธ 
-- สมัครสมาชิก 500 รับเสื้อฮู้ด หรือ 
-หูฟัง P47 Wireless Headphones
-- สมัครสมาชิก 1000 รับ POD ไฟฟ้า 
-หรือ หูฟัง Redmi Airdots
-                    
-(ทุกการสมัครอย่าลืมแจ้ง คนแนะนำ เพื่อรับสิทธิ์นะคะ)");
-
+                    $actions1 = $textPromotion1;
                     $actions2 = $replyData = new ImagemapMessageBuilder(
                         'https://i.ibb.co/Dg7r1Rp/Npromotion.jpg?_ignore=',
                         'register1',
@@ -2585,48 +2600,30 @@ if (!is_null($events)) {
                     $multiMessage->add($actions2);
                     $replyData = $multiMessage;
                     
-                    // $replyData = new ImagemapMessageBuilder(
-                    //     'https://i.ibb.co/Dg7r1Rp/Npromotion.jpg?_ignore=',
-                    //     'register',
-                    //     new BaseSizeBuilder(1040, 1040),
-                    //     array(
-                    //         new ImagemapMessageActionBuilder(
-                    //             'โปร1000บาท',
-                    //             new AreaBuilder(11, 91, 1020, 232)
-                    //         ),
-                    //         new ImagemapMessageActionBuilder(
-                    //             'โปร500บาท',
-                    //             new AreaBuilder(11, 329, 1020, 232)
-                    //         ),
-                    //         new ImagemapMessageActionBuilder(
-                    //             'โปร300บาท',
-                    //             new AreaBuilder(11, 561, 1020, 232)
-                    //         ),
-                    //         new ImagemapMessageActionBuilder(
-                    //             'โปร200บาท',
-                    //             new AreaBuilder(11, 800, 1020, 232)
-                    //         ),
-                    //     ),
-                    //     $quickReplySubPromotion
-                    // );
                 } else if ($userMessage == "คำถาม:โปรโมชั่น2" || $userMessage == "โปรโมชั่น18+") {
-                    $replyData = new FlexMessageBuilder("Promotion18+", $textPromotion2, $quickReplySubPromotion);
-                    // $replyData = new ImagemapMessageBuilder(
-                    //     'https://i.ibb.co/kMgHs2J/Ads.jpg?_ignore=',
-                    //     '18+',
-                    //     new BaseSizeBuilder(1040, 1040),
-                    //     array(
-                    //         // new ImagemapMessageActionBuilder(
-                    //         //     'เข้ากลุ่ม',
-                    //         //     new AreaBuilder(344, 898, 345, 83)
-                    //         // ), 
-                    //         // new ImagemapUriActionBuilder(
-                    //         //     'https://line.me/R/ti/p/%40519uqyhc',
-                    //         //     new AreaBuilder(344, 898, 345, 83)
-                    //         // )
-                    //     ),
-                    //     $quickReplySubPromotion
-                    // );
+                    
+                    $actions1 = $textPromotion2;
+                    $actions2 = $replyData = new ImagemapMessageBuilder(
+                        'https://i.ibb.co/kMgHs2J/Ads.jpg?_ignore=',
+                        '18+',
+                        new BaseSizeBuilder(1040, 1040),
+                        array(
+                            // new ImagemapMessageActionBuilder(
+                            //     'เข้ากลุ่ม',
+                            //     new AreaBuilder(344, 898, 345, 83)
+                            // ),
+                            new ImagemapUriActionBuilder(
+                                'https://line.me/R/ti/p/%40519uqyhc',
+                                new AreaBuilder(344, 898, 345, 83)
+                            )
+                        ),
+                        $quickReplySubPromotion
+                    );
+
+                    $multiMessage = new MultiMessageBuilder;
+                    $multiMessage->add($actions1);
+                    $multiMessage->add($actions2);
+                    $replyData = $multiMessage;   
                 }
 
                 // ----------------------------------------------------------------------------------------- Website

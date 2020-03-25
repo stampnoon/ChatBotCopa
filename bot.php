@@ -2979,13 +2979,14 @@ if (!is_null($events)) {
                 //     );
                 // } 
                 else if ($userMessage == "test") {
-                    // $actions = array(
-                    //     'message' => 'AAA'
-                    // );
-                    // $replyData = new TextMessageBuilder(json_encode($actions));
+                    $actions = array(
+                        'type' => 'text',
+                        'text' => 'Hello'
+                    );
+                    $replyData = new TextMessageBuilder($actions);
 
-                    $test = new TextMessageBuilder("test ja");
-                    $replyData = new TextMessageBuilder(json_decode($test));
+                    // $test = new TextMessageBuilder("test ja");
+                    // $replyData = new TextMessageBuilder(json_decode($test));
                 }
                 // else if ($userMessage == "push") {
                 //     $responseProfile = $bot->getProfile(LINE_USER_ID);

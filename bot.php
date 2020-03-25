@@ -401,7 +401,7 @@ $quickReplyDetailUser = new QuickReplyMessageBuilder(
 // ----------------------------------------------------------------------------------------- TextAll
 
 $textPromotion1 = new TextMessageBuilder(
-"โปรโมชั่นของแถม
+    "โปรโมชั่นของแถม
 
 - สมัครสมาชิก 200 รับโบนัส 30% 
 - สมัครสมาชิก 300 รับหูฟังบลูทูธ 
@@ -444,7 +444,7 @@ $textPromotion1 = new TextMessageBuilder(
 // );
 
 $textPromotion2 = new TextMessageBuilder(
-"โปรโมชั่น 18+
+    "โปรโมชั่น 18+
 
 ทุกการสมัคร 200 บาทขึ้นไป เข้ากลุ่มฟรี
 
@@ -2599,9 +2599,8 @@ if (!is_null($events)) {
                     $multiMessage->add($actions1);
                     $multiMessage->add($actions2);
                     $replyData = $multiMessage;
-                    
                 } else if ($userMessage == "คำถาม:โปรโมชั่น2" || $userMessage == "โปรโมชั่น18+") {
-                    
+
                     $actions1 = $textPromotion2;
                     $actions2 = $replyData = new ImagemapMessageBuilder(
                         'https://i.ibb.co/kMgHs2J/Ads.jpg?_ignore=',
@@ -2623,7 +2622,7 @@ if (!is_null($events)) {
                     $multiMessage = new MultiMessageBuilder;
                     $multiMessage->add($actions1);
                     $multiMessage->add($actions2);
-                    $replyData = $multiMessage;   
+                    $replyData = $multiMessage;
                 }
 
                 // ----------------------------------------------------------------------------------------- Website
@@ -2990,70 +2989,70 @@ if (!is_null($events)) {
                     $replyData = new FlexMessageBuilder("Flex", $textSendAddress, $quickReplyMain);
                 }
                 // ========================== Test ===================================
-                else if ($userMessage == "img") {
-                    $imageMapUrl = 'https://i.ibb.co/Dg7r1Rp/Npromotion.jpg?_ignore=';
-                    $replyData = new ImagemapMessageBuilder(
-                        $imageMapUrl,
-                        'register',
-                        new BaseSizeBuilder(1040, 1040),
-                        array(
-                            new ImagemapMessageActionBuilder(
-                                'โปร1000บาท',
-                                new AreaBuilder(11, 91, 1020, 232)
-                            ),
-                            new ImagemapMessageActionBuilder(
-                                'โปร500บาท',
-                                new AreaBuilder(11, 329, 1020, 232)
-                            ),
-                            new ImagemapMessageActionBuilder(
-                                'โปร300บาท',
-                                new AreaBuilder(11, 561, 1020, 232)
-                            ),
-                            new ImagemapMessageActionBuilder(
-                                'โปร200บาท',
-                                new AreaBuilder(11, 800, 1020, 232)
-                            ),
-                        ),
-                        $quickReplyMain
-                    );
-                } else if ($userMessage == "test") {
-                    $actions1 = new TextMessageBuilder("test ja1");
-                    $actions2 = new TextMessageBuilder("test ja2");
-                    $actions3 = $replyData = new ImagemapMessageBuilder(
-                        'https://i.ibb.co/Dg7r1Rp/Npromotion.jpg?_ignore=',
-                        'register',
-                        new BaseSizeBuilder(1040, 1040),
-                        array(
-                            new ImagemapMessageActionBuilder(
-                                'โปร1000บาท',
-                                new AreaBuilder(11, 91, 1020, 232)
-                            ),
-                            new ImagemapMessageActionBuilder(
-                                'โปร500บาท',
-                                new AreaBuilder(11, 329, 1020, 232)
-                            ),
-                            new ImagemapMessageActionBuilder(
-                                'โปร300บาท',
-                                new AreaBuilder(11, 561, 1020, 232)
-                            ),
-                            new ImagemapMessageActionBuilder(
-                                'โปร200บาท',
-                                new AreaBuilder(11, 800, 1020, 232)
-                            ),
-                        ),
-                        $quickReplyMain
-                    );
+                // else if ($userMessage == "img") {
+                //     $imageMapUrl = 'https://i.ibb.co/Dg7r1Rp/Npromotion.jpg?_ignore=';
+                //     $replyData = new ImagemapMessageBuilder(
+                //         $imageMapUrl,
+                //         'register',
+                //         new BaseSizeBuilder(1040, 1040),
+                //         array(
+                //             new ImagemapMessageActionBuilder(
+                //                 'โปร1000บาท',
+                //                 new AreaBuilder(11, 91, 1020, 232)
+                //             ),
+                //             new ImagemapMessageActionBuilder(
+                //                 'โปร500บาท',
+                //                 new AreaBuilder(11, 329, 1020, 232)
+                //             ),
+                //             new ImagemapMessageActionBuilder(
+                //                 'โปร300บาท',
+                //                 new AreaBuilder(11, 561, 1020, 232)
+                //             ),
+                //             new ImagemapMessageActionBuilder(
+                //                 'โปร200บาท',
+                //                 new AreaBuilder(11, 800, 1020, 232)
+                //             ),
+                //         ),
+                //         $quickReplyMain
+                //     );
+                // } else if ($userMessage == "test") {
+                //     $actions1 = new TextMessageBuilder("test ja1");
+                //     $actions2 = new TextMessageBuilder("test ja2");
+                //     $actions3 = $replyData = new ImagemapMessageBuilder(
+                //         'https://i.ibb.co/Dg7r1Rp/Npromotion.jpg?_ignore=',
+                //         'register',
+                //         new BaseSizeBuilder(1040, 1040),
+                //         array(
+                //             new ImagemapMessageActionBuilder(
+                //                 'โปร1000บาท',
+                //                 new AreaBuilder(11, 91, 1020, 232)
+                //             ),
+                //             new ImagemapMessageActionBuilder(
+                //                 'โปร500บาท',
+                //                 new AreaBuilder(11, 329, 1020, 232)
+                //             ),
+                //             new ImagemapMessageActionBuilder(
+                //                 'โปร300บาท',
+                //                 new AreaBuilder(11, 561, 1020, 232)
+                //             ),
+                //             new ImagemapMessageActionBuilder(
+                //                 'โปร200บาท',
+                //                 new AreaBuilder(11, 800, 1020, 232)
+                //             ),
+                //         ),
+                //         $quickReplyMain
+                //     );
 
 
-                    $multiMessage =     new MultiMessageBuilder;
-                    $multiMessage->add($actions1);
-                    $multiMessage->add($actions2);
-                    $multiMessage->add($actions3);
-                    $replyData = $multiMessage;
+                //     $multiMessage =     new MultiMessageBuilder;
+                //     $multiMessage->add($actions1);
+                //     $multiMessage->add($actions2);
+                //     $multiMessage->add($actions3);
+                //     $replyData = $multiMessage;
 
-                    // $test = new TextMessageBuilder("test ja");
-                    // $replyData = new TextMessageBuilder(json_decode($test));
-                }
+                //     // $test = new TextMessageBuilder("test ja");
+                //     // $replyData = new TextMessageBuilder(json_decode($test));
+                // }
                 // else if ($userMessage == "push") {
                 //     $responseProfile = $bot->getProfile(LINE_USER_ID);
                 //     $profile = $responseProfile->getJSONDecodedBody();
@@ -3067,16 +3066,16 @@ if (!is_null($events)) {
                 //         $replyData = new TextMessageBuilder('Send to Bot2 success');
                 //     }
                 // }
-                elseif ($userMessage == "F") {
-                    $actions = array(
-                        // general message action
-                        new MessageTemplateActionBuilder("ดูต่อ", "ควยลัน"),
-                    );
-                    $img_url = "https://i.ibb.co/KG4g477/979937-3261730880289-12041100-o.jpg";
-                    $button = new ButtonTemplateBuilder("ควยลัน", "description", $img_url, $actions);
-                    $replyData = new TemplateMessageBuilder("Button template builder", $button);
-                    break;
-                }
+                // elseif ($userMessage == "F") {
+                //     $actions = array(
+                //         // general message action
+                //         new MessageTemplateActionBuilder("ดูต่อ", "ควยลัน"),
+                //     );
+                //     $img_url = "https://i.ibb.co/KG4g477/979937-3261730880289-12041100-o.jpg";
+                //     $button = new ButtonTemplateBuilder("ควยลัน", "description", $img_url, $actions);
+                //     $replyData = new TemplateMessageBuilder("Button template builder", $button);
+                //     break;
+                // }
                 // ========================== Test===================================
                 else {
                     $replyData = new FlexMessageBuilder("Flex", $textNotKeyword, $quickReplyMain);

@@ -2981,12 +2981,36 @@ if (!is_null($events)) {
                 } else if ($userMessage == "test") {
                     $actions1 = new TextMessageBuilder("test ja1");
                     $actions2 = new TextMessageBuilder("test ja2");
+                    $actions3 = $replyData = new ImagemapMessageBuilder(
+                        'https://i.ibb.co/Dg7r1Rp/Npromotion.jpg?_ignore=',
+                        'register',
+                        new BaseSizeBuilder(1040, 1040),
+                        array(
+                            new ImagemapMessageActionBuilder(
+                                'โปร1000บาท',
+                                new AreaBuilder(11, 91, 1020, 232)
+                            ),
+                            new ImagemapMessageActionBuilder(
+                                'โปร500บาท',
+                                new AreaBuilder(11, 329, 1020, 232)
+                            ),
+                            new ImagemapMessageActionBuilder(
+                                'โปร300บาท',
+                                new AreaBuilder(11, 561, 1020, 232)
+                            ),
+                            new ImagemapMessageActionBuilder(
+                                'โปร200บาท',
+                                new AreaBuilder(11, 800, 1020, 232)
+                            ),
+                        ),
+                        $quickReplyMain
+                    );
 
 
                     $multiMessage =     new MultiMessageBuilder;
                     $multiMessage->add($actions1);
                     $multiMessage->add($actions2);
-                    //$multiMessage->add($locationMessage);
+                    $multiMessage->add($actions3);
                     $replyData = $multiMessage;
 
                     // $test = new TextMessageBuilder("test ja");

@@ -2365,7 +2365,7 @@ Copa69 ขอขอบคุณที่ใช้บริการค่ะ....
         "horizontal",
         array(
             new ButtonComponentBuilder(
-                new UriTemplateActionBuilder("ติดต่อแอดมิน", "asdasdasd"),
+                new UriTemplateActionBuilder("ติดต่อแอดมิน", "https://line.me/R/ti/p/%40519uqyhc"),
                 NULL,
                 NULL,
                 NULL,

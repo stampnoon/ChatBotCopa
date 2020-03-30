@@ -2249,12 +2249,13 @@ $textAddress = new BubbleContainerBuilder(
         "horizontal",
         array(
             new TextComponentBuilder(
-                "กรุณากรอกที่อยู่ให้ครบถ้วนสมบูรณ์
+                "กรุณากรอกชื่อ เบอร์โที่อยู่ให้ครบถ้วนสมบูรณ์
 *กรุณานำหน้าประโยคด้วยคำว่า 'ที่อยู่'
 ___________________________________
 
 ตัวอย่าง: ที่อยู่ 111 หมู่1 ต.ตำบล
-อ.อำเภอ จ.จังหวัด 11111",
+อ.อำเภอ จ.จังหวัด 11111
+",
                 NULL,
                 NULL,
                 "md",
@@ -2336,7 +2337,8 @@ Copa69 ขอขอบคุณที่ใช้บริการค่ะ....
         )
     )
 );
-$textContact = new BubbleContainerBuilder(
+
+$textRegistsuccess = new BubbleContainerBuilder(
     "ltr",
     NULL,
     NULL,
@@ -2344,8 +2346,8 @@ $textContact = new BubbleContainerBuilder(
         "horizontal",
         array(
             new TextComponentBuilder(
-                "หากมีข้อสงสัยนอกเหนือจากที่กล่าว
-มาลูกค้าสามารถติดต่อกับ Admin ได้โดยตรงค่ะ
+                "สมัครสมาชิกเสร็จเรียบร้อยแล้ว
+กรุณาติดต่อแอดมินเพื่อรับของแถมได้เลยค่ะ
 
 คลิกที่ลิ้งเพื่อติดต่อ Admin
 ___________________________________
@@ -2363,7 +2365,44 @@ Copa69 ขอขอบคุณที่ใช้บริการค่ะ....
         "horizontal",
         array(
             new ButtonComponentBuilder(
-                new UriTemplateActionBuilder("ติดต่อ Admin", "https://line.me/R/ti/p/%40519uqyhc"),
+                new UriTemplateActionBuilder("ติดต่อ Adminเพื่อรับของแถม", ""),
+                NULL,
+                NULL,
+                NULL,
+                "primary"
+            )
+        )
+    )
+);
+
+$textContact = new BubbleContainerBuilder(
+    "ltr",
+    NULL,
+    NULL,
+    new BoxComponentBuilder(
+        "horizontal",
+        array(
+            new TextComponentBuilder(
+                "หากมีข้อสงสัยนอกเหนือจากที่กล่าว
+มาลูกค้าสามารถติดต่อกับแอดมินได้โดยตรงค่ะ
+
+คลิกที่ลิ้งเพื่อติดต่อแอดมิน
+___________________________________
+Copa69 ขอขอบคุณที่ใช้บริการค่ะ....",
+                NULL,
+                NULL,
+                NULL,
+                NULL,
+                NULL,
+                true
+            )
+        )
+    ),
+    new BoxComponentBuilder(
+        "horizontal",
+        array(
+            new ButtonComponentBuilder(
+                new UriTemplateActionBuilder("ติดต่อแอดมิน", "https://line.me/R/ti/p/%40519uqyhc"),
                 NULL,
                 NULL,
                 NULL,
@@ -3083,7 +3122,7 @@ if (!is_null($events)) {
                 break;
             }
         case "image":
-            $replyData = new FlexMessageBuilder("Flex", $textGetUser, $quickReplyEditSlip);
+            $replyData = new FlexMessageBuilder("Flex", $textRegistsuccess, $quickReplyMain);
             break;
             // ----------------------------------------------------------------------------------------- Image
         default:

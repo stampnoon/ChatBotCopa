@@ -2388,7 +2388,7 @@ $textContact = new BubbleContainerBuilder(
 รับของแถม
 
 เข้ากลุ่ม 18+
-___________________________________",
+",
                 NULL,
                 NULL,
                 NULL,
@@ -3011,10 +3011,11 @@ if (!is_null($events)) {
 
                 else if (strstr($userMessage, "แจ้งเลขยูส") == true || strstr($userMessage, "แก้ไขเลขยูส") == true) {
                     $replyData = new FlexMessageBuilder("Flex", $textGetUser, $quickReplyEditSlip);
-                } else if (strstr($userMessage, "user_") == true || strstr($userMessage, "User_") == true  || strstr($userMessage, "USER_") == true || $userMessage == "แก้ไขที่อยู่") {
-                    //$replyData = new FlexMessageBuilder("Flex", $textToAddress, $quickReplyUser);
-                    $replyData = new FlexMessageBuilder("Flex", $textAddress, $quickEditUser);
-                }
+                } 
+                // else if (strstr($userMessage, "user_") == true || strstr($userMessage, "User_") == true  || strstr($userMessage, "USER_") == true || $userMessage == "แก้ไขที่อยู่") {
+                //     //$replyData = new FlexMessageBuilder("Flex", $textToAddress, $quickReplyUser);
+                //     $replyData = new FlexMessageBuilder("Flex", $textAddress, $quickEditUser);
+                // }
                 // else if ($userMessage == "ไม่ต้องการ") {
                 //     $replyData = new FlexMessageBuilder("Flex", $textNotAddress, $quickReplyMain);
                 // } 
@@ -3022,10 +3023,10 @@ if (!is_null($events)) {
                 //     $replyData = new FlexMessageBuilder("Flex", $textAddress, $quickReplyAddress);
                 // } 
                 // else if (strstr($userMessage, "ที่อยู่") == true || strstr($userMessage, "อำเภอ") == true || strstr($userMessage, "อ.") == true || strstr($userMessage, "ตำบล") == true || strstr($userMessage, "ต.") == true || strstr($userMessage, "จังหวัด") == true || strstr($userMessage, "จ.") == true) {
-                else if (strstr($userMessage, "ที่อยู่") == true) {
-                    $replyData = new FlexMessageBuilder("Flex", $textDetailUser, $quickReplyDetailUser);
-                } else if (strstr($userMessage, "เพิ่มเติม") == true) {
-                    $replyData = new FlexMessageBuilder("Flex", $textSendAddress, $quickReplyMain);
+                // else if (strstr($userMessage, "ที่อยู่") == true) {
+                //     $replyData = new FlexMessageBuilder("Flex", $textDetailUser, $quickReplyDetailUser);
+                // } else if (strstr($userMessage, "เพิ่มเติม") == true) {
+                //     $replyData = new FlexMessageBuilder("Flex", $textSendAddress, $quickReplyMain);
                 }
                 // ========================== Test ===================================
                 // else if ($userMessage == "img") {

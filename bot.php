@@ -2349,7 +2349,7 @@ $textRegistsuccess = new BubbleContainerBuilder(
                 "สมัครสมาชิกเสร็จเรียบร้อยแล้ว
 กรุณาติดต่อแอดมินเพื่อรับของแถมได้เลยค่ะ
 
-คลิกที่ลิ้งเพื่อติดต่อ Admin
+คลิกที่ลิ้งเพื่อติดต่อแอดมิน
 ___________________________________
 Copa69 ขอขอบคุณที่ใช้บริการค่ะ....",
                 NULL,
@@ -2365,7 +2365,7 @@ Copa69 ขอขอบคุณที่ใช้บริการค่ะ....
         "horizontal",
         array(
             new ButtonComponentBuilder(
-                new UriTemplateActionBuilder("ติดต่อ Adminเพื่อรับของแถม", ""),
+                new UriTemplateActionBuilder("ติดต่อแอดมินเพื่อรับของแถม", "https://line.me/R/ti/p/%40519uqyhc"),
                 NULL,
                 NULL,
                 NULL,
@@ -3122,7 +3122,7 @@ if (!is_null($events)) {
                 break;
             }
         case "image":
-            $replyData = new FlexMessageBuilder("Flex", $textRegistsuccess, $quickReplyMain);
+            $replyData = new FlexMessageBuilder("Register success", $textRegistsuccess, $quickReplyMain);
             break;
             // ----------------------------------------------------------------------------------------- Image
         default:

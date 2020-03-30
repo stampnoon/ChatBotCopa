@@ -3009,25 +3009,24 @@ if (!is_null($events)) {
 
                 // ----------------------------------------------------------------------------------------- Account
 
-                else if (strstr($userMessage, "แจ้งเลขยูส") == true || strstr($userMessage, "แก้ไขเลขยูส") == true) {
-                    $replyData = new FlexMessageBuilder("Flex", $textGetUser, $quickReplyEditSlip);
-                } 
-                // else if (strstr($userMessage, "user_") == true || strstr($userMessage, "User_") == true  || strstr($userMessage, "USER_") == true || $userMessage == "แก้ไขที่อยู่") {
+                // else if (strstr($userMessage, "แจ้งเลขยูส") == true || strstr($userMessage, "แก้ไขเลขยูส") == true) {
+                //     $replyData = new FlexMessageBuilder("Flex", $textGetUser, $quickReplyEditSlip);
+                // } else if (strstr($userMessage, "user_") == true || strstr($userMessage, "User_") == true  || strstr($userMessage, "USER_") == true || $userMessage == "แก้ไขที่อยู่") {
                 //     //$replyData = new FlexMessageBuilder("Flex", $textToAddress, $quickReplyUser);
                 //     $replyData = new FlexMessageBuilder("Flex", $textAddress, $quickEditUser);
                 // }
-                // else if ($userMessage == "ไม่ต้องการ") {
-                //     $replyData = new FlexMessageBuilder("Flex", $textNotAddress, $quickReplyMain);
-                // } 
-                // else if ($userMessage == "ต้องการ" || $userMessage == "ย้อนกลับAddress") {
-                //     $replyData = new FlexMessageBuilder("Flex", $textAddress, $quickReplyAddress);
-                // } 
-                // else if (strstr($userMessage, "ที่อยู่") == true || strstr($userMessage, "อำเภอ") == true || strstr($userMessage, "อ.") == true || strstr($userMessage, "ตำบล") == true || strstr($userMessage, "ต.") == true || strstr($userMessage, "จังหวัด") == true || strstr($userMessage, "จ.") == true) {
+                // // else if ($userMessage == "ไม่ต้องการ") {
+                // //     $replyData = new FlexMessageBuilder("Flex", $textNotAddress, $quickReplyMain);
+                // // } 
+                // // else if ($userMessage == "ต้องการ" || $userMessage == "ย้อนกลับAddress") {
+                // //     $replyData = new FlexMessageBuilder("Flex", $textAddress, $quickReplyAddress);
+                // // } 
+                // // else if (strstr($userMessage, "ที่อยู่") == true || strstr($userMessage, "อำเภอ") == true || strstr($userMessage, "อ.") == true || strstr($userMessage, "ตำบล") == true || strstr($userMessage, "ต.") == true || strstr($userMessage, "จังหวัด") == true || strstr($userMessage, "จ.") == true) {
                 // else if (strstr($userMessage, "ที่อยู่") == true) {
                 //     $replyData = new FlexMessageBuilder("Flex", $textDetailUser, $quickReplyDetailUser);
                 // } else if (strstr($userMessage, "เพิ่มเติม") == true) {
                 //     $replyData = new FlexMessageBuilder("Flex", $textSendAddress, $quickReplyMain);
-                }
+                // }
                 // ========================== Test ===================================
                 // else if ($userMessage == "img") {
                 //     $imageMapUrl = 'https://i.ibb.co/Dg7r1Rp/Npromotion.jpg?_ignore=';

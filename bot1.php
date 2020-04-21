@@ -1602,39 +1602,78 @@ $textDetailPromotion1 = new BubbleContainerBuilder(
     "ltr",
     NULL,
     NULL,
-    new BoxComponentBuilder(
-        "horizontal",
-        //array(
-            new TextComponentBuilder(
-                "สมัครสมาชิก 1000 รับ POD ไฟฟ้า
-หรือ หูฟัง Redmi Airdots 
+    array(
+        new BoxComponentBuilder(
+            "horizontal",
+            array(
+                new TextComponentBuilder(
+                    "สมัครสมาชิก 1000 รับ POD ไฟฟ้า
+    หรือ หูฟัง Redmi Airdots 
 
-คลิกลิงค์เพื่อสมัครได้เลยค่ะ
+    คลิกลิงค์เพื่อสมัครได้เลยค่ะ
 
-*อย่าลืมแจ้ง JP99 แนะนำ เพื่อรับสิทธิ์นะคะ* 
-*แจ้งรับของแถมจากคนแนะนำด้วยนะคะ*
-___________________________________
+    *อย่าลืมแจ้ง JP99 แนะนำ เพื่อรับสิทธิ์นะคะ* 
+    *แจ้งรับของแถมจากคนแนะนำด้วยนะคะ*
+    ___________________________________
 
-สมัครเสร็จแล้ว แจ้งสลิปการโอนสมัคร
-กลับมาที่นี่เพื่อรับของแถมได้เลยค่ะ",
-                NULL,
-                NULL,
-                NULL,
-                NULL,
-                NULL,
-                true
+    สมัครเสร็จแล้ว แจ้งสลิปการโอนสมัคร
+    กลับมาที่นี่เพื่อรับของแถมได้เลยค่ะ",
+                    NULL,
+                    NULL,
+                    NULL,
+                    NULL,
+                    NULL,
+                    true
+                )
             )
-        //)
-    ),
-    new BoxComponentBuilder(
-        "horizontal",
-        array(
-            new ButtonComponentBuilder(
-                new UriTemplateActionBuilder("สมัครโปรโมชั่น", "https://line.me/R/ti/p/%40519uqyhc"),
-                NULL,
-                NULL,
-                NULL,
-                "primary"
+        ),
+        new BoxComponentBuilder(
+            "horizontal",
+            array(
+                new ButtonComponentBuilder(
+                    new UriTemplateActionBuilder("สมัครโปรโมชั่น", "https://line.me/R/ti/p/%40519uqyhc"),
+                    NULL,
+                    NULL,
+                    NULL,
+                    "primary"
+                )
+            )
+        )
+    ,
+        new BoxComponentBuilder(
+            "horizontal",
+            array(
+                new TextComponentBuilder(
+                    "สมัครสมาชิก 1000 รับ POD ไฟฟ้า
+    หรือ หูฟัง Redmi Airdots 
+
+    คลิกลิงค์เพื่อสมัครได้เลยค่ะ
+
+    *อย่าลืมแจ้ง JP99 แนะนำ เพื่อรับสิทธิ์นะคะ* 
+    *แจ้งรับของแถมจากคนแนะนำด้วยนะคะ*
+    ___________________________________
+
+    สมัครเสร็จแล้ว แจ้งสลิปการโอนสมัคร
+    กลับมาที่นี่เพื่อรับของแถมได้เลยค่ะ",
+                    NULL,
+                    NULL,
+                    NULL,
+                    NULL,
+                    NULL,
+                    true
+                )
+            )
+        ),
+        new BoxComponentBuilder(
+            "horizontal",
+            array(
+                new ButtonComponentBuilder(
+                    new UriTemplateActionBuilder("สมัครโปรโมชั่น", "https://line.me/R/ti/p/%40519uqyhc"),
+                    NULL,
+                    NULL,
+                    NULL,
+                    "primary"
+                )
             )
         )
     )

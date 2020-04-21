@@ -1,9 +1,9 @@
 <?php
 
-define('LINE_MESSAGE_CHANNEL_ID', '1653962671');
-define('LINE_MESSAGE_CHANNEL_SECRET', 'd2dfde7d8d794de418721245d96de4cc');
-define('LINE_MESSAGE_ACCESS_TOKEN', '/K+Rh34f9Gj/yHmNHTZWjoW/AKjzHTKPMVfz7HtX8IpqbsQQ8Ps0sY+w9RkOoL7OcaCLH+VM8dDjC0LYPevRZKBEqjm0iw2+RT8vb91IuPRxw2xiUNLFYh2zmRFHxEBiP/Ev22L+Gl299UB1IQ+cuAdB04t89/1O/w1cDnyilFU=');
-define('LINE_USER_ID', 'Ua465cc5346a14189526aec3f177f0433');
+define('LINE_MESSAGE_CHANNEL_ID', '1654117069');
+define('LINE_MESSAGE_CHANNEL_SECRET', 'fdd17b3b04e3e46b9d441a0f3e0ca95e');
+define('LINE_MESSAGE_ACCESS_TOKEN', '04auMSUPap48vKJyMMNm7VXclTpBuEj0dOCS2tL66zgDf4JfGhd71+6kqmdHjPl1orh0J/+lGqZBMTwmqR47yzxAmduIUDOGETPlPik9JH9GRLUiX08gCsa532CaP1aKwy2r4Q9LwXVGJ6g0pVaHEgdB04t89/1O/w1cDnyilFU=');
+define('LINE_USER_ID', 'U898c197854fd8e072d6b289c6c3dbd45');
 
 
 ini_set('display_errors', 1);
@@ -3115,6 +3115,9 @@ if (!is_null($events)) {
                 //     $replyData = new TemplateMessageBuilder("Button template builder", $button);
                 //     break;
                 // }
+                else if ($userMessage == "test") {
+                        $replyData = new TextMessageBuilder('This is bot 2');
+                }
                 // ========================== Test===================================
                 else {
                     $replyData = new FlexMessageBuilder("Flex", $textNotKeyword, $quickReplyMain);

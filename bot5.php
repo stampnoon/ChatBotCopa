@@ -1637,7 +1637,7 @@ ___________________________________
                 NULL,
                 "primary"
             ),new ButtonComponentBuilder(
-                new UriTemplateActionBuilder("ติดต่อรับของแถม", "https://lin.ee/iDODdH2"),
+                new UriTemplateActionBuilder("ติดต่อรับของแถม", "https://lin.ee/nify4cI"),
                 NULL,
                 NULL,
                 NULL,
@@ -1687,7 +1687,7 @@ ___________________________________
                 NULL,
                 "primary"
             ),new ButtonComponentBuilder(
-                new UriTemplateActionBuilder("ติดต่อรับของแถม", "https://lin.ee/iDODdH2"),
+                new UriTemplateActionBuilder("ติดต่อรับของแถม", "https://lin.ee/nify4cI"),
                 NULL,
                 NULL,
                 NULL,
@@ -1736,7 +1736,7 @@ ___________________________________
                 NULL,
                 "primary"
             ),new ButtonComponentBuilder(
-                new UriTemplateActionBuilder("ติดต่อรับของแถม", "https://lin.ee/iDODdH2"),
+                new UriTemplateActionBuilder("ติดต่อรับของแถม", "https://lin.ee/nify4cI"),
                 NULL,
                 NULL,
                 NULL,
@@ -1785,7 +1785,7 @@ ___________________________________
                 NULL,
                 "primary"
             ),new ButtonComponentBuilder(
-                new UriTemplateActionBuilder("ติดต่อรับของแถม", "https://lin.ee/iDODdH2"),
+                new UriTemplateActionBuilder("ติดต่อรับของแถม", "https://lin.ee/nify4cI"),
                 NULL,
                 NULL,
                 NULL,
@@ -2437,7 +2437,7 @@ ___________________________________",
         "horizontal",
         array(
             new ButtonComponentBuilder(
-                new UriTemplateActionBuilder("ติดต่อแอดมิน", "https://line.me/R/ti/p/%40743mznmf"),
+                new UriTemplateActionBuilder("ติดต่อแอดมิน", "https://lin.ee/nify4cI"),
                 NULL,
                 NULL,
                 NULL,

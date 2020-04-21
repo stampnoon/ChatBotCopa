@@ -2437,7 +2437,7 @@ ___________________________________",
         "horizontal",
         array(
             new ButtonComponentBuilder(
-                new UriTemplateActionBuilder("ติดต่อแอดมิน", "https://line.me/R/ti/p/%40743mznmf"),
+                new UriTemplateActionBuilder("ติดต่อแอดมิน", "https://lin.ee/iDODdH2"),
                 NULL,
                 NULL,
                 NULL,

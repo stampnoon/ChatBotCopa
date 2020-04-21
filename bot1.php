@@ -3116,7 +3116,7 @@ if (!is_null($events)) {
                 //     break;
                 // }
                 else if ($userMessage == "test") {
-                    $replyData = new TextMessageBuilder('This is bot 2');
+                    $replyData = new TextMessageBuilder('This is bot 1');
                 }
                 // ========================== Test===================================
                 else {

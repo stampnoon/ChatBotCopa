@@ -358,9 +358,9 @@ $quickReplyProblem = new QuickReplyMessageBuilder(
 );
 $quickReplyBackRegister = new QuickReplyMessageBuilder(
     array(
-        new QuickReplyButtonBuilder($textReplyBackRegister),
-        new QuickReplyButtonBuilder(new CameraTemplateActionBuilder('กล้องถ่ายรูป')),
-        new QuickReplyButtonBuilder(new CameraRollTemplateActionBuilder('คลังรูปภาพ'))
+        new QuickReplyButtonBuilder($textReplyBackRegister)
+        // new QuickReplyButtonBuilder(new CameraTemplateActionBuilder('กล้องถ่ายรูป')),
+        // new QuickReplyButtonBuilder(new CameraRollTemplateActionBuilder('คลังรูปภาพ'))
     )
 );
 $quickReplyEditSlip = new QuickReplyMessageBuilder(

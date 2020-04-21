@@ -1,8 +1,8 @@
 <?php
 
-define('LINE_MESSAGE_CHANNEL_ID', '1654117060');
-define('LINE_MESSAGE_CHANNEL_SECRET', 'd4c5e041f5b94dc2730feca0d9b87f3a');
-define('LINE_MESSAGE_ACCESS_TOKEN', 'sp8Gg9tYa4JjULug6bZGSbIPZGMq+jvVMC1+/X1hvwypxjMz+Oq9/wdLynXJfFZMPraaHlZ6qfyMnyytGpacVkIWJRQLa8XVnRyxVuSOropTFBtRu2DNshHSeFMCWh5p6qeUQrOn0WGQLCO8yUZ8OQdB04t89/1O/w1cDnyilFU=');
+define('LINE_MESSAGE_CHANNEL_ID', '1654117490');
+define('LINE_MESSAGE_CHANNEL_SECRET', 'e318dcadf98fa1741ad47b64b29d1f8f');
+define('LINE_MESSAGE_ACCESS_TOKEN', '0H93JWYPMYgSUCIeDZfR3E3fcEc7aYDfaf1YEPJr6CbkeBnN1ynIE5HZn+tBGlpVPE85+vQbBguWInfQ4zLW0n1IwHPRXAeFYiM8SPgo/awd2SCk7nwypEILrC4gtCk93lDDg+SZXbhYBQZfATvnBgdB04t89/1O/w1cDnyilFU=');
 define('LINE_USER_ID', 'U898c197854fd8e072d6b289c6c3dbd45');
 
 
@@ -1609,14 +1609,15 @@ $textDetailPromotion1 = new BubbleContainerBuilder(
                 "สมัครสมาชิก 1000 รับ POD ไฟฟ้า
 หรือ หูฟัง Redmi Airdots 
 
-คลิกลิงค์เพื่อสมัครได้เลยค่ะ
+กดปุ่มสมัคร เพื่อสมัครได้เลยค่ะ
 
-*อย่าลืมแจ้ง JP99 แนะนำ เพื่อรับสิทธิ์นะคะ* 
-*แจ้งรับของแถมจากคนแนะนำด้วยนะคะ*
+*อย่าลืมแจ้ง Live99 แนะนำ เพื่อรับสิทธิ์นะคะ* 
 ___________________________________
 
-สมัครเสร็จแล้ว แจ้งสลิปการโอนสมัคร
-กลับมาที่นี่เพื่อรับของแถมได้เลยค่ะ",
+สมัครเสร็จแล้ว กดปุ่มรับของแถม
+
+*แจ้งชื่อ และสลิป เพื่อรับของแถม
+จากคนแนะนำด้วยนะคะ*",
                 NULL,
                 NULL,
                 NULL,
@@ -1627,7 +1628,7 @@ ___________________________________
         )
     ),
     new BoxComponentBuilder(
-        "horizontal",
+        "vertical",
         array(
             new ButtonComponentBuilder(
                 new UriTemplateActionBuilder("สมัครโปรโมชั่น", "https://line.me/R/ti/p/%40519uqyhc"),
@@ -1635,10 +1636,18 @@ ___________________________________
                 NULL,
                 NULL,
                 "primary"
+            ),new ButtonComponentBuilder(
+                new UriTemplateActionBuilder("ติดต่อรับของแถม", "https://lin.ee/iDODdH2"),
+                NULL,
+                NULL,
+                NULL,
+                "primary"
             )
-        )
+        ),
+        0,"md"
     )
 );
+
 $textDetailPromotion2 = new BubbleContainerBuilder(
     "ltr",
     NULL,
@@ -1652,12 +1661,13 @@ $textDetailPromotion2 = new BubbleContainerBuilder(
 
 คลิกลิงค์เพื่อสมัครได้เลยค่ะ
 
-*อย่าลืมแจ้ง JP99 แนะนำ เพื่อรับสิทธิ์นะคะ* 
-*แจ้งรับของแถมจากคนแนะนำด้วยนะคะ*
+*อย่าลืมแจ้ง Live99 แนะนำ เพื่อรับสิทธิ์นะคะ* 
 ___________________________________
 
-สมัครเสร็จแล้ว แจ้งสลิปการโอนสมัคร
-กลับมาที่นี่เพื่อรับของแถมได้เลยค่ะ",
+สมัครเสร็จแล้ว กดปุ่มรับของแถม
+
+*แจ้งชื่อ และสลิป เพื่อรับของแถม
+จากคนแนะนำด้วยนะคะ*",
                 NULL,
                 NULL,
                 NULL,
@@ -1668,7 +1678,7 @@ ___________________________________
         )
     ),
     new BoxComponentBuilder(
-        "horizontal",
+        "vertical",
         array(
             new ButtonComponentBuilder(
                 new UriTemplateActionBuilder("สมัครโปรโมชั่น", "https://line.me/R/ti/p/%40519uqyhc"),
@@ -1676,10 +1686,18 @@ ___________________________________
                 NULL,
                 NULL,
                 "primary"
+            ),new ButtonComponentBuilder(
+                new UriTemplateActionBuilder("ติดต่อรับของแถม", "https://lin.ee/iDODdH2"),
+                NULL,
+                NULL,
+                NULL,
+                "primary"
             )
-        )
+        ),
+        0,"md"
     )
 );
+
 $textDetailPromotion3 = new BubbleContainerBuilder(
     "ltr",
     NULL,
@@ -1692,12 +1710,13 @@ $textDetailPromotion3 = new BubbleContainerBuilder(
 
 คลิกลิงค์เพื่อสมัครได้เลยค่ะ
 
-*อย่าลืมแจ้ง JP99 แนะนำ เพื่อรับสิทธิ์นะคะ* 
-*แจ้งรับของแถมจากคนแนะนำด้วยนะคะ*
+*อย่าลืมแจ้ง Live99 แนะนำ เพื่อรับสิทธิ์นะคะ*
 ___________________________________
 
-สมัครเสร็จแล้ว แจ้งสลิปการโอนสมัคร
-กลับมาที่นี่เพื่อรับของแถมได้เลยค่ะ",
+สมัครเสร็จแล้ว กดปุ่มรับของแถม
+
+*แจ้งชื่อ และสลิป เพื่อรับของแถม
+จากคนแนะนำด้วยนะคะ*",
                 NULL,
                 NULL,
                 NULL,
@@ -1708,7 +1727,7 @@ ___________________________________
         )
     ),
     new BoxComponentBuilder(
-        "horizontal",
+        "vertical",
         array(
             new ButtonComponentBuilder(
                 new UriTemplateActionBuilder("สมัครโปรโมชั่น", "https://line.me/R/ti/p/%40519uqyhc"),
@@ -1716,10 +1735,18 @@ ___________________________________
                 NULL,
                 NULL,
                 "primary"
+            ),new ButtonComponentBuilder(
+                new UriTemplateActionBuilder("ติดต่อรับของแถม", "https://lin.ee/iDODdH2"),
+                NULL,
+                NULL,
+                NULL,
+                "primary"
             )
-        )
+        ),
+        0,"md"
     )
 );
+
 $textDetailPromotion4 = new BubbleContainerBuilder(
     "ltr",
     NULL,
@@ -1732,12 +1759,13 @@ $textDetailPromotion4 = new BubbleContainerBuilder(
 
 คลิกลิ้งเพื่อสมัครได้เลยค่ะ
 
-*อย่าลืมแจ้ง JP99 แนะนำ เพื่อรับสิทธิ์นะคะ* 
-*แจ้งรับของแถมจากคนแนะนำด้วยนะคะ*
+*อย่าลืมแจ้ง Live99 แนะนำ เพื่อรับสิทธิ์นะคะ*
 ___________________________________
 
-สมัครเสร็จแล้ว แจ้งสลิปการโอนสมัคร
-กลับมาที่นี่เพื่อรับของแถมได้เลยค่ะ",
+สมัครเสร็จแล้ว กดปุ่มรับของแถม
+
+*แจ้งชื่อ และสลิป เพื่อรับของแถม
+จากคนแนะนำด้วยนะคะ*",
                 NULL,
                 NULL,
                 NULL,
@@ -1748,7 +1776,7 @@ ___________________________________
         )
     ),
     new BoxComponentBuilder(
-        "horizontal",
+        "vertical",
         array(
             new ButtonComponentBuilder(
                 new UriTemplateActionBuilder("สมัครโปรโมชั่น", "https://line.me/R/ti/p/%40519uqyhc"),
@@ -1756,8 +1784,15 @@ ___________________________________
                 NULL,
                 NULL,
                 "primary"
+            ),new ButtonComponentBuilder(
+                new UriTemplateActionBuilder("ติดต่อรับของแถม", "https://lin.ee/iDODdH2"),
+                NULL,
+                NULL,
+                NULL,
+                "primary"
             )
-        )
+        ),
+        0,"md"
     )
 );
 // $textDetailPromotion5 = new BubbleContainerBuilder(

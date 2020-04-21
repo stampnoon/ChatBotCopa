@@ -1,8 +1,8 @@
 <?php
 
-define('LINE_MESSAGE_CHANNEL_ID', '1654117463');
-define('LINE_MESSAGE_CHANNEL_SECRET', 'a2c516e6b7f64007af0a2bbeec58e7d8');
-define('LINE_MESSAGE_ACCESS_TOKEN', 'DT2B5kx0Rbd2IZH+6ABIGdn8YnECcD7+oYT1h7SKXY3gZtJY2y3qXqe7YD0Z8GsdC6NEkqLuHa018NGiKQiG8lbTy0LLWY01db8HRmIAnyXPBpOgJbAoaFTBra0PmWH6q11nHZKDtjh1TJ3NSV2cvQdB04t89/1O/w1cDnyilFU=');
+define('LINE_MESSAGE_CHANNEL_ID', '1654117502');
+define('LINE_MESSAGE_CHANNEL_SECRET', '4d0cac9bc8be348df2f34d665bec677c');
+define('LINE_MESSAGE_ACCESS_TOKEN', '9+cwQAAagl7TMMUYVx81dXQXFZcF0bBF5sHRdmbMzN83z/ZMiJ/1yeO7hHfDdSP7FpVQ+8Y/bdBuvdwBwd1owmJjHHm/9p5T87VYtibjCoRRhcG5zHUr3bw8/pjW2yBRZeU29IeFURSNEVsyz0QUuAdB04t89/1O/w1cDnyilFU=');
 define('LINE_USER_ID', 'U898c197854fd8e072d6b289c6c3dbd45');
 
 
@@ -1611,7 +1611,7 @@ $textDetailPromotion1 = new BubbleContainerBuilder(
 
 กดปุ่มสมัคร เพื่อสมัครได้เลยค่ะ
 
-*อย่าลืมแจ้ง Pro99 แนะนำ เพื่อรับสิทธิ์นะคะ* 
+*อย่าลืมแจ้ง มาดูหมี99 แนะนำ เพื่อรับสิทธิ์นะคะ* 
 ___________________________________
 
 สมัครเสร็จแล้ว กดปุ่มรับของแถม
@@ -1661,7 +1661,7 @@ $textDetailPromotion2 = new BubbleContainerBuilder(
 
 คลิกลิงค์เพื่อสมัครได้เลยค่ะ
 
-*อย่าลืมแจ้ง Pro99 แนะนำ เพื่อรับสิทธิ์นะคะ* 
+*อย่าลืมแจ้ง มาดูหมี99 แนะนำ เพื่อรับสิทธิ์นะคะ* 
 ___________________________________
 
 สมัครเสร็จแล้ว กดปุ่มรับของแถม
@@ -1710,7 +1710,7 @@ $textDetailPromotion3 = new BubbleContainerBuilder(
 
 คลิกลิงค์เพื่อสมัครได้เลยค่ะ
 
-*อย่าลืมแจ้ง Pro99 แนะนำ เพื่อรับสิทธิ์นะคะ*
+*อย่าลืมแจ้ง มาดูหมี99 แนะนำ เพื่อรับสิทธิ์นะคะ*
 ___________________________________
 
 สมัครเสร็จแล้ว กดปุ่มรับของแถม
@@ -1759,7 +1759,7 @@ $textDetailPromotion4 = new BubbleContainerBuilder(
 
 คลิกลิ้งเพื่อสมัครได้เลยค่ะ
 
-*อย่าลืมแจ้ง Pro99 แนะนำ เพื่อรับสิทธิ์นะคะ*
+*อย่าลืมแจ้ง มาดูหมี99 แนะนำ เพื่อรับสิทธิ์นะคะ*
 ___________________________________
 
 สมัครเสร็จแล้ว กดปุ่มรับของแถม

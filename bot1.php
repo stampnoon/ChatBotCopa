@@ -1609,14 +1609,15 @@ $textDetailPromotion1 = new BubbleContainerBuilder(
                 "สมัครสมาชิก 1000 รับ POD ไฟฟ้า
 หรือ หูฟัง Redmi Airdots 
 
-คลิกลิงค์เพื่อสมัครได้เลยค่ะ
+กดปุ่มสมัคร เพื่อสมัครได้เลยค่ะ
 
-*อย่าลืมแจ้ง JP99 แนะนำ เพื่อรับสิทธิ์นะคะ* 
+*อย่าลืมแจ้ง So99 แนะนำ เพื่อรับสิทธิ์นะคะ* 
 *แจ้งรับของแถมจากคนแนะนำด้วยนะคะ*
 ___________________________________
 
-สมัครเสร็จแล้ว แจ้งสลิปการโอนสมัคร
-กลับมาที่นี่เพื่อรับของแถมได้เลยค่ะ",
+สมัครเสร็จแล้วกดปุ่มรับของแถม
+แล้วแจ้งชื่อ และสลิป
+เพื่อรับของแถมได้เลยค่ะ",
                 NULL,
                 NULL,
                 NULL,
@@ -1636,7 +1637,7 @@ ___________________________________
                 NULL,
                 "primary"
             ),new ButtonComponentBuilder(
-                new UriTemplateActionBuilder("สมัครโปรโมชั่น2", "https://line.me/R/ti/p/%40519uqyhc"),
+                new UriTemplateActionBuilder("ติดต่อรับของแถม", " https://lin.ee/iDODdH2"),
                 NULL,
                 NULL,
                 NULL,
@@ -1660,12 +1661,13 @@ $textDetailPromotion2 = new BubbleContainerBuilder(
 
 คลิกลิงค์เพื่อสมัครได้เลยค่ะ
 
-*อย่าลืมแจ้ง JP99 แนะนำ เพื่อรับสิทธิ์นะคะ* 
+*อย่าลืมแจ้ง So99 แนะนำ เพื่อรับสิทธิ์นะคะ* 
 *แจ้งรับของแถมจากคนแนะนำด้วยนะคะ*
 ___________________________________
 
-สมัครเสร็จแล้ว แจ้งสลิปการโอนสมัคร
-กลับมาที่นี่เพื่อรับของแถมได้เลยค่ะ",
+สมัครเสร็จแล้วกดปุ่มรับของแถม
+แล้วแจ้งชื่อ และสลิป
+เพื่อรับของแถมได้เลยค่ะ",
                 NULL,
                 NULL,
                 NULL,
@@ -1676,7 +1678,7 @@ ___________________________________
         )
     ),
     new BoxComponentBuilder(
-        "horizontal",
+        "vertical",
         array(
             new ButtonComponentBuilder(
                 new UriTemplateActionBuilder("สมัครโปรโมชั่น", "https://line.me/R/ti/p/%40519uqyhc"),
@@ -1684,10 +1686,18 @@ ___________________________________
                 NULL,
                 NULL,
                 "primary"
+            ),new ButtonComponentBuilder(
+                new UriTemplateActionBuilder("ติดต่อรับของแถม", " https://lin.ee/iDODdH2"),
+                NULL,
+                NULL,
+                NULL,
+                "primary"
             )
-        )
+        ),
+        0,"md"
     )
 );
+
 $textDetailPromotion3 = new BubbleContainerBuilder(
     "ltr",
     NULL,
@@ -1700,12 +1710,13 @@ $textDetailPromotion3 = new BubbleContainerBuilder(
 
 คลิกลิงค์เพื่อสมัครได้เลยค่ะ
 
-*อย่าลืมแจ้ง JP99 แนะนำ เพื่อรับสิทธิ์นะคะ* 
+*อย่าลืมแจ้ง So99 แนะนำ เพื่อรับสิทธิ์นะคะ* 
 *แจ้งรับของแถมจากคนแนะนำด้วยนะคะ*
 ___________________________________
 
-สมัครเสร็จแล้ว แจ้งสลิปการโอนสมัคร
-กลับมาที่นี่เพื่อรับของแถมได้เลยค่ะ",
+สมัครเสร็จแล้วกดปุ่มรับของแถม
+แล้วแจ้งชื่อ และสลิป
+เพื่อรับของแถมได้เลยค่ะ",
                 NULL,
                 NULL,
                 NULL,
@@ -1716,7 +1727,7 @@ ___________________________________
         )
     ),
     new BoxComponentBuilder(
-        "horizontal",
+        "vertical",
         array(
             new ButtonComponentBuilder(
                 new UriTemplateActionBuilder("สมัครโปรโมชั่น", "https://line.me/R/ti/p/%40519uqyhc"),
@@ -1724,8 +1735,15 @@ ___________________________________
                 NULL,
                 NULL,
                 "primary"
+            ),new ButtonComponentBuilder(
+                new UriTemplateActionBuilder("ติดต่อรับของแถม", " https://lin.ee/iDODdH2"),
+                NULL,
+                NULL,
+                NULL,
+                "primary"
             )
-        )
+        ),
+        0,"md"
     )
 );
 $textDetailPromotion4 = new BubbleContainerBuilder(
@@ -1740,12 +1758,13 @@ $textDetailPromotion4 = new BubbleContainerBuilder(
 
 คลิกลิ้งเพื่อสมัครได้เลยค่ะ
 
-*อย่าลืมแจ้ง JP99 แนะนำ เพื่อรับสิทธิ์นะคะ* 
+*อย่าลืมแจ้ง So99 แนะนำ เพื่อรับสิทธิ์นะคะ* 
 *แจ้งรับของแถมจากคนแนะนำด้วยนะคะ*
 ___________________________________
 
-สมัครเสร็จแล้ว แจ้งสลิปการโอนสมัคร
-กลับมาที่นี่เพื่อรับของแถมได้เลยค่ะ",
+สมัครเสร็จแล้วกดปุ่มรับของแถม
+แล้วแจ้งชื่อ และสลิป
+เพื่อรับของแถมได้เลยค่ะ",
                 NULL,
                 NULL,
                 NULL,
@@ -1756,7 +1775,7 @@ ___________________________________
         )
     ),
     new BoxComponentBuilder(
-        "horizontal",
+        "vertical",
         array(
             new ButtonComponentBuilder(
                 new UriTemplateActionBuilder("สมัครโปรโมชั่น", "https://line.me/R/ti/p/%40519uqyhc"),
@@ -1764,8 +1783,15 @@ ___________________________________
                 NULL,
                 NULL,
                 "primary"
+            ),new ButtonComponentBuilder(
+                new UriTemplateActionBuilder("ติดต่อรับของแถม", " https://lin.ee/iDODdH2"),
+                NULL,
+                NULL,
+                NULL,
+                "primary"
             )
-        )
+        ),
+        0,"md"
     )
 );
 // $textDetailPromotion5 = new BubbleContainerBuilder(

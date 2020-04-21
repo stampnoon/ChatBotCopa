@@ -1604,7 +1604,7 @@ $textDetailPromotion1 = new BubbleContainerBuilder(
     NULL,
     new BoxComponentBuilder(
         "horizontal",
-        //array(
+        array(
             new TextComponentBuilder(
                 "สมัครสมาชิก 1000 รับ POD ไฟฟ้า
 หรือ หูฟัง Redmi Airdots 
@@ -1624,7 +1624,7 @@ ___________________________________
                 NULL,
                 true
             )
-        //)
+        )
     ),
     new BoxComponentBuilder(
         "horizontal",

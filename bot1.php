@@ -1627,7 +1627,7 @@ ___________________________________
         )
     ),
     new BoxComponentBuilder(
-        "horizontal",
+        "vertical",
         array(
             new ButtonComponentBuilder(
                 new UriTemplateActionBuilder("สมัครโปรโมชั่น", "https://line.me/R/ti/p/%40519uqyhc"),
@@ -1641,9 +1641,8 @@ ___________________________________
                 NULL,
                 NULL,
                 "primary"
-            )
-        ),
-        1
+            ),0,"md"
+        )
     )
 );
 

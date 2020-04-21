@@ -3150,18 +3150,18 @@ if (!is_null($events)) {
                 //     $replyData = new TemplateMessageBuilder("Button template builder", $button);
                 //     break;
                 // }
-                else if ($userMessage == "test") {
-                    $replyData = new TextMessageBuilder('This is bot 1');
-                }
+                // else if ($userMessage == "test") {
+                //     $replyData = new TextMessageBuilder('This is bot 1');
+                // }
                 // ========================== Test===================================
                 else {
                     $replyData = new FlexMessageBuilder("Flex", $textNotKeyword, $quickReplyMain);
                 }
                 break;
             }
-        case "image":
-            $replyData = new FlexMessageBuilder("Register success", $textRegistsuccess, $quickReplyMain);
-            break;
+        // case "image":
+        //     $replyData = new FlexMessageBuilder("Register success", $textRegistsuccess, $quickReplyMain);
+        //     break;
             // ----------------------------------------------------------------------------------------- Image
         default:
             break;

@@ -3221,7 +3221,7 @@ if (!is_null($events)) {
                                 สมัครฝาก 500 รับ เสื้อบอล Euro หรือ โบนัส 30%
 
                                 สมัครฝาก 1500 รับเตาปิ้งย่างบาร์บีคิว หรือ โบนัส 30%
-                                
+
                                 สมัครฝาก 5000 รับ iQos รุ่น 3Multi หรือ โบนัส 30%")
                             )
                         ),
@@ -3240,6 +3240,58 @@ if (!is_null($events)) {
                         // )
                     );
                     $replyData = new FlexMessageBuilder("Flex",$testTestReply);
+                }
+                else if($userMessage == "test2")
+                {
+                    $textTest = new BubbleContainerBuilder(
+                        "ltr",
+                        NULL,
+                        NULL,
+                        new BoxComponentBuilder(
+                            "horizontal",
+                            array(
+                                new TextComponentBuilder(
+                                    "สมัครสมาชิก 300 รับหูฟังบลูทูธ 
+                    
+                    คลิกลิงค์เพื่อสมัครได้เลยค่ะ
+                    
+                    *อย่าลืมแจ้ง มาดูหมี99 แนะนำ เพื่อรับสิทธิ์นะคะ*
+                    ___________________________________
+                    
+                    สมัครเสร็จแล้ว กดปุ่มรับของแถม
+                    
+                    *แจ้งชื่อ และสลิป เพื่อรับของแถม
+                    จากคนแนะนำด้วยนะคะ*",
+                                    NULL,
+                                    NULL,
+                                    NULL,
+                                    NULL,
+                                    NULL,
+                                    true
+                                )
+                            )
+                        ),
+                        new BoxComponentBuilder(
+                            "vertical",
+                            array(
+                                new ButtonComponentBuilder(
+                                    new UriTemplateActionBuilder("สมัครโปรโมชั่น", "https://line.me/R/ti/p/%40519uqyhc"),
+                                    NULL,
+                                    NULL,
+                                    NULL,
+                                    "primary"
+                                ),new ButtonComponentBuilder(
+                                    new UriTemplateActionBuilder("ติดต่อรับของแถม", "https://lin.ee/nify4cI"),
+                                    NULL,
+                                    NULL,
+                                    NULL,
+                                    "primary"
+                                )
+                            ),
+                            0,"md"
+                        )
+                    );
+                    $replyData = new FlexMessageBuilder("Flex",$textTest);
                 }
                 // ========================== Test===================================
                 else {

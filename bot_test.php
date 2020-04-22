@@ -3212,7 +3212,8 @@ if (!is_null($events)) {
                             )
                         ),
                         new ImageComponentBuilder(
-                            "https://www.ninenik.com/images/ninenik_page_logo.png",NULL,NULL,NULL,NULL,"full","20:13","cover"),
+                            // "https://i.ibb.co/jGqC3sF/NPromotion2.jpg?_ignore=",NULL,NULL,NULL,NULL,"full","20:13","cover"),
+                            "https://i.ibb.co/jGqC3sF/NPromotion2.jpg?_ignore="),
                         new BoxComponentBuilder(
                             "vertical",
                             array(

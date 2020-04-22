@@ -33,10 +33,12 @@ use LINE\LINEBot\MessageBuilder\ImagemapMessageBuilder;
 use LINE\LINEBot\ImagemapActionBuilder\ImagemapMessageActionBuilder;
 use LINE\LINEBot\ImagemapActionBuilder\ImagemapUriActionBuilder;
 use LINE\LINEBot\ImagemapActionBuilder\AreaBuilder;
+use LINE\LINEBot\MessageBuilder\Flex\ComponentBuilder\ImageComponentBuilder as ComponentBuilderImageComponentBuilder;
 use LINE\LINEBot\MessageBuilder\Imagemap\BaseSizeBuilder;
 use LINE\LINEBot\MessageBuilder\MultiMessageBuilder;
 use LINE\LINEBot\MessageBuilder\TemplateBuilder\ButtonTemplateBuilder;
 use LINE\LINEBot\MessageBuilder\TemplateMessageBuilder;
+use LINE\LINEBot\MessageBuilder\Flex\ComponentBuilder\ImageComponentBuilder;
 
 $httpClient = new CurlHTTPClient(LINE_MESSAGE_ACCESS_TOKEN);
 $bot = new LINEBot($httpClient, array('channelSecret' => LINE_MESSAGE_CHANNEL_SECRET));
@@ -3222,13 +3224,14 @@ if (!is_null($events)) {
                             array(
                                 new TextComponentBuilder("This is Footer")
                             )
-                        ),
-                        new BubbleStylesBuilder( // style ทั้งหมดของ bubble
-                            new BlockStyleBuilder("#FFC90E"),  // style สำหรับ header block
-                            new BlockStyleBuilder("#EFE4B0"), // style สำหรับ hero block
-                            new BlockStyleBuilder("#B5E61D"), // style สำหรับ body block
-                            new BlockStyleBuilder("#FFF200") // style สำหรับ footer block
                         )
+                        // ,
+                        // new BubbleStylesBuilder( // style ทั้งหมดของ bubble
+                        //     new BlockStyleBuilder("#FFC90E"),  // style สำหรับ header block
+                        //     new BlockStyleBuilder("#EFE4B0"), // style สำหรับ hero block
+                        //     new BlockStyleBuilder("#B5E61D"), // style สำหรับ body block
+                        //     new BlockStyleBuilder("#FFF200") // style สำหรับ footer block
+                        // )
                     );
                     $replyData = new FlexMessageBuilder("Flex",$testTestReply);
                 }

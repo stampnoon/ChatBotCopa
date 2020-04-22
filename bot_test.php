@@ -3218,11 +3218,8 @@ if (!is_null($events)) {
                                 array(
                                     new TextComponentBuilder(
                                         "- สมัครฝาก 200 รับโบนัส 30%
-
 - สมัครฝาก 500 รับ เสื้อบอล Euro หรือ โบนัส 30%
-
 - สมัครฝาก 1500 รับเตาปิ้งย่างบาร์บีคิว หรือ โบนัส 30%
-
 - สมัครฝาก 5000 รับ iQos รุ่น 3Multi หรือ โบนัส 30%",
                                         NULL,
                                         NULL,
@@ -3236,8 +3233,21 @@ if (!is_null($events)) {
                         new BoxComponentBuilder(
                             "vertical",
                             array(
-                                new TextComponentBuilder("This is Footer")
-                            )
+                                new ButtonComponentBuilder(
+                                    new UriTemplateActionBuilder("สมัครฝาก 200", "https://line.me/R/ti/p/%40519uqyhc"),
+                                    NULL,
+                                    NULL,
+                                    NULL,
+                                    "primary"
+                                ),new ButtonComponentBuilder(
+                                    new UriTemplateActionBuilder("สมัครฝาก 500", "https://lin.ee/nify4cI"),
+                                    NULL,
+                                    NULL,
+                                    NULL,
+                                    "primary"
+                                )
+                            ),
+                            0,"md"
                         )
                         // ,
                         // new BubbleStylesBuilder( // style ทั้งหมดของ bubble

@@ -2504,9 +2504,13 @@ if (!is_null($events)) {
                     'สอบถาม',
                     new AreaBuilder(4, 112, 337, 281)
                 ),
-                new ImagemapMessageActionBuilder(
-                    'สมัคร',
-                    new AreaBuilder(348, 112, 340, 283)
+                // new ImagemapMessageActionBuilder(
+                //     'สมัคร',
+                //     new AreaBuilder(348, 112, 340, 283)
+                // ),
+                new ImagemapUriActionBuilder(
+                    'https://line.me/R/ti/p/%40519uqyhc',
+                    new AreaBuilder(344, 898, 345, 83)
                 ),
                 new ImagemapMessageActionBuilder(
                     'ติดต่อ',
@@ -2541,9 +2545,13 @@ if (!is_null($events)) {
                                 'สอบถาม',
                                 new AreaBuilder(4, 112, 337, 281)
                             ),
-                            new ImagemapMessageActionBuilder(
-                                'สมัคร',
-                                new AreaBuilder(348, 112, 340, 283)
+                            // new ImagemapMessageActionBuilder(
+                            //     'สมัคร',
+                            //     new AreaBuilder(348, 112, 340, 283)
+                            // ),
+                            new ImagemapUriActionBuilder(
+                                'https://line.me/R/ti/p/%40519uqyhc',
+                                new AreaBuilder(344, 898, 345, 83)
                             ),
                             new ImagemapMessageActionBuilder(
                                 'ติดต่อ',

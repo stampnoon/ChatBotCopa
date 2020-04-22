@@ -33,6 +33,7 @@ use LINE\LINEBot\MessageBuilder\ImagemapMessageBuilder;
 use LINE\LINEBot\ImagemapActionBuilder\ImagemapMessageActionBuilder;
 use LINE\LINEBot\ImagemapActionBuilder\ImagemapUriActionBuilder;
 use LINE\LINEBot\ImagemapActionBuilder\AreaBuilder;
+use LINE\LINEBot\KitchenSink\EventHandler\MessageHandler\Util\UrlBuilder;
 use LINE\LINEBot\MessageBuilder\Flex\ComponentBuilder\ImageComponentBuilder as ComponentBuilderImageComponentBuilder;
 use LINE\LINEBot\MessageBuilder\Imagemap\BaseSizeBuilder;
 use LINE\LINEBot\MessageBuilder\MultiMessageBuilder;
@@ -3199,73 +3200,7 @@ if (!is_null($events)) {
                 //     break;
                 // }
                 else if ($userMessage == "test") {
-                    $testTestReply = new BubbleContainerBuilder(
-                        "ltr",  // กำหนด NULL หรือ "ltr" หรือ "rtl"
-                        new BoxComponentBuilder(
-                            "vertical",
-                            array(
-                                new TextComponentBuilder("Promotion")
-                            )
-                        ),
-                        new ImageComponentBuilder(
-                            "https://i.ibb.co/jGqC3sF/NPromotion2.jpg?_ignore=",NULL,NULL,NULL,NULL,"full",NULL,"cover"),
-                        new BoxComponentBuilder(
-                                "horizontal",
-                                array(
-                                    new TextComponentBuilder(
-                                        "- สมัครฝาก 200 รับโบนัส 30%
-- สมัครฝาก 500 รับ เสื้อบอล Euro หรือ โบนัส 30%
-- สมัครฝาก 1500 รับเตาปิ้งย่างบาร์บีคิว หรือ โบนัส 30%
-- สมัครฝาก 5000 รับ iQos รุ่น 3Multi หรือ โบนัส 30%",
-                                        NULL,
-                                        NULL,
-                                        NULL,
-                                        NULL,
-                                        NULL,
-                                        true
-                                    )
-                                )
-                        ),
-                        new BoxComponentBuilder(
-                            "vertical",
-                            array(
-                                new ButtonComponentBuilder(
-                                    new UriTemplateActionBuilder("สมัครฝาก 200", "https://line.me/R/ti/p/%40519uqyhc"),
-                                    NULL,
-                                    NULL,
-                                    NULL,
-                                    "primary"
-                                ),new ButtonComponentBuilder(
-                                    new UriTemplateActionBuilder("สมัครฝาก 500", "https://line.me/R/ti/p/%40519uqyhc"),
-                                    NULL,
-                                    NULL,
-                                    NULL,
-                                    "primary"
-                                ),new ButtonComponentBuilder(
-                                    new UriTemplateActionBuilder("สมัครฝาก 1500", "https://line.me/R/ti/p/%40519uqyhc"),
-                                    NULL,
-                                    NULL,
-                                    NULL,
-                                    "primary"
-                                ),new ButtonComponentBuilder(
-                                    new UriTemplateActionBuilder("สมัครฝาก 5000", "https://line.me/R/ti/p/%40519uqyhc"),
-                                    NULL,
-                                    NULL,
-                                    NULL,
-                                    "primary"
-                                )
-                            ),
-                            0,"md"
-                        )
-                        // ,
-                        // new BubbleStylesBuilder( // style ทั้งหมดของ bubble
-                        //     new BlockStyleBuilder("#FFC90E"),  // style สำหรับ header block
-                        //     new BlockStyleBuilder("#EFE4B0"), // style สำหรับ hero block
-                        //     new BlockStyleBuilder("#B5E61D"), // style สำหรับ body block
-                        //     new BlockStyleBuilder("#FFF200") // style สำหรับ footer block
-                        // )
-                    );
-                    $replyData = new FlexMessageBuilder("Flex",$testTestReply);
+                    $replyData = new UrlBuilder("https://line.me/R/ti/p/%40519uqyhc");
                 }
                 // ========================== Test===================================
                 else {

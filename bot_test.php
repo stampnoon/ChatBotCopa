@@ -3202,73 +3202,38 @@ if (!is_null($events)) {
                 // }
                 else if ($userMessage == "test") {
                     $testTestReply = new BubbleContainerBuilder(
-                        "ltr",
+                        "ltr",  // กำหนด NULL หรือ "ltr" หรือ "rtl"
                         new BoxComponentBuilder(
                             "vertical",
                             array(
                                 new TextComponentBuilder("This is Header")
                             )
                         ),
-                        NULL,
+                        new ImageComponentBuilder(
+                            "https://www.ninenik.com/images/ninenik_page_logo.png",NULL,NULL,NULL,NULL,"full","20:13","cover"),
                         new BoxComponentBuilder(
-                            "horizontal",
+                            "vertical",
                             array(
-                                new TextComponentBuilder(
-                                    "Test
-                                    Test
-                                    Test
-                                    Test
-                                    Test
-                                    Test
-                                    Test
-                                    Test",
-                                    NULL,
-                                    NULL,
-                                    NULL,
-                                    NULL,
-                                    NULL,
-                                    true
-                                )
+                                new TextComponentBuilder("-สมัครฝาก 200 รับโบนัส 30%
+                                -สมัครฝาก 500 รับ เสื้อบอล Euro หรือ โบนัส 30%
+                                -สมัครฝาก 1500 รับเตาปิ้งย่างบาร์บีคิว หรือ โบนัส 30%
+                                -สมัครฝาก 5000 รับ iQos รุ่น 3Multi หรือ โบนัส 30%")
                             )
                         ),
                         new BoxComponentBuilder(
-                            "horizontal",
+                            "vertical",
                             array(
-                                new ButtonComponentBuilder(
-                                    new UriTemplateActionBuilder("สมัครโปรโมชั่น", "https://line.me/R/ti/p/%40519uqyhc"),
-                                    NULL,
-                                    NULL,
-                                    NULL,
-                                    "primary"
-                                ),new ButtonComponentBuilder(
-                                    new UriTemplateActionBuilder("ติดต่อรับของแถม", "https://lin.ee/nify4cI"),
-                                    NULL,
-                                    NULL,
-                                    NULL,
-                                    "primary"
-                                ),new ButtonComponentBuilder(
-                                    new UriTemplateActionBuilder("ติดต่อรับของแถม", "https://lin.ee/nify4cI"),
-                                    NULL,
-                                    NULL,
-                                    NULL,
-                                    "primary"
-                                ),new ButtonComponentBuilder(
-                                    new UriTemplateActionBuilder("ติดต่อรับของแถม", "https://lin.ee/nify4cI"),
-                                    NULL,
-                                    NULL,
-                                    NULL,
-                                    "primary"
-                                ),new ButtonComponentBuilder(
-                                    new UriTemplateActionBuilder("ติดต่อรับของแถม", "https://lin.ee/nify4cI"),
-                                    NULL,
-                                    NULL,
-                                    NULL,
-                                    "primary"
-                                )
-                            ),
-                            0,"md"
+                                new TextComponentBuilder("This is Footer")
+                            )
                         )
-                    );
+                        // ,
+                        // new BubbleStylesBuilder( // style ทั้งหมดของ bubble
+                        //     new BlockStyleBuilder("#FFC90E"),  // style สำหรับ header block
+                        //     new BlockStyleBuilder("#EFE4B0"), // style สำหรับ hero block
+                        //     new BlockStyleBuilder("#B5E61D"), // style สำหรับ body block
+                        //     new BlockStyleBuilder("#FFF200") // style สำหรับ footer block
+                        // )
+                    )
                     $replyData = new FlexMessageBuilder("Flex",$testTestReply);
                 }
                 // ========================== Test===================================

@@ -1431,6 +1431,44 @@ Copa69 ขอขอบคุณที่ใช้บริการค่ะ....
 //         )
 //     )
 // );
+$textPro3 = new BubbleContainerBuilder(
+    "ltr",
+    NULL,
+    NULL,
+    new BoxComponentBuilder(
+        "horizontal",
+        array(
+            new TextComponentBuilder(
+                "โปรโมชั่นประจำเดือน
+                
+สามารถสอบถามรายละเอียด
+
+เพื่อรับสิทธิโปรโมชั่นประจำเดือน
+
+จากแอดมินได้เลยค่ะ
+___________________________________",
+                NULL,
+                NULL,
+                NULL,
+                NULL,
+                NULL,
+                true
+            )
+        )
+    ),
+    new BoxComponentBuilder(
+        "horizontal",
+        array(
+            new ButtonComponentBuilder(
+                new UriTemplateActionBuilder("โปรโมชั่นประจำเดือน", "https://lin.ee/3Gm95Iagu"),
+                NULL,
+                NULL,
+                NULL,
+                "primary"
+            )
+        )
+    )
+);
 
 $textWebsite1 = new BubbleContainerBuilder(
     "ltr",
@@ -2701,6 +2739,8 @@ if (!is_null($events)) {
                     $multiMessage->add($actions1);
                     $multiMessage->add($actions2);
                     $replyData = $multiMessage;
+                }else if ($userMessage == "คำถาม:โปรโมชั่น3") {
+                    $replyData = new FlexMessageBuilder("Pro_other", $textPro3, $quickReplySubPromotion);
                 }
 
                 // ----------------------------------------------------------------------------------------- Website

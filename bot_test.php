@@ -3214,7 +3214,14 @@ if (!is_null($events)) {
                             "horizontal",
                             array(
                                 new TextComponentBuilder(
-                                    "Test",
+                                    "Test
+                                    Test
+                                    Test
+                                    Test
+                                    Test
+                                    Test
+                                    Test
+                                    Test",
                                     NULL,
                                     NULL,
                                     NULL,

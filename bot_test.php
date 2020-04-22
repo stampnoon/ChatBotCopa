@@ -3214,16 +3214,28 @@ if (!is_null($events)) {
                         new ImageComponentBuilder(
                             "https://i.ibb.co/jGqC3sF/NPromotion2.jpg?_ignore=",NULL,NULL,NULL,NULL,"full",NULL,"cover"),
                         new BoxComponentBuilder(
-                            "horizontal",
-                            array(
-                                new TextComponentBuilder("สมัครฝาก 200 รับโบนัส 30%
-                                
-                                สมัครฝาก 500 รับ เสื้อบอล Euro หรือ โบนัส 30%
-
-                                สมัครฝาก 1500 รับเตาปิ้งย่างบาร์บีคิว หรือ โบนัส 30%
-
-                                สมัครฝาก 5000 รับ iQos รุ่น 3Multi หรือ โบนัส 30%")
-                            )
+                                "horizontal",
+                                array(
+                                    new TextComponentBuilder(
+                                        "สมัครสมาชิก 300 รับหูฟังบลูทูธ 
+                        
+                        คลิกลิงค์เพื่อสมัครได้เลยค่ะ
+                        
+                        *อย่าลืมแจ้ง มาดูหมี99 แนะนำ เพื่อรับสิทธิ์นะคะ*
+                        ___________________________________
+                        
+                        สมัครเสร็จแล้ว กดปุ่มรับของแถม
+                        
+                        *แจ้งชื่อ และสลิป เพื่อรับของแถม
+                        จากคนแนะนำด้วยนะคะ*",
+                                        NULL,
+                                        NULL,
+                                        NULL,
+                                        NULL,
+                                        NULL,
+                                        true
+                                    )
+                                )
                         ),
                         new BoxComponentBuilder(
                             "vertical",

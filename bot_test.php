@@ -3214,7 +3214,7 @@ if (!is_null($events)) {
                         new ImageComponentBuilder(
                             "https://i.ibb.co/jGqC3sF/NPromotion2.jpg?_ignore=",NULL,NULL,NULL,NULL,"full",NULL,"cover"),
                         new BoxComponentBuilder(
-                            "vertical",
+                            "horizontal",
                             array(
                                 new TextComponentBuilder("สมัครฝาก 200 รับโบนัส 30%
                                 

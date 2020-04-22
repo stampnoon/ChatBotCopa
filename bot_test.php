@@ -2695,7 +2695,7 @@ if (!is_null($events)) {
                 } else if ($userMessage == "คำถาม:โปรโมชั่น1") {
                     $actions1 = $textPromotion1;
                     $actions2 = $replyData = new ImagemapMessageBuilder(
-                        'https://i.ibb.co/Dg7r1Rp/Npromotion.jpg?_ignore=',
+                        'https://i.ibb.co/jGqC3sF/NPromotion2.jpg?_ignore=',
                         'register1',
                         new BaseSizeBuilder(1040, 1040),
                         array(
@@ -2875,34 +2875,34 @@ if (!is_null($events)) {
                 // ----------------------------------------------------------------------------------------- Group
 
                 // ----------------------------------------------------------------------------------------- Promotion
-                else if ($userMessage == "สมัคร") {
-                    //$imageMapUrl = 'https://www.pic2free.com/uploads/20200319/22aff7616945ae9b1c4079d4501507b60a7b701a.jpg?_ignore=';
-                    $imageMapUrl = 'https://i.ibb.co/Dg7r1Rp/Npromotion.jpg?_ignore=';
-                    $replyData = new ImagemapMessageBuilder(
-                        $imageMapUrl,
-                        'register',
-                        new BaseSizeBuilder(1040, 1040),
-                        array(
-                            new ImagemapMessageActionBuilder(
-                                'โปร1000บาท',
-                                new AreaBuilder(11, 91, 1020, 232)
-                            ),
-                            new ImagemapMessageActionBuilder(
-                                'โปร500บาท',
-                                new AreaBuilder(11, 329, 1020, 232)
-                            ),
-                            new ImagemapMessageActionBuilder(
-                                'โปร300บาท',
-                                new AreaBuilder(11, 561, 1020, 232)
-                            ),
-                            new ImagemapMessageActionBuilder(
-                                'โปร200บาท',
-                                new AreaBuilder(11, 800, 1020, 232)
-                            ),
-                        ),
-                        $quickReplyMain
-                    );
-                }
+                // else if ($userMessage == "สมัคร") {
+                //     //$imageMapUrl = 'https://www.pic2free.com/uploads/20200319/22aff7616945ae9b1c4079d4501507b60a7b701a.jpg?_ignore=';
+                //     $imageMapUrl = 'https://i.ibb.co/Dg7r1Rp/Npromotion.jpg?_ignore=';
+                //     $replyData = new ImagemapMessageBuilder(
+                //         $imageMapUrl,
+                //         'register',
+                //         new BaseSizeBuilder(1040, 1040),
+                //         array(
+                //             new ImagemapMessageActionBuilder(
+                //                 'โปร1000บาท',
+                //                 new AreaBuilder(11, 91, 1020, 232)
+                //             ),
+                //             new ImagemapMessageActionBuilder(
+                //                 'โปร500บาท',
+                //                 new AreaBuilder(11, 329, 1020, 232)
+                //             ),
+                //             new ImagemapMessageActionBuilder(
+                //                 'โปร300บาท',
+                //                 new AreaBuilder(11, 561, 1020, 232)
+                //             ),
+                //             new ImagemapMessageActionBuilder(
+                //                 'โปร200บาท',
+                //                 new AreaBuilder(11, 800, 1020, 232)
+                //             ),
+                //         ),
+                //         $quickReplyMain
+                //     );
+                // }
                 // ----------------------------------------------------------------------------------------- DetailPromotion
                 else if ($userMessage == "โปร1000บาท") {
                     $replyData = new FlexMessageBuilder("Pro1000", $textDetailPromotion1, $quickReplyBackRegister);

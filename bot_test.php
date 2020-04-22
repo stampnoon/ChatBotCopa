@@ -2618,7 +2618,7 @@ if (!is_null($events)) {
                 // ----------------------------------------------------------------------------------------- Promotion
 
                 else if ($userMessage == "โปรโมชั่น") {
-                    $imagePromotion = 'https://i.ibb.co/60LLDdr/q-promotion.jpg?_ignore=';
+                    $imagePromotion = 'https://i.ibb.co/MfPzpYx/q-promotion2.jpg?_ignore=';
                     $replyData = new ImagemapMessageBuilder(
                         $imagePromotion,
                         'qpromotion',

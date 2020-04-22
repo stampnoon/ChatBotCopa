@@ -3221,6 +3221,9 @@ if (!is_null($events)) {
                 //     $replyData = new TemplateMessageBuilder("Button template builder", $button);
                 //     break;
                 // }
+                else if ($userMessage == "test") {
+                    $replyData = new TextMessageBuilder("test ja1","https://line.me/R/ti/p/%40519uqyhc");
+                }
                 // ========================== Test===================================
                 else {
                     $replyData = new FlexMessageBuilder("Flex", $textNotKeyword, $quickReplyMain);

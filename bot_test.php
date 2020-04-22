@@ -3251,6 +3251,12 @@ if (!is_null($events)) {
                                     NULL,
                                     NULL,
                                     "primary"
+                                ),new ButtonComponentBuilder(
+                                    new UriTemplateActionBuilder("ติดต่อรับของแถม", "https://lin.ee/nify4cI"),
+                                    NULL,
+                                    NULL,
+                                    NULL,
+                                    "primary"
                                 )
                             ),
                             0,"md"

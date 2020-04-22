@@ -640,6 +640,39 @@ ___________________________________",
         )
     )
 );
+
+$textRegister = new BubbleContainerBuilder(
+    "ltr",
+    NULL,
+    NULL,
+    new BoxComponentBuilder(
+        "horizontal",
+        array(
+            new TextComponentBuilder(
+                "สมัครสมาชิก
+___________________________________",
+                NULL,
+                NULL,
+                NULL,
+                NULL,
+                NULL,
+                true
+            )
+        )
+    ),
+    new BoxComponentBuilder(
+        "horizontal",
+        array(
+            new ButtonComponentBuilder(
+                new UriTemplateActionBuilder("สมัครสมาชิก", "https://line.me/R/ti/p/%40519uqyhc"),
+                NULL,
+                NULL,
+                NULL,
+                "primary"
+            )
+        )
+    )
+);
 // $textPromotion4 = new BubbleContainerBuilder(
 //     "ltr",
 //     NULL,
@@ -3199,8 +3232,8 @@ if (!is_null($events)) {
                 //     $replyData = new TemplateMessageBuilder("Button template builder", $button);
                 //     break;
                 // }
-                else if ($userMessage == "test") {
-                    $replyData = new UrlBuilder("https://line.me/R/ti/p/%40519uqyhc");
+                else if ($userMessage == "test") {  
+                    $replyData = new FlexMessageBuilder("Flex", $textRegister, $quickReplyMain);
                 }
                 // ========================== Test===================================
                 else {

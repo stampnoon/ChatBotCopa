@@ -2787,7 +2787,7 @@ if (!is_null($events)) {
                 //     $replyData = $multiMessage;
                 // } 
                 else if ($userMessage == "คำถาม:โปรโมชั่น1") { 
-                    $replyData = new FlexMessageBuilder("Pro_other", $textPro3, $quickReplySubPromotion);
+                    $replyData = new FlexMessageBuilder("Pro_other", $textPromotion1, $quickReplySubPromotion);
                 }
                 else if ($userMessage == "คำถาม:โปรโมชั่น2" || $userMessage == "โปรโมชั่น18+") {
 

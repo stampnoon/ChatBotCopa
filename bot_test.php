@@ -3208,7 +3208,7 @@ if (!is_null($events)) {
                         new BoxComponentBuilder(
                             "vertical",
                             array(
-                                new TextComponentBuilder("This is Header")
+                                new TextComponentBuilder("Promotion")
                             )
                         ),
                         new ImageComponentBuilder(
@@ -3216,7 +3216,13 @@ if (!is_null($events)) {
                         new BoxComponentBuilder(
                             "vertical",
                             array(
-                                new TextComponentBuilder("This is Body")
+                                new TextComponentBuilder("สมัครฝาก 200 รับโบนัส 30%
+                                
+                                สมัครฝาก 500 รับ เสื้อบอล Euro หรือ โบนัส 30%
+
+                                สมัครฝาก 1500 รับเตาปิ้งย่างบาร์บีคิว หรือ โบนัส 30%
+                                
+                                สมัครฝาก 5000 รับ iQos รุ่น 3Multi หรือ โบนัส 30%")
                             )
                         ),
                         new BoxComponentBuilder(

@@ -2726,7 +2726,7 @@ if (!is_null($events)) {
                 } else if ($userMessage == "คำถาม:โปรโมชั่น2" || $userMessage == "โปรโมชั่น18+") {
 
                     $actions1 = $textPromotion2;
-                    $actions2 = $replyData = new ImagemapMessageBuilder(
+                    $actions2 = new ImagemapMessageBuilder(
                         'https://i.ibb.co/kMgHs2J/Ads.jpg?_ignore=',
                         '18+',
                         new BaseSizeBuilder(1040, 1040),

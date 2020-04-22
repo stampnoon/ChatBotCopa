@@ -3203,12 +3203,7 @@ if (!is_null($events)) {
                 else if ($userMessage == "test") {
                     $textDetailPromotion1 = new BubbleContainerBuilder(
                         "ltr",
-                        new BoxComponentBuilder(
-                            "vertical",
-                            array(
-                                new TextComponentBuilder("This is Header")
-                            )
-                        ),
+                        NULL,
                         NULL,
                         new BoxComponentBuilder(
                             "horizontal",

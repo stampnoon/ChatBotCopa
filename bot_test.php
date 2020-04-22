@@ -3212,8 +3212,7 @@ if (!is_null($events)) {
                             )
                         ),
                         new ImageComponentBuilder(
-                            // "https://i.ibb.co/jGqC3sF/NPromotion2.jpg?_ignore=",NULL,NULL,NULL,NULL,"full","20:13","cover"),
-                            "https://i.ibb.co/jGqC3sF/NPromotion2.jpg?_ignore="),
+                            "https://i.ibb.co/jGqC3sF/NPromotion2.jpg?_ignore=",NULL,NULL,NULL,NULL,"full",NULL,"cover"),
                         new BoxComponentBuilder(
                             "vertical",
                             array(

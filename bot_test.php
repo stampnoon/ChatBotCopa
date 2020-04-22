@@ -3209,8 +3209,7 @@ if (!is_null($events)) {
                                 new TextComponentBuilder("This is Header")
                             )
                         ),
-                        new ImageComponentBuilder(
-                            "https://i.ibb.co/jGqC3sF/NPromotion2.jpg?_ignore=",NULL,NULL,NULL,NULL,"full","20:13","cover"),
+                        NULL,
                         new BoxComponentBuilder(
                             "horizontal",
                             array(
@@ -3230,6 +3229,18 @@ if (!is_null($events)) {
                             array(
                                 new ButtonComponentBuilder(
                                     new UriTemplateActionBuilder("สมัครโปรโมชั่น", "https://line.me/R/ti/p/%40519uqyhc"),
+                                    NULL,
+                                    NULL,
+                                    NULL,
+                                    "primary"
+                                ),new ButtonComponentBuilder(
+                                    new UriTemplateActionBuilder("ติดต่อรับของแถม", "https://lin.ee/nify4cI"),
+                                    NULL,
+                                    NULL,
+                                    NULL,
+                                    "primary"
+                                ),new ButtonComponentBuilder(
+                                    new UriTemplateActionBuilder("ติดต่อรับของแถม", "https://lin.ee/nify4cI"),
                                     NULL,
                                     NULL,
                                     NULL,

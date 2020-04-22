@@ -3190,19 +3190,61 @@ if (!is_null($events)) {
                 //         $replyData = new TextMessageBuilder('Send to Bot2 success');
                 //     }
                 // }
-                elseif ($userMessage == "F") {
-                    $actions = array(
-                        // general message action
-                        new MessageTemplateActionBuilder("ดูต่อ", "ควยลัน"),
-                    );
-                    $img_url = "https://i.ibb.co/KG4g477/979937-3261730880289-12041100-o.jpg";
-                    $button = new ButtonTemplateBuilder("ควยลัน", "description", $img_url, $actions);
-                    $replyData = new TemplateMessageBuilder("Button template builder", $button);
-                    break;
-                }
-                // else if ($userMessage == "test") {
-                //     $replyData = new TextMessageBuilder('This is bot 1');
+                // elseif ($userMessage == "F") {
+                //     $actions = array(
+                //         // general message action
+                //         new MessageTemplateActionBuilder("ดูต่อ", "ควยลัน"),
+                //     );
+                //     $img_url = "https://i.ibb.co/KG4g477/979937-3261730880289-12041100-o.jpg";
+                //     $button = new ButtonTemplateBuilder("ควยลัน", "description", $img_url, $actions);
+                //     $replyData = new TemplateMessageBuilder("Button template builder", $button);
+                //     break;
                 // }
+                else if ($userMessage == "test") {
+                    $textDetailPromotion1 = new BubbleContainerBuilder(
+                        "ltr",
+                        new BoxComponentBuilder(
+                            "vertical",
+                            array(
+                                new TextComponentBuilder("This is Header")
+                            )
+                        ),
+                        NULL,
+                        new BoxComponentBuilder(
+                            "horizontal",
+                            array(
+                                new TextComponentBuilder(
+                                    "Test",
+                                    NULL,
+                                    NULL,
+                                    NULL,
+                                    NULL,
+                                    NULL,
+                                    true
+                                )
+                            )
+                        ),
+                        new BoxComponentBuilder(
+                            "vertical",
+                            array(
+                                new ButtonComponentBuilder(
+                                    new UriTemplateActionBuilder("สมัครโปรโมชั่น", "https://line.me/R/ti/p/%40519uqyhc"),
+                                    NULL,
+                                    NULL,
+                                    NULL,
+                                    "primary"
+                                ),new ButtonComponentBuilder(
+                                    new UriTemplateActionBuilder("ติดต่อรับของแถม", "https://lin.ee/nify4cI"),
+                                    NULL,
+                                    NULL,
+                                    NULL,
+                                    "primary"
+                                )
+                            ),
+                            0,"md"
+                        )
+                    );
+                }
                 // ========================== Test===================================
                 else {
                     $replyData = new FlexMessageBuilder("Flex", $textNotKeyword, $quickReplyMain);

@@ -3209,7 +3209,9 @@ if (!is_null($events)) {
                                 new TextComponentBuilder("This is Header")
                             )
                         ),
-                        NULL,
+                        new ImageComponentBuilder(
+                            "https://i.ibb.co/jGqC3sF/NPromotion2.jpg?_ignore="), 
+                            //"https://i.ibb.co/jGqC3sF/NPromotion2.jpg?_ignore=",NULL,NULL,NULL,NULL,"full","20:13","cover"),
                         new BoxComponentBuilder(
                             "horizontal",
                             array(

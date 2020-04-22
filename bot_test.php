@@ -3190,7 +3190,7 @@ if (!is_null($events)) {
                 //         $replyData = new TextMessageBuilder('Send to Bot2 success');
                 //     }
                 // }
-                // elseif ($userMessage == "F") {
+                // else if ($userMessage == "F") {
                 //     $actions = array(
                 //         // general message action
                 //         new MessageTemplateActionBuilder("ดูต่อ", "ควยลัน"),
@@ -3201,9 +3201,14 @@ if (!is_null($events)) {
                 //     break;
                 // }
                 else if ($userMessage == "test") {
-                    $textDetailPromotion1 = new BubbleContainerBuilder(
+                    $testTestReply = new BubbleContainerBuilder(
                         "ltr",
-                        NULL,
+                        new BoxComponentBuilder(
+                            "vertical",
+                            array(
+                                new TextComponentBuilder("This is Header")
+                            )
+                        ),
                         NULL,
                         new BoxComponentBuilder(
                             "horizontal",
@@ -3239,6 +3244,7 @@ if (!is_null($events)) {
                             0,"md"
                         )
                     );
+                    $replyData = new FlexMessageBuilder("Flex",$testTestReply);
                 }
                 // ========================== Test===================================
                 else {

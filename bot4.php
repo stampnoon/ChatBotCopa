@@ -2456,7 +2456,7 @@ ___________________________________",
 if (!is_null($events)) {
     $userMessage = strtolower($userMessage);
     if (!is_null($eventFollow)) {
-        $imageMain = 'https://i.ibb.co/q7GNG0k/main.jpg?_ignore=';
+        $imageMain = 'https://i.ibb.co/ZzSzxwb/main2.jpg?_ignore=';
         $replyData = new ImagemapMessageBuilder(
             $imageMain,
             'main',
@@ -2493,7 +2493,7 @@ if (!is_null($events)) {
         case "text":
             if ($userMessage != null) {
                 if ($userMessage == "ย้อนกลับMain" || $userMessage == "Main") {
-                    $imageMain = 'https://i.ibb.co/q7GNG0k/main.jpg?_ignore=';
+                    $imageMain = 'https://i.ibb.co/ZzSzxwb/main2.jpg?_ignore=';
                     $replyData = new ImagemapMessageBuilder(
                         $imageMain,
                         'main',

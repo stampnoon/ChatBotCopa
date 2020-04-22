@@ -3214,10 +3214,7 @@ if (!is_null($events)) {
                         new BoxComponentBuilder(
                             "vertical",
                             array(
-                                new TextComponentBuilder("-สมัครฝาก 200 รับโบนัส 30%
-                                -สมัครฝาก 500 รับ เสื้อบอล Euro หรือ โบนัส 30%
-                                -สมัครฝาก 1500 รับเตาปิ้งย่างบาร์บีคิว หรือ โบนัส 30%
-                                -สมัครฝาก 5000 รับ iQos รุ่น 3Multi หรือ โบนัส 30%")
+                                new TextComponentBuilder("This is Body")
                             )
                         ),
                         new BoxComponentBuilder(
@@ -3225,15 +3222,14 @@ if (!is_null($events)) {
                             array(
                                 new TextComponentBuilder("This is Footer")
                             )
+                        ),
+                        new BubbleStylesBuilder( // style ทั้งหมดของ bubble
+                            new BlockStyleBuilder("#FFC90E"),  // style สำหรับ header block
+                            new BlockStyleBuilder("#EFE4B0"), // style สำหรับ hero block
+                            new BlockStyleBuilder("#B5E61D"), // style สำหรับ body block
+                            new BlockStyleBuilder("#FFF200") // style สำหรับ footer block
                         )
-                        // ,
-                        // new BubbleStylesBuilder( // style ทั้งหมดของ bubble
-                        //     new BlockStyleBuilder("#FFC90E"),  // style สำหรับ header block
-                        //     new BlockStyleBuilder("#EFE4B0"), // style สำหรับ hero block
-                        //     new BlockStyleBuilder("#B5E61D"), // style สำหรับ body block
-                        //     new BlockStyleBuilder("#FFF200") // style สำหรับ footer block
-                        // )
-                    )
+                    );
                     $replyData = new FlexMessageBuilder("Flex",$testTestReply);
                 }
                 // ========================== Test===================================

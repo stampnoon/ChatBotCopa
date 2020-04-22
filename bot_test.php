@@ -3240,7 +3240,19 @@ if (!is_null($events)) {
                                     NULL,
                                     "primary"
                                 ),new ButtonComponentBuilder(
-                                    new UriTemplateActionBuilder("สมัครฝาก 500", "https://lin.ee/nify4cI"),
+                                    new UriTemplateActionBuilder("สมัครฝาก 500", "https://line.me/R/ti/p/%40519uqyhc"),
+                                    NULL,
+                                    NULL,
+                                    NULL,
+                                    "primary"
+                                ),new ButtonComponentBuilder(
+                                    new UriTemplateActionBuilder("สมัครฝาก 1500", "https://line.me/R/ti/p/%40519uqyhc"),
+                                    NULL,
+                                    NULL,
+                                    NULL,
+                                    "primary"
+                                ),new ButtonComponentBuilder(
+                                    new UriTemplateActionBuilder("สมัครฝาก 5000", "https://line.me/R/ti/p/%40519uqyhc"),
                                     NULL,
                                     NULL,
                                     NULL,

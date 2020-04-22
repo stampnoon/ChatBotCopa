@@ -402,17 +402,77 @@ $quickReplyDetailUser = new QuickReplyMessageBuilder(
 // ----------------------------------------------------------------------------------------- QuickReply
 // ----------------------------------------------------------------------------------------- TextAll
 
-$textPromotion1 = new TextMessageBuilder(
-    "โปรโมชั่นของแถม
-
-- สมัครฝาก 200 รับโบนัส 30%
+$textPromotion1 = new BubbleContainerBuilder(
+    "ltr",  // กำหนด NULL หรือ "ltr" หรือ "rtl"
+    new BoxComponentBuilder(
+        "vertical",
+        array(
+            new TextComponentBuilder("Promotion")
+        )
+    ),
+    new ImageComponentBuilder(
+        "https://i.ibb.co/jGqC3sF/NPromotion2.jpg?_ignore=",NULL,NULL,NULL,NULL,"full",NULL,"cover"),
+    new BoxComponentBuilder(
+            "horizontal",
+            array(
+                new TextComponentBuilder(
+                    "- สมัครฝาก 200 รับโบนัส 30%
 - สมัครฝาก 500 รับ เสื้อบอล Euro หรือ โบนัส 30%
 - สมัครฝาก 1500 รับเตาปิ้งย่างบาร์บีคิว หรือ โบนัส 30%
-- สมัครฝาก 5000 รับ iQos รุ่น 3Multi หรือ โบนัส 30%
-
-(ทุกการสมัครอย่าลืมแจ้ง คนแนะนำ เพื่อรับสิทธิ์นะคะ)"
-
+- สมัครฝาก 5000 รับ iQos รุ่น 3Multi หรือ โบนัส 30%",
+                    NULL,
+                    NULL,
+                    NULL,
+                    NULL,
+                    NULL,
+                    true
+                )
+            )
+    ),
+    new BoxComponentBuilder(
+        "vertical",
+        array(
+            new ButtonComponentBuilder(
+                new UriTemplateActionBuilder("สมัครฝาก 200", "https://line.me/R/ti/p/%40519uqyhc"),
+                NULL,
+                NULL,
+                NULL,
+                "primary"
+            ),new ButtonComponentBuilder(
+                new UriTemplateActionBuilder("สมัครฝาก 500", "https://line.me/R/ti/p/%40519uqyhc"),
+                NULL,
+                NULL,
+                NULL,
+                "primary"
+            ),new ButtonComponentBuilder(
+                new UriTemplateActionBuilder("สมัครฝาก 1500", "https://line.me/R/ti/p/%40519uqyhc"),
+                NULL,
+                NULL,
+                NULL,
+                "primary"
+            ),new ButtonComponentBuilder(
+                new UriTemplateActionBuilder("สมัครฝาก 5000", "https://line.me/R/ti/p/%40519uqyhc"),
+                NULL,
+                NULL,
+                NULL,
+                "primary"
+            )
+        ),
+        0,"md"
+    )
 );
+
+// $textPromotion1 = new TextMessageBuilder(
+//     "โปรโมชั่นของแถม
+
+// - สมัครฝาก 200 รับโบนัส 30%
+// - สมัครฝาก 500 รับ เสื้อบอล Euro หรือ โบนัส 30%
+// - สมัครฝาก 1500 รับเตาปิ้งย่างบาร์บีคิว หรือ โบนัส 30%
+// - สมัครฝาก 5000 รับ iQos รุ่น 3Multi หรือ โบนัส 30%
+
+// (ทุกการสมัครอย่าลืมแจ้ง คนแนะนำ เพื่อรับสิทธิ์นะคะ)"
+
+// );
 
 // $textPromotion1 = new BubbleContainerBuilder(
 //     "ltr",
@@ -2692,41 +2752,47 @@ if (!is_null($events)) {
                             ),
                         )
                     );
-                } else if ($userMessage == "คำถาม:โปรโมชั่น1") {
-                    $actions1 = $textPromotion1;
-                    $actions2 = $replyData = new ImagemapMessageBuilder(
-                        'https://i.ibb.co/jGqC3sF/NPromotion2.jpg?_ignore=',
-                        'register1',
-                        new BaseSizeBuilder(1040, 1040),
-                        array(
-                            new ImagemapMessageActionBuilder(
-                                'โปร1000บาท',
-                                new AreaBuilder(11, 91, 1020, 232)
-                            ),
-                            new ImagemapMessageActionBuilder(
-                                'โปร500บาท',
-                                new AreaBuilder(11, 329, 1020, 232)
-                            ),
-                            new ImagemapMessageActionBuilder(
-                                'โปร300บาท',
-                                new AreaBuilder(11, 561, 1020, 232)
-                            ),
-                            new ImagemapMessageActionBuilder(
-                                'โปร200บาท',
-                                new AreaBuilder(11, 800, 1020, 232)
-                            ),
-                        ),
-                        $quickReplySubPromotion
-                    );
+                } 
+                //======== คำถาม:โปรโมชั่น1 (เก่า) =========
+                // else if ($userMessage == "คำถาม:โปรโมชั่น1") { 
+                //     $actions1 = $textPromotion1;
+                //     $actions2 = $replyData = new ImagemapMessageBuilder(
+                //         'https://i.ibb.co/jGqC3sF/NPromotion2.jpg?_ignore=',
+                //         'register1',
+                //         new BaseSizeBuilder(1040, 1040),
+                //         array(
+                //             new ImagemapMessageActionBuilder(
+                //                 'โปร1000บาท',
+                //                 new AreaBuilder(11, 91, 1020, 232)
+                //             ),
+                //             new ImagemapMessageActionBuilder(
+                //                 'โปร500บาท',
+                //                 new AreaBuilder(11, 329, 1020, 232)
+                //             ),
+                //             new ImagemapMessageActionBuilder(
+                //                 'โปร300บาท',
+                //                 new AreaBuilder(11, 561, 1020, 232)
+                //             ),
+                //             new ImagemapMessageActionBuilder(
+                //                 'โปร200บาท',
+                //                 new AreaBuilder(11, 800, 1020, 232)
+                //             ),
+                //         ),
+                //         $quickReplySubPromotion
+                //     );
 
-                    $multiMessage = new MultiMessageBuilder;
-                    $multiMessage->add($actions1);
-                    $multiMessage->add($actions2);
-                    $replyData = $multiMessage;
-                } else if ($userMessage == "คำถาม:โปรโมชั่น2" || $userMessage == "โปรโมชั่น18+") {
+                //     $multiMessage = new MultiMessageBuilder;
+                //     $multiMessage->add($actions1);
+                //     $multiMessage->add($actions2);
+                //     $replyData = $multiMessage;
+                // } 
+                else if ($userMessage == "คำถาม:โปรโมชั่น1") { 
+                    $replyData = new FlexMessageBuilder("Pro_other", $textPro3, $quickReplySubPromotion);
+                }
+                else if ($userMessage == "คำถาม:โปรโมชั่น2" || $userMessage == "โปรโมชั่น18+") {
 
                     $actions1 = $textPromotion2;
-                    $actions2 = $replyData = new ImagemapMessageBuilder(
+                    $actions2 = new ImagemapMessageBuilder(
                         'https://i.ibb.co/kMgHs2J/Ads.jpg?_ignore=',
                         '18+',
                         new BaseSizeBuilder(1040, 1040),
@@ -3270,58 +3336,6 @@ if (!is_null($events)) {
                         // )
                     );
                     $replyData = new FlexMessageBuilder("Flex",$testTestReply);
-                }
-                else if($userMessage == "test2")
-                {
-                    $textTest = new BubbleContainerBuilder(
-                        "ltr",
-                        NULL,
-                        NULL,
-                        new BoxComponentBuilder(
-                            "horizontal",
-                            array(
-                                new TextComponentBuilder(
-                                    "สมัครสมาชิก 300 รับหูฟังบลูทูธ 
-                    
-                    คลิกลิงค์เพื่อสมัครได้เลยค่ะ
-                    
-                    *อย่าลืมแจ้ง มาดูหมี99 แนะนำ เพื่อรับสิทธิ์นะคะ*
-                    ___________________________________
-                    
-                    สมัครเสร็จแล้ว กดปุ่มรับของแถม
-                    
-                    *แจ้งชื่อ และสลิป เพื่อรับของแถม
-                    จากคนแนะนำด้วยนะคะ*",
-                                    NULL,
-                                    NULL,
-                                    NULL,
-                                    NULL,
-                                    NULL,
-                                    true
-                                )
-                            )
-                        ),
-                        new BoxComponentBuilder(
-                            "vertical",
-                            array(
-                                new ButtonComponentBuilder(
-                                    new UriTemplateActionBuilder("สมัครโปรโมชั่น", "https://line.me/R/ti/p/%40519uqyhc"),
-                                    NULL,
-                                    NULL,
-                                    NULL,
-                                    "primary"
-                                ),new ButtonComponentBuilder(
-                                    new UriTemplateActionBuilder("ติดต่อรับของแถม", "https://lin.ee/nify4cI"),
-                                    NULL,
-                                    NULL,
-                                    NULL,
-                                    "primary"
-                                )
-                            ),
-                            0,"md"
-                        )
-                    );
-                    $replyData = new FlexMessageBuilder("Flex",$textTest);
                 }
                 // ========================== Test===================================
                 else {

@@ -659,6 +659,7 @@ $textRegister = new BubbleContainerBuilder(
         )
     )
 );
+
 // $textPromotion4 = new BubbleContainerBuilder(
 //     "ltr",
 //     NULL,
@@ -3220,9 +3221,6 @@ if (!is_null($events)) {
                 //     $replyData = new TemplateMessageBuilder("Button template builder", $button);
                 //     break;
                 // }
-                else if ($userMessage == "test") {  
-                    $replyData = new FlexMessageBuilder("Flex", $textRegister, $quickReplyMain);
-                }
                 // ========================== Test===================================
                 else {
                     $replyData = new FlexMessageBuilder("Flex", $textNotKeyword, $quickReplyMain);

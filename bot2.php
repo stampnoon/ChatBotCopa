@@ -638,6 +638,26 @@ ___________________________________",
         )
     )
 );
+
+$textRegister = new BubbleContainerBuilder(
+    "ltr",
+    NULL,
+    NULL,
+    NULL,
+    new BoxComponentBuilder(
+        "horizontal",
+        array(
+            new ButtonComponentBuilder(
+                new UriTemplateActionBuilder("สมัครสมาชิก", "https://line.me/R/ti/p/%40519uqyhc"),
+                NULL,
+                NULL,
+                NULL,
+                "primary"
+            )
+        )
+    )
+);
+
 // $textPromotion4 = new BubbleContainerBuilder(
 //     "ltr",
 //     NULL,
@@ -2834,7 +2854,9 @@ if (!is_null($events)) {
                 // ----------------------------------------------------------------------------------------- Group
 
                 // ----------------------------------------------------------------------------------------- Promotion
-                // else if ($userMessage == "สมัคร") {
+                else if ($userMessage == "สมัคร") {
+                    $replyData = new FlexMessageBuilder("Flex", $textRegister, $quickReplyMain);
+                }
                 //     //$imageMapUrl = 'https://www.pic2free.com/uploads/20200319/22aff7616945ae9b1c4079d4501507b60a7b701a.jpg?_ignore=';
                 //     $imageMapUrl = 'https://i.ibb.co/Dg7r1Rp/Npromotion.jpg?_ignore=';
                 //     $replyData = new ImagemapMessageBuilder(

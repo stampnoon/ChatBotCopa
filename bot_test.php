@@ -3233,7 +3233,8 @@ if (!is_null($events)) {
                 //     break;
                 // }
                 else if ($userMessage == "test") {  
-                    $replyData = new FlexMessageBuilder("Flex", $textRegister, $quickReplyMain);
+                    $replyData = new UriTemplateActionBuilder("สมัครโปรโมชั่น", "https://line.me/R/ti/p/%40519uqyhc");
+                    //$replyData = new FlexMessageBuilder("Flex", $textRegister, $quickReplyMain);
                 }
                 // ========================== Test===================================
                 else {

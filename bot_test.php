@@ -2510,7 +2510,7 @@ if (!is_null($events)) {
                 // ),
                 new ImagemapUriActionBuilder(
                     'https://line.me/R/ti/p/%40519uqyhc',
-                    new AreaBuilder(344, 898, 345, 83)
+                    new AreaBuilder(348, 112, 340, 283)
                 ),
                 new ImagemapMessageActionBuilder(
                     'ติดต่อ',
@@ -2551,7 +2551,7 @@ if (!is_null($events)) {
                             // ),
                             new ImagemapUriActionBuilder(
                                 'https://line.me/R/ti/p/%40519uqyhc',
-                                new AreaBuilder(344, 898, 345, 83)
+                                new AreaBuilder(348, 112, 340, 283)
                             ),
                             new ImagemapMessageActionBuilder(
                                 'ติดต่อ',

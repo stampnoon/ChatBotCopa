@@ -2686,7 +2686,7 @@ if (!is_null($events)) {
                             //     new AreaBuilder(344, 898, 345, 83)
                             // ),
                             new ImagemapUriActionBuilder(
-                                'https://line.me/R/ti/p/%40743mznmf',
+                                'https://lin.ee/nify4cI',
                                 new AreaBuilder(344, 898, 345, 83)
                             )
                         ),

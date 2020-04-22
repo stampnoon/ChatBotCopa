@@ -2622,14 +2622,14 @@ if (!is_null($events)) {
                     $replyData = new ImagemapMessageBuilder(
                         $imagePromotion,
                         'qpromotion',
-                        new BaseSizeBuilder(386, 1040),
+                        new BaseSizeBuilder(500, 1040),
                         array(
                             new ImagemapMessageActionBuilder(
                                 'คำถาม:โปรโมชั่น1',
                                 new AreaBuilder(5, 145, 513, 108)
                             ),
                             new ImagemapMessageActionBuilder(
-                                'ย้อนกลับQuestion',
+                                'คำถาม:โปรโมชั่น3',
                                 new AreaBuilder(5, 255, 513, 108)
                             ),
                             new ImagemapMessageActionBuilder(
@@ -2637,8 +2637,13 @@ if (!is_null($events)) {
                                 new AreaBuilder(523, 145, 513, 108)
                             ),
                             new ImagemapMessageActionBuilder(
-                                'ย้อนกลับMain',
+                                'ย้อนกลับQuestion',
                                 new AreaBuilder(523, 255, 513, 108)
+                            ),
+                            ,
+                            new ImagemapMessageActionBuilder(
+                                'ย้อนกลับMain',
+                                new AreaBuilder(5, 370, 513, 108)
                             ),
                         )
                     );

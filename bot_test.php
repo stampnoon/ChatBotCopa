@@ -3190,16 +3190,16 @@ if (!is_null($events)) {
                 //         $replyData = new TextMessageBuilder('Send to Bot2 success');
                 //     }
                 // }
-                // elseif ($userMessage == "F") {
-                //     $actions = array(
-                //         // general message action
-                //         new MessageTemplateActionBuilder("ดูต่อ", "ควยลัน"),
-                //     );
-                //     $img_url = "https://i.ibb.co/KG4g477/979937-3261730880289-12041100-o.jpg";
-                //     $button = new ButtonTemplateBuilder("ควยลัน", "description", $img_url, $actions);
-                //     $replyData = new TemplateMessageBuilder("Button template builder", $button);
-                //     break;
-                // }
+                elseif ($userMessage == "F") {
+                    $actions = array(
+                        // general message action
+                        new MessageTemplateActionBuilder("ดูต่อ", "ควยลัน"),
+                    );
+                    $img_url = "https://i.ibb.co/KG4g477/979937-3261730880289-12041100-o.jpg";
+                    $button = new ButtonTemplateBuilder("ควยลัน", "description", $img_url, $actions);
+                    $replyData = new TemplateMessageBuilder("Button template builder", $button);
+                    break;
+                }
                 // else if ($userMessage == "test") {
                 //     $replyData = new TextMessageBuilder('This is bot 1');
                 // }

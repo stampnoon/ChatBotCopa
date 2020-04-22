@@ -3232,7 +3232,7 @@ if (!is_null($events)) {
                             )
                         ),
                         new BoxComponentBuilder(
-                            "vertical",
+                            "horizontal",
                             array(
                                 new ButtonComponentBuilder(
                                     new UriTemplateActionBuilder("สมัครโปรโมชั่น", "https://line.me/R/ti/p/%40519uqyhc"),

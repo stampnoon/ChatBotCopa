@@ -645,21 +645,7 @@ $textRegister = new BubbleContainerBuilder(
     "ltr",
     NULL,
     NULL,
-    new BoxComponentBuilder(
-        "horizontal",
-        array(
-            new TextComponentBuilder(
-                "สมัครสมาชิก
-___________________________________",
-                NULL,
-                NULL,
-                NULL,
-                NULL,
-                NULL,
-                true
-            )
-        )
-    ),
+    NULL,
     new BoxComponentBuilder(
         "horizontal",
         array(

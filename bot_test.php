@@ -462,47 +462,6 @@ $textPromotion1 = new BubbleContainerBuilder(
     )
 );
 
-// $textPromotion1 = new TextMessageBuilder(
-//     "โปรโมชั่นของแถม
-
-// - สมัครฝาก 200 รับโบนัส 30%
-// - สมัครฝาก 500 รับ เสื้อบอล Euro หรือ โบนัส 30%
-// - สมัครฝาก 1500 รับเตาปิ้งย่างบาร์บีคิว หรือ โบนัส 30%
-// - สมัครฝาก 5000 รับ iQos รุ่น 3Multi หรือ โบนัส 30%
-
-// (ทุกการสมัครอย่าลืมแจ้ง คนแนะนำ เพื่อรับสิทธิ์นะคะ)"
-
-// );
-
-// $textPromotion1 = new BubbleContainerBuilder(
-//     "ltr",
-//     NULL,
-//     NULL,
-//     new BoxComponentBuilder(
-//         "horizontal",
-//         array(
-//             new TextComponentBuilder(
-//                 "โปรโมชั่นของแถม
-
-// - สมัครสมาชิก 200 รับโบนัส 30% 
-// - สมัครสมาชิก 300 รับหูฟังบลูทูธ 
-// - สมัครสมาชิก 500 รับเสื้อฮู้ด หรือ 
-// หูฟัง P47 Wireless Headphones
-// - สมัครสมาชิก 1000 รับ POD ไฟฟ้า 
-// หรือ หูฟัง Redmi Airdots
-
-// (ทุกการสมัครอย่าลืมแจ้ง คนแนะนำ เพื่อรับสิทธิ์นะคะ)",
-//                 NULL,
-//                 NULL,
-//                 "md",
-//                 NULL,
-//                 NULL,
-//                 true
-//             )
-//         )
-//     )
-// );
-
 $textPromotion2 = new TextMessageBuilder(
     "โปรโมชั่น 18+
 
@@ -515,32 +474,44 @@ $textPromotion2 = new TextMessageBuilder(
 
 );
 
-// $textPromotion2 = new BubbleContainerBuilder(
-//     "ltr",
-//     NULL,
-//     NULL,
-//     new BoxComponentBuilder(
-//         "horizontal",
-//         array(
-//             new TextComponentBuilder(
-//                 "โปรโมชั่น 18+
+$textPromotion3 = new BubbleContainerBuilder(
+    "ltr",
+    NULL,
+    NULL,
+    new BoxComponentBuilder(
+        "horizontal",
+        array(
+            new TextComponentBuilder(
+                "โปรโมชั่นประจำเดือน
+                
+สามารถสอบถามรายละเอียด
 
-// ทุกการสมัคร 200 บาทขึ้นไป เข้ากลุ่มฟรี
+เพื่อรับสิทธิโปรโมชั่นประจำเดือน
 
-// -กลุ่มคลิปหลุด
-// -กลุ่มไลฟ์สดถอดหมด
-
-// (แจ้งขอเข้ากลุ่มหลังจากสมัครสมาชิกเรียบร้อยแล้ว)",
-//                 NULL,
-//                 NULL,
-//                 "md",
-//                 NULL,
-//                 NULL,
-//                 true
-//             )
-//         )
-//     )
-// );
+จากแอดมินได้เลยค่ะ
+___________________________________",
+                NULL,
+                NULL,
+                NULL,
+                NULL,
+                NULL,
+                true
+            )
+        )
+    ),
+    new BoxComponentBuilder(
+        "horizontal",
+        array(
+            new ButtonComponentBuilder(
+                new UriTemplateActionBuilder("โปรโมชั่นประจำเดือน", "https://lin.ee/iDODdH2"),
+                NULL,
+                NULL,
+                NULL,
+                "primary"
+            )
+        )
+    )
+);
 
 $textOther1 = new BubbleContainerBuilder(
     "ltr",
@@ -1491,44 +1462,6 @@ Copa69 ขอขอบคุณที่ใช้บริการค่ะ....
 //         )
 //     )
 // );
-$textPro3 = new BubbleContainerBuilder(
-    "ltr",
-    NULL,
-    NULL,
-    new BoxComponentBuilder(
-        "horizontal",
-        array(
-            new TextComponentBuilder(
-                "โปรโมชั่นประจำเดือน
-                
-สามารถสอบถามรายละเอียด
-
-เพื่อรับสิทธิโปรโมชั่นประจำเดือน
-
-จากแอดมินได้เลยค่ะ
-___________________________________",
-                NULL,
-                NULL,
-                NULL,
-                NULL,
-                NULL,
-                true
-            )
-        )
-    ),
-    new BoxComponentBuilder(
-        "horizontal",
-        array(
-            new ButtonComponentBuilder(
-                new UriTemplateActionBuilder("โปรโมชั่นประจำเดือน", "https://lin.ee/iDODdH2"),
-                NULL,
-                NULL,
-                NULL,
-                "primary"
-            )
-        )
-    )
-);
 
 $textWebsite1 = new BubbleContainerBuilder(
     "ltr",
@@ -2814,7 +2747,7 @@ if (!is_null($events)) {
                     $multiMessage->add($actions2);
                     $replyData = $multiMessage;
                 }else if ($userMessage == "คำถาม:โปรโมชั่น3") {
-                    $replyData = new FlexMessageBuilder("Pro_other", $textPro3, $quickReplySubPromotion);
+                    $replyData = new FlexMessageBuilder("Pro_other", $textPromotion3, $quickReplySubPromotion);
                 }
 
                 // ----------------------------------------------------------------------------------------- Website

@@ -3266,100 +3266,50 @@ if (!is_null($events)) {
 
                 //     $replyData = $multiMessage; //Multi Message Max 5 Message
                 // }
-                // else if ($userMessage == "test") { //MultiMessage
-                //     $BubbleSet_1 = new CarouselContainerBuilder(
-                //         array(
-                //             new BubbleContainerBuilder(
-                //                 "ltr",  // กำหนด NULL หรือ "ltr" หรือ "rtl"
-                //                 NULL,
-                //                 NULL,
-                //                 new BoxComponentBuilder(
-                //                     "horizontal",
-                //                     array(
-                //                         new TextComponentBuilder("Hello, World 1",NULL,NULL,NULL,NULL,NULL,true)
-                //                     )
-                //                 ),
-                //                 new BoxComponentBuilder(
-                //                     "horizontal",
-                //                     array(
-                //                         new ButtonComponentBuilder(
-                //                             new UriTemplateActionBuilder("GO","http://niik.in"),
-                //                             NULL,NULL,NULL,"primary"
-                //                         )
-                //                     )
-                //                 )
-                //             ), // end bubble 1
-                //             new BubbleContainerBuilder(
-                //                 "ltr",  // กำหนด NULL หรือ "ltr" หรือ "rtl"
-                //                 NULL,NULL,
-                //                 new BoxComponentBuilder(
-                //                     "horizontal",
-                //                     array(
-                //                         new TextComponentBuilder("Hello, World 2",NULL,NULL,NULL,NULL,NULL,true)
-                //                     )
-                //                 ),
-                //                 new BoxComponentBuilder(
-                //                     "horizontal",
-                //                     array(
-                //                         new ButtonComponentBuilder(
-                //                             new UriTemplateActionBuilder("GO","http://niik.in"),
-                //                             NULL,NULL,NULL,"primary"
-                //                         )
-                //                     )
-                //                 )
-                //             ), // end bubble 2
-                //             new BubbleContainerBuilder(
-                //                 "ltr",  // กำหนด NULL หรือ "ltr" หรือ "rtl"
-                //                 NULL,NULL,
-                //                 new BoxComponentBuilder(
-                //                     "horizontal",
-                //                     array(
-                //                         new TextComponentBuilder("Hello, World 3",NULL,NULL,NULL,NULL,NULL,true)
-                //                     )
-                //                 ),
-                //                 new BoxComponentBuilder(
-                //                     "horizontal",
-                //                     array(
-                //                         new ButtonComponentBuilder(
-                //                             new UriTemplateActionBuilder("GO","http://niik.in"),
-                //                             NULL,NULL,NULL,"primary"
-                //                         )
-                //                     )
-                //                 )
-                //             ), // end bubble 3      
-                //             new BubbleContainerBuilder(
-                //                 "ltr",  // กำหนด NULL หรือ "ltr" หรือ "rtl"
-                //                 NULL,NULL,
-                //                 new BoxComponentBuilder(
-                //                     "horizontal",
-                //                     array(
-                //                         new TextComponentBuilder("Hello, World 4",NULL,NULL,NULL,NULL,NULL,true)
-                //                     )
-                //                 ),
-                //                 new BoxComponentBuilder(
-                //                     "horizontal",
-                //                     array(
-                //                         new ButtonComponentBuilder(
-                //                             new UriTemplateActionBuilder("GO","http://niik.in"),
-                //                             NULL,NULL,NULL,"primary"
-                //                         )
-                //                     )
-                //                 )
-                //             )
-                //         )
-                //     );
-                //     $replyData1 = new FlexMessageBuilder("Flex",$BubbleSet_1);
-                //     $replyData2 = new FlexMessageBuilder("Flex",$textReplyMessage);
+                else if ($userMessage == "test") { //MultiMessage
+                    $BubbleSet_1 = new CarouselContainerBuilder(
+                        array(
+                            new BubbleContainerBuilder(
+                                "ltr",  // กำหนด NULL หรือ "ltr" หรือ "rtl"
+                                NULL,
+                                new ImageComponentBuilder(
+                                    "https://i.ibb.co/jGqC3sF/NPromotion2.jpg?_ignore=",NULL,NULL,NULL,NULL,"full",NULL,"cover")
+                                ,
+                                NULL,
+                                NULL
+                            ), // end bubble 1
+                            new BubbleContainerBuilder(
+                                "ltr",  // กำหนด NULL หรือ "ltr" หรือ "rtl"
+                                NULL,
+                                new ImageComponentBuilder(
+                                    "https://i.ibb.co/jGqC3sF/NPromotion2.jpg?_ignore=",NULL,NULL,NULL,NULL,"full",NULL,"cover")
+                                ,
+                                NULL,
+                                NULL
+                            ), // end bubble 2
+                            new BubbleContainerBuilder(
+                                "ltr",  // กำหนด NULL หรือ "ltr" หรือ "rtl"
+                                NULL,
+                                new ImageComponentBuilder(
+                                    "https://i.ibb.co/jGqC3sF/NPromotion2.jpg?_ignore=",NULL,NULL,NULL,NULL,"full",NULL,"cover")
+                                ,
+                                NULL,
+                                NULL
+                            ) // end bubble 3      
+                        )
+                    );
+                    $replyData1 = new FlexMessageBuilder("Flex",$BubbleSet_1);
+                    $replyData2 = new FlexMessageBuilder("Flex",$textReplyMessage);
 
-                //     //$replyData = new FlexMessageBuilder("Flex",$textReplyMessage);
+                    //$replyData = new FlexMessageBuilder("Flex",$textReplyMessage);
 
                     
-                //     $multiMessage = new MultiMessageBuilder;
-                //     $multiMessage->add($replyData1);
-                //     $multiMessage->add($replyData2);
+                    $multiMessage = new MultiMessageBuilder;
+                    $multiMessage->add($replyData1);
+                    $multiMessage->add($replyData2);
 
-                //     $replyData = $multiMessage; //Multi Message Max 5 Message
-                // }
+                    $replyData = $multiMessage; //Multi Message Max 5 Message
+                }
                 // ========================== Test===================================
                 else {
                     $replyData = new FlexMessageBuilder("Flex", $textNotKeyword, $quickReplyMain);

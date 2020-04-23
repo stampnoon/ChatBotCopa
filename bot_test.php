@@ -477,41 +477,41 @@ $textPromotion2 = new TextMessageBuilder(
 
 );
 
-$textPromotion3 = new BubbleContainerBuilder(
-    "ltr",
-    NULL,
-    NULL,
-    new BoxComponentBuilder(
-        "horizontal",
-        array(
-            new TextComponentBuilder(
-                "โปรโมชั่นประจำเดือน
+// $textPromotion3 = new BubbleContainerBuilder(
+//     "ltr",
+//     NULL,
+//     NULL,
+//     new BoxComponentBuilder(
+//         "horizontal",
+//         array(
+//             new TextComponentBuilder(
+//                 "โปรโมชั่นประจำเดือน
 
-โปรโมชั่นพิเศษในแต่ละเดือนไม่ว่าจะเป็นแถมสุดพิเศษหรือส่วนลดสุดคุ้ม
-สามารถสอบถามรายละเอียดโปรโมชั่นประจำเดือนจากแอดมินได้เลยค่ะ
-___________________________________",
-                NULL,
-                NULL,
-                NULL,
-                NULL,
-                NULL,
-                true
-            )
-        )
-    ),
-    new BoxComponentBuilder(
-        "horizontal",
-        array(
-            new ButtonComponentBuilder(
-                new UriTemplateActionBuilder("โปรโมชั่นประจำเดือน", "https://lin.ee/iDODdH2"),
-                NULL,
-                NULL,
-                NULL,
-                "primary"
-            )
-        )
-    )
-);
+// โปรโมชั่นพิเศษในแต่ละเดือนไม่ว่าจะเป็นแถมสุดพิเศษหรือส่วนลดสุดคุ้ม
+// สามารถสอบถามรายละเอียดโปรโมชั่นประจำเดือนจากแอดมินได้เลยค่ะ
+// ___________________________________",
+//                 NULL,
+//                 NULL,
+//                 NULL,
+//                 NULL,
+//                 NULL,
+//                 true
+//             )
+//         )
+//     ),
+//     new BoxComponentBuilder(
+//         "horizontal",
+//         array(
+//             new ButtonComponentBuilder(
+//                 new UriTemplateActionBuilder("โปรโมชั่นประจำเดือน", "https://lin.ee/iDODdH2"),
+//                 NULL,
+//                 NULL,
+//                 NULL,
+//                 "primary"
+//             )
+//         )
+//     )
+// );
 
 $textOther1 = new BubbleContainerBuilder(
     "ltr",

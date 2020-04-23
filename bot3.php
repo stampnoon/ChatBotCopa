@@ -38,6 +38,7 @@ use LINE\LINEBot\MessageBuilder\MultiMessageBuilder;
 use LINE\LINEBot\MessageBuilder\TemplateBuilder\ButtonTemplateBuilder;
 use LINE\LINEBot\MessageBuilder\TemplateMessageBuilder;
 use LINE\LINEBot\MessageBuilder\Flex\ComponentBuilder\ImageComponentBuilder;
+use LINE\LINEBot\MessageBuilder\Flex\ContainerBuilder\CarouselContainerBuilder;
 
 $httpClient = new CurlHTTPClient(LINE_MESSAGE_ACCESS_TOKEN);
 $bot = new LINEBot($httpClient, array('channelSecret' => LINE_MESSAGE_CHANNEL_SECRET));
@@ -473,41 +474,41 @@ $textPromotion2 = new TextMessageBuilder(
 
 );
 
-$textPromotion3 = new BubbleContainerBuilder(
-    "ltr",
-    NULL,
-    NULL,
-    new BoxComponentBuilder(
-        "horizontal",
-        array(
-            new TextComponentBuilder(
-                "โปรโมชั่นประจำเดือน
+// $textPromotion3 = new BubbleContainerBuilder(
+//     "ltr",
+//     NULL,
+//     NULL,
+//     new BoxComponentBuilder(
+//         "horizontal",
+//         array(
+//             new TextComponentBuilder(
+//                 "โปรโมชั่นประจำเดือน
                 
-โปรโมชั่นพิเศษในแต่ละเดือนไม่ว่าจะเป็นแถมสุดพิเศษหรือส่วนลดสุดคุ้ม
-สามารถสอบถามรายละเอียดโปรโมชั่นประจำเดือนจากแอดมินได้เลยค่ะ
-___________________________________",
-                NULL,
-                NULL,
-                NULL,
-                NULL,
-                NULL,
-                true
-            )
-        )
-    ),
-    new BoxComponentBuilder(
-        "horizontal",
-        array(
-            new ButtonComponentBuilder(
-                new UriTemplateActionBuilder("โปรโมชั่นประจำเดือน", "https://lin.ee/kOWSzgx"),
-                NULL,
-                NULL,
-                NULL,
-                "primary"
-            )
-        )
-    )
-);
+// โปรโมชั่นพิเศษในแต่ละเดือนไม่ว่าจะเป็นแถมสุดพิเศษหรือส่วนลดสุดคุ้ม
+// สามารถสอบถามรายละเอียดโปรโมชั่นประจำเดือนจากแอดมินได้เลยค่ะ
+// ___________________________________",
+//                 NULL,
+//                 NULL,
+//                 NULL,
+//                 NULL,
+//                 NULL,
+//                 true
+//             )
+//         )
+//     ),
+//     new BoxComponentBuilder(
+//         "horizontal",
+//         array(
+//             new ButtonComponentBuilder(
+//                 new UriTemplateActionBuilder("โปรโมชั่นประจำเดือน", "https://lin.ee/kOWSzgx"),
+//                 NULL,
+//                 NULL,
+//                 NULL,
+//                 "primary"
+//             )
+//         )
+//     )
+// );
 
 $textOther1 = new BubbleContainerBuilder(
     "ltr",
@@ -2494,6 +2495,138 @@ ___________________________________",
     )
 );
 
+$BubbleSet_1 = new CarouselContainerBuilder(
+    array(
+        new BubbleContainerBuilder(
+            "ltr",  // กำหนด NULL หรือ "ltr" หรือ "rtl"
+            NULL,
+            new ImageComponentBuilder(
+                "https://i.ibb.co/129WS7t/300-TWS.jpg?_ignore=",NULL,NULL,NULL,NULL,"full",NULL,"cover")
+            ,
+            NULL,
+            NULL
+        ), // end bubble 1
+        new BubbleContainerBuilder(
+            "ltr",  // กำหนด NULL หรือ "ltr" หรือ "rtl"
+            NULL,
+            new ImageComponentBuilder(
+                "https://i.ibb.co/SKnkzpZ/300-Hamer.jpg?_ignore=",NULL,NULL,NULL,NULL,"full",NULL,"cover")
+            ,
+            NULL,
+            NULL
+        ), // end bubble 2
+        new BubbleContainerBuilder(
+            "ltr",  // กำหนด NULL หรือ "ltr" หรือ "rtl"
+            NULL,
+            new ImageComponentBuilder(
+                "https://i.ibb.co/1vCT2tN/300-Game-Hand.jpg?_ignore=",NULL,NULL,NULL,NULL,"full",NULL,"cover")
+            ,
+            NULL,
+            NULL
+        ), // end bubble 3  
+        new BubbleContainerBuilder(
+            "ltr",  // กำหนด NULL หรือ "ltr" หรือ "rtl"
+            NULL,
+            new ImageComponentBuilder(
+                "https://i.ibb.co/Sr2r6gR/300-Bag.jpg?_ignore=",NULL,NULL,NULL,NULL,"full",NULL,"cover")
+            ,
+            NULL,
+            NULL
+        ) // end bubble 4       
+    )
+);
+
+$BubbleSet_2 = new CarouselContainerBuilder(
+    array(
+        new BubbleContainerBuilder(
+            "ltr",  // กำหนด NULL หรือ "ltr" หรือ "rtl"
+            NULL,
+            new ImageComponentBuilder(
+                "https://i.ibb.co/hFdGjrR/500-Techbay.jpg?_ignore=",NULL,NULL,NULL,NULL,"full",NULL,"cover")
+            ,
+            NULL,
+            NULL
+        ), // end bubble 1
+        new BubbleContainerBuilder(
+            "ltr",  // กำหนด NULL หรือ "ltr" หรือ "rtl"
+            NULL,
+            new ImageComponentBuilder(
+                "https://i.ibb.co/nnH7n5V/500-Smartwatch.jpg?_ignore=",NULL,NULL,NULL,NULL,"full",NULL,"cover")
+            ,
+            NULL,
+            NULL
+        ), // end bubble 2
+        new BubbleContainerBuilder(
+            "ltr",  // กำหนด NULL หรือ "ltr" หรือ "rtl"
+            NULL,
+            new ImageComponentBuilder(
+                "https://i.ibb.co/ssqCy1H/500-Nike.jpg?_ignore=",NULL,NULL,NULL,NULL,"full",NULL,"cover")
+            ,
+            NULL,
+            NULL
+        ), // end bubble 3  
+        new BubbleContainerBuilder(
+            "ltr",  // กำหนด NULL หรือ "ltr" หรือ "rtl"
+            NULL,
+            new ImageComponentBuilder(
+                "https://i.ibb.co/vLnkLsM/500-Gamebox.jpg?_ignore=",NULL,NULL,NULL,NULL,"full",NULL,"cover")
+            ,
+            NULL,
+            NULL
+        ), // end bubble 4    
+        new BubbleContainerBuilder(
+            "ltr",  // กำหนด NULL หรือ "ltr" หรือ "rtl"
+            NULL,
+            new ImageComponentBuilder(
+                "https://i.ibb.co/G98ddJX/500-Bluetooth.jpg?_ignore=",NULL,NULL,NULL,NULL,"full",NULL,"cover")
+            ,
+            NULL,
+            NULL
+        ) // end bubble 5   
+    )
+);
+
+$BubbleSet_3 = new CarouselContainerBuilder(
+    array(
+        new BubbleContainerBuilder(
+            "ltr",  // กำหนด NULL หรือ "ltr" หรือ "rtl"
+            NULL,
+            new ImageComponentBuilder(
+                "https://i.ibb.co/g3jScCH/1000-Airdot.jpg?_ignore=",NULL,NULL,NULL,NULL,"full",NULL,"cover")
+            ,
+            NULL,
+            NULL
+        ), // end bubble 1
+        new BubbleContainerBuilder(
+            "ltr",  // กำหนด NULL หรือ "ltr" หรือ "rtl"
+            NULL,
+            new ImageComponentBuilder(
+                "https://i.ibb.co/RHMYxZh/1000-Pod.jpg?_ignore=",NULL,NULL,NULL,NULL,"full",NULL,"cover")
+            ,
+            NULL,
+            NULL
+        ), // end bubble 2
+        new BubbleContainerBuilder(
+            "ltr",  // กำหนด NULL หรือ "ltr" หรือ "rtl"
+            NULL,
+            new ImageComponentBuilder(
+                "https://i.ibb.co/SVN1mYh/1000-Miniphone.jpg?_ignore=",NULL,NULL,NULL,NULL,"full",NULL,"cover")
+            ,
+            NULL,
+            NULL
+        ), // end bubble 3  
+        new BubbleContainerBuilder(
+            "ltr",  // กำหนด NULL หรือ "ltr" หรือ "rtl"
+            NULL,
+            new ImageComponentBuilder(
+                "https://i.ibb.co/nCBvzN6/1000-Eloop.jpg?_ignore=",NULL,NULL,NULL,NULL,"full",NULL,"cover")
+            ,
+            NULL,
+            NULL
+        ) // end bubble 4      
+    )
+);
+
 //======================================================================================
 //============================== Working condition =====================================
 //======================================================================================
@@ -2727,7 +2860,17 @@ if (!is_null($events)) {
                     $multiMessage->add($actions2);
                     $replyData = $multiMessage;
                 }else if ($userMessage == "คำถาม:โปรโมชั่น3") {
-                    $replyData = new FlexMessageBuilder("Pro_other", $textPromotion3, $quickReplySubPromotion);
+                    // $replyData = new FlexMessageBuilder("Pro_other", $textPromotion3, $quickReplySubPromotion);
+                    $replyData1 = new FlexMessageBuilder("Flex",$BubbleSet_1);
+                    $replyData2 = new FlexMessageBuilder("Flex",$BubbleSet_2);
+                    $replyData3 = new FlexMessageBuilder("Flex",$BubbleSet_3,$quickReplySubPromotion);
+
+                    $multiMessage = new MultiMessageBuilder;
+                    $multiMessage->add($replyData1);
+                    $multiMessage->add($replyData2);
+                    $multiMessage->add($replyData3);
+
+                    $replyData = $multiMessage; //Multi Message Max 5 Message
                 }
 
                 // ----------------------------------------------------------------------------------------- Website

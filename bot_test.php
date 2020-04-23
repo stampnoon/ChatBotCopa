@@ -41,6 +41,7 @@ use LINE\LINEBot\MessageBuilder\MultiMessageBuilder;
 use LINE\LINEBot\MessageBuilder\TemplateBuilder\ButtonTemplateBuilder;
 use LINE\LINEBot\MessageBuilder\TemplateMessageBuilder;
 use LINE\LINEBot\MessageBuilder\Flex\ComponentBuilder\ImageComponentBuilder;
+use LINE\LINEBot\MessageBuilder\Flex\ContainerBuilder\CarouselContainerBuilder;
 
 $httpClient = new CurlHTTPClient(LINE_MESSAGE_ACCESS_TOKEN);
 $bot = new LINEBot($httpClient, array('channelSecret' => LINE_MESSAGE_CHANNEL_SECRET));
@@ -3225,41 +3226,88 @@ if (!is_null($events)) {
                 // else if ($userMessage == "test") {
                 //     $replyData = new TextMessageBuilder("test ja1","https://line.me/R/ti/p/%40519uqyhc");
                 // }
-                else if ($userMessage == "test") {
+                // else if ($userMessage == "test") { //MultiMessage
 
-                    $picFullSize1 = 'https://i.ibb.co/g3jScCH/1000-Airdot.jpg?_ignore=';
-                    $picThumbnail1 = 'https://i.ibb.co/g3jScCH/1000-Airdot.jpg?_ignore=/240';
-                    $imageMessage1 = new ImageMessageBuilder($picFullSize1,$picThumbnail1);
+                //     $picFullSize1 = 'https://i.ibb.co/g3jScCH/1000-Airdot.jpg?_ignore=';
+                //     $picThumbnail1 = 'https://i.ibb.co/g3jScCH/1000-Airdot.jpg?_ignore=/240';
+                //     $imageMessage1 = new ImageMessageBuilder($picFullSize1,$picThumbnail1);
 
-                    $picFullSize2 = 'https://i.ibb.co/nCBvzN6/1000-Eloop.jpg?_ignore=';
-                    $picThumbnail2 = 'https://i.ibb.co/nCBvzN6/1000-Eloop.jpg?_ignore=/240';
-                    $imageMessage2 = new ImageMessageBuilder($picFullSize2,$picThumbnail2);
+                //     $picFullSize2 = 'https://i.ibb.co/nCBvzN6/1000-Eloop.jpg?_ignore=';
+                //     $picThumbnail2 = 'https://i.ibb.co/nCBvzN6/1000-Eloop.jpg?_ignore=/240';
+                //     $imageMessage2 = new ImageMessageBuilder($picFullSize2,$picThumbnail2);
 
-                    $picFullSize3 = 'https://i.ibb.co/SVN1mYh/1000-Miniphone.jpg?_ignore=';
-                    $picThumbnail3 = 'https://i.ibb.co/SVN1mYh/1000-Miniphone.jpg?_ignore=/240';
-                    $imageMessage3 = new ImageMessageBuilder($picFullSize3,$picThumbnail3);
+                //     $picFullSize3 = 'https://i.ibb.co/SVN1mYh/1000-Miniphone.jpg?_ignore=';
+                //     $picThumbnail3 = 'https://i.ibb.co/SVN1mYh/1000-Miniphone.jpg?_ignore=/240';
+                //     $imageMessage3 = new ImageMessageBuilder($picFullSize3,$picThumbnail3);
 
-                    $picFullSize4 = 'https://i.ibb.co/RHMYxZh/1000-Pod.jpg?_ignore=';
-                    $picThumbnail4 = 'https://i.ibb.co/RHMYxZh/1000-Pod.jpg?_ignore=/240';
-                    $imageMessage4 = new ImageMessageBuilder($picFullSize4,$picThumbnail4);
+                //     $picFullSize4 = 'https://i.ibb.co/RHMYxZh/1000-Pod.jpg?_ignore=';
+                //     $picThumbnail4 = 'https://i.ibb.co/RHMYxZh/1000-Pod.jpg?_ignore=/240';
+                //     $imageMessage4 = new ImageMessageBuilder($picFullSize4,$picThumbnail4);
 
-                    $picFullSize5 = 'https://i.ibb.co/Sr2r6gR/300-Bag.jpg?_ignore=';
-                    $picThumbnail5 = 'https://i.ibb.co/Sr2r6gR/300-Bag.jpg?_ignore=/240';
-                    $imageMessage5 = new ImageMessageBuilder($picFullSize5,$picThumbnail5);
+                //     $picFullSize5 = 'https://i.ibb.co/Sr2r6gR/300-Bag.jpg?_ignore=';
+                //     $picThumbnail5 = 'https://i.ibb.co/Sr2r6gR/300-Bag.jpg?_ignore=/240';
+                //     $imageMessage5 = new ImageMessageBuilder($picFullSize5,$picThumbnail5);
 
-                    $picFullSize6 = 'https://i.ibb.co/1vCT2tN/300-Game-Hand.jpg?_ignore=';
-                    $picThumbnail6 = 'https://i.ibb.co/1vCT2tN/300-Game-Hand.jpg?_ignore=/240';
-                    $imageMessage6 = new ImageMessageBuilder($picFullSize6,$picThumbnail6);
+                //     $picFullSize6 = 'https://i.ibb.co/1vCT2tN/300-Game-Hand.jpg?_ignore=';
+                //     $picThumbnail6 = 'https://i.ibb.co/1vCT2tN/300-Game-Hand.jpg?_ignore=/240';
+                //     $imageMessage6 = new ImageMessageBuilder($picFullSize6,$picThumbnail6);
 
-                    $multiMessage = new MultiMessageBuilder;
-                    $multiMessage->add($imageMessage1);
-                    $multiMessage->add($imageMessage2);
-                    $multiMessage->add($imageMessage3);
-                    $multiMessage->add($imageMessage4);
-                    $multiMessage->add($imageMessage5);
-                    $multiMessage->add($imageMessage6);
+                //     $multiMessage = new MultiMessageBuilder;
+                //     $multiMessage->add($imageMessage1);
+                //     $multiMessage->add($imageMessage2);
+                //     $multiMessage->add($imageMessage3);
+                //     $multiMessage->add($imageMessage4);
+                //     $multiMessage->add($imageMessage5);
+                //     //$multiMessage->add($imageMessage6);
 
-                    $replyData = $multiMessage;
+                //     $replyData = $multiMessage; //Multi Message Max 5 Message
+                // }
+                else if ($userMessage == "test") { //MultiMessage
+                    $textReplyMessage = new CarouselContainerBuilder(
+                        array(
+                            new BubbleContainerBuilder(
+                                "ltr",  // กำหนด NULL หรือ "ltr" หรือ "rtl"
+                                NULL,NULL,
+                                new BoxComponentBuilder(
+                                    "horizontal",
+                                    array(
+                                        new TextComponentBuilder("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
+                                        do eiusmod tempor incididunt ut labore et dolore magna aliqua.",NULL,NULL,NULL,NULL,NULL,true)
+                                    )
+                                ),
+                                new BoxComponentBuilder(
+                                    "horizontal",
+                                    array(
+                                        new ButtonComponentBuilder(
+                                            new UriTemplateActionBuilder("GO","http://niik.in"),
+                                            NULL,NULL,NULL,"primary"
+                                        )
+                                    )
+                                )
+                            ), // end bubble 1
+                            new BubbleContainerBuilder(
+                                "ltr",  // กำหนด NULL หรือ "ltr" หรือ "rtl"
+                                NULL,NULL,
+                                new BoxComponentBuilder(
+                                    "horizontal",
+                                    array(
+                                        new TextComponentBuilder("Hello, World!",NULL,NULL,NULL,NULL,NULL,true)
+                                    )
+                                ),
+                                new BoxComponentBuilder(
+                                    "horizontal",
+                                    array(
+                                        new ButtonComponentBuilder(
+                                            new UriTemplateActionBuilder("GO","http://niik.in"),
+                                            NULL,NULL,NULL,"primary"
+                                        )
+                                    )
+                                )
+                            ) // end bubble 2       
+                        )
+                    );
+
+                    $replyData = $textReplyMessage; //Multi Message Max 5 Message
                 }
                 // ========================== Test===================================
                 else {

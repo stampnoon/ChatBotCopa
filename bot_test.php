@@ -3228,17 +3228,31 @@ if (!is_null($events)) {
                 else if ($userMessage == "test") {
 
                     $picFullSize1 = 'https://i.ibb.co/g3jScCH/1000-Airdot.jpg?_ignore=';
-                    $picThumbnail1 = 'https://i.ibb.co/g3jScCH/1000-Airdot.jpg?_ignore=/1040';
+                    $picThumbnail1 = 'https://i.ibb.co/g3jScCH/1000-Airdot.jpg?_ignore=/240';
                     $imageMessage1 = new ImageMessageBuilder($picFullSize1,$picThumbnail1);
 
                     $picFullSize2 = 'https://i.ibb.co/nCBvzN6/1000-Eloop.jpg?_ignore=';
-                    $picThumbnail2 = 'https://i.ibb.co/nCBvzN6/1000-Eloop.jpg?_ignore=/1040';
+                    $picThumbnail2 = 'https://i.ibb.co/nCBvzN6/1000-Eloop.jpg?_ignore=/240';
                     $imageMessage2 = new ImageMessageBuilder($picFullSize2,$picThumbnail2);
+
+                    $picFullSize3 = 'https://i.ibb.co/SVN1mYh/1000-Miniphone.jpg?_ignore=';
+                    $picThumbnail3 = 'https://i.ibb.co/SVN1mYh/1000-Miniphone.jpg?_ignore=/240';
+                    $imageMessage3 = new ImageMessageBuilder($picFullSize3,$picThumbnail3);
+
+                    $picFullSize4 = 'https://i.ibb.co/RHMYxZh/1000-Pod.jpg?_ignore=';
+                    $picThumbnail4 = 'https://i.ibb.co/RHMYxZh/1000-Pod.jpg?_ignore=/240';
+                    $imageMessage4 = new ImageMessageBuilder($picFullSize4,$picThumbnail4);
+
+                    $picFullSize5 = 'https://i.ibb.co/Sr2r6gR/300-Bag.jpg?_ignore=';
+                    $picThumbnail5 = 'https://i.ibb.co/Sr2r6gR/300-Bag.jpg?_ignore=/240';
+                    $imageMessage5 = new ImageMessageBuilder($picFullSize5,$picThumbnail5);
 
                     $multiMessage = new MultiMessageBuilder;
                     $multiMessage->add($imageMessage1);
                     $multiMessage->add($imageMessage2);
-
+                    $multiMessage->add($imageMessage3);
+                    $multiMessage->add($imageMessage4);
+                    $multiMessage->add($imageMessage5);
 
                     $replyData = $multiMessage;
                 }

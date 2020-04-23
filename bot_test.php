@@ -3454,7 +3454,26 @@ if (!is_null($events)) {
                                         )
                                     )
                                 )
-                            ) // end bubble 10    
+                            ), // end bubble 10  
+                            new BubbleContainerBuilder(
+                                "ltr",  // กำหนด NULL หรือ "ltr" หรือ "rtl"
+                                NULL,NULL,
+                                new BoxComponentBuilder(
+                                    "horizontal",
+                                    array(
+                                        new TextComponentBuilder("Hello, World 11",NULL,NULL,NULL,NULL,NULL,true)
+                                    )
+                                ),
+                                new BoxComponentBuilder(
+                                    "horizontal",
+                                    array(
+                                        new ButtonComponentBuilder(
+                                            new UriTemplateActionBuilder("GO","http://niik.in"),
+                                            NULL,NULL,NULL,"primary"
+                                        )
+                                    )
+                                )
+                            ) // end bubble 11      
                         )
                     );
 

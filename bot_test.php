@@ -3307,7 +3307,7 @@ if (!is_null($events)) {
                         )
                     );
 
-                    $replyData = $textReplyMessage; //Multi Message Max 5 Message
+                    $replyData = new FlexMessageBuilder("Flex",$textReplyMessage);
                 }
                 // ========================== Test===================================
                 else {

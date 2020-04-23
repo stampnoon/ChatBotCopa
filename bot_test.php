@@ -3401,7 +3401,7 @@ if (!is_null($events)) {
 
                     $replyData1 = new FlexMessageBuilder("Flex",$BubbleSet_1);
                     $replyData2 = new FlexMessageBuilder("Flex",$BubbleSet_2);
-                    $replyData3 = new FlexMessageBuilder("Flex",$BubbleSet_3);
+                    $replyData3 = new FlexMessageBuilder("Flex",$BubbleSet_3,$quickReplySubPromotion);
 
                     $multiMessage = new MultiMessageBuilder;
                     $multiMessage->add($replyData1);

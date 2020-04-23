@@ -2900,10 +2900,16 @@ if (!is_null($events)) {
                     $replyData = $multiMessage;
                 }else if ($userMessage == "คำถาม:โปรโมชั่น3") {
                     //$replyData = new FlexMessageBuilder("Pro_other", $textPromotion3, $quickReplySubPromotion);
-                    $picFullSize = 'https://i.ibb.co/Kq5zms4/Monthly-Promotion.jpg?_ignore=';
-                    $picThumbnail = 'https://i.ibb.co/Kq5zms4/Monthly-Promotion.jpg?_ignore=/1040';
-                    $imageMessage = new ImageMessageBuilder($picFullSize,$picThumbnail);
-                    $replyData = $imageMessage;
+                    $replyData1 = new FlexMessageBuilder("Flex",$BubbleSet_1);
+                    $replyData2 = new FlexMessageBuilder("Flex",$BubbleSet_2);
+                    $replyData3 = new FlexMessageBuilder("Flex",$BubbleSet_3,$quickReplySubPromotion);
+
+                    $multiMessage = new MultiMessageBuilder;
+                    $multiMessage->add($replyData1);
+                    $multiMessage->add($replyData2);
+                    $multiMessage->add($replyData3);
+
+                    $replyData = $multiMessage; //Multi Message Max 5 Message
                 }
 
                 // ----------------------------------------------------------------------------------------- Website
@@ -3398,18 +3404,6 @@ if (!is_null($events)) {
 
                 //     $replyData = $multiMessage; //Multi Message Max 5 Message
                 // }
-                else if ($userMessage == "test") { //MultiMessage
-                    $replyData1 = new FlexMessageBuilder("Flex",$BubbleSet_1);
-                    $replyData2 = new FlexMessageBuilder("Flex",$BubbleSet_2);
-                    $replyData3 = new FlexMessageBuilder("Flex",$BubbleSet_3,$quickReplySubPromotion);
-
-                    $multiMessage = new MultiMessageBuilder;
-                    $multiMessage->add($replyData1);
-                    $multiMessage->add($replyData2);
-                    $multiMessage->add($replyData3);
-
-                    $replyData = $multiMessage; //Multi Message Max 5 Message
-                }
                 // ========================== Test===================================
                 else {
                     $replyData = new FlexMessageBuilder("Flex", $textNotKeyword, $quickReplyMain);

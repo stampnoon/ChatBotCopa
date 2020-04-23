@@ -477,41 +477,41 @@ $textPromotion2 = new TextMessageBuilder(
 
 );
 
-// $textPromotion3 = new BubbleContainerBuilder(
-//     "ltr",
-//     NULL,
-//     NULL,
-//     new BoxComponentBuilder(
-//         "horizontal",
-//         array(
-//             new TextComponentBuilder(
-//                 "โปรโมชั่นประจำเดือน
+$textPromotion3 = new BubbleContainerBuilder(
+    "ltr",
+    NULL,
+    NULL,
+    new BoxComponentBuilder(
+        "horizontal",
+        array(
+            new TextComponentBuilder(
+                "โปรโมชั่นประจำเดือน
 
-// โปรโมชั่นพิเศษในแต่ละเดือนไม่ว่าจะเป็นแถมสุดพิเศษหรือส่วนลดสุดคุ้ม
-// สามารถสอบถามรายละเอียดโปรโมชั่นประจำเดือนจากแอดมินได้เลยค่ะ
-// ___________________________________",
-//                 NULL,
-//                 NULL,
-//                 NULL,
-//                 NULL,
-//                 NULL,
-//                 true
-//             )
-//         )
-//     ),
-//     new BoxComponentBuilder(
-//         "horizontal",
-//         array(
-//             new ButtonComponentBuilder(
-//                 new UriTemplateActionBuilder("โปรโมชั่นประจำเดือน", "https://lin.ee/iDODdH2"),
-//                 NULL,
-//                 NULL,
-//                 NULL,
-//                 "primary"
-//             )
-//         )
-//     )
-// );
+โปรโมชั่นพิเศษในแต่ละเดือนไม่ว่าจะเป็นแถมสุดพิเศษหรือส่วนลดสุดคุ้ม
+สามารถสอบถามรายละเอียดโปรโมชั่นประจำเดือนจากแอดมินได้เลยค่ะ
+___________________________________",
+                NULL,
+                NULL,
+                NULL,
+                NULL,
+                NULL,
+                true
+            )
+        )
+    ),
+    new BoxComponentBuilder(
+        "horizontal",
+        array(
+            new ButtonComponentBuilder(
+                new UriTemplateActionBuilder("โปรโมชั่นประจำเดือน", "https://lin.ee/iDODdH2"),
+                NULL,
+                NULL,
+                NULL,
+                "primary"
+            )
+        )
+    )
+);
 
 $textOther1 = new BubbleContainerBuilder(
     "ltr",
@@ -2899,15 +2899,16 @@ if (!is_null($events)) {
                     $multiMessage->add($actions2);
                     $replyData = $multiMessage;
                 }else if ($userMessage == "คำถาม:โปรโมชั่น3") {
-                    //$replyData = new FlexMessageBuilder("Pro_other", $textPromotion3, $quickReplySubPromotion);
-                    $replyData1 = new FlexMessageBuilder("Flex",$BubbleSet_1);
-                    $replyData2 = new FlexMessageBuilder("Flex",$BubbleSet_2);
-                    $replyData3 = new FlexMessageBuilder("Flex",$BubbleSet_3,$quickReplySubPromotion);
+                    $replyData1 = new FlexMessageBuilder("Monthly_Promotion1",$BubbleSet_1);
+                    $replyData2 = new FlexMessageBuilder("Monthly_Promotion2",$BubbleSet_2);
+                    $replyData3 = new FlexMessageBuilder("Monthly_Promotion3",$BubbleSet_3);
+                    $replyData4 = new FlexMessageBuilder("Monthly_Promotion", $textPromotion3, $quickReplySubPromotion);
 
                     $multiMessage = new MultiMessageBuilder;
                     $multiMessage->add($replyData1);
                     $multiMessage->add($replyData2);
                     $multiMessage->add($replyData3);
+                    $multiMessage->add($replyData4);
 
                     $replyData = $multiMessage; //Multi Message Max 5 Message
                 }

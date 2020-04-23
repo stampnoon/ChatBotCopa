@@ -3227,16 +3227,20 @@ if (!is_null($events)) {
                 // }
                 else if ($userMessage == "test") {
 
-                    $picFullSize = 'https://i.ibb.co/g3jScCH/1000-Airdot.jpg?_ignore=';
-                    $picThumbnail = 'https://i.ibb.co/g3jScCH/1000-Airdot.jpg?_ignore=/240';
-                    $imageMessage = new ImageMessageBuilder($picFullSize,$picThumbnail);
+                    $picFullSize1 = 'https://i.ibb.co/g3jScCH/1000-Airdot.jpg?_ignore=';
+                    $picThumbnail1 = 'https://i.ibb.co/g3jScCH/1000-Airdot.jpg?_ignore=/1040';
+                    $imageMessage1 = new ImageMessageBuilder($picFullSize1,$picThumbnail1);
 
-                    // $multiMessage = new MultiMessageBuilder;
-                    // $multiMessage->add($actions1);
-                    // $multiMessage->add($actions2);
+                    $picFullSize2 = 'https://i.ibb.co/nCBvzN6/1000-Eloop.jpg?_ignore=';
+                    $picThumbnail2 = 'https://i.ibb.co/nCBvzN6/1000-Eloop.jpg?_ignore=/1040';
+                    $imageMessage2 = new ImageMessageBuilder($picFullSize2,$picThumbnail2);
+
+                    $multiMessage = new MultiMessageBuilder;
+                    $multiMessage->add($imageMessage1);
+                    $multiMessage->add($imageMessage2);
 
 
-                    $replyData = $imageMessage;
+                    $replyData = $multiMessage;
                 }
                 // ========================== Test===================================
                 else {

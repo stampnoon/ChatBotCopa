@@ -2498,6 +2498,138 @@ ___________________________________",
     )
 );
 
+$BubbleSet_1 = new CarouselContainerBuilder(
+    array(
+        new BubbleContainerBuilder(
+            "ltr",  // กำหนด NULL หรือ "ltr" หรือ "rtl"
+            NULL,
+            new ImageComponentBuilder(
+                "https://i.ibb.co/129WS7t/300-TWS.jpg?_ignore=",NULL,NULL,NULL,NULL,"full",NULL,"cover")
+            ,
+            NULL,
+            NULL
+        ), // end bubble 1
+        new BubbleContainerBuilder(
+            "ltr",  // กำหนด NULL หรือ "ltr" หรือ "rtl"
+            NULL,
+            new ImageComponentBuilder(
+                "https://i.ibb.co/SKnkzpZ/300-Hamer.jpg?_ignore=",NULL,NULL,NULL,NULL,"full",NULL,"cover")
+            ,
+            NULL,
+            NULL
+        ), // end bubble 2
+        new BubbleContainerBuilder(
+            "ltr",  // กำหนด NULL หรือ "ltr" หรือ "rtl"
+            NULL,
+            new ImageComponentBuilder(
+                "https://i.ibb.co/1vCT2tN/300-Game-Hand.jpg?_ignore=",NULL,NULL,NULL,NULL,"full",NULL,"cover")
+            ,
+            NULL,
+            NULL
+        ), // end bubble 3  
+        new BubbleContainerBuilder(
+            "ltr",  // กำหนด NULL หรือ "ltr" หรือ "rtl"
+            NULL,
+            new ImageComponentBuilder(
+                "https://i.ibb.co/Sr2r6gR/300-Bag.jpg?_ignore=",NULL,NULL,NULL,NULL,"full",NULL,"cover")
+            ,
+            NULL,
+            NULL
+        ) // end bubble 4       
+    )
+);
+
+$BubbleSet_2 = new CarouselContainerBuilder(
+    array(
+        new BubbleContainerBuilder(
+            "ltr",  // กำหนด NULL หรือ "ltr" หรือ "rtl"
+            NULL,
+            new ImageComponentBuilder(
+                "https://i.ibb.co/hFdGjrR/500-Techbay.jpg?_ignore=",NULL,NULL,NULL,NULL,"full",NULL,"cover")
+            ,
+            NULL,
+            NULL
+        ), // end bubble 1
+        new BubbleContainerBuilder(
+            "ltr",  // กำหนด NULL หรือ "ltr" หรือ "rtl"
+            NULL,
+            new ImageComponentBuilder(
+                "https://i.ibb.co/nnH7n5V/500-Smartwatch.jpg?_ignore=",NULL,NULL,NULL,NULL,"full",NULL,"cover")
+            ,
+            NULL,
+            NULL
+        ), // end bubble 2
+        new BubbleContainerBuilder(
+            "ltr",  // กำหนด NULL หรือ "ltr" หรือ "rtl"
+            NULL,
+            new ImageComponentBuilder(
+                "https://i.ibb.co/ssqCy1H/500-Nike.jpg?_ignore=",NULL,NULL,NULL,NULL,"full",NULL,"cover")
+            ,
+            NULL,
+            NULL
+        ), // end bubble 3  
+        new BubbleContainerBuilder(
+            "ltr",  // กำหนด NULL หรือ "ltr" หรือ "rtl"
+            NULL,
+            new ImageComponentBuilder(
+                "https://i.ibb.co/vLnkLsM/500-Gamebox.jpg?_ignore=",NULL,NULL,NULL,NULL,"full",NULL,"cover")
+            ,
+            NULL,
+            NULL
+        ), // end bubble 4    
+        new BubbleContainerBuilder(
+            "ltr",  // กำหนด NULL หรือ "ltr" หรือ "rtl"
+            NULL,
+            new ImageComponentBuilder(
+                "https://i.ibb.co/G98ddJX/500-Bluetooth.jpg?_ignore=",NULL,NULL,NULL,NULL,"full",NULL,"cover")
+            ,
+            NULL,
+            NULL
+        ) // end bubble 5   
+    )
+);
+
+$BubbleSet_3 = new CarouselContainerBuilder(
+    array(
+        new BubbleContainerBuilder(
+            "ltr",  // กำหนด NULL หรือ "ltr" หรือ "rtl"
+            NULL,
+            new ImageComponentBuilder(
+                "https://i.ibb.co/g3jScCH/1000-Airdot.jpg?_ignore=",NULL,NULL,NULL,NULL,"full",NULL,"cover")
+            ,
+            NULL,
+            NULL
+        ), // end bubble 1
+        new BubbleContainerBuilder(
+            "ltr",  // กำหนด NULL หรือ "ltr" หรือ "rtl"
+            NULL,
+            new ImageComponentBuilder(
+                "https://i.ibb.co/RHMYxZh/1000-Pod.jpg?_ignore=",NULL,NULL,NULL,NULL,"full",NULL,"cover")
+            ,
+            NULL,
+            NULL
+        ), // end bubble 2
+        new BubbleContainerBuilder(
+            "ltr",  // กำหนด NULL หรือ "ltr" หรือ "rtl"
+            NULL,
+            new ImageComponentBuilder(
+                "https://i.ibb.co/SVN1mYh/1000-Miniphone.jpg?_ignore=",NULL,NULL,NULL,NULL,"full",NULL,"cover")
+            ,
+            NULL,
+            NULL
+        ), // end bubble 3  
+        new BubbleContainerBuilder(
+            "ltr",  // กำหนด NULL หรือ "ltr" หรือ "rtl"
+            NULL,
+            new ImageComponentBuilder(
+                "https://i.ibb.co/nCBvzN6/1000-Eloop.jpg?_ignore=",NULL,NULL,NULL,NULL,"full",NULL,"cover")
+            ,
+            NULL,
+            NULL
+        ) // end bubble 4      
+    )
+);
+
 //======================================================================================
 //============================== Working condition =====================================
 //======================================================================================
@@ -3267,138 +3399,6 @@ if (!is_null($events)) {
                 //     $replyData = $multiMessage; //Multi Message Max 5 Message
                 // }
                 else if ($userMessage == "test") { //MultiMessage
-                    $BubbleSet_1 = new CarouselContainerBuilder(
-                        array(
-                            new BubbleContainerBuilder(
-                                "ltr",  // กำหนด NULL หรือ "ltr" หรือ "rtl"
-                                NULL,
-                                new ImageComponentBuilder(
-                                    "https://i.ibb.co/129WS7t/300-TWS.jpg?_ignore=",NULL,NULL,NULL,NULL,"700",NULL,"cover")
-                                ,
-                                NULL,
-                                NULL
-                            ), // end bubble 1
-                            new BubbleContainerBuilder(
-                                "ltr",  // กำหนด NULL หรือ "ltr" หรือ "rtl"
-                                NULL,
-                                new ImageComponentBuilder(
-                                    "https://i.ibb.co/SKnkzpZ/300-Hamer.jpg?_ignore=",NULL,NULL,NULL,NULL,"full",NULL,"cover")
-                                ,
-                                NULL,
-                                NULL
-                            ), // end bubble 2
-                            new BubbleContainerBuilder(
-                                "ltr",  // กำหนด NULL หรือ "ltr" หรือ "rtl"
-                                NULL,
-                                new ImageComponentBuilder(
-                                    "https://i.ibb.co/1vCT2tN/300-Game-Hand.jpg?_ignore=",NULL,NULL,NULL,NULL,"full",NULL,"cover")
-                                ,
-                                NULL,
-                                NULL
-                            ), // end bubble 3  
-                            new BubbleContainerBuilder(
-                                "ltr",  // กำหนด NULL หรือ "ltr" หรือ "rtl"
-                                NULL,
-                                new ImageComponentBuilder(
-                                    "https://i.ibb.co/Sr2r6gR/300-Bag.jpg?_ignore=",NULL,NULL,NULL,NULL,"full",NULL,"cover")
-                                ,
-                                NULL,
-                                NULL
-                            ) // end bubble 4       
-                        )
-                    );
-
-                    $BubbleSet_2 = new CarouselContainerBuilder(
-                        array(
-                            new BubbleContainerBuilder(
-                                "ltr",  // กำหนด NULL หรือ "ltr" หรือ "rtl"
-                                NULL,
-                                new ImageComponentBuilder(
-                                    "https://i.ibb.co/hFdGjrR/500-Techbay.jpg?_ignore=",NULL,NULL,NULL,NULL,"full",NULL,"cover")
-                                ,
-                                NULL,
-                                NULL
-                            ), // end bubble 1
-                            new BubbleContainerBuilder(
-                                "ltr",  // กำหนด NULL หรือ "ltr" หรือ "rtl"
-                                NULL,
-                                new ImageComponentBuilder(
-                                    "https://i.ibb.co/nnH7n5V/500-Smartwatch.jpg?_ignore=",NULL,NULL,NULL,NULL,"full",NULL,"cover")
-                                ,
-                                NULL,
-                                NULL
-                            ), // end bubble 2
-                            new BubbleContainerBuilder(
-                                "ltr",  // กำหนด NULL หรือ "ltr" หรือ "rtl"
-                                NULL,
-                                new ImageComponentBuilder(
-                                    "https://i.ibb.co/ssqCy1H/500-Nike.jpg?_ignore=",NULL,NULL,NULL,NULL,"full",NULL,"cover")
-                                ,
-                                NULL,
-                                NULL
-                            ), // end bubble 3  
-                            new BubbleContainerBuilder(
-                                "ltr",  // กำหนด NULL หรือ "ltr" หรือ "rtl"
-                                NULL,
-                                new ImageComponentBuilder(
-                                    "https://i.ibb.co/vLnkLsM/500-Gamebox.jpg?_ignore=",NULL,NULL,NULL,NULL,"full",NULL,"cover")
-                                ,
-                                NULL,
-                                NULL
-                            ), // end bubble 4    
-                            new BubbleContainerBuilder(
-                                "ltr",  // กำหนด NULL หรือ "ltr" หรือ "rtl"
-                                NULL,
-                                new ImageComponentBuilder(
-                                    "https://i.ibb.co/G98ddJX/500-Bluetooth.jpg?_ignore=",NULL,NULL,NULL,NULL,"full",NULL,"cover")
-                                ,
-                                NULL,
-                                NULL
-                            ) // end bubble 5   
-                        )
-                    );
-
-                    $BubbleSet_3 = new CarouselContainerBuilder(
-                        array(
-                            new BubbleContainerBuilder(
-                                "ltr",  // กำหนด NULL หรือ "ltr" หรือ "rtl"
-                                NULL,
-                                new ImageComponentBuilder(
-                                    "https://i.ibb.co/g3jScCH/1000-Airdot.jpg?_ignore=",NULL,NULL,NULL,NULL,"full",NULL,"cover")
-                                ,
-                                NULL,
-                                NULL
-                            ), // end bubble 1
-                            new BubbleContainerBuilder(
-                                "ltr",  // กำหนด NULL หรือ "ltr" หรือ "rtl"
-                                NULL,
-                                new ImageComponentBuilder(
-                                    "https://i.ibb.co/RHMYxZh/1000-Pod.jpg?_ignore=",NULL,NULL,NULL,NULL,"full",NULL,"cover")
-                                ,
-                                NULL,
-                                NULL
-                            ), // end bubble 2
-                            new BubbleContainerBuilder(
-                                "ltr",  // กำหนด NULL หรือ "ltr" หรือ "rtl"
-                                NULL,
-                                new ImageComponentBuilder(
-                                    "https://i.ibb.co/SVN1mYh/1000-Miniphone.jpg?_ignore=",NULL,NULL,NULL,NULL,"full",NULL,"cover")
-                                ,
-                                NULL,
-                                NULL
-                            ), // end bubble 3  
-                            new BubbleContainerBuilder(
-                                "ltr",  // กำหนด NULL หรือ "ltr" หรือ "rtl"
-                                NULL,
-                                new ImageComponentBuilder(
-                                    "https://i.ibb.co/nCBvzN6/1000-Eloop.jpg?_ignore=",NULL,NULL,NULL,NULL,"full",NULL,"cover")
-                                ,
-                                NULL,
-                                NULL
-                            ) // end bubble 4      
-                        )
-                    );
-
                     $replyData1 = new FlexMessageBuilder("Flex",$BubbleSet_1);
                     $replyData2 = new FlexMessageBuilder("Flex",$BubbleSet_2);
                     $replyData3 = new FlexMessageBuilder("Flex",$BubbleSet_3,$quickReplySubPromotion);

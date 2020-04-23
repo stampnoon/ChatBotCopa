@@ -3299,7 +3299,7 @@ if (!is_null($events)) {
                         )
                     );
                     $replyData1 = new FlexMessageBuilder("Flex",$BubbleSet_1);
-                    $replyData2 = new FlexMessageBuilder("Flex",$textReplyMessage);
+                    $replyData2 = new FlexMessageBuilder("Flex",$BubbleSet_1);
 
                     //$replyData = new FlexMessageBuilder("Flex",$textReplyMessage);
 

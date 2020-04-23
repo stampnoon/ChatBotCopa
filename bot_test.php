@@ -3247,12 +3247,17 @@ if (!is_null($events)) {
                     $picThumbnail5 = 'https://i.ibb.co/Sr2r6gR/300-Bag.jpg?_ignore=/240';
                     $imageMessage5 = new ImageMessageBuilder($picFullSize5,$picThumbnail5);
 
+                    $picFullSize6 = 'https://i.ibb.co/1vCT2tN/300-Game-Hand.jpg?_ignore=';
+                    $picThumbnail6 = 'https://i.ibb.co/1vCT2tN/300-Game-Hand.jpg?_ignore=/240';
+                    $imageMessage6 = new ImageMessageBuilder($picFullSize6,$picThumbnail6);
+
                     $multiMessage = new MultiMessageBuilder;
                     $multiMessage->add($imageMessage1);
                     $multiMessage->add($imageMessage2);
                     $multiMessage->add($imageMessage3);
                     $multiMessage->add($imageMessage4);
                     $multiMessage->add($imageMessage5);
+                    $multiMessage->add($imageMessage6);
 
                     $replyData = $multiMessage;
                 }

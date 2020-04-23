@@ -3271,8 +3271,7 @@ if (!is_null($events)) {
                                 new BoxComponentBuilder(
                                     "horizontal",
                                     array(
-                                        new TextComponentBuilder("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
-                                        do eiusmod tempor incididunt ut labore et dolore magna aliqua.",NULL,NULL,NULL,NULL,NULL,true)
+                                        new TextComponentBuilder("Hello, World 1",NULL,NULL,NULL,NULL,NULL,true)
                                     )
                                 ),
                                 new BoxComponentBuilder(
@@ -3291,7 +3290,7 @@ if (!is_null($events)) {
                                 new BoxComponentBuilder(
                                     "horizontal",
                                     array(
-                                        new TextComponentBuilder("Hello, World!",NULL,NULL,NULL,NULL,NULL,true)
+                                        new TextComponentBuilder("Hello, World 2",NULL,NULL,NULL,NULL,NULL,true)
                                     )
                                 ),
                                 new BoxComponentBuilder(
@@ -3310,7 +3309,7 @@ if (!is_null($events)) {
                                 new BoxComponentBuilder(
                                     "horizontal",
                                     array(
-                                        new TextComponentBuilder("Hello, World!",NULL,NULL,NULL,NULL,NULL,true)
+                                        new TextComponentBuilder("Hello, World 3",NULL,NULL,NULL,NULL,NULL,true)
                                     )
                                 ),
                                 new BoxComponentBuilder(
@@ -3329,7 +3328,7 @@ if (!is_null($events)) {
                                 new BoxComponentBuilder(
                                     "horizontal",
                                     array(
-                                        new TextComponentBuilder("Hello, World!",NULL,NULL,NULL,NULL,NULL,true)
+                                        new TextComponentBuilder("Hello, World 4",NULL,NULL,NULL,NULL,NULL,true)
                                     )
                                 ),
                                 new BoxComponentBuilder(
@@ -3348,7 +3347,7 @@ if (!is_null($events)) {
                                 new BoxComponentBuilder(
                                     "horizontal",
                                     array(
-                                        new TextComponentBuilder("Hello, World!",NULL,NULL,NULL,NULL,NULL,true)
+                                        new TextComponentBuilder("Hello, World 5",NULL,NULL,NULL,NULL,NULL,true)
                                     )
                                 ),
                                 new BoxComponentBuilder(
@@ -3360,7 +3359,102 @@ if (!is_null($events)) {
                                         )
                                     )
                                 )
-                            ) // end bubble 5           
+                            ), // end bubble 5      
+                            new BubbleContainerBuilder(
+                                "ltr",  // กำหนด NULL หรือ "ltr" หรือ "rtl"
+                                NULL,NULL,
+                                new BoxComponentBuilder(
+                                    "horizontal",
+                                    array(
+                                        new TextComponentBuilder("Hello, World 6",NULL,NULL,NULL,NULL,NULL,true)
+                                    )
+                                ),
+                                new BoxComponentBuilder(
+                                    "horizontal",
+                                    array(
+                                        new ButtonComponentBuilder(
+                                            new UriTemplateActionBuilder("GO","http://niik.in"),
+                                            NULL,NULL,NULL,"primary"
+                                        )
+                                    )
+                                )
+                            ), // end bubble 6   
+                            new BubbleContainerBuilder(
+                                "ltr",  // กำหนด NULL หรือ "ltr" หรือ "rtl"
+                                NULL,NULL,
+                                new BoxComponentBuilder(
+                                    "horizontal",
+                                    array(
+                                        new TextComponentBuilder("Hello, World 7",NULL,NULL,NULL,NULL,NULL,true)
+                                    )
+                                ),
+                                new BoxComponentBuilder(
+                                    "horizontal",
+                                    array(
+                                        new ButtonComponentBuilder(
+                                            new UriTemplateActionBuilder("GO","http://niik.in"),
+                                            NULL,NULL,NULL,"primary"
+                                        )
+                                    )
+                                )
+                            ), // end bubble 7   
+                            new BubbleContainerBuilder(
+                                "ltr",  // กำหนด NULL หรือ "ltr" หรือ "rtl"
+                                NULL,NULL,
+                                new BoxComponentBuilder(
+                                    "horizontal",
+                                    array(
+                                        new TextComponentBuilder("Hello, World 8",NULL,NULL,NULL,NULL,NULL,true)
+                                    )
+                                ),
+                                new BoxComponentBuilder(
+                                    "horizontal",
+                                    array(
+                                        new ButtonComponentBuilder(
+                                            new UriTemplateActionBuilder("GO","http://niik.in"),
+                                            NULL,NULL,NULL,"primary"
+                                        )
+                                    )
+                                )
+                            ), // end bubble 8
+                            new BubbleContainerBuilder(
+                                "ltr",  // กำหนด NULL หรือ "ltr" หรือ "rtl"
+                                NULL,NULL,
+                                new BoxComponentBuilder(
+                                    "horizontal",
+                                    array(
+                                        new TextComponentBuilder("Hello, World 9",NULL,NULL,NULL,NULL,NULL,true)
+                                    )
+                                ),
+                                new BoxComponentBuilder(
+                                    "horizontal",
+                                    array(
+                                        new ButtonComponentBuilder(
+                                            new UriTemplateActionBuilder("GO","http://niik.in"),
+                                            NULL,NULL,NULL,"primary"
+                                        )
+                                    )
+                                )
+                            ), // end bubble 9    
+                            new BubbleContainerBuilder(
+                                "ltr",  // กำหนด NULL หรือ "ltr" หรือ "rtl"
+                                NULL,NULL,
+                                new BoxComponentBuilder(
+                                    "horizontal",
+                                    array(
+                                        new TextComponentBuilder("Hello, World 10",NULL,NULL,NULL,NULL,NULL,true)
+                                    )
+                                ),
+                                new BoxComponentBuilder(
+                                    "horizontal",
+                                    array(
+                                        new ButtonComponentBuilder(
+                                            new UriTemplateActionBuilder("GO","http://niik.in"),
+                                            NULL,NULL,NULL,"primary"
+                                        )
+                                    )
+                                )
+                            ) // end bubble 10    
                         )
                     );
 

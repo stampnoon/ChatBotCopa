@@ -30,6 +30,7 @@ use LINE\LINEBot\MessageBuilder\Flex\ComponentBuilder\BoxComponentBuilder;
 use LINE\LINEBot\MessageBuilder\Flex\ComponentBuilder\ButtonComponentBuilder;
 use LINE\LINEBot\MessageBuilder\Flex\ComponentBuilder\TextComponentBuilder;
 use LINE\LINEBot\MessageBuilder\ImagemapMessageBuilder;
+use LINE\LINEBot\MessageBuilder\ImageMessageBuilder;
 use LINE\LINEBot\ImagemapActionBuilder\ImagemapMessageActionBuilder;
 use LINE\LINEBot\ImagemapActionBuilder\ImagemapUriActionBuilder;
 use LINE\LINEBot\ImagemapActionBuilder\AreaBuilder;
@@ -3224,6 +3225,19 @@ if (!is_null($events)) {
                 // else if ($userMessage == "test") {
                 //     $replyData = new TextMessageBuilder("test ja1","https://line.me/R/ti/p/%40519uqyhc");
                 // }
+                else if ($userMessage == "test") {
+
+                    $picFullSize = 'https://i.ibb.co/g3jScCH/1000-Airdot.jpg?_ignore=';
+                    $picThumbnail = 'https://i.ibb.co/g3jScCH/1000-Airdot.jpg?_ignore=/240';
+                    $imageMessage = new ImageMessageBuilder($picFullSize,$picThumbnail);
+
+                    // $multiMessage = new MultiMessageBuilder;
+                    // $multiMessage->add($actions1);
+                    // $multiMessage->add($actions2);
+
+
+                    $replyData = $imageMessage;
+                }
                 // ========================== Test===================================
                 else {
                     $replyData = new FlexMessageBuilder("Flex", $textNotKeyword, $quickReplyMain);

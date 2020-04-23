@@ -3256,7 +3256,7 @@ if (!is_null($events)) {
                     $multiMessage->add($imageMessage2);
                     $multiMessage->add($imageMessage3);
                     $multiMessage->add($imageMessage4);
-                    $multiMessage->add($imageMessage5);
+                    //$multiMessage->add($imageMessage5);
                     $multiMessage->add($imageMessage6);
 
                     $replyData = $multiMessage;

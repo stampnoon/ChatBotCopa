@@ -3273,7 +3273,7 @@ if (!is_null($events)) {
                                 "ltr",  // กำหนด NULL หรือ "ltr" หรือ "rtl"
                                 NULL,
                                 new ImageComponentBuilder(
-                                    "https://i.ibb.co/129WS7t/300-TWS.jpg?_ignore=",NULL,NULL,NULL,NULL,700,NULL,"cover")
+                                    "https://i.ibb.co/129WS7t/300-TWS.jpg?_ignore=",NULL,NULL,NULL,NULL,"700",NULL,"cover")
                                 ,
                                 NULL,
                                 NULL

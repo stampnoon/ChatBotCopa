@@ -373,13 +373,13 @@ $quickReplyEditSlip = new QuickReplyMessageBuilder(
         new QuickReplyButtonBuilder(new CameraRollTemplateActionBuilder('แก้ไขสลิป'))
     )
 );
-$quickReplyUser = new QuickReplyMessageBuilder(
-    array(
-        new QuickReplyButtonBuilder($textAddress),
-        new QuickReplyButtonBuilder($textNotAddress),
-        new QuickReplyButtonBuilder($textEditUser),
-    )
-);
+// $quickReplyUser = new QuickReplyMessageBuilder(
+//     array(
+//         new QuickReplyButtonBuilder($textAddress),
+//         new QuickReplyButtonBuilder($textNotAddress),
+//         new QuickReplyButtonBuilder($textEditUser),
+//     )
+// );
 $quickEditUser = new QuickReplyMessageBuilder(
     array(
         new QuickReplyButtonBuilder($textEditUser),
@@ -2327,139 +2327,139 @@ $textGetUser = new BubbleContainerBuilder(
 //     )
 // );
 
-$textAddress = new BubbleContainerBuilder(
-    "ltr",
-    NULL,
-    NULL,
-    new BoxComponentBuilder(
-        "horizontal",
-        array(
-            new TextComponentBuilder(
-                "กรุณากรอกชื่อ เบอร์โที่อยู่ให้ครบถ้วนสมบูรณ์
-*กรุณานำหน้าประโยคด้วยคำว่า 'ที่อยู่'
-___________________________________
+// $textAddress = new BubbleContainerBuilder(
+//     "ltr",
+//     NULL,
+//     NULL,
+//     new BoxComponentBuilder(
+//         "horizontal",
+//         array(
+//             new TextComponentBuilder(
+//                 "กรุณากรอกชื่อ เบอร์โที่อยู่ให้ครบถ้วนสมบูรณ์
+// *กรุณานำหน้าประโยคด้วยคำว่า 'ที่อยู่'
+// ___________________________________
 
-ตัวอย่าง: ที่อยู่ 111 หมู่1 ต.ตำบล
-อ.อำเภอ จ.จังหวัด 11111
-",
-                NULL,
-                NULL,
-                "md",
-                NULL,
-                NULL,
-                true
-            )
-        )
-    )
-);
+// ตัวอย่าง: ที่อยู่ 111 หมู่1 ต.ตำบล
+// อ.อำเภอ จ.จังหวัด 11111
+// ",
+//                 NULL,
+//                 NULL,
+//                 "md",
+//                 NULL,
+//                 NULL,
+//                 true
+//             )
+//         )
+//     )
+// );
 
-$textDetailUser = new BubbleContainerBuilder(
-    "ltr",
-    NULL,
-    NULL,
-    new BoxComponentBuilder(
-        "horizontal",
-        array(
-            new TextComponentBuilder(
-                "กรอกชื่อและเบอร์โทรเพื่อติดต่อ
-*กรุณานำหน้าประโยคด้วยคำว่า 'เพิ่มเติม'
-___________________________________
+// $textDetailUser = new BubbleContainerBuilder(
+//     "ltr",
+//     NULL,
+//     NULL,
+//     new BoxComponentBuilder(
+//         "horizontal",
+//         array(
+//             new TextComponentBuilder(
+//                 "กรอกชื่อและเบอร์โทรเพื่อติดต่อ
+// *กรุณานำหน้าประโยคด้วยคำว่า 'เพิ่มเติม'
+// ___________________________________
 
-ตัวอย่าง: เพิ่มเติม นายเอ นามสม 0812345678",
-                NULL,
-                NULL,
-                "md",
-                NULL,
-                NULL,
-                true
-            )
-        )
-    )
-);
-$textSendAddress = new BubbleContainerBuilder(
-    "ltr",
-    NULL,
-    NULL,
-    new BoxComponentBuilder(
-        "horizontal",
-        array(
-            new TextComponentBuilder(
-                "ขอบคุณค่ะ เดี๋ยวทางเราจะดำเนินการ
-ส่งของตามที่อยู่นี้นะคะ..
-___________________________________
+// ตัวอย่าง: เพิ่มเติม นายเอ นามสม 0812345678",
+//                 NULL,
+//                 NULL,
+//                 "md",
+//                 NULL,
+//                 NULL,
+//                 true
+//             )
+//         )
+//     )
+// );
+// $textSendAddress = new BubbleContainerBuilder(
+//     "ltr",
+//     NULL,
+//     NULL,
+//     new BoxComponentBuilder(
+//         "horizontal",
+//         array(
+//             new TextComponentBuilder(
+//                 "ขอบคุณค่ะ เดี๋ยวทางเราจะดำเนินการ
+// ส่งของตามที่อยู่นี้นะคะ..
+// ___________________________________
 
-Copa69 ขอขอบคุณที่ใช้บริการค่ะ....",
-                NULL,
-                NULL,
-                "md",
-                NULL,
-                NULL,
-                true
-            )
-        )
-    )
-);
-$textNotKeyword = new BubbleContainerBuilder(
-    "ltr",
-    NULL,
-    NULL,
-    new BoxComponentBuilder(
-        "horizontal",
-        array(
-            new TextComponentBuilder(
-                "คุณพิมพ์ไม่ตรง Keyword ที่ต้องการค่ะ
-กรุณาเลือกหัวข้อที่ต้องการและทำตาม
-ขั้นตอนค่ะ
-___________________________________
+// Copa69 ขอขอบคุณที่ใช้บริการค่ะ....",
+//                 NULL,
+//                 NULL,
+//                 "md",
+//                 NULL,
+//                 NULL,
+//                 true
+//             )
+//         )
+//     )
+// );
+// $textNotKeyword = new BubbleContainerBuilder(
+//     "ltr",
+//     NULL,
+//     NULL,
+//     new BoxComponentBuilder(
+//         "horizontal",
+//         array(
+//             new TextComponentBuilder(
+//                 "คุณพิมพ์ไม่ตรง Keyword ที่ต้องการค่ะ
+// กรุณาเลือกหัวข้อที่ต้องการและทำตาม
+// ขั้นตอนค่ะ
+// ___________________________________
 
-Copa69 ขอขอบคุณที่ใช้บริการค่ะ....",
-                NULL,
-                NULL,
-                "md",
-                NULL,
-                NULL,
-                true
-            )
-        )
-    )
-);
+// Copa69 ขอขอบคุณที่ใช้บริการค่ะ....",
+//                 NULL,
+//                 NULL,
+//                 "md",
+//                 NULL,
+//                 NULL,
+//                 true
+//             )
+//         )
+//     )
+// );
 
-$textRegistsuccess = new BubbleContainerBuilder(
-    "ltr",
-    NULL,
-    NULL,
-    new BoxComponentBuilder(
-        "horizontal",
-        array(
-            new TextComponentBuilder(
-                "สมัครสมาชิกเสร็จเรียบร้อยแล้ว
-กรุณาติดต่อแอดมินเพื่อรับของแถมได้เลยค่ะ
+// $textRegistsuccess = new BubbleContainerBuilder(
+//     "ltr",
+//     NULL,
+//     NULL,
+//     new BoxComponentBuilder(
+//         "horizontal",
+//         array(
+//             new TextComponentBuilder(
+//                 "สมัครสมาชิกเสร็จเรียบร้อยแล้ว
+// กรุณาติดต่อแอดมินเพื่อรับของแถมได้เลยค่ะ
 
-คลิกที่ลิงค์เพื่อติดต่อแอดมิน
-___________________________________
-Copa69 ขอขอบคุณที่ใช้บริการค่ะ....",
-                NULL,
-                NULL,
-                NULL,
-                NULL,
-                NULL,
-                true
-            )
-        )
-    ),
-    new BoxComponentBuilder(
-        "horizontal",
-        array(
-            new ButtonComponentBuilder(
-                new UriTemplateActionBuilder("ติดต่อแอดมิน", "https://line.me/R/ti/p/%40743mznmf"),
-                NULL,
-                NULL,
-                NULL,
-                "primary"
-            )
-        )
-    )
-);
+// คลิกที่ลิงค์เพื่อติดต่อแอดมิน
+// ___________________________________
+// Copa69 ขอขอบคุณที่ใช้บริการค่ะ....",
+//                 NULL,
+//                 NULL,
+//                 NULL,
+//                 NULL,
+//                 NULL,
+//                 true
+//             )
+//         )
+//     ),
+//     new BoxComponentBuilder(
+//         "horizontal",
+//         array(
+//             new ButtonComponentBuilder(
+//                 new UriTemplateActionBuilder("ติดต่อแอดมิน", "https://line.me/R/ti/p/%40743mznmf"),
+//                 NULL,
+//                 NULL,
+//                 NULL,
+//                 "primary"
+//             )
+//         )
+//     )
+// );
 
 $textContact = new BubbleContainerBuilder(
     "ltr",

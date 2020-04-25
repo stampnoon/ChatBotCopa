@@ -3407,7 +3407,31 @@ if (!is_null($events)) {
                 // }
                 // ========================== Test===================================
                 else {
-                    $replyData = new FlexMessageBuilder("Flex", $textNotKeyword, $quickReplyMain);
+                    //$replyData = new FlexMessageBuilder("Flex", $textNotKeyword, $quickReplyMain);
+                    $imageMain = 'https://i.ibb.co/ZzSzxwb/main2.jpg?_ignore=';
+                    $replyData = new ImagemapMessageBuilder(
+                        $imageMain,
+                        'main',
+                        new BaseSizeBuilder(420, 1040),
+                        array(
+                            new ImagemapMessageActionBuilder(
+                                'สอบถาม',
+                                new AreaBuilder(4, 112, 337, 281)
+                            ),
+                            // new ImagemapMessageActionBuilder(
+                            //     'สมัคร',
+                            //     new AreaBuilder(348, 112, 340, 283)
+                            // ),
+                            new ImagemapUriActionBuilder(
+                                'https://line.me/R/ti/p/%40519uqyhc',
+                                new AreaBuilder(348, 112, 340, 283)
+                            ),
+                            new ImagemapMessageActionBuilder(
+                                'ติดต่อ',
+                                new AreaBuilder(693, 112, 338, 283)
+                            ),
+                        )
+                    );
                 }
                 break;
             }
